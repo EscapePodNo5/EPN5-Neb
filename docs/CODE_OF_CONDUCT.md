@@ -1,6 +1,9 @@
 # Code of Conduct
 In order to foster a more healthy, productive and friendly contributing environment, the following code is in effect on this repository and all Development category channels on Discord/IRC.
 
+# General
+Do not edit core files. If you absolutely can't preform a change via a modpack or overwrite within a modpack, then please go to [Nebula](https://github.com/NebulaSS13/Nebula) with your change.
+
 
 ## Rules
 The following conduct may result in a warning being logged against your account:
