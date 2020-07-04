@@ -1,0 +1,6 @@
+#ifndef MODPACK_EPNO5
+#define MODPACK_EPNO5
+
+#include "example.dm"
+
+#endif
