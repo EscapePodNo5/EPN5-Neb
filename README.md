@@ -1,6 +1,6 @@
 # Nebula 13
 
-[Discord](https://discord.gg/Ddw58yF) - [Code](http://github.com/NebulaSS13/Nebula/)
+[Discord](https://discord.gg/uEumvNR) - [Code](https://github.com/EscapePodNo5/Nebula)
 
 ---
 
