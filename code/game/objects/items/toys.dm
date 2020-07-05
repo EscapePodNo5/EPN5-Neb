@@ -112,12 +112,6 @@
 /*
  * Fake telebeacon
  */
-/obj/item/toy/blink
-	name = "electronic blink toy game"
-	desc = "Blink.  Blink.  Blink. Ages 8 and up."
-	icon = 'icons/obj/items/device/radio/beacon.dmi'
-	icon_state = "beacon"
-	item_state = "signaler"
 
 /*
  * Fake singularity
@@ -852,7 +846,7 @@
 
 /obj/item/toy/desk/fan
 	name = "office fan"
-	desc = "Your greatest fan."
+	desc = "Your greatest  ."
 	icon_state= "fan"
 
 /obj/item/toy/desk/officetoy
@@ -864,6 +858,18 @@
 	name = "dipping bird toy"
 	desc = "A ancient human bird idol, worshipped by clerks and desk jockeys."
 	icon_state= "dippybird"
+
+//Not a desk toy per say. But uses the same master object for convenience
+
+/obj/item/toy/desk/blink
+	name = "electronic blink toy game"
+	desc = "Uses uranium for infinite blinking fun! Ages 3 and up."
+	icon = 'icons/obj/toy.dmi'
+	icon_state = "blinktoy"
+	item_state = "electronic"
+	w_class = ITEM_SIZE_TINY
+
+
 
 // tg station ports
 

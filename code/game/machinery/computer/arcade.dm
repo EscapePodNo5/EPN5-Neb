@@ -6,7 +6,7 @@
 	icon_screen = "invaders"
 	var/random = TRUE
 	var/list/prizes = list(	/obj/item/storage/box/snappops										= 200,
-							/obj/item/toy/blink															= 200,
+							/obj/item/toy/desk/blink															= 200,
 							/obj/item/clothing/under/syndicate/tacticool								= 200,
 							/obj/item/toy/sword															= 200,
 							/obj/item/gun/projectile/revolver/capgun								= 200,

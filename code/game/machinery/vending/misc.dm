@@ -65,7 +65,7 @@
 		/obj/item/storage/wallet/poly = 2
 	)
 	contraband = list(
-		/obj/item/clothing/glasses/eyepatch = 2, 
+		/obj/item/clothing/glasses/eyepatch = 2,
 		/obj/item/clothing/accessory/horrible = 2,
 		/obj/item/clothing/mask/smokable/pipe = 3
 	)
@@ -82,24 +82,24 @@
 	icon_vend = "games-vend"
 	base_type = /obj/machinery/vending/games
 	products = list(
-		/obj/item/toy/blink = 5, 
-		/obj/item/toy/eightball = 8, 
-		/obj/item/deck/cards = 5, 
-		/obj/item/deck/tarot = 5, 
-		/obj/item/pack/cardemon = 6, 
-		/obj/item/pack/spaceball = 6, 
-		/obj/item/storage/pill_bottle/dice_nerd = 5, 
-		/obj/item/storage/pill_bottle/dice = 5, 
-		/obj/item/storage/box/checkers = 2, 
-		/obj/item/storage/box/checkers/chess/red = 2, 
-		/obj/item/storage/box/checkers/chess = 2, 
+		/obj/item/toy/desk/blink = 5,
+		/obj/item/toy/eightball = 8,
+		/obj/item/deck/cards = 5,
+		/obj/item/deck/tarot = 5,
+		/obj/item/pack/cardemon = 6,
+		/obj/item/pack/spaceball = 6,
+		/obj/item/storage/pill_bottle/dice_nerd = 5,
+		/obj/item/storage/pill_bottle/dice = 5,
+		/obj/item/storage/box/checkers = 2,
+		/obj/item/storage/box/checkers/chess/red = 2,
+		/obj/item/storage/box/checkers/chess = 2,
 		/obj/item/board = 2
 	)
 	contraband = list(
-		/obj/item/chems/spray/waterflower = 2, 
+		/obj/item/chems/spray/waterflower = 2,
 		/obj/item/storage/box/snappops = 3,
-		/obj/item/spirit_board = 1, 
-		/obj/item/gun/projectile/revolver/capgun = 1, 
+		/obj/item/spirit_board = 1,
+		/obj/item/gun/projectile/revolver/capgun = 1,
 		/obj/item/ammo_magazine/caps = 4
 	)
 

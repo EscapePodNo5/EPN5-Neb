@@ -487,7 +487,7 @@
 				/obj/item/toy/sword,
 				/obj/item/toy/water_balloon,
 				/obj/item/toy/crossbow,
-				/obj/item/toy/blink,
+				/obj/item/toy/desk/blink,
 				/obj/item/chems/spray/waterflower,
 				/obj/item/toy/prize/powerloader,
 				/obj/item/toy/prize/fireripley,

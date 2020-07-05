@@ -69,7 +69,7 @@
 		/obj/item/beach_ball,
 		/obj/item/beach_ball/holoball,
 		/obj/item/toy/water_balloon,
-		/obj/item/toy/blink,
+		/obj/item/toy/desk/blink,
 		/obj/item/toy/crossbow,
 		/obj/item/gun/projectile/revolver/capgun,
 		/obj/item/material/sword/katana/toy,
