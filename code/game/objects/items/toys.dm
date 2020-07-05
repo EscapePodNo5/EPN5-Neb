@@ -846,7 +846,7 @@
 
 /obj/item/toy/desk/fan
 	name = "office fan"
-	desc = "Your greatest  ."
+	desc = "Your greatest fan."
 	icon_state= "fan"
 
 /obj/item/toy/desk/officetoy
