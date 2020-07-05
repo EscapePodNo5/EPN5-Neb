@@ -2,5 +2,7 @@
 #define MODPACK_EPNO5
 
 #include "example.dm"
+#include "mob_defines.dm"
+#include "species/vulpkanin.dm"
 
 #endif
