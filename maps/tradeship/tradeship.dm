@@ -2,6 +2,7 @@
 
 	#include "../../mods/corporate/_corporate.dme"
 	#include "../../mods/ascent/_ascent.dme"
+	#include "../../mods/general_content/GeneralContent.dme"
 
 	#include "tradeship_antagonists.dm"
 	#include "tradeship_areas.dm"

@@ -6,7 +6,7 @@
  	user << browse_rsc(pref.preview_icon, "previewicon.png")
 
 	. += "<b>Preview</b><br>"
-	. += "<div class='statusDisplay'><center><img src=previewicon.png width=[pref.preview_icon.Width()/2] height=[pref.preview_icon.Height()/2]></center></div>"
+	. += "<div class='statusDisplay'><center><img src=previewicon.png width=[pref.preview_icon.Width()] height=[pref.preview_icon.Height()]></center></div>"
 
 	var/ear_display = "Normal"
 	if(pref.ear_style && (pref.ear_style in GLOB.ear_styles_list))
@@ -40,7 +40,7 @@
 		if (T.extra_overlay)
 			. += "<a href='?src=\ref[src];tail_color2=1'>Change Secondary Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_tail2, 2)][num2hex(pref.g_tail2, 2)][num2hex(pref.b_tail2, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_tail2, 2)][num2hex(pref.g_tail2, 2)][num2hex(pref.b_tail2, 2)]'><tr><td>__</td></tr></table> </font><br>"
 
-/datum/category_item/player_setup_item/cosmetics/ears/OnTopic(var/href,var/list/href_list, var/mob/user)
+/datum/category_item/player_setup_item/cosmetics/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(!CanUseTopic(user))
 		return TOPIC_NOACTION
 
