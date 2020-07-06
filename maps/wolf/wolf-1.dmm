@@ -2,6 +2,26 @@
 "b" = (/turf/simulated/wall/r_wall,/area/space)
 "c" = (/turf/simulated/floor/plating,/area/space)
 "d" = (/obj/structure/lattice,/turf/space,/area/space)
+"e" = (/obj/structure/stairs/north,/turf/simulated/floor/plating,/area/space)
+"f" = (/obj/machinery/computer/upload/ai{dir = 8},/obj/machinery/door/window/brigdoor/westleft,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"j" = (/obj/machinery/porta_turret/stationary,/obj/effect/floor_decal/industrial/warning/full,/turf/simulated/floor/tiled/dark/monotile,/area/space)
+"n" = (/obj/effect/floor_decal/techfloor/orange,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"s" = (/obj/effect/floor_decal/techfloor/orange{dir = 1},/obj/structure/table/rack/dark,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"x" = (/obj/structure/window/reinforced,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"y" = (/obj/effect/floor_decal/techfloor/orange{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"B" = (/obj/structure/stairs/north,/obj/machinery/door/blast/shutters/open{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"D" = (/obj/effect/floor_decal/techfloor/orange{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"F" = (/obj/effect/floor_decal/techfloor/orange{dir = 9},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"H" = (/obj/effect/floor_decal/techfloor/orange{dir = 1},/obj/structure/table/rack/dark,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"I" = (/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"J" = (/obj/machinery/door/blast/shutters/open{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"M" = (/turf/simulated/floor/tiled/dark/monotile,/area/space)
+"N" = (/obj/effect/floor_decal/techfloor/orange{dir = 10},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"O" = (/obj/effect/floor_decal/techfloor/orange{dir = 5},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"P" = (/obj/machinery/computer/upload/robot{dir = 4},/obj/machinery/door/window/brigdoor/eastleft,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"Q" = (/obj/effect/floor_decal/industrial/warning/fulltile,/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"R" = (/obj/effect/floor_decal/techfloor/orange{dir = 6},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
+"Z" = (/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/space)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -41,13 +61,13 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbcccccccccccbbaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbcccccccccccccbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabccbbbbbbbbcccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcbbFsHHObbbccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcbeDxxIyjBbccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcbcDfPIyQJbccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcbMDZZIyjJbccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbcbbNnnnRbbbccbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccbbbMbbbbccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcccccccccccccccbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbcccccccccccccbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
