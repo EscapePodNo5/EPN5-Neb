@@ -4,5 +4,19 @@
 #include "example.dm"
 #include "mob_defines.dm"
 #include "species/vulpkanin.dm"
+#include "species/skrell.dm"
 
 #endif
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+#include "example.dm"
+#include "mob_defines.dm"
+#include "species\skrell.dm"
+#include "species\vulpkanin.dm"
+// END_INCLUDE
