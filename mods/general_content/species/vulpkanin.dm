@@ -4,10 +4,10 @@
 
 	description = "insert big bad lore description here."
 
-	icobase = 'icons/vulpkanin/body.dmi'
+	icobase = 'mods/general_content/icons/vulpkanin/body.dmi'
 	//deform = They don't have deformed icons.
-	husk_icon = 'icons/vulpkanin/husk.dmi'
-	preview_icon = 'icons/vulpkanin/preview.dmi'
+	husk_icon = 'mods/general_content/icons/vulpkanin/husk.dmi'
+	preview_icon = 'mods/general_content/icons/vulpkanin/preview.dmi'
 	tail = "vulptail"
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY

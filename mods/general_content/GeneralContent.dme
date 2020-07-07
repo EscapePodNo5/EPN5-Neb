@@ -3,6 +3,17 @@
 
 #include "example.dm"
 #include "mob_defines.dm"
+#include "global_defines.dm"
 #include "species/vulpkanin.dm"
+
+#include "sprite_accessory/_cosmetics_selection.dm"
+#include "sprite_accessory/_hooks.dm"
+#include "sprite_accessory/_mob_overwrites.dm"
+#include "sprite_accessory/_player_setup.dm"
+#include "sprite_accessory/_update_icons.dm"
+#include "sprite_accessory/ears.dm"
+#include "sprite_accessory/tails.dm"
+#include "sprite_accessory/update_icons.dm"
+#include "sprite_accessory/overwrites_head.dm"
 
 #endif
