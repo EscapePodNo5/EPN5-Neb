@@ -1,15 +1,14 @@
 /datum/species/skrell
 	name = SPECIES_SKRELL
 	name_plural = SPECIES_SKRELL
-
 	description = "insert big bad lore description here."
-
 	icobase = 'mods/general_content/icons/skrell/body.dmi'
 	deform = 'mods/general_content/icons/skrell/deformed_body.dmi'
 	husk_icon = 'mods/general_content/icons/skrell/husk.dmi'
 	preview_icon = 'mods/general_content/icons/skrell/preview.dmi'
 	hidden_from_codex = FALSE
 	spawn_flags = SPECIES_CAN_JOIN
+	genders = list(PLURAL)
 
 	//unarmed_attacks = list(/decl/natural_attack/stomp /decl/natural_attack/kick, /decl/natural_attack/punch, /decl/natural_attack/bite/sharp, /decl/natural_attack/claws)
 
