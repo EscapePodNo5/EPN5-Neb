@@ -15,5 +15,6 @@
 #include "sprite_accessory/tails.dm"
 #include "sprite_accessory/update_icons.dm"
 #include "sprite_accessory/overwrites_head.dm"
+#include "decals/damagecontrol.dm"
 
 #endif
