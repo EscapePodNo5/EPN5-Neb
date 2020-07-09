@@ -3207,10 +3207,5 @@
 #include "maps\~mapsystem\maps_unit_testing.dm"
 #include "maps\~unit_tests\unit_testing.dm"
 #include "mods\_modpack.dm"
-#include "mods\general_content\mob_defines.dm"
-#include "mods\general_content\organs\internal\skrell\Eyes.dm"
-#include "mods\general_content\organs\internal\skrell\gills.dm"
-#include "mods\general_content\species\skrell.dm"
-#include "mods\general_content\sprite_accessories\accessory_skrell.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
