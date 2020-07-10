@@ -1,4 +1,6 @@
 #if !defined(USING_MAP_DATUM)
+	#include "../../mods/general_content/GeneralContent.dme"
+
 
 	#include "wolf-1.dmm"
 	#include "wolf-2.dmm"

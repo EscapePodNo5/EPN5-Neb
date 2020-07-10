@@ -8,6 +8,7 @@
 	#include "..\..\mods\ascent\_ascent.dme"
 	#include "..\..\mods\modern_earth\_modern_earth.dme"
 	#include "..\..\mods\dionaea\_dionaea.dme"
+	#include "..\..\mods\general_content\GeneralContent.dme"
 
 	#include "example_areas.dm"
 	#include "example_shuttles.dm"

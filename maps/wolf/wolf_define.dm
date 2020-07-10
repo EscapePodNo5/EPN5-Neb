@@ -1,6 +1,6 @@
 /datum/map/wolf
 	name = "Wolf"
-	full_name = "IMV So Much For Subtlety"
+	full_name = "FTE Odyssey"
 	path = "wolf"
 	ground_noun = "deckplate"
 
