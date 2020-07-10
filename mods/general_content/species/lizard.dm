@@ -71,7 +71,7 @@
 		"You feel sluggish and cold.",
 		"Your scales bristle against the cold."
 		)
-	breathing_sound = 'sound/voice/lizard.ogg'
+	breathing_sound = 'sound/lizard.ogg'
 
 	/*base_auras = list(
 		/obj/aura/regenerating/human/unathi
