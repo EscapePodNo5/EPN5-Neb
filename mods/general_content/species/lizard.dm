@@ -8,13 +8,12 @@
 	preview_icon = 'icons/unathi/preview.dmi'
 	bandages_icon = 'icons/mob/bandage.dmi'
 	tail = "sogtail"
-	tail_animation = 'icons/mob/species/unathi/unathi_tail.dmi'
+	tail_animation = 'icons/unathi/unathi_tail.dmi'
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE
-	skin_material =   MATERIAL_SKIN_LIZARD
 
-	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/tail, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
+	//unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/tail, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
 	primitive_form = "Stok"
 	darksight_range = 4
 	darksight_tint = DARKTINT_MODERATE
@@ -48,15 +47,14 @@
 	heat_level_2 = 480 //Default 400
 	heat_level_3 = 1100 //Default 1000
 
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	flesh_color = "#34af10"
 
-	reagent_tag = IS_UNATHI
 	base_color = "#066000"
 	blood_color = "#f24b2e"
-	organs_icon = 'icons/mob/human_races/species/unathi/organs.dmi'
+	organs_icon = 'icons/unathi/organs.dmi'
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
 
@@ -86,38 +84,11 @@
 
 	prone_overlay_offset = list(-4, -4)
 
-	override_organ_types = list(
-		BP_EYES = /obj/item/organ/internal/eyes/unathi,
-		BP_BRAIN = /obj/item/organ/internal/brain/unathi
-	)
-
 	descriptors = list(
 		/datum/mob_descriptor/height = 2,
 		/datum/mob_descriptor/build = 2
 		)
 
-	available_cultural_info = list(
-		TAG_CULTURE = list(
-			CULTURE_UNATHI
-		),
-		TAG_HOMEWORLD = list(
-			HOME_SYSTEM_MOGHES
-		),
-		TAG_FACTION = list(
-			FACTION_UNATHI_POLAR,
-			FACTION_UNATHI_DESERT,
-			FACTION_UNATHI_SAVANNAH,
-			FACTION_UNATHI_DIAMOND_PEAK,
-			FACTION_UNATHI_SALT_SWAMP
-		),
-		TAG_RELIGION =  list(
-			RELIGION_UNATHI_STRATAGEM,
-			RELIGION_UNATHI_PRECURSOR,
-			RELIGION_UNATHI_VINE,
-			RELIGION_UNATHI_LIGHTS,
-			RELIGION_OTHER
-		)
-	)
 	pain_emotes_with_pain_level = list(
 			list(/decl/emote/audible/wheeze, /decl/emote/audible/roar, /decl/emote/audible/bellow, /decl/emote/audible/howl) = 80,
 			list(/decl/emote/audible/grunt, /decl/emote/audible/groan, /decl/emote/audible/wheeze, /decl/emote/audible/hiss) = 50,
@@ -127,17 +98,6 @@
 /datum/species/unathi/equip_survival_gear(var/mob/living/carbon/human/H)
 	..()
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes)
-
-/datum/species/unathi/proc/handle_sugar(var/mob/living/carbon/human/M, var/datum/reagent/sugar, var/efficiency = 1)
-	var/effective_dose = efficiency * M.chem_doses[sugar.type]
-	if(effective_dose < 5)
-		return
-	M.druggy = max(M.druggy, 10)        // Sugar gets Unathi high
-	M.add_chemical_effect(CE_PULSE, -1)
-	if(effective_dose > 15 && prob(7))
-		M.emote(pick("twitch", "drool"))
-	if(effective_dose > 20 && prob(10))
-		M.SelfMove(pick(GLOB.cardinal))
 
 /datum/species/unathi/get_bodytype(var/mob/living/carbon/human/H)
 	return SPECIES_UNATHI

@@ -5,7 +5,7 @@
 #include "mob_defines.dm"
 #include "global_defines.dm"
 #include "species/vulpkanin.dm"
-#include "species/unathi.dm"
+#include "species/lizard.dm"
 
 #include "sprite_accessory/_cosmetics_selection.dm"
 #include "sprite_accessory/_hooks.dm"
