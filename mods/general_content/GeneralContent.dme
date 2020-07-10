@@ -9,6 +9,8 @@
 #include "species/vox/vox.dm"
 #include "species/vox/organs.dm"
 
+#include "machinery/thermal_fusion.dm"
+
 #include "sprite_accessory/_cosmetics_selection.dm"
 #include "sprite_accessory/_hooks.dm"
 #include "sprite_accessory/_mob_overwrites.dm"
