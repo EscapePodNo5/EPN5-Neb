@@ -5,7 +5,7 @@
 #include "mob_defines.dm"
 #include "species/vulpkanin.dm"
 #include "species/skrell.dm"
-#include "mods\general_content\organs\internal\skrell\eyes.dm"
-#include "mods\general_content\organs\internal\skrell\gills.dm"
+#include "organs/internal/skrell/eyes.dm"
+#include "organs/internal/skrell/gills.dm"
 
 #endif
