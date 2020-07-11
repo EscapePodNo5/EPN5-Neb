@@ -6,6 +6,7 @@
 	#include "wolf-2.dmm"
 	#include "wolf-3.dmm"
 	#include "wolf-4.dmm"
+	#include "decals\floor_decals.dm"
 
 	#define USING_MAP_DATUM /datum/map/wolf
 
