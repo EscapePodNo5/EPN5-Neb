@@ -7,7 +7,7 @@
 	Check equipment/missile_equipment.dm for more info.
 */
 
-/obj/structure/missile
+/obj/structure/base_projectile/missile
 	name = "intergalactic missile"
 	desc = "big scary missile that boom boom the ship. go open an issue for having seen this."
 	icon = 'mods/ship_combat2/icons/bigmissile.dmi'
@@ -18,31 +18,27 @@
 	dir = WEST
 	does_spin = FALSE
 
-	var/overmap_name = "projectile"
-
+	projectile_type = PROJECTILE_TYPE_MISSILE
 	var/maintenance_hatch_open = FALSE
 	var/active = FALSE
-	var/list/equipment = list()
-	var/obj/effect/overmap/projectile/overmap_missile = null
-	var/frame_mass = 10 //tons.
 
-/obj/structure/missile/examine(mob/user)
+/obj/structure/base_projectile/missile/examine(mob/user)
 	. = ..()
 	if(LAZYLEN(equipment))
 		to_chat(user, SPAN_NOTICE("It has these modules mounted:"))
-	for(var/obj/item/missile_equipment/E in equipment)
+	for(var/obj/item/projectile_equipment/E in equipment)
 		to_chat(user, SPAN_NOTICE("\icon[E] [E.name]"))
 	if(active)
 		to_chat(user,SPAN_DANGER("A status light indicates that it is armed."))
 
-/obj/structure/missile/proc/get_additional_info()
+/obj/structure/base_projectile/missile/proc/get_additional_info()
 	var/list/info = list("Detected components:<ul>")
-	for(var/obj/item/missile_equipment/E in equipment)
+	for(var/obj/item/projectile_equipment/E in equipment)
 		info += ("<li>" + E.name)
 	info += "</ul>"
 	return JOINTEXT(info)
 
-/obj/structure/missile/proc/update_bounds()
+/obj/structure/base_projectile/missile/update_bounds()
 	if(dir in list(EAST, WEST))
 		bound_width = 2 * world.icon_size
 		bound_height = world.icon_size
@@ -50,69 +46,34 @@
 		bound_width = world.icon_size
 		bound_height = 2 * world.icon_size
 
-/obj/structure/missile/Initialize()
+/obj/structure/base_projectile/missile/Initialize()
 	. = ..()
 
 	for(var/i = 1; i <= LAZYLEN(equipment); i++)
 		var/path = equipment[i]
 		equipment[i] = new path(src)
 
-	for(var/obj/item/missile_equipment/E in equipment)
+	for(var/obj/item/projectile_equipment/E in equipment)
 		E.missile = src
 
 	update_bounds()
 	update_icon()
 
-/obj/structure/missile/Destroy()
+/obj/structure/base_projectile/missile/Destroy()
 	. = ..()
 
 	walk(src, 0)
-	for(var/obj/item/missile_equipment/E in equipment)
+	for(var/obj/item/projectile_equipment/E in equipment)
 		E.missile = null
 
 	QDEL_NULL_LIST(equipment)
 
-	if(!QDELETED(overmap_missile))
-		QDEL_NULL(overmap_missile)
-	overmap_missile = null
-
-/obj/structure/missile/Move()
-	. = ..()
-	update_bounds()
-
-	// for some reason, touch_map_edge doesn't always trigger like it should
-	// this ensures that it does
-
-	if(x < TRANSITIONEDGE || x > world.maxx - TRANSITIONEDGE || y < TRANSITIONEDGE || y > world.maxy - TRANSITIONEDGE)
-		touch_map_edge()
-
-/obj/structure/missile/Bump(var/atom/obstacle)
+/obj/structure/base_projectile/missile/Bump(var/atom/obstacle)
 	..()
 	detonate(obstacle)
 
-// Move to the overmap until we encounter a new z
-/obj/structure/missile/touch_map_edge()
-	// In case the proc is called normally alongside the call in Move()
-	if(loc == overmap_missile)
-		return
 
-	for(var/obj/item/missile_equipment/E in equipment)
-		E.on_touch_map_edge(overmap_missile)
-
-	// didn't activate the missile in time, so it drifts off into space harmlessly or something
-	if(!active)
-		qdel(src)
-		return
-
-	if(overmap_missile.dangerous)
-		log_and_message_admins("A dangerous missile has entered the overmap (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[overmap_missile.x];Y=[overmap_missile.y];Z=[overmap_missile.z]'>JMP</a>)")
-
-	// Abort walk
-	walk(src, 0)
-	forceMove(overmap_missile)
-	overmap_missile.set_moving(TRUE)
-
-/obj/structure/missile/attackby(var/obj/item/I, var/mob/user)
+/obj/structure/base_projectile/missile/attackby(var/obj/item/I, var/mob/user)
 	if(!active && isMultitool(I))
 		if(activate())
 			if(overmap_missile.dangerous)
@@ -129,8 +90,8 @@
 		return
 
 	if(maintenance_hatch_open)
-		if(istype(I, /obj/item/missile_equipment))
-			var/obj/item/missile_equipment/E = I
+		if(istype(I, /obj/item/projectile_equipment))
+			var/obj/item/projectile_equipment/E = I
 
 			if(!user.unEquip(E, src))
 				return
@@ -143,7 +104,7 @@
 			return
 
 		if(isCrowbar(I))
-			var/obj/item/missile_equipment/removed_component = input("Which component would you like to remove?") as null|obj in equipment
+			var/obj/item/projectile_equipment/removed_component = input("Which component would you like to remove?") as null|obj in equipment
 			if(removed_component)
 				to_chat(user, "You remove \the [removed_component] from \the [src].")
 				user.put_in_hands(removed_component)
@@ -155,43 +116,31 @@
 
 	..()
 
-/obj/structure/missile/on_update_icon()
+/obj/structure/base_projectile/missile/on_update_icon()
 	overlays.Cut()
 
-	for(var/obj/item/missile_equipment/E in equipment)
+	for(var/obj/item/projectile_equipment/E in equipment)
 		overlays += E.icon_state
 	overlays += "panel[maintenance_hatch_open ? "_open" : ""]"
 
 // primes the missile and puts it on the overmap
-/obj/structure/missile/proc/activate()
+/obj/structure/base_projectile/missile/activate()
+	..()
+	active = TRUE
 	if(active)
 		return 0
 
-	var/obj/effect/overmap/start_object = waypoint_sector(src)
-	if(!start_object)
-		return 0
-
-	active = TRUE
-
-	var/turf/T = get_turf(start_object)
-
-	overmap_missile = new /obj/effect/overmap/projectile(null, T)
-	overmap_missile.set_missile(src)
-	overmap_missile.recalc_mass()
-	overmap_missile.SetName(overmap_name)
-	overmap_missile.host_ship = start_object
-
-	for(var/obj/item/missile_equipment/E in equipment)
+	for(var/obj/item/projectile_equipment/E in equipment)
 		E.on_missile_activated(overmap_missile)
 
 	return 1
 
-/obj/structure/missile/proc/detonate(var/atom/obstacle)
+/obj/structure/base_projectile/missile/proc/detonate(var/atom/obstacle)
 	if(!active)
 		return
 
 	// missile equipment triggers before the missile itself
-	for(var/obj/item/missile_equipment/E in equipment)
+	for(var/obj/item/projectile_equipment/E in equipment)
 		E.on_trigger(obstacle)
 
 	// stop moving
@@ -200,41 +149,16 @@
 	qdel(src)
 
 // Figure out where to pop in and set the missile flying
-/obj/structure/missile/proc/enter_level(var/z_level)
-	// prevent the missile from moving on the overmap
-	overmap_missile.set_moving(FALSE)
+/obj/structure/base_projectile/missile/enter_level(var/z_level)
+	..()
 
 	var/heading = overmap_missile.dir
 	if(!heading)
 		heading = random_dir() // To prevent the missile from popping into the middle of the map and sitting there
 
-	var/start_x = 0
-	var/start_y = 0
-
-	if(heading & WEST)
-		start_x = world.maxx - TRANSITIONEDGE - 2
-	else if(heading & EAST)
-		start_x = TRANSITIONEDGE + 2
-	else
-		start_x = Floor(world.maxx / 2) + rand(-10, 10)
-
-	if(heading & NORTH)
-		start_y = TRANSITIONEDGE + 2
-	else if(heading & SOUTH)
-		start_y = world.maxy - TRANSITIONEDGE - 2
-	else
-		start_y = Floor(world.maxy / 2) + rand(-10, 10)
-
-	var/turf/start = locate(start_x, start_y, z_level)
-
-	if(overmap_missile.dangerous)
-		log_and_message_admins("A dangerous missile has entered z level [z_level] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
-	forceMove(start)
-
-
 	// let missile equipment decide a target
 	var/list/goal_coords = null
-	for(var/obj/item/missile_equipment/E in equipment)
+	for(var/obj/item/projectile_equipment/E in equipment)
 		var/list/coords = E.on_enter_level(z_level)
 		if(coords)
 			goal_coords = coords
@@ -249,16 +173,16 @@
 
 	walk(src, heading, 1)
 
-/obj/structure/missile/proc/has_iff()
-	for(var/obj/item/missile_equipment/E in equipment)
-		if(istype(E, /obj/item/missile_equipment/iff))
+/obj/structure/base_projectile/missile/proc/has_iff()
+	for(var/obj/item/projectile_equipment/E in equipment)
+		if(istype(E, /obj/item/projectile_equipment/iff))
 			return TRUE
 		else
 			continue
 
-/obj/structure/missile/proc/get_iff_code()
+/obj/structure/base_projectile/missile/proc/get_iff_code()
 	if(!has_iff())
 		return
 
-	for(var/obj/item/missile_equipment/iff/E in equipment)
+	for(var/obj/item/projectile_equipment/iff/E in equipment)
 		return E.iff_code

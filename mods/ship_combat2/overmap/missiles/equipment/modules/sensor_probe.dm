@@ -1,5 +1,5 @@
 // Lights up the overmap
-/obj/item/missile_equipment/sensor
+/obj/item/projectile_equipment/sensor
 	name = "sensor probe"
 	desc = "A portable sensor probe that provides information about nearby sectors and feeds it back to a designated mothership."
 	icon_state = "probe"
@@ -10,21 +10,21 @@
 	var/power_draw = 30 KILOWATTS // per sensor range
 	var/obj/item/cell/cell
 
-/obj/item/missile_equipment/sensor/Initialize()
+/obj/item/projectile_equipment/sensor/Initialize()
 	. = ..()
 	cell = new(src)
 	GLOB.destroyed_event.register(cell, src, .proc/cell_qdel)
 
-/obj/item/missile_equipment/sensor/proc/cell_qdel()
+/obj/item/projectile_equipment/sensor/proc/cell_qdel()
 	GLOB.destroyed_event.unregister(cell, src)
 	cell = null
 
-/obj/item/missile_equipment/sensor/Destroy()
+/obj/item/projectile_equipment/sensor/Destroy()
 	. = ..()
 	GLOB.destroyed_event.unregister(cell, src)
 	QDEL_NULL(cell)
 
-/obj/item/missile_equipment/sensor/attackby(var/obj/item/I, var/mob/user)
+/obj/item/projectile_equipment/sensor/attackby(var/obj/item/I, var/mob/user)
 	if(isScrewdriver(I) && !isnull(cell))
 		user.put_in_hands(cell)
 		to_chat(user, SPAN_NOTICE("You remove \the [cell] from \the [src]."))
@@ -41,10 +41,10 @@
 	..()
 
 // Make sure the probe stays on the overmap
-/obj/item/missile_equipment/sensor/on_missile_activated(var/obj/effect/overmap/projectile/P)
+/obj/item/projectile_equipment/sensor/on_missile_activated(var/obj/effect/overmap/projectile/P)
 	P.set_enter_zs(FALSE)
 
-/obj/item/missile_equipment/sensor/do_overmap_work(var/obj/effect/overmap/projectile/P)
+/obj/item/projectile_equipment/sensor/do_overmap_work(var/obj/effect/overmap/projectile/P)
 	if(!..())
 		return
 

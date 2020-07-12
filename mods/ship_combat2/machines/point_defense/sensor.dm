@@ -11,6 +11,10 @@
 
 	id_tag = "test"
 
+/obj/machinery/point_defense/point_defense_sensor/Destroy()
+	. = ..()
+	mainframe.sensors -= src
+
 /obj/machinery/point_defense/point_defense_sensor/proc/report_status()
 	if(inoperable())
 		return FALSE

@@ -1,4 +1,4 @@
-/obj/item/missile_equipment/targeting_package
+/obj/item/projectile_equipment/targeting_package
 	name = "targeting package"
 	desc = "A bog-standard targeting package, used in missiles to target ships."
 	icon_state = "guidance"
@@ -16,21 +16,21 @@
 	var/scan_range = 4 //How far the missile can 'see'. They don't use the normal sensor system, but this is a vague analogue for locating targets on the overmap.
 
 	var/list/target_list = list() //The list of things we might target when we enter the level.
-	var/obj/effect/overmap/overmap_target_type //The type of things we can target on the overmap.
+	var/obj/effect/overmap/overmap_target_type = /obj/effect/overmap //The type of things we can target on the overmap.
 
 	var/using_own_guidance //With how this works, since missile sensor range should always be shorter than the max sensor range of a ship, once the missile is roughly ~3 tiles away, it will switch to using it's own guidance (and scan range, accordingly.)
 	var/has_RGM = FALSE //Do we have an RGM?
 
-/obj/item/missile_equipment/targeting_package/proc/set_target() //Use target ref or coords to set target, then hand over to guide_missile.
+/obj/item/projectile_equipment/targeting_package/proc/set_target() //Use target ref or coords to set target, then hand over to guide_missile.
 	return
 
-/obj/item/missile_equipment/targeting_package/proc/is_target_valid(var/O)
+/obj/item/projectile_equipment/targeting_package/proc/is_target_valid(var/O)
 	if(istype(O, overmap_target_type))
 		return TRUE
 	else
 		return FALSE
 
-/obj/item/missile_equipment/targeting_package/proc/guide_missile() //If tracking, update target x and y.
+/obj/item/projectile_equipment/targeting_package/proc/guide_missile() //If tracking, update target x and y.
 	if((ecm_duration < world.time) && jammed)
 		jammed = FALSE
 
@@ -43,7 +43,7 @@
 	if((get_dist(missile.overmap_missile, missile.overmap_missile.host_ship) >= 3) && !has_RGM && !using_own_guidance) //Kick us off to our own guidance after three tiles.
 		using_own_guidance = TRUE
 
-/obj/item/missile_equipment/targeting_package/proc/ecm_act(var/obj/effect/overmap/O, var/ecm_strength) //Handle ECM. The base proc is just a bunch of checks to save from doing them over and over again.
+/obj/item/projectile_equipment/targeting_package/proc/ecm_act(var/obj/effect/overmap/O, var/ecm_strength) //Handle ECM. The base proc is just a bunch of checks to save from doing them over and over again.
 	var/resisted_ecm
 
 	if(has_RGM) //Remotely guided missiles can't be jammed.
@@ -70,7 +70,7 @@
 	//From this point on, this is left up to the individual targeting packages on how to handle getting jammed.
 
 
-/obj/item/missile_equipment/targeting_package/on_enter_level(var/z_level)
+/obj/item/projectile_equipment/targeting_package/on_enter_level(var/z_level)
 	if(!can_target_specifics)
 		return
 
