@@ -2,11 +2,12 @@
 	name = "projectile"
 	icon_state = "projectile"
 	icon = 'mods/ship_combat2/icons/overmap.dmi'
-	movement_handler_type = /datum/extension/overmap_movement/ship
+	can_move = TRUE
+	color = "#c0c0c0"
 
 	var/sector_flags = OVERMAP_SECTOR_KNOWN // technically in space, but you can't visit the missile during its flight
 
-	var/obj/structure/missile/actual_missile = null
+	var/obj/structure/base_projectile/missile/actual_missile = null
 	var/obj/effect/overmap/visitable/host_ship = null
 
 	var/walking = FALSE // walking towards something on the overmap?
@@ -42,7 +43,7 @@
 
 	. = ..()
 
-/obj/effect/overmap/projectile/proc/set_missile(var/obj/structure/missile/missile)
+/obj/effect/overmap/projectile/proc/set_missile(var/obj/structure/base_projectile/missile/missile)
 	actual_missile = missile
 
 /obj/effect/overmap/projectile/proc/set_dangerous(var/is_dangerous)
@@ -77,28 +78,29 @@
 
 /obj/effect/overmap/projectile/Process()
 	// Whether overmap movement occurs is controlled by the missile itself
+	. = ..()
 	if(QDELETED(src))
 		return
 
 	if(!moving)
 		return
 
+
 	check_enter()
 
 	// let equipment alter speed/course
-	for(var/obj/item/missile_equipment/E in actual_missile.equipment)
+	for(var/obj/item/projectile_equipment/E in actual_missile.equipment)
 		E.do_overmap_work(src)
 
-	for(var/obj/item/missile_equipment/targeting_package/T in actual_missile.equipment)
+	for(var/obj/item/projectile_equipment/targeting_package/T in actual_missile.equipment)
 		T.guide_missile()
 
-	if(movement)
-		movement.do_overmap_movement()
 
 	if(world.time > self_destruct_time)
 		qdel(src)
 
 	update_icon()
+
 
 // Checks if the missile should enter the z level of an overmap object
 /obj/effect/overmap/projectile/proc/check_enter()
@@ -115,7 +117,7 @@
 		potential_levels[O] = 0
 
 		// Missile equipment "votes" on what to enter
-		for(var/obj/item/missile_equipment/E in actual_missile.equipment)
+		for(var/obj/item/projectile_equipment/E in actual_missile.equipment)
 			if(E.should_enter(O))
 				potential_levels[O]++
 
@@ -144,8 +146,7 @@
 		actual_missile.enter_level(pick(winner.map_z))
 
 /obj/effect/overmap/projectile/on_update_icon()
-	if(movement)
-		movement.handle_pixel_movement()
+	. = ..()
 	icon_state = "projectile"
 	if(!is_still())
 		icon_state += "_moving"
@@ -157,7 +158,7 @@
 /obj/effect/overmap/projectile/get_vessel_mass()
 	var/total_mass
 	total_mass += actual_missile.frame_mass
-	for(var/obj/item/missile_equipment/E in actual_missile.equipment)
+	for(var/obj/item/projectile_equipment/E in actual_missile.equipment)
 		total_mass += E.mass
 	return total_mass
 
@@ -166,9 +167,9 @@
 
 /obj/effect/overmap/projectile/proc/get_thrust()
 	var/thrust
-	for(var/obj/item/missile_equipment/E in actual_missile.equipment)
-		if(istype(E, /obj/item/missile_equipment/thruster))
-			var/obj/item/missile_equipment/thruster/T = E
+	for(var/obj/item/projectile_equipment/E in actual_missile.equipment)
+		if(istype(E, /obj/item/projectile_equipment/thruster))
+			var/obj/item/projectile_equipment/thruster/T = E
 			thrust = T.thrust
 	return thrust
 
@@ -184,10 +185,13 @@
 	return round(raw_delta_v, SHIP_MOVE_RESOLUTION)
 
 // This is the amount of fuel we can spend in one specific impulse.
-/obj/effect/overmap/projectile/get_specific_wet_mass()
+/obj/effect/overmap/projectile/proc/get_specific_wet_mass()
 	var/mass
-	for(var/obj/item/missile_equipment/E in actual_missile.equipment)
-		if(istype(E, /obj/item/missile_equipment/thruster))
-			var/obj/item/missile_equipment/thruster/T = E
+	for(var/obj/item/projectile_equipment/E in actual_missile.equipment)
+		if(istype(E, /obj/item/projectile_equipment/thruster))
+			var/obj/item/projectile_equipment/thruster/T = E
 			mass = T.fuel
 	return mass
+
+/obj/effect/overmap/projectile/get_vessel_mass()
+	return vessel_mass

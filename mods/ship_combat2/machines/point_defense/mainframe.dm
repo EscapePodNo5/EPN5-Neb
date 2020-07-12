@@ -6,7 +6,6 @@
 	desc = "A complicated, large computer that provides rapid targeting for point defense cannons."
 	icon_state = "pdc_mainframe"
 
-	var/list/ammo_containers = list() //Where our ammo is stored.
 	var/list/sensors = list() //Our sensors, generally used for measuring integrity of the PDC network.
 	var/list/pdcs = list() //Our point defense cannons. They're added in the Initialize() call.
 
@@ -35,12 +34,14 @@
 
 	update_icon()
 	..()
-/*
+
 /obj/machinery/point_defense/point_defense_computer/Destroy()
-	for(var/obj/machinery/point_defense/ammo_storage/M in ammo_containers)
-		M.point_defense_computer = null
-	..()
-*/
+	. = ..()
+	for(var/obj/machinery/point_defense/point_defense_sensor/M in sensors)
+		M.mainframe = null
+	for(var/obj/machinery/point_defense/point_defense_cannon/pdc in sensors)
+		pdc.mainframe = null
+
 
 /obj/machinery/point_defense/point_defense_computer/Process()
 	if(inoperable()) //Broken or no power.

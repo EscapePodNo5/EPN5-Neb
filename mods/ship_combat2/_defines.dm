@@ -5,3 +5,6 @@
 #define MISSILE_TARGET_THRUST list(/obj/machinery/atmospherics/unary/engine)
 #define MISSILE_TARGET_WEAPONS list() //Unused for the moment until weapons are actually coded in.
 #define MISSILE_TARGET_WARCRIMES list(/mob/living/carbon/human) //Can't commit warcrimes on people who are just atoms in spread across 300km of space.
+
+#define PROJECTILE_TYPE_MISSILE 1
+#define PROJECTILE_TYPE_KINETIC 2

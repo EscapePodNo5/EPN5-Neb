@@ -1,4 +1,4 @@
-/obj/item/missile_equipment/thruster/planet
+/obj/item/projectile_equipment/thruster/planet
 	name = "planetary missile booster"
 	desc = "The standard fare missile booster, but with planetary flight capabilities."
 	icon_state = "planet"
@@ -6,12 +6,12 @@
 	var/turf/planetary_target
 	mass = 6
 
-/obj/item/missile_equipment/thruster/planet/is_target_valid(var/obj/effect/overmap/O)
+/obj/item/projectile_equipment/thruster/planet/is_target_valid(var/obj/effect/overmap/O)
 	return istype(O, /obj/effect/overmap/visitable/sector/exoplanet)
 
 // Immediately move the missile to the target on arrival
-/obj/item/missile_equipment/thruster/planet/on_enter_level(var/z_level)
-	var/obj/structure/missile/M = loc
+/obj/item/projectile_equipment/thruster/planet/on_enter_level(var/z_level)
+	var/obj/structure/base_projectile/missile/M = loc
 	if(!istype(M))
 		return
 
@@ -28,7 +28,7 @@
 
 	return null
 /*
-/obj/item/missile_equipment/thruster/planet/attackby(var/obj/item/I, var/mob/user)
+/obj/item/projectile_equipment/thruster/planet/attackby(var/obj/item/I, var/mob/user)
 	..()
 
 	// If we set a target, follow up with setting a specific x/y target on the planet
