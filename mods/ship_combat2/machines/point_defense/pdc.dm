@@ -179,4 +179,4 @@
 	var/obj/item/projectile/bullet/rifle/B = new(get_turf(src)) //Make a new bullet.
 	B.step_delay = 0.2
 	B.launch(bullet_launch_loc)//YEET
-	addtimer(CALLBACK(src, .proc/do_bullet, target), 0.05 SECONDS) //Does this create a loop? Yes. The loop is only broken when the target is dead or intercepting is false.
+	addtimer(CALLBACK(src, .proc/do_bullet, target), 0.1 SECONDS) //Does this create a loop? Yes. The loop is only broken when the target is dead or intercepting is false.
