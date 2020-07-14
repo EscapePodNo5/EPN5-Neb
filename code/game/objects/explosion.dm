@@ -9,7 +9,7 @@
 	set waitfor = FALSE
 
 	epicenter = get_turf(epicenter)
-	if(!epicenter) 
+	if(!epicenter)
 		return
 
 	var/start_time = REALTIMEOFDAY
@@ -89,7 +89,7 @@
 						addtimer(CALLBACK(AM, /atom/movable/.proc/throw_at, throw_target, throw_dist, throw_dist), 0)
 
 	var/took = (REALTIMEOFDAY-start_time)/10
-	if(Debug2) 
+	if(Debug2)
 		to_world_log("## DEBUG: Explosion([x0],[y0],[z0])(d[devastation_range],h[heavy_impact_range],l[light_impact_range]): Took [took] seconds.")
 	return 1
 
