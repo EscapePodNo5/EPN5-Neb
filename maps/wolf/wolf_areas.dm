@@ -64,6 +64,9 @@
 	icon_state = "atmos"
 	name = "\improper Atmospherics"
 
+/area/ship/wolf/engineering/atmospherics/pump_room
+	name = "Coolant Pump Bay"
+
 /area/ship/wolf/engineering/EVA
 	name = "\improper EVA Bay"
 	icon_state = "EVA"
@@ -91,6 +94,10 @@
 
 /area/ship/wolf/engineering/thruster_bay/two
 	name = "\improper Third Deck Thruster Bay"
+
+/area/ship/wolf/engineering/inertial_damper
+	name = "Inertial Damper Bay"
+	icon_state = "damper"
 
 //Habitation
 
@@ -133,10 +140,20 @@
 /area/ship/wolf/habitation/cabins/four
 	name = "\improper Cabin Four"
 
+/area/ship/wolf/habitation/cryo
+	icon_state = "cryo"
+
+/area/ship/wolf/habitation/cryo/one
+	name = "Cryo Bay One"
+
+/area/ship/wolf/habitation/cryo/two
+	name = "Cryo Bay Two"
+
 //Security
 
 /area/ship/wolf/security
 	icon_state = "sec"
+	name = "Security"
 
 /area/ship/wolf/security/maa_office
 	icon_state = "maa"
@@ -234,24 +251,94 @@
 /area/ship/wolf/command/office/xo/bedroom
 	name = "\improper Executive Officer's Quarters"
 
+/area/ship/wolf/ai/core
+	icon_state = "aicore"
+	name = "AI Core"
+
+/area/ship/wolf/ai/upload
+	icon_state = "aiupload"
+	name = "AI Upload"
+
 //Cargo
 
 /area/ship/wolf/cargo
 	icon_state = "cargo"
+
+/area/ship/wolf/cargo/general
+	name = "Cargo Bay"
+
+/area/ship/wolf/cargo/lobby
+	name = "Cargo Lobby"
+	icon_state = "cargolobby"
+
+/area/ship/wolf/cargo/fabrication
+	name = "Fabrication Bay"
+	icon_state = "fabrication"
 
 //Science
 
 /area/ship/wolf/science
 	icon_state = "science"
 
+/area/ship/wolf/science/robotics
+	icon_state = "robotics"
+	name = "Robotics Bay"
+
 //Hallways.
 
 /area/ship/wolf/hallway
 	icon_state = "hallway"
+
+/area/ship/wolf/hallway/first_deck
+	name = "First Deck Hallway"
 
 /area/ship/wolf/hallway/second_deck
 	name = "\improper Second Deck Hallway"
 
 /area/ship/wolf/hallway/third_deck/fore
 	name = "\improper Third Deck Hallway"
+
+//Escape pod bays
+
+/area/ship/wolf/escape_pod
+	icon_state = "escpod"
+
+/area/ship/wolf/escape_pod/one
+	name = "Escape Pod Bay One"
+
+/area/ship/wolf/escape_pod/two
+	name = "Escape Pod Bay Two"
+
+/area/ship/wolf/escape_pod/three
+	name = "Escape Pod Bay Three"
+
+/area/ship/wolf/escape_pod/four
+	name = "Escape Pod Bay Four"
+
+/area/ship/wolf/escape_pod/five
+	name = "Escape Pod Bay Five"
+
+/area/ship/wolf/escape_pod/six
+	name = "Escape Pod Bay Six"
+
+//Maintenance
+
+/area/ship/wolf/maintenance
+	icon_state = "maint"
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/ship/wolf/maintenance/deckthree/aft
+	name = "Third Deck Aft Maintenance"
+
+/area/ship/wolf/maintenance/deckthree/aftport
+	name = "Third Deck Aft Port Maintenance"
+
+/area/ship/wolf/maintenance/deckthree/foreport
+	name = "Third Deck Fore Port Maintenance"
+
+//Misc areas
+
+/area/ship/wolf/eva
+	name = "General EVA Bay"
+	icon_state = "gen_eva"
 

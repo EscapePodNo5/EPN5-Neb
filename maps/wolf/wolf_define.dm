@@ -4,7 +4,7 @@
 	path = "wolf"
 	ground_noun = "deckplate"
 
-//	lobby_tracks = list(/music_track/absconditus)
+	lobby_tracks = list(/music_track/wolf/great_expectations, /music_track/wolf/yamato, /music_track/wolf/interception, /music_track/wolf/augmentations)
 
 	station_levels = list(1, 2, 3, 4)
 	contact_levels = list(1, 2, 3, 4)
@@ -19,7 +19,7 @@
 	company_name  = "Fenris Tactical Enforcement"
 	company_short = "FTE"
 	overmap_event_areas = 11
-//	lobby_screens = list('maps/tradeship/lobby/bloodmoney.png','maps/tradeship/lobby/vapormoney.png')
+	lobby_screens = list('maps/wolf/icons/wolf_lobby.png')
 	use_overmap = 1
 	num_exoplanets = 3
 	welcome_sound = 'sound/effects/cowboysting.ogg'
