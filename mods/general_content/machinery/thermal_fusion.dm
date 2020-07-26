@@ -136,7 +136,7 @@
 			tick_instability += rand(30,50)
 			AM.emp_act(empsev)
 
-	if(owned_core && owned_core.loc)
+	if(owned_core)
 		var/datum/gas_mixture/removed = new
 		var/equilibrium_power = 250
 		var/temp_factor
@@ -174,6 +174,12 @@
 			visible_message("[src]: Releasing [round(thermal_power)] W.")
 			visible_message("[src]: energy: [energy].")
 			visible_message("[src]: temp_factor: [temp_factor]")
+
+	if(owned_core && owned_core.loc)
+		var/datum/gas_mixture/environment = owned_core.loc.return_air()
+		if(environment && environment.temperature < (T0C+1000)) // Putting an upper bound on it to stop it being used in a TEG.
+			environment.add_thermal_energy(plasma_temperature*20000)
+
 	radiation = 0
 
 

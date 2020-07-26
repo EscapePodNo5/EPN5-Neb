@@ -5,6 +5,10 @@
 #include "mob_defines.dm"
 #include "global_defines.dm"
 #include "species/vulpkanin.dm"
+#include "music.dm"
+#include "species/vox/vox.dm"
+#include "species/vox/organs.dm"
+#include "machinery/thermal_fusion.dm"
 #include "species/skrell.dm"
 #include "organs/internal/skrell/eyes.dm"
 #include "organs/internal/skrell/gills.dm"
@@ -18,4 +22,5 @@
 #include "sprite_accessory/update_icons.dm"
 #include "sprite_accessory/overwrites_head.dm"
 #include "decals/damagecontrol.dm"
+#endif
 
