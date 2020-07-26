@@ -8,7 +8,6 @@
 	#include "wolf-3.dmm"
 	#include "wolf-4.dmm"
 	#include "wolf_overmap.dm"
-	#include "wolf_music.dm"
 	#include "decals\floor_decals.dm"
 	#include "wolf_areas.dm"
 	#include "machines\smes.dm"
