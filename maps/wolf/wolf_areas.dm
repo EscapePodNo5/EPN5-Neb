@@ -275,6 +275,10 @@
 	name = "Fabrication Bay"
 	icon_state = "fabrication"
 
+/area/ship/wolf/cargo/disposals
+	name = "Disposals Bay"
+	icon_state = "disposal"
+
 //Science
 
 /area/ship/wolf/science
@@ -283,6 +287,22 @@
 /area/ship/wolf/science/robotics
 	icon_state = "robotics"
 	name = "Robotics Bay"
+
+/area/ship/wolf/science/science_hall
+	name = "Science Hallway"
+	icon_state = "sciencehall"
+
+/area/ship/wolf/science/rd_office
+	name = "Technology Director's Office"
+	icon_state = "rdoffice"
+
+/area/ship/wolf/science/materials_lab
+	name = "Materials Laboratory"
+	icon_state = "matlab"
+
+/area/ship/wolf/science/server_room
+	name = "Server Room"
+	icon_state = "server"
 
 //Hallways.
 
@@ -341,4 +361,16 @@
 /area/ship/wolf/eva
 	name = "General EVA Bay"
 	icon_state = "gen_eva"
+
+/area/ship/wolf/hangar
+	name = "Hangar Bay"
+	icon_state = "hangar"
+
+/area/ship/wolf/ladderwell
+	name = "Ladderwell"
+	icon_state = "ladder"
+
+/area/ship/wolf/janitorial
+	name = "Janitorial Closet"
+	icon_state = "janitor"
 
