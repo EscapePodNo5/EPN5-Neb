@@ -6,7 +6,7 @@ GLOBAL_LIST_EMPTY(latejoin_cryo_two)
 		delete_me = 1
 	. = ..()
 
-datum/map/wolf
+/datum/map/wolf
 	allowed_spawns = list("First Deck Cryogenic Storage", "Third Deck Cryogenic Storage", "Robot Storage")
 	default_spawn = "Third Deck Cryogenic Storage"
 

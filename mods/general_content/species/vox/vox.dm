@@ -39,7 +39,6 @@
 	blood_color = "#2299fc"
 	flesh_color = "#808d11"
 
-	reagent_tag = IS_VOX
 	maneuvers = list(/decl/maneuver/leap/grab)
 	standing_jump_range = 5
 
