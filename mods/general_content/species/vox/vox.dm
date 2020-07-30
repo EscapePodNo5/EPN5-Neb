@@ -9,6 +9,7 @@
 	blood_mask =      'mods/general_content/icons/vox/blood_mask.dmi'
 
 	limb_blend = ICON_MULTIPLY
+	bodytype = BODYTYPE_HUMANOID
 
 	//unarmed_types = list(	/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws/strong/gloves, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/strong)
 	rarity_value = 4
