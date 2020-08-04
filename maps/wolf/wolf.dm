@@ -9,6 +9,7 @@
 	#include "wolf-4.dmm"
 	#include "wolf_overmap.dm"
 	#include "wolf_jobs.dm"
+	#include "wolf_evac.dm"
 	#include "decals\floor_decals.dm"
 	#include "wolf_areas.dm"
 	#include "machines\smes.dm"

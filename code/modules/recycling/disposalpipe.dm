@@ -10,7 +10,7 @@
 	level = 1			// underfloor only
 	dir = 0				// dir will contain dominant direction for junction pipes
 	alpha = 192 // Plane and alpha modified for mapping, reset to normal on spawn.
-	layer = DISPOSALS_PIPE_LAYER
+	layer = RUNE_LAYER //This is so that it's slightly below pipes during mapping.
 	var/dpdir = 0		// bitmask of pipe directions
 	var/base_icon_state	// initial icon state on map
 	var/sort_type = ""
@@ -22,6 +22,7 @@
 	. = ..()
 	alpha = 255
 	base_icon_state = icon_state
+	layer = DISPOSALS_PIPE_LAYER
 
 // pipe is deleted
 // ensure if holder is present, it is expelled
