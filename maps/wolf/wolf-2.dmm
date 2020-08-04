@@ -6,7 +6,7 @@
 "af" = (/obj/machinery/atmospherics/portables_connector,/turf/simulated/floor/tiled,/area/ship/wolf/engineering/atmospherics)
 "ag" = (/turf/simulated/floor/tiled,/area/ship/wolf/engineering/hallway)
 "ah" = (/obj/machinery/atmospherics/pipe/simple/visible/red{dir = 5; icon_state = "intact"},/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/atmospherics)
-"ai" = (/turf/simulated/floor/reinforced/airless,/area/space)
+"ai" = (/turf/simulated/floor/plating,/area/ship/wolf/security/weapons_bay/three)
 "aj" = (/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
 "ak" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 10},/turf/simulated/floor/plating,/area/ship/wolf/security/hallway/weapons_bay/starboard)
 "al" = (/obj/machinery/atmospherics/pipe/manifold/visible/red{dir = 4; icon_state = "map"},/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/atmospherics)
@@ -31,7 +31,7 @@
 "aE" = (/obj/machinery/door/airlock/highsecurity,/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/security/weapons_bay/three)
 "aF" = (/obj/machinery/atmospherics/unary/outlet_injector/engine{dir = 4; icon_state = "off"},/turf/simulated/floor/reinforced/carbon_dioxide,/area/ship/wolf/engineering/atmospherics)
 "aG" = (/obj/effect/wallframe_spawn/reinforced_borosilicate,/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/engineering/atmospherics)
-"aH" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/three)
+"aH" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/fore/port)
 "aI" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/utility_shaft)
 "aJ" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/hallway/second_deck)
 "aK" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled,/area/ship/wolf/engineering/atmospherics)
@@ -101,14 +101,14 @@
 "bW" = (/obj/machinery/atmospherics/pipe/simple/visible/green{dir = 6; icon_state = "intact"},/obj/machinery/meter,/turf/simulated/floor/tiled,/area/ship/wolf/engineering/atmospherics)
 "bX" = (/obj/machinery/atmospherics/pipe/zpipe/up/supply{icon_state = "up-supply"; dir = 4},/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{icon_state = "up-scrubbers"; dir = 4},/obj/structure/lattice,/obj/structure/cable{icon_state = "2-4"},/obj/structure/disposalpipe/up,/turf/simulated/open,/area/ship/wolf/engineering/utility_shaft)
 "bY" = (/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/security/weapons_bay/one)
-"bZ" = (/obj/effect/paint/black,/obj/machinery/atmospherics/pipe/simple/visible/red{dir = 6; icon_state = "intact"},/turf/simulated/wall/r_wall/prepainted,/area/space)
+"bZ" = (/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/hallway/second_deck)
 "ca" = (/obj/structure/railing/mapped{dir = 4},/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/security/hallway/weapons_bay/starboard)
-"cb" = (/obj/effect/paint/black,/obj/machinery/atmospherics/pipe/simple/visible/red{dir = 4; icon_state = "intact"},/turf/simulated/wall/r_wall/prepainted,/area/space)
+"cb" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/fore/starboard)
 "cc" = (/obj/machinery/atmospherics/pipe/zpipe/down,/obj/structure/lattice,/obj/structure/cable/green{icon_state = "32-2"},/turf/simulated/open,/area/ship/wolf/engineering/engine_room)
 "cd" = (/obj/machinery/light/small/red{dir = 8},/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/security/hallway/weapons_bay/starboard)
 "ce" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "4-8"},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/security/hallway/weapons_bay/port)
 "cf" = (/obj/machinery/atmospherics/unary/outlet_injector/engine{dir = 4; icon_state = "off"},/turf/simulated/floor/reinforced/nitrogen,/area/ship/wolf/engineering/atmospherics)
-"cg" = (/obj/machinery/atmospherics/pipe/vent{icon_state = "intact"; dir = 1},/turf/simulated/floor/reinforced/airless,/area/space)
+"cg" = (/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
 "ch" = (/obj/effect/floor_decal/techfloor/orange{dir = 4},/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/ai/core)
 "ci" = (/obj/machinery/atmospherics/unary/outlet_injector/engine{dir = 1; icon_state = "off"; id_tag = "engine_injector"},/turf/simulated/floor/reinforced/airless,/area/ship/wolf/engineering/reactor)
 "cj" = (/obj/effect/floor_decal/corner/blue{dir = 6},/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/bridge/cic)
@@ -187,7 +187,7 @@
 "dE" = (/obj/machinery/computer/air_control{dir = 4; icon_state = "computer"; id_tag = "reactor_fuel"; input_tag = "fuel_injector"; name = "hydrogen injection control console"; sensor_name = ""},/turf/simulated/floor/tiled,/area/ship/wolf/engineering/monitoring)
 "dF" = (/obj/structure/cable/green{icon_state = "0-4"},/obj/structure/cable/green{icon_state = "0-8"},/obj/machinery/power/smes/buildable/preset/wolf/subgrid,/turf/simulated/floor/plating,/area/ship/wolf/engineering/substation/two)
 "dG" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{icon_state = "map-supply"; dir = 1},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/bridge/cic)
-"dH" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/hallway/second_deck)
+"dH" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/machinery/door/window{icon_state = "left"; dir = 4},/obj/machinery/mass_driver{dir = 8; icon_state = "mass_driver"; id_tag = null},/obj/machinery/cryopod/lifepod{icon_state = "redpod0"; dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/one)
 "dI" = (/obj/structure/cable/green{icon_state = "2-4"},/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
 "dJ" = (/obj/machinery/light/spot{dir = 8},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/security/weapons_bay/three)
 "dK" = (/obj/effect/floor_decal/techfloor{dir = 8},/obj/effect/floor_decal/techfloor{dir = 4},/obj/effect/floor_decal/techfloor/corner{dir = 1},/obj/effect/floor_decal/techfloor/corner{dir = 4},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/item/radio/intercom{pixel_y = 32},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/ai/core)
@@ -195,11 +195,11 @@
 "dM" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/plating,/area/ship/wolf/security/hallway/weapons_bay/starboard)
 "dN" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/reactor)
 "dO" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/command/bridge/cic)
-"dP" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 6; icon_state = "intact"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"dP" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 5},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "dQ" = (/obj/structure/cable/yellow{icon_state = "0-2"},/obj/machinery/power/terminal{icon_state = "term"; dir = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/engineering/smes)
 "dR" = (/obj/structure/cable/green{icon_state = "2-4"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "dS" = (/obj/machinery/atmospherics/pipe/simple/visible/green{icon_state = "intact"; dir = 4},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
-"dT" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 4; icon_state = "intact"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"dT" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 10},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "dU" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/door/airlock/autoname/wolf/civilian,/turf/simulated/floor/tiled,/area/ship/wolf/habitation/bathroom/two)
 "dV" = (/obj/structure/cable/yellow,/obj/structure/cable/yellow{icon_state = "0-2"},/obj/machinery/power/terminal{icon_state = "term"; dir = 8},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/engineering/smes)
 "dW" = (/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 4; icon_state = "intact"},/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/engine_room)
@@ -213,12 +213,12 @@
 "ee" = (/obj/machinery/atmospherics/pipe/manifold/visible/black,/obj/structure/cable/yellow{icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "ef" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/command/bridge/cic)
 "eg" = (/obj/effect/floor_decal/techfloor/orange,/obj/effect/floor_decal/techfloor/corner{dir = 4},/obj/effect/floor_decal/techfloor/corner{dir = 1},/obj/effect/floor_decal/techfloor/orange/corner{dir = 8},/obj/machinery/power/apc/super/critical{dir = 1; pixel_y = 32},/obj/structure/cable/orange{icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/ai/core)
-"eh" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/EVA)
-"ei" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/hallway)
+"eh" = (/obj/machinery/power/apc{icon_state = "apc0"; dir = 4},/obj/structure/cable/green{icon_state = "0-2"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
+"ei" = (/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
 "ej" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/hallway)
 "ek" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/smes)
 "el" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/structure/disposalpipe/segment/bent{icon_state = "pipe-c"; dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/bridge/cic)
-"em" = (/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/smes)
+"em" = (/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
 "en" = (/obj/structure/cable/green{icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "eo" = (/obj/structure/cable/yellow{icon_state = "4-8"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "ep" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/turf/simulated/floor/plating,/area/ship/wolf/command/hallway/cic)
@@ -231,14 +231,14 @@
 "ew" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/security/weapons_bay/two)
 "ex" = (/turf/simulated/floor/reinforced/carbon_dioxide,/area/ship/wolf/engineering/fuel_bay/co2)
 "ey" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/turf/simulated/floor/plating,/area/ship/wolf/command/hallway/cic)
-"ez" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{icon_state = "map"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"ez" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "eA" = (/turf/simulated/floor/reinforced/hydrogen/fuel,/area/ship/wolf/engineering/fuel_bay/hydrogen)
-"eB" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/fuel_bay/hydrogen)
+"eB" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
 "eC" = (/obj/machinery/atmospherics/unary/vent_pump/engine{dir = 1; icon_state = "map_vent"; id_tag = "engine_vent"; pump_direction = 0},/turf/simulated/floor/reinforced/airless,/area/ship/wolf/engineering/reactor)
 "eD" = (/obj/effect/floor_decal/borderfloorblack{dir = 10},/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/bridge/cic)
 "eE" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
 "eF" = (/obj/structure/disposalpipe/trunk,/obj/machinery/disposal,/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/bridge/cic)
-"eG" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/fuel_bay/co2)
+"eG" = (/obj/machinery/door/window{icon_state = "left"; dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/obj/machinery/mass_driver{icon_state = "mass_driver"; dir = 4; id_tag = "disposals"},/obj/machinery/cryopod/lifepod{icon_state = "redpod0"; dir = 2},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
 "eH" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/substation/two)
 "eI" = (/obj/structure/cable/cyan{icon_state = "0-4"},/obj/machinery/power/smes/buildable/preset/wolf/subgrid/atmos,/turf/simulated/floor/tiled,/area/ship/wolf/engineering/atmospherics)
 "eJ" = (/obj/machinery/light/spot{dir = 4},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/security/weapons_bay/three)
@@ -263,7 +263,7 @@
 "fc" = (/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/bridge/cic)
 "fd" = (/obj/machinery/light{dir = 4},/obj/effect/floor_decal/techfloor/orange{dir = 5},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/ai/core)
 "fe" = (/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/bridge/cic)
-"ff" = (/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
+"ff" = (/obj/machinery/power/apc{dir = 8; icon_state = "apc0"},/obj/structure/cable/green{icon_state = "0-2"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
 "fg" = (/obj/effect/floor_decal/corner/b_green/mono,/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/bridge/cic)
 "fh" = (/obj/effect/floor_decal/borderfloorblack{dir = 4},/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/bridge/cic)
 "fi" = (/obj/effect/floor_decal/borderfloorblack{dir = 10},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/bridge/cic)
@@ -286,7 +286,7 @@
 "fz" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{icon_state = "map-supply"; dir = 4},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/bridge/cic)
 "fA" = (/obj/structure/cable{icon_state = "2-8"},/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/command/bridge/cic)
 "fB" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/two)
-"fC" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/one)
+"fC" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/two)
 "fD" = (/turf/simulated/floor/reinforced,/area/ship/wolf/security/weapons_bay/two)
 "fE" = (/turf/simulated/floor/reinforced,/area/ship/wolf/security/weapons_bay/one)
 "fF" = (/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/security/weapons_bay/two)
@@ -295,7 +295,7 @@
 "fI" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/two)
 "fJ" = (/obj/machinery/atmospherics/pipe/manifold/visible/green,/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "fK" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/ship/wolf/command/hallway/cic)
-"fL" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
+"fL" = (/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
 "fM" = (/obj/structure/cable/green{icon_state = "1-4"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 5},/obj/structure/disposalpipe/segment/bent{icon_state = "pipe-c"; dir = 1},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
 "fN" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/hallway/cic)
 "fO" = (/obj/effect/floor_decal/borderfloorblack{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/bridge/cic)
@@ -310,7 +310,7 @@
 "fX" = (/obj/effect/catwalk_plated/dark,/obj/machinery/light{dir = 8},/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/ship/wolf/command/hallway/cic)
 "fY" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/ship/wolf/command/hallway/cic)
 "fZ" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{icon_state = "map-supply"; dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
-"ga" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
+"ga" = (/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
 "gb" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/hallway/cic)
 "gc" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/disposalpipe/junction{icon_state = "pipe-j1"; dir = 4},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
 "gd" = (/obj/effect/floor_decal/borderfloorblack{dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/security/weapons_bay/one)
@@ -320,7 +320,7 @@
 "gh" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/security/weapons_bay/two)
 "gi" = (/obj/structure/cable/green{icon_state = "0-4"},/obj/machinery/power/apc,/obj/structure/cable/green{icon_state = "0-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/hallway/cic)
 "gj" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_x = 0; pixel_y = -24},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/hallway/cic)
-"gk" = (/obj/machinery/cryopod/lifepod{icon_state = "redpod0"; dir = 4},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/machinery/door/window{icon_state = "left"; dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/one)
+"gk" = (/obj/structure/ladder,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
 "gl" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/machinery/door/airlock/highsecurity,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/security/weapons_bay/two)
 "gm" = (/obj/structure/cable/green{icon_state = "2-8"},/obj/structure/cable/green{icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/hallway/cic)
 "gn" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/security/weapons_bay/two)
@@ -332,6 +332,7 @@
 "gt" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled,/area/ship/wolf/engineering/material_storage)
 "gu" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/one)
 "gv" = (/turf/simulated/floor/tiled/steel_ridged,/area/ship/wolf/security/weapons_bay/two)
+"gw" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "gx" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/ship/wolf/ladderwell)
 "gy" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/door/airlock/autoname/wolf/glass/civilian,/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
 "gz" = (/turf/simulated/floor/tiled/steel_ridged,/area/ship/wolf/security/weapons_bay/one)
@@ -341,7 +342,7 @@
 "gD" = (/turf/simulated/wall/prepainted,/area/ship/wolf/hallway/second_deck)
 "gE" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/hallway/second_deck)
 "gF" = (/turf/simulated/floor/tiled/freezer,/area/ship/wolf/habitation/bathroom/two)
-"gG" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/habitation/bathroom/two)
+"gG" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/one)
 "gH" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/obj/structure/cable/cyan{icon_state = "0-8"},/obj/machinery/power/apc/critical{icon_state = "apc0"; dir = 1},/turf/simulated/floor/tiled,/area/ship/wolf/engineering/atmospherics)
 "gI" = (/obj/machinery/light/small/red{dir = 8},/obj/structure/cable/green{icon_state = "1-4"},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/security/hallway/weapons_bay/starboard)
 "gJ" = (/obj/effect/catwalk_plated/dark,/obj/machinery/light{dir = 1},/turf/simulated/floor/plating,/area/ship/wolf/command/hallway/cic)
@@ -350,7 +351,7 @@
 "gM" = (/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
 "gN" = (/obj/structure/cable/green{icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment/bent{icon_state = "pipe-c"; dir = 4},/turf/simulated/floor/tiled/steel_ridged,/area/ship/wolf/security/weapons_bay/two)
 "gO" = (/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
-"gP" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
+"gP" = (/obj/structure/ladder,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
 "gQ" = (/turf/simulated/wall/prepainted,/area/ship/wolf/habitation/bathroom/two)
 "gR" = (/obj/structure/railing/mapped,/turf/simulated/open,/area/ship/wolf/hallway/second_deck)
 "gS" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/escape_pod/one)
@@ -440,7 +441,7 @@
 "iy" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-4"},/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,/obj/structure/disposalpipe/junction/yjunction{icon_state = "pipe-y"; dir = 4},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/hallway/second_deck)
 "iz" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/hallway/second_deck)
 "iA" = (/obj/structure/cable/green{icon_state = "1-8"},/obj/machinery/atmospherics/pipe/simple/visible/red,/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/engineering/engine_room)
-"iB" = (/obj/structure/cable/green{icon_state = "0-8"},/obj/machinery/power/apc{icon_state = "apc0"; dir = 1},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/smes)
+"iB" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
 "iC" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
 "iD" = (/obj/structure/cable/green{icon_state = "2-8"},/obj/machinery/atmospherics/unary/tank/air,/turf/simulated/floor/tiled,/area/ship/wolf/engineering/hallway)
 "iE" = (/obj/effect/wallframe_spawn/reinforced,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/ship/wolf/engineering/monitoring)
@@ -492,8 +493,8 @@
 "jy" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "1-8"},/turf/simulated/floor/plating,/area/ship/wolf/command/bridge/cic)
 "jz" = (/obj/machinery/atmospherics/pipe/simple/visible/black,/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/engineering/engine_room)
 "jA" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 9; icon_state = "intact"},/obj/structure/cable/yellow{icon_state = "4-8"},/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
-"jB" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
-"jC" = (/obj/structure/cable/green{icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/visible/yellow{icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"jB" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 4; icon_state = "intact"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
+"jC" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow{icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "jD" = (/obj/structure/cable{icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
 "jE" = (/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{icon_state = "intact-scrubbers"; dir = 10},/turf/simulated/floor/plating,/area/ship/wolf/security/hallway/weapons_bay/starboard)
 "jF" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/structure/cable/green{icon_state = "1-4"},/turf/simulated/floor/tiled,/area/ship/wolf/engineering/monitoring)
@@ -519,13 +520,13 @@
 "jZ" = (/obj/machinery/atmospherics/portables_connector,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "ka" = (/obj/machinery/airlock_sensor{id_tag = "eng_eva_sensor"; pixel_y = 24},/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{id_tag = "eng_eva_pump"},/turf/simulated/floor/plating,/area/ship/wolf/engineering/hallway)
 "kb" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 1},/turf/simulated/floor/tiled,/area/ship/wolf/engineering/EVA)
-"kc" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/smes)
+"kc" = (/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_x = 0; pixel_y = -24},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
 "kd" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 1},/turf/simulated/floor/tiled,/area/ship/wolf/engineering/atmospherics)
 "ke" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{icon_state = "map"; dir = 1},/obj/structure/lattice,/obj/structure/catwalk,/obj/structure/cable{icon_state = "2-4"},/obj/structure/cable{icon_state = "2-8"},/obj/structure/disposalpipe/junction/mirrored{icon_state = "pipe-j2"; dir = 1},/turf/simulated/open,/area/ship/wolf/engineering/utility_shaft)
 "kf" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/fuel,/obj/structure/cable{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/maintenance,/turf/simulated/floor/tiled,/area/ship/wolf/engineering/utility_shaft)
 "kg" = (/obj/structure/cable/yellow{icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 10},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "kh" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
-"ki" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"ki" = (/obj/structure/cable/green{icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/visible/yellow{icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "kj" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/fuel_bay/co2)
 "kk" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/fuel_bay/hydrogen)
 "kl" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/freezer,/area/ship/wolf/habitation/bathroom/two)
@@ -535,9 +536,9 @@
 "kp" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/structure/cable/green{icon_state = "1-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/engineering/hallway)
 "kq" = (/obj/machinery/atmospherics/unary/vent_pump/siphon/on/atmos/tank{icon_state = "map_vent_in"; dir = 1},/turf/simulated/floor/reinforced/carbon_dioxide,/area/ship/wolf/engineering/fuel_bay/co2)
 "kr" = (/obj/machinery/computer/air_control{dir = 8; icon_state = "computer"; id_tag = "hydrogentank"; output_tag = "hydrogentank_vent"; sensor_tag = "hydrogentank_sensor"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/fuel_bay/hydrogen)
-"ks" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 5},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
-"kt" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 10},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
-"ku" = (/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"ks" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan,/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
+"kt" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/obj/machinery/atmospherics/binary/passive_gate/on{icon_state = "map_on"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
+"ku" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{icon_state = "map"; dir = 8},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "kv" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/engineering/engine_room)
 "kw" = (/obj/machinery/atmospherics/pipe/simple/visible/green{icon_state = "intact"; dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/engineering/engine_room)
 "kx" = (/obj/structure/cable/green{icon_state = "0-8"},/obj/machinery/power/apc{icon_state = "apc0"; dir = 1},/obj/machinery/atmospherics/pipe/simple/visible/yellow{icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/fuel_bay/hydrogen)
@@ -631,7 +632,7 @@
 "mh" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/security/weapons_bay/one)
 "mi" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{icon_state = "intact-scrubbers"; dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 9},/obj/structure/disposalpipe/segment{icon_state = "pipe-s"; dir = 4},/turf/simulated/floor/tiled,/area/ship/wolf/engineering/hallway)
 "mj" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/escape_pod/two)
-"mk" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
+"mk" = (/obj/machinery/light/small/red{dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
 "ml" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/structure/cable/green{icon_state = "1-8"},/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/engineering/hallway)
 "mm" = (/turf/simulated/floor/plating,/area/ship/wolf/engineering/hallway)
 "mn" = (/obj/structure/cable/yellow{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/visible/red,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
@@ -640,24 +641,24 @@
 "mq" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/light{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/engineering/hallway)
 "mr" = (/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/engineering/hallway)
 "ms" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{icon_state = "intact-scrubbers"; dir = 6},/obj/structure/cable/green{icon_state = "2-4"},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/one)
-"mt" = (/obj/machinery/cryopod/lifepod{icon_state = "redpod0"; dir = 2},/obj/machinery/door/window{icon_state = "left"; dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
+"mt" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{icon_state = "intact-scrubbers"; dir = 4},/obj/structure/cable/green{icon_state = "4-8"},/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
 "mu" = (/obj/machinery/door/blast/regular/escape_pod{icon_state = "pdoor1"; dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
 "mv" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 9},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/autoname/wolf/atmos,/turf/simulated/floor/tiled,/area/ship/wolf/engineering/atmospherics)
 "mw" = (/obj/machinery/light,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{icon_state = "intact-scrubbers"; dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 9},/obj/structure/cable/green{icon_state = "1-8"},/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
 "mx" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{icon_state = "map-supply"; dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{icon_state = "map-scrubbers"; dir = 8},/obj/structure/cable/green{icon_state = "1-4"},/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
 "my" = (/obj/structure/cable/yellow{icon_state = "4-8"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/autoname/wolf/engineering,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
-"mz" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/structure/cable/green{icon_state = "4-8"},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
+"mz" = (/obj/structure/cable/green{icon_state = "2-4"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
 "mA" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{icon_state = "intact-scrubbers"; dir = 9},/obj/structure/cable/green{icon_state = "2-8"},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
-"mB" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 1},/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/one)
+"mB" = (/obj/machinery/light/small/red{dir = 8},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
 "mC" = (/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
 "mD" = (/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/security/weapons_bay/one)
 "mE" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/escape_pod/one)
-"mF" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/escape_pod/one)
-"mG" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/escape_pod/two)
+"mF" = (/turf/simulated/floor/reinforced/carbon_dioxide,/area/ship/wolf/engineering/atmospherics)
+"mG" = (/obj/structure/cable/green{icon_state = "1-4"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
 "mH" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/escape_pod/two)
 "mI" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
-"mJ" = (/obj/structure/cable/green,/obj/machinery/power/apc,/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/one)
-"mK" = (/obj/structure/cable/green,/obj/machinery/power/apc,/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
+"mJ" = (/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
+"mK" = (/obj/machinery/atmospherics/pipe/vent{icon_state = "intact"; dir = 1},/turf/simulated/floor/reinforced/airless,/area/space)
 "mL" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/autoname/wolf/engineering,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/fuel_bay/co2)
 "mM" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/visible/yellow{icon_state = "intact"; dir = 4},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/autoname/wolf/engineering,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/fuel_bay/hydrogen)
 "mN" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 4},/obj/structure/cable/green{icon_state = "1-8"},/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/engineering/engine_room)
@@ -670,8 +671,8 @@
 "mU" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/reactor)
 "mV" = (/obj/machinery/atmospherics/pipe/simple/visible/yellow{icon_state = "intact"; dir = 4},/obj/machinery/atmospherics/pipe/simple/visible/fuel,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/reactor)
 "mW" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 5},/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/engineering/fuel_bay/co2)
-"mX" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan,/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
-"mY" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/obj/machinery/atmospherics/binary/passive_gate/on{icon_state = "map_on"; dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"mX" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{icon_state = "map"; dir = 8},/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
+"mY" = (/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "mZ" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/turf/simulated/wall/ocp_wall,/area/ship/wolf/engineering/reactor)
 "na" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 10},/turf/simulated/wall/ocp_wall,/area/ship/wolf/engineering/reactor)
 "nb" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 6},/turf/simulated/wall/ocp_wall,/area/ship/wolf/engineering/reactor)
@@ -686,11 +687,11 @@
 "nk" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 9; icon_state = "intact"},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/engineering/engine_room)
 "nl" = (/obj/structure/cable/yellow{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/visible/fuel,/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor/grid,/area/ship/wolf/engineering/engine_room)
 "nm" = (/obj/machinery/atmospherics/pipe/simple/visible/fuel{icon_state = "intact"; dir = 4},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
-"nn" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{icon_state = "map"; dir = 8},/obj/machinery/meter,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"nn" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{icon_state = "map"; dir = 8},/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "no" = (/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/security/weapons_bay/two)
 "np" = (/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/security/weapons_bay/one)
 "nq" = (/obj/structure/disposalpipe/segment/bent,/turf/simulated/floor/tiled,/area/ship/wolf/engineering/hallway)
-"nr" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
+"nr" = (/turf/simulated/floor/reinforced/hydrogen,/area/ship/wolf/engineering/atmospherics)
 "ns" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/one)
 "nt" = (/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 4},/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/tiled/freezer,/area/ship/wolf/habitation/bathroom/two)
 "nu" = (/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_x = 0; pixel_y = -24},/obj/structure/stairs/east,/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
@@ -712,8 +713,8 @@
 "nK" = (/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/smes)
 "nL" = (/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/fuel_bay/co2)
 "nM" = (/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/fuel_bay/hydrogen)
-"nN" = (/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
-"nO" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{icon_state = "map"; dir = 8},/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"nN" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
+"nO" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{icon_state = "map"; dir = 8},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/engine_room)
 "nP" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 1},/obj/structure/table/steel,/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/smes)
 "nQ" = (/obj/machinery/atmospherics/pipe/manifold/hidden,/turf/simulated/floor/plating,/area/ship/wolf/engineering/hallway)
 "nR" = (/obj/machinery/atmospherics/pipe/manifold4w/hidden,/turf/simulated/floor/plating,/area/ship/wolf/engineering/hallway)
@@ -756,7 +757,80 @@
 "oC" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled,/area/ship/wolf/engineering/hallway)
 "oD" = (/obj/machinery/door/blast/regular{dir = 8; icon_state = "pdoor1"; id_tag = "disposals_blast"},/turf/simulated/floor/reinforced/airless,/area/ship/wolf/engineering/reactor)
 "oE" = (/obj/machinery/atmospherics/pipe/zpipe/up/red{dir = 8; icon_state = "up"},/obj/machinery/atmospherics/pipe/simple/visible/red,/obj/structure/cable{icon_state = "16-0"},/obj/structure/cable,/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/ship/wolf/engineering/atmospherics)
-"oF" = (/obj/machinery/atmospherics/pipe/manifold/visible/cyan{icon_state = "map"; dir = 8},/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/reactor)
+"oF" = (/turf/simulated/floor/reinforced/oxygen,/area/ship/wolf/engineering/atmospherics)
+"oG" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/fore/port)
+"oH" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/fore/starboard)
+"oI" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/fore/port)
+"oJ" = (/turf/simulated/floor/reinforced/nitrogen,/area/ship/wolf/engineering/atmospherics)
+"oK" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/one)
+"oL" = (/turf/simulated/floor/plating,/area/ship/wolf/engineering/substation/two)
+"oM" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/fore/starboard)
+"oN" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/aft/port)
+"oO" = (/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"oP" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/aft/port)
+"oQ" = (/obj/structure/cable/green{icon_state = "4-8"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"oR" = (/obj/structure/cable/green{icon_state = "1-8"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"oS" = (/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"oT" = (/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"oU" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"oV" = (/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"oW" = (/obj/machinery/atmospherics/pipe/simple/visible/red{dir = 6; icon_state = "intact"},/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/aft/port)
+"oX" = (/obj/machinery/atmospherics/pipe/simple/visible/red{dir = 4; icon_state = "intact"},/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/aft/port)
+"oY" = (/obj/machinery/atmospherics/pipe/simple/visible/red{dir = 4; icon_state = "intact"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"oZ" = (/obj/machinery/atmospherics/pipe/simple/visible/red{dir = 4; icon_state = "intact"},/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pa" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pb" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pc" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/door/airlock/hatch/maintenance,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/port)
+"pd" = (/obj/structure/cable/green{icon_state = "4-8"},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
+"pe" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/obj/structure/cable/green{icon_state = "2-8"},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
+"pf" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/green{icon_state = "2-4"},/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/hallway/cic)
+"pg" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/door/airlock/hatch/maintenance,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
+"ph" = (/obj/structure/cable/green{icon_state = "1-8"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
+"pi" = (/obj/structure/cable/green,/obj/machinery/power/apc{dir = 4; icon_state = "apc0"},/obj/structure/cable/green{icon_state = "0-2"},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/one)
+"pj" = (/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_x = 0; pixel_y = -24},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/fore/starboard)
+"pk" = (/obj/structure/cable/green{icon_state = "1-4"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pl" = (/obj/structure/cable/green{icon_state = "4-8"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pm" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{icon_state = "map_scrubber_on"; dir = 1},/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/light{dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/one)
+"pn" = (/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"po" = (/obj/machinery/power/apc{icon_state = "apc0"; dir = 1},/obj/structure/cable/green{icon_state = "0-8"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pp" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/ship/wolf/engineering/substation/two)
+"pq" = (/obj/structure/cable/green,/obj/machinery/power/apc{dir = 8; icon_state = "apc0"},/obj/structure/cable/green{icon_state = "0-2"},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
+"pr" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/one)
+"ps" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
+"pt" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"pu" = (/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"pv" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"pw" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"px" = (/obj/machinery/power/apc{dir = 8; icon_state = "apc0"},/obj/structure/cable/green,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"py" = (/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"pz" = (/turf/simulated/floor/reinforced/airless,/area/space)
+"pA" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pB" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/tiled,/area/ship/wolf/engineering/EVA)
+"pC" = (/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pD" = (/obj/structure/cable/green{icon_state = "0-8"},/obj/machinery/power/apc{icon_state = "apc0"; dir = 1},/obj/structure/cable/green{icon_state = "0-2"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/smes)
+"pE" = (/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/smes)
+"pF" = (/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pG" = (/obj/machinery/light{dir = 4},/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/smes)
+"pH" = (/obj/structure/cable/green{icon_state = "1-4"},/turf/simulated/floor/tiled/techfloor,/area/ship/wolf/engineering/smes)
+"pI" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pJ" = (/obj/structure/cable/green{icon_state = "2-8"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pK" = (/obj/structure/cable/green{icon_state = "1-2"},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pL" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pM" = (/obj/machinery/power/apc{dir = 8; icon_state = "apc0"},/obj/structure/cable/green,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pN" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch/maintenance,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pO" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/obj/machinery/atmospherics/unary/vent_pump/on{icon_state = "map_vent_out"; dir = 1},/obj/machinery/light{dir = 8},/turf/simulated/floor/plating,/area/ship/wolf/escape_pod/two)
+"pP" = (/obj/structure/cable/green{icon_state = "2-8"},/obj/machinery/light/small/red{dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pQ" = (/obj/machinery/light/small/red{dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pR" = (/obj/machinery/light/small/red{dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"pS" = (/obj/machinery/light/small/red,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"pT" = (/obj/machinery/light/small/red{dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pU" = (/obj/machinery/light/small/red,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pV" = (/obj/machinery/light/small/red,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"pW" = (/obj/structure/cable/green{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/turf/simulated/floor/tiled,/area/ship/wolf/hallway/second_deck)
+"pX" = (/obj/structure/ladder,/obj/structure/lattice,/obj/machinery/door/firedoor,/turf/simulated/open,/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"pY" = (/obj/structure/ladder,/obj/structure/lattice,/obj/machinery/door/firedoor,/turf/simulated/open,/area/ship/wolf/maintenance/decktwo/aft/port)
+"pZ" = (/obj/structure/ladder,/obj/structure/lattice,/obj/machinery/door/firedoor,/turf/simulated/open,/area/space)
+"qa" = (/obj/machinery/door/firedoor,/obj/structure/ladder,/turf/simulated/floor/plating,/area/ship/wolf/maintenance/decktwo/aft/starboard)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -783,82 +857,82 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHaHaHaHaHaHaHaHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxaHaHaHaHaHaHaHaHaHaHaHcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHaHaxcPdtdtdtcPaxaHaHaHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHcPcPcPdtdtdtcPcPcPaHaHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHcPcPcPcPdtdtdtcPcPcPcPaHaHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHdJcPcPcPdtdtdtcPcPcPeJaHaHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxaHaHayazaAaUeKeKeKaUaUaUeOaHaHcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxababaTcEaYcPeLeLeLcPcPcEaEababcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxcxababbncEbCcPeLeLeLcPcPcEeVababcxcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxabababbncEcEcPeLeMeLcPcEcEeVabababcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxabbUcecmararararararararargIgUgVabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxabcvgWgXararararararararargYgZjEabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxabczbHarararaVbLcwdKaVarararcaakabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxabcBarardLegeteSeUeWeXfdarararbRabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxabcCararfqfqiJiWiYiZjacharararcdabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxabcJararfqfqfqjcfqfqjdmOararardMabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxabcBararararaVmPmQmRmSararararbRabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAcxabcBeNeNeNeNeNfxfAeNeNeNeNeNeNbRabcxcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAababcOeNePeQeReFcQbAcYfeeYeQeZeNcpababcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAababcBeNfafbfccWcjdGdXftfcfgfheNbRababcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAababcBeNeDfjfkcWeTcriXftflfjhAeNbRababcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAcxabdfeNfnfofpcWeTcriXftfrfofneNddabcxcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacximdidrefefefeldOfzjyfeftftftdpfZgOcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxfNepeNfpfwfrfogLfshsfofpfyfreNfKiLcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxfueueNfihafOfVfWhbfOfVfWhzfmeNfXjbcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafBfBfBfBfBaaaacxcxcTeyeNeNeNeNeNeNhKeNeNeNeNeNeNfYcTcxcxaaaafCfCfCfCfCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafBfDfDfDfBaaaacxabfffLfvgJhIfvfvfvhLfvfvfvhIgJfvgaffabcxaaaafCfEfEfEfCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafBfBfDfDfDfBfBcxcxabfNfMgbgbgcgigjgmgpgKgKgKhJgKgKifiLabcxcxcxfCfEfEfEfCfCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafBfFfGfDfHfFfIfIfIfIfIfIfufuhcfIfIaWgydDgugugugugugugugugugugufPfQfEfRfPfCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafBfFfSfTfUfFfIfIfIfIfIfIfIfIfIfIfIijaJgMgugugugugugugugugugugufPgdgegffPfCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAfBggigbskWghfIiGbtbtmgbtkXbtbtmgfIllaJgMgumhbYbYkYbYmhbYbYkMgugqkZbwkOgrfCcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAfIfFfSkPbKbMglkRgngngngnewbtbtlCfIijaJgMgumDbYbYcMgogogogokThdckcllogffPgucAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAfInogvgNgThxfIlpbtbtbtbtdCfIfIfIfIgCaJgMguguguguhlbYbYbYbYlqgunyhMhNgznpgucAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAfIfIfIhTfIfIfIfIfIdHdHdHdHdHdIedeEhWhXcVeEdblaguguguguguguguguguguidgugugucAcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzgkgBgSbcgEgEinhEieihiCgEioisiIiKiNiwiyiziNjDjNgEiFiHiCiogEiPkUgEgEiVmjmkmImtmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzgkmshemwgMgMlzgAlbhththththththvgxgxligxnYhwhthtiilrgMgMgMldlsgMgMmxhfmzmAmtmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzgkmBeHeHeHeHeHdAaWgDgDaeafafafafgxnZltognYaCaCaChFlugPgMgMgMnGcygQdUgQcynrmtmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzgknseHeHacdnithhhigRgRaeahalamannYocodoenYgtaDhglAlvbBhjjpjphjcynthklncymCmtmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzgkmJeHeHaLdFiljIlDgsnuaeeIgHasohnYobobobnYaDlehgjuknhjaglEaghRcygFhQklcymKmtmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEmFgSeHeHeHeHeHaeaeaeaeaebaaObjlxnYnYnYnYnYnwhyhYkpkQlIlKminqagcyjlgQjlcymGmHmHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxcxabababababaeatauicaobiavawnvaIbXjocDaIiplGhglfnxhjagjWnzagcykmgQkmgGcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaicxcxababababaeaFaGlcaKbmaMaNnXaIjqkecNaIjOaDhgjulmbBjPagoibBcygQgQgGgGaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaicxcxabababaeaPaQaRaSbilHasofaIaIkfaIaIaCaCaClwlBbDbDbDbDbDababcxcxaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaicxcxababaeaeaeapaobIixaXokolomonooopiQjMiEjukniMcZcZjRbDabcxcxaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaicxcxabaeaZaQaRaSbJjgjSaeaeaeaBdEoqjijMiElAoriMcZlJcZbDcxcxaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaicxcxaebbaGlNaobJjgbdbebfbgaBjLoqjjjMiEirosiSiuiOcZehcxaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaicxaebhauaplLjklMbNbkbqbgaBdvoqjijMiElfnxiMivkbcZehaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxaeaeaejTblcKjmbWbobpbgaBjnotjFjQjhmlkniMiqcZcZehaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxcxaecnauapbrcLjUjVaeaeaeaBiEouiEdadampmqbDbDnEjRehehaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAcxabaebubvlNlhbikNbxkomrmrbymrnFoxoyozoAoBiDbBbBbBbBeiejaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAababaebEbFbGkShHlOkVkLoaojcRovowlQlSlWoClRhuhCikkanAmmnBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAababaeaeaejXkddlbObPaebQbQlgdWdWerbQbQoinDnSnCnQnRnTmmnUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAababaebSbThDbVdxbVjYaejZccjxhGiRhmcUbQeklFlXbBbBnVnWbBejaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAcxabaecfbvoEaonHbOaSaedjcqkvdzjsiTjsjteklYlZiBabababcxcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxcxaejJauaOaoaeaeaeaecofJkwdScsjectnIeknPmaemababcxcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabZcbcucumvaeaecFcGcHcImNlycHhOjfdcjvekdgdQkcababcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacgcxbQnJdRenhBiAdedkdhljlUlkdejrdhjwekhqdVemabcxcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxbQeahpjHhPhShUhodmdombdonknlcSjzekekhrnKabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxbQiahVnmkgmneodBdYecmcececmoeejAmyeoeqcUabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxadadmLadmTksktdNlTmdmemflVmUkujBdqdqdqdqdqcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxcxaddshZiUmTdPdTdZkhajdwcXibmVcXjCmMkxkykrdqcxcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxadadnLdukjmWmXmYmZnakzkBkznbncajajdqkkkAnMdqabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxadadkCkDkCadnndTkEjKebesebjKkzajajdqkFkGkFdqabcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAcxadexexkqexadoFdTkHndnenfngndkzajnNdqeAhnjGeAdqeBcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAadadexexexexadnOdTkHndnhlPnhndkzajkidqeAeAeAeAdqdqcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAadadexexexexadezdTkHndnhevnhndkzajajdqeAeAeAeAdqdqcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAadadexexexexadezdTkHninjebninjkIajajdqeAeAeAeAdqdqcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAadadexexexexadkJkKdydydyoDdydydyababdqeAeAeAeAdqdqcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAeGadadadadadadeCciaqababoDabababababdqdqdqdqdqdqeBcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxeGeGadadadadaqaqaqababoDabababababdqdqdqdqeBeBcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxcxcxabababababababoDabababababababcxcxcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxcxcxcxcxabababoDabababcxcxcxcxcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxcxcxcxoDcxcxcxcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHaHcxcxcxcxcxcxcxcbcbcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHcgcgaiaiaiaiaiaiaimJmJcbcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHcgaicEcEcEcEcEcEcEcEcEmJmJcbcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapzaHcgaicEcEaxcPdtdtdtcPaxcEcEaimJcbpzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHcgcEcEcPcPcPdtdtdtcPcPcPcEcEmJcbcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHcgcEcPcPcPcPdtdtdtcPcPcPcPcEmJcbcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHcgcEdJcPcPcPdtdtdtcPcPcPeJcEmJcbcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapzaHaHeicEayazaAaUeKeKeKaUaUaUeOcEemcbcbpzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHcgmkoGaTcEaYcPeLeLeLcPcPcEaEoHmBmJcbcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHcgcgoGoGbncEbCcPeLeLeLcPcPcEeVoHmJmJmJcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHcgoGoGoGbncEcEcPeLeMeLcPcEcEeVoHoHoHmJcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHcgeBbUcecmararararararararargIgUgViBmJcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHeBoGcvgWgXararararararararargYgZjEoHiBcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHcgoGczbHarararaVbLcwdKaVarararcaakoHmJcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHcgoGcBarardLegeteSeUeWeXfdarararbRoHmJcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHmkoGcCararfqfqiJiWiYiZjacharararcdoHmBcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHcgoGcJararfqfqfqjcfqfqjdmOararardMoHmJcbcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHcgeioGcBararararaVmPmQmRmSararararbRoHemmJcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoIcgcgoGcBeNeNeNeNeNfxfAeNeNeNeNeNeNbRoHmJmJoMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoIcggkoGcOeNePeQeReFcQbAcYfeeYeQeZeNcpoHmJmJoMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoIcgcgoGcBeNfafbfccWcjdGdXftfcfgfheNbRoHmJmJoMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoIcgmkoGcBeNeDfjfkcWeTcriXftflfjhAeNbRoHmBmJoMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoIcgoGoGdfeNfnfofpcWeTcriXftfrfofneNddoHoHmJoMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaHeBoGimdidrefefefeldOfzjyfeftftftdpfZgOoHiBcbcbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafBfBfBfBfBaHcgcgoGfNepeNfpfwfrfogLfshsfofpfyfreNfKiLoHmJmJcbfBfBfBfBfBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxfBfBfBfBfBcgcgehoGfueueNfihafOfVfWhbfOfVfWhzfmeNfXjboHffmJgPfBfBfBfBfBcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxfBfDfDfDfIcgcgfLoGcTeyeNeNeNeNeNeNhKeNeNeNeNeNeNfYcToHgamJmJfIfDfDfDfBcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxfBfDfDfDfIcgcgmGpcpdpefvgJhIfvfvfvhLfvfvfvhIgJfvpfpdpgphmJmJfIfDfDfDfBcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxfBfBfDfDfDfIfIkcmkoGfNfMgbgbgcgigjgmgpgKgKgKhJgKgKifiLoHmBpjoHfIfDfDfDfBgGcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxfBfFfGfDfHfFfIfIfIfIfIfIfufuhcfIfIaWgydDgugugugugugugugugugugufPfQfEfRfPgGcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacxfBfFfSfTfUfFfIfIfIfIfIfIfIfIfIfIfIijaJgMgugugugugugugugugugugufPgdgegffPgGcxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAfCggigbskWghfIiGbtbtmgbtkXbtbtmgfIllaJgMgumhbYbYkYbYmhbYbYkMgugqkZbwkOgroKcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAfCfFfSkPbKbMglkRgngngngnewbtbtlCfIijaJgMgumDbYbYcMgogogogokThdckcllogffPoKcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAfCnogvgNgThxfIlpbtbtbtbtdCfIfIfIfIgCaJgMguguguguhlbYbYbYbYlqgunyhMhNgznpoKcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacAcAfCfIfIhTfIfIfIfIfIfIfIfIfIfIdIedeEhWhXcVeEdblaguguguguguguguguguguidgugucAcAcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzdHgBgSbZbcgEgEinhEieihiCgEioisiIiKiNiwiyiziNjDjNgEiFiHiCiogEiPkUgEgEiVbZmjmIeGmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzdHmshemtmwgMgMlzgAlbhththththththvgxgxligxnYhwhthtiilrgMgMgMldlsgMgMmxpWhfmAeGmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzdHpmgSeHeHeHeHeHdAaWgDgDaeafafafafgxnZltognYaCaCaChFluhjgMgMgMnGcygQdUgQcypOeGmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzdHnsgSoLppacdnithhhigRgRaeahalamannYocodoenYgtaDhglAlvbBhjjpjphjcynthklncymCeGmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabzdHpigSoLeHaLdFiljIlDgsnuaeeIgHasohnYobobobnYaDlehgjuknhjaglEaghRcygFhQklcypqeGmuaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamEmEprgSoLeHeHeHeHaeaeaeaeaebaaObjlxnYnYnYnYnYnwhyhYkpkQlIlKminqagcyjlgQcycypsmHmHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoOpkplpPoPoOoOaemFatauicaobiavawnvaIbXjocDaIiplGhglfnxhjagjWnzagcykmgQmzoQoRoSptaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNoOoOpwoPoOpQaemFaFaGlcaKbmaMaNnXaIjqkecNaIjOaDhgjulmbBjPagoibBcygQgQpuoSoSpvpvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNoOpnoPoPoOaemFaPaQaRaSbilHasofaIaIkfaIaIaCaCaClwlBbDbDbDbDbDmzoQoQoRpRpvpvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNpkplpooOaeaeaeaeapaobIixaXokolomonooopiQjMiEjukniMcZcZjRbDpxoSoSoSpvpvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapzoNoNoOoOpQaenraZaQaRaSbJjgjSaeaeaeaBdEoqjijMiElAoriMcZlJcZbDoSoSoSpvpvpzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapzpzoNoNoOoOaenrbbaGlNaobJjgbdbebfbgaBjLoqjjjMiEirosiSiuiOcZbDpyoSpvpvpzpzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapzpzoNoOoOaenrbhauaplLjklMbNbkbqbgaBdvoqjijMiElfnxiMivkbcZbDpXoSpvpzpzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapapApAaeaeaeaejTblcKjmbWbobpbgaBjnotjFjQjhmlkniMiqcZjRbDoSoSptaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapaoOoOaeoFcnauapbrcLjUjVaeaeaeaBiEouiEdadampmqbDbDnEcZpBoSpSptaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapaoOoOaeoFbubvlNlhbikNbxkomrmrbymrnFoxoyozoAoBiDbBbBbBbBbBejptaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapaoOpQaeoFbEbFbGkShHlOkVkLoaojcRovowlQlSlWoClRhuhCikkanAmmnBaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapaoOpYaeaeaeaejXkddlbObPaepZbQlgdWdWerbQbQoinDnSnCnQnRnTmmnUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapaoOoOaeoJbSbThDbVdxbVjYaejZccjxhGiRhmcUbQeklFlXbBbBnVnWbBejcAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoOpCaeoJcfbvoEaonHbOaSaedjcqkvdzjsiTjsjteklYlZpDoToToToToToUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoOoOaeaejJauaOaoaeaeaeaecofJkwdScsjectnIeknPmapEoTpFoVoVqaoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoWoXoYoYoZcucumvaeaecFcGcHcImNlycHhOjfdcjvekdgdQpGoToVoVoVoUoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamKoNoNoOoObQnJdRenhBiAdedkdhljlUlkdejrdhjwekhqdVpHpIpJoVoUoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapzoNoOpQbQeahpjHhPhShUhodmdombdonknlcSjzekekhrnKoTpKpToUpzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapzcxpApAbQiahVnmkgmneodBdYecmcececmoeejAmyeoeqcUoTpLpNcxpzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoOoOadadmLadmTdPdTdNlTmdmemflVmUezgwdqdqdqdqdqpKoVoUpzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNoOoOaddshZiUmTeajBdZkhajdwcXibmVjCkimMkxkykrdqpMoVoUoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNoOoOadadnLdukjmWksktmZnakzkBkznbnccUcUdqkkkAnMdqoToVoVoUoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoOoOoPadadkCkDkCadkujBkEjKebesebjKkzcUcUdqkFkGkFdqoToToVoVoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapapCoPoPexexexkqexadmXjBkHndnenfngndkzcUmYdqeAhnjGeAeAdqoToVpbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapaoOoPadexexexexexadnnjBkHndnhlPnhndkzcUnNdqeAeAeAeAeAdqoTpTpbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapaoOoPadexexexexexadnOjBkHndnhevnhndkzcUcUdqeAeAeAeAeAdqoToVpbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapapQoPadexexexexexadnOjBkHninjebninjkIcUcUdqeAeAeAeAeAdqoTpFpbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapaoOoPadexexexexexadkJkKdydydyoDdydydyababdqeAeAeAeAeAdqoToVpbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapapAoPadexexexexexadeCciaqababoDabababababdqeAeAeAeAeAdqoTpNpbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoOoOoPadadadadadadaqaqaqababoDabababababdqdqdqdqdqdqoToVoVoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNoOoOoOoPoPoPabababababababoDabababababababoToToToVoVoVoUoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNoNpUoOoOoPoPoPoPoPabababoDabababoUoToToToToVoVoVoUoUoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNoNoOoOoOoOoOoPoPoPoNoDoUoToToToVoVoVpVoVoUoUoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNoNoNoNpUoOoOpCoNaaoUpFoVoVoVoUoUoUoUoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaoNoNoNoNoNoNaaoUoUoUoUoUoUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

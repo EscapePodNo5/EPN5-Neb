@@ -108,6 +108,10 @@
 	icon_state = "bar"
 	name = "\improper Mess Hall"
 
+/area/ship/wolf/habitation/bar/backroom
+	icon_state = "barback"
+	name = "Bar Backroom"
+
 /area/ship/wolf/habitation/kitchen
 	icon_state = "kitchen"
 	name = "\improper Kitchen"
@@ -149,11 +153,19 @@
 /area/ship/wolf/habitation/cryo/two
 	name = "Cryo Bay Two"
 
+/area/ship/wolf/habitation/observation
+	name = "Observation Lounge"
+	icon_state = "observation"
+
 //Security
 
 /area/ship/wolf/security
 	icon_state = "sec"
 	name = "Security"
+
+/area/ship/wolf/security/lockers
+	name = "Locker Room"
+	icon_state = "lockers"
 
 /area/ship/wolf/security/maa_office
 	icon_state = "maa"
@@ -210,6 +222,14 @@
 /area/ship/wolf/medical/chemistry
 	icon_state = "chem"
 	name = "\improper Chemistry Lab"
+
+/area/ship/wolf/medical/storage
+	name = "Medical Storage"
+	icon_state = "medstore"
+
+/area/ship/wolf/medical/breakroom
+	name = "Medical Lounge"
+	icon_state = "medbreak"
 
 //Command
 
@@ -346,6 +366,45 @@
 /area/ship/wolf/maintenance
 	icon_state = "maint"
 	area_flags = AREA_FLAG_RAD_SHIELDED
+	turf_initializer = /decl/turf_initializer/maintenance
+	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg')
+
+/area/ship/wolf/maintenance/deckone/aft
+	name = "First Deck Aft Maintenance"
+
+/area/ship/wolf/maintenance/deckone/aft/port
+	name = "First Deck Aft Port Maintenance"
+
+/area/ship/wolf/maintenance/deckone/aft/starboard
+	name = "First Deck Aft Starboard Maintenance"
+
+/area/ship/wolf/maintenance/deckone/fore/starboard
+	name = "First Deck Fore Starboard Maintenance"
+
+/area/ship/wolf/maintenance/deckone/fore/port
+	name = "First Deck Fore Port Maintenance"
+
+/area/ship/wolf/maintenance/deckone/amidships/port
+	name = "First Deck Amidships Port Maintenance"
+
+//Second Deck Maint
+
+/area/ship/wolf/maintenance/decktwo/fore/port
+	name = "Second Deck Fore Port Maintenance"
+
+/area/ship/wolf/maintenance/decktwo/fore/starboard
+	name = "Second Deck Fore Starboard Maintenance"
+
+/area/ship/wolf/maintenance/decktwo/amidship/starboard
+	name = "Second Deck Amidships Starboard Maintenance"
+
+/area/ship/wolf/maintenance/decktwo/aft/port
+	name = "Second Deck Aft Port Maintenance"
+
+/area/ship/wolf/maintenance/decktwo/aft/starboard
+	name = "Second Deck Aft Starboard Maintenance"
+
+//Third Deck Maint
 
 /area/ship/wolf/maintenance/deckthree/aft
 	name = "Third Deck Aft Maintenance"
@@ -355,6 +414,12 @@
 
 /area/ship/wolf/maintenance/deckthree/foreport
 	name = "Third Deck Fore Port Maintenance"
+
+/area/ship/wolf/maintenance/deckthree/fore/starboard
+	name = "Third Deck Fore Starboard Maintenance"
+
+/area/ship/wolf/maintenance/deckthree/aft/starboard
+	name = "Third Deck Aft Starboard Maintenance"
 
 //Misc areas
 

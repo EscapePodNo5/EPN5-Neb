@@ -46,6 +46,9 @@
 /obj/machinery/door/airlock/autoname/wolf/engineering
 	door_color = COLOR_AMBER
 
+/obj/machinery/door/airlock/autoname/wolf/maintenance
+	stripe_color = COLOR_AMBER
+
 // Glass airlock presets
 
 /obj/machinery/door/airlock/autoname/wolf/glass
@@ -108,3 +111,25 @@
 
 /obj/machinery/door/airlock/autoname/wolf/glass/hydroponic
 	door_color = COLOR_CIVIE_GREEN
+
+/obj/machinery/door/airlock/hatch/autoname/wolf
+
+/obj/machinery/door/airlock/hatch/autoname/wolf/Initialize()
+	. = ..()
+	var/area/A = get_area(src)
+	SetName("[A.name]")
+
+/obj/machinery/door/airlock/hatch/autoname/wolf/general
+	stripe_color = COLOR_CIVIE_GREEN
+
+/obj/machinery/door/airlock/hatch/autoname/wolf/maintenance
+	stripe_color = COLOR_AMBER
+
+/obj/machinery/door/airlock/hatch/autoname/wolf/command
+	stripe_color = COLOR_COMMAND_BLUE
+
+/obj/machinery/door/airlock/hatch/autoname/wolf/engineering
+	stripe_color = COLOR_AMBER
+
+/obj/machinery/door/airlock/hatch/autoname/wolf/science
+	stripe_color = COLOR_PURPLE
