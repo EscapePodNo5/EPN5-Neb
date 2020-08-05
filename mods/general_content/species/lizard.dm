@@ -2,13 +2,12 @@
 	name = SPECIES_UNATHI
 	name_plural = SPECIES_UNATHI
 	icon_template = 'icons/mob/human_races/species/template_tall.dmi'
-	icobase = 'icons/unathi/body.dmi'
-	deform = 'icons/unathi/deformed_body.dmi'
-	husk_icon = 'icons/unathi/husk.dmi'
-	preview_icon = 'icons/unathi/preview.dmi'
-	bandages_icon = 'icons/mob/bandage.dmi'
+	icobase = 'mods/general_content/icons/unathi/body.dmi'
+	deform = 'mods/general_content/icons/unathi/deformed_body.dmi'
+	husk_icon = 'mods/general_content/icons/unathi/husk.dmi'
+	preview_icon = 'mods/general_content/icons/unathi/preview.dmi'
 	tail = "sogtail"
-	tail_animation = 'icons/unathi/unathi_tail.dmi'
+	tail_animation = 'mods/general_content/icons/unathi/unathi_tail.dmi'
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE
@@ -54,7 +53,7 @@
 
 	base_color = "#066000"
 	blood_color = "#f24b2e"
-	organs_icon = 'icons/unathi/organs.dmi'
+	organs_icon = 'mods/general_content/icons/unathi/organs.dmi'
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
 
@@ -77,7 +76,7 @@
 		/obj/aura/regenerating/human/unathi
 		)
 
-	inherent_verbs = list(  
+	inherent_verbs = list(
 		/mob/living/carbon/human/proc/diona_heal_toggle
 		) */
         //Regeneration is commented out, pending Unathi lore update.
