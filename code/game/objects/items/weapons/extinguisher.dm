@@ -27,7 +27,7 @@
 	desc = "A light and compact fibreglass-framed model fire extinguisher."
 	icon_state = "miniFE0"
 	item_state = "miniFE"
-	hitsound = null	//it is much lighter, after all.
+	hitsound = null
 	throwforce = 2
 	w_class = ITEM_SIZE_SMALL
 	force = 3.0
@@ -48,7 +48,7 @@
 /obj/item/extinguisher/examine(mob/user, distance)
 	. = ..()
 	if(distance <= 0)
-		to_chat(user, text("\icon[] [] contains [] units of water left!", src, src.name, src.reagents.total_volume))
+		to_chat(user, "[html_icon(src)] [name] contains [reagents.total_volume] units of water!")
 
 /obj/item/extinguisher/attack_self(mob/user)
 	safety = !safety

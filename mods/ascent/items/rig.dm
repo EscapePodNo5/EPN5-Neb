@@ -27,7 +27,6 @@
 	glove_type = /obj/item/clothing/gloves/rig/mantid
 	update_visible_name = TRUE
 	icon = 'mods/ascent/icons/rig/inventory.dmi'
-	on_mob_icon = 'mods/ascent/icons/rig/inventory.dmi'
 	sprite_sheets = list(
 		BODYTYPE_MANTID_LARGE = 'mods/ascent/icons/rig/gyne.dmi',
 		BODYTYPE_MANTID_SMALL = 'mods/ascent/icons/rig/alate.dmi',
@@ -255,7 +254,7 @@
 
 /obj/item/rig/mantid/mob_can_equip(var/mob/M, var/slot)
 	. = ..()
-	if(. && slot == slot_back)
+	if(. && slot == slot_back_str)
 		var/mob/living/carbon/human/H = M
 		if(!istype(H) || H.species.get_root_species_name(H) != mantid_caste)
 			to_chat(H, "<span class='danger'>Your species cannot wear \the [src].</span>")

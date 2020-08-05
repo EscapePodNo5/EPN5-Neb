@@ -1,6 +1,7 @@
 /obj/item/clothing/suit
-	icon = 'icons/obj/clothing/obj_suit.dmi'
 	name = "suit"
+	icon = 'icons/clothing/suit/suit_jacket.dmi'
+	icon_state = ICON_STATE_WORLD
 	var/fire_resist = T0C+100
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	allowed = list(/obj/item/tank/emergency)
@@ -18,7 +19,7 @@
 
 /obj/item/clothing/suit/get_mob_overlay(mob/user_mob, slot)
 	var/image/ret = ..()
-	if(item_state_slots && item_state_slots[slot])
+	if(slot in item_state_slots)
 		ret.icon_state = item_state_slots[slot]
 	else if(item_state)
 		ret.icon_state = item_state

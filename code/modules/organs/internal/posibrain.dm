@@ -11,14 +11,13 @@
 	throwforce = 1.0
 	throw_speed = 3
 	throw_range = 5
-	origin_tech = "{'engineering':4,'materials':4,'bluespace':2,'programming':4}"
+	origin_tech = "{'engineering':4,'materials':4,'wormholes':2,'programming':4}"
 	attack_verb = list("attacked", "slapped", "whacked")
 	material = /decl/material/solid/metal/steel
 	matter = list(
 		/decl/material/solid/glass = MATTER_AMOUNT_REINFORCEMENT,
 		/decl/material/solid/metal/silver = MATTER_AMOUNT_TRACE,
 		/decl/material/solid/metal/gold = MATTER_AMOUNT_TRACE,
-		/decl/material/solid/phoron = MATTER_AMOUNT_TRACE,
 		/decl/material/solid/gemstone/diamond = MATTER_AMOUNT_TRACE
 	)
 	relative_size = 60
@@ -89,7 +88,7 @@
 /obj/item/organ/internal/posibrain/examine(mob/user)
 	. = ..()
 
-	var/msg = "<span class='info'>*---------*</span>\nThis is \icon[src] \a <EM>[src]</EM>!\n[desc]\n"
+	var/msg = "<span class='info'>*---------*</span>\nThis is [html_icon(src)] \a <EM>[src]</EM>!\n[desc]\n"
 
 	if(shackle)	msg += "<span class='warning'>It is clamped in a set of metal straps with a complex digital lock.</span>\n"
 

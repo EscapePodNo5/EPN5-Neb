@@ -3,7 +3,6 @@
 	name = "gem-encrusted voidsuit helmet"
 	desc = "A bizarre gem-encrusted helmet that radiates magical energies."
 	icon = 'icons/clothing/spacesuit/void/wizard/helmet.dmi'
-	on_mob_icon = 'icons/clothing/spacesuit/void/wizard/helmet.dmi'
 	unacidable = 1 //No longer shall our kind be foiled by lone chemists with spray bottles!
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -22,7 +21,6 @@
 	name = "gem-encrusted voidsuit"
 	desc = "A bizarre gem-encrusted suit that radiates magical energies."
 	icon = 'icons/clothing/spacesuit/void/wizard/suit.dmi'
-	on_mob_icon = 'icons/clothing/spacesuit/void/wizard/suit.dmi'
 	w_class = ITEM_SIZE_LARGE //normally voidsuits are bulky but this one is magic I suppose
 	unacidable = 1
 	armor = list(
@@ -43,7 +41,7 @@
 
 /obj/item/clothing/suit/space/void/wizard/Initialize()
 	. = ..()
-	slowdown_per_slot[slot_wear_suit] = 1
+	LAZYSET(slowdown_per_slot, slot_wear_suit_str, 1)
 
 /obj/item/clothing/gloves/wizard
 	name = "mystical gloves"

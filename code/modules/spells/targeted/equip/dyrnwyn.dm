@@ -13,7 +13,7 @@
 	level_max = list(Sp_TOTAL = 1, Sp_SPEED = 0, Sp_POWER = 1)
 	duration = 300 //30 seconds
 	max_targets = 1
-	equipped_summons = list("active hand" = /obj/item/material/sword)
+	equipped_summons = list("active hand" = /obj/item/sword)
 	delete_old = 0
 	var/material = /decl/material/solid/metal/gold
 
@@ -25,8 +25,8 @@
 	W.SetName("\improper Dyrnwyn")
 	W.damtype = BURN
 	W.hitsound = 'sound/items/welder2.ogg'
-	W.slowdown_per_slot[slot_l_hand] = 1
-	W.slowdown_per_slot[slot_r_hand] = 1
+	LAZYSET(W.slowdown_per_slot, slot_l_hand_str, 1)
+	LAZYSET(W.slowdown_per_slot, slot_r_hand_str, 1)
 	return W
 
 /spell/targeted/equip_item/dyrnwyn/empower_spell()

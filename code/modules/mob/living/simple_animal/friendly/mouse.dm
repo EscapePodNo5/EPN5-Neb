@@ -1,6 +1,6 @@
 /mob/living/simple_animal/mouse
-	name = "snaprat"
-	real_name = "snaprat"
+	name = "mouse"
+	real_name = "mouse"
 	desc = "It's a small rodent."
 	icon_state = "mouse_gray"
 	item_state = "mouse_gray"
@@ -100,7 +100,7 @@
 	if( ishuman(AM) )
 		if(!stat)
 			var/mob/M = AM
-			to_chat(M, "<span class='warning'>\icon[src] Squeek!</span>")
+			to_chat(M, "<span class='warning'>[html_icon(src)] Squeek!</span>")
 			sound_to(M, 'sound/effects/mousesqueek.ogg')
 	..()
 

@@ -251,25 +251,39 @@
 	name = "\improper CIC Hallway"
 
 /area/ship/wolf/command/office
-	icon_state = "combed"
+	icon_state = "comoffice"
 
 /area/ship/wolf/command/office/captain
 	name = "\improper Captain's Quarters"
+	icon_state = "combed"
 
 /area/ship/wolf/command/office/xo
 	name = "\improper Executive Officer's Office"
 
 /area/ship/wolf/command/office/ce
+	name = "\improper Chief Engineer's Office"
+
+/area/ship/wolf/command/office/ce/bedroom
 	name = "\improper Chief Engineer's Quarters"
+	icon_state = "combed"
 
 /area/ship/wolf/command/office/cmo
+	name = "\improper CMO's Office"
+
+/area/ship/wolf/command/office/cmo/bedroom
 	name = "\improper CMO's Quarters"
+	icon_state = "combed"
 
 /area/ship/wolf/command/office/maa
+	name = "\improper Master at Arms's Office"
+
+/area/ship/wolf/command/office/maa/bedroom
 	name = "\improper Master at Arms's Quarters"
+	icon_state = "combed"
 
 /area/ship/wolf/command/office/xo/bedroom
 	name = "\improper Executive Officer's Quarters"
+	icon_state = "combed"
 
 /area/ship/wolf/ai/core
 	icon_state = "aicore"

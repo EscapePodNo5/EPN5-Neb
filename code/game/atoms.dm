@@ -66,6 +66,7 @@
 	return
 
 /atom/Destroy()
+	global.is_currently_exploding -= src
 	QDEL_NULL(reagents)
 	. = ..()
 
@@ -251,7 +252,7 @@ its easier to just keep the beam vertical.
 			f_name = "a "
 		f_name += "<font color ='[blood_color]'>stained</font> [name][infix]!"
 
-	to_chat(user, "\icon[src] That's [f_name] [suffix]")
+	to_chat(user, "[html_icon(src)] That's [f_name] [suffix]")
 	to_chat(user, desc)
 	return TRUE
 
@@ -311,11 +312,14 @@ its easier to just keep the beam vertical.
 
 /atom/proc/explosion_act(var/severity)
 	SHOULD_CALL_PARENT(TRUE)
-	. = (severity <= 3)
-	if(.)
-		for(var/atom/movable/AM in contents)
-			AM.explosion_act(severity++)
-		try_detonate_reagents(severity)
+	if(!global.is_currently_exploding[src])
+		global.is_currently_exploding[src] = TRUE
+		. = (severity <= 3)
+		if(.)
+			for(var/atom/movable/AM in contents)
+				AM.explosion_act(severity++)
+			try_detonate_reagents(severity)
+		global.is_currently_exploding -= src
 
 /atom/proc/emag_act(var/remaining_charges, var/mob/user, var/emag_source)
 	return NO_EMAG_ACT
@@ -565,11 +569,7 @@ its easier to just keep the beam vertical.
 				M.adjustBruteLoss(damage)
 				return
 
-			var/obj/item/organ/external/affecting
-			var/list/limbs = BP_ALL_LIMBS //sanity check, can otherwise be shortened to affecting = pick(BP_ALL_LIMBS)
-			if(limbs.len)
-				affecting = H.get_organ(pick(limbs))
-
+			var/obj/item/organ/external/affecting = pick(H.organs)
 			if(affecting)
 				to_chat(M, "<span class='danger'>You land heavily on your [affecting.name]!</span>")
 				affecting.take_external_damage(damage, 0)
@@ -607,3 +607,9 @@ its easier to just keep the beam vertical.
 			user.examinate(src)
 			return TOPIC_HANDLED
 	. = ..()
+
+/atom/proc/get_heat()
+	. = temperature
+
+/atom/proc/isflamesource()
+	. = FALSE

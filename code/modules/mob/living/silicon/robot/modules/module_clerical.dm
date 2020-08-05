@@ -2,9 +2,6 @@
 	channels = list(
 		"Service" = TRUE
 	)
-	languages = list(
-		/decl/language/human/common = TRUE
-	)
 	skills = list(
 		SKILL_LITERACY            = SKILL_ADEPT,
 		SKILL_FINANCE             = SKILL_PROF,
@@ -31,13 +28,13 @@
 		/obj/item/flash,
 		/obj/item/gripper/service,
 		/obj/item/chems/glass/bucket,
-		/obj/item/material/minihoe,
-		/obj/item/material/hatchet,
+		/obj/item/minihoe,
+		/obj/item/hatchet,
 		/obj/item/scanner/plant,
 		/obj/item/storage/plants,
 		/obj/item/robot_harvester,
-		/obj/item/material/kitchen/rollingpin,
-		/obj/item/material/knife/kitchen,
+		/obj/item/kitchen/rollingpin,
+		/obj/item/knife/kitchen,
 		/obj/item/crowbar,
 		/obj/item/rsf,
 		/obj/item/chems/dropper/industrial,

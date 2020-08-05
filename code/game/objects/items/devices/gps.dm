@@ -4,7 +4,7 @@
 	icon = 'icons/obj/items/device/locator.dmi'
 	icon_state = "locator"
 	item_state = "locator"
-	origin_tech = "{'materials':2,'programming':2,'bluespace':2}"
+	origin_tech = "{'materials':2,'programming':2,'wormholes':2}"
 	material = /decl/material/solid/metal/aluminium
 	matter = list(
 		/decl/material/solid/metal/steel = MATTER_AMOUNT_REINFORCEMENT,
@@ -18,7 +18,7 @@
 	)
 
 /obj/item/gps/attack_self(var/mob/user)
-	to_chat(user, "<span class='notice'>\icon[src] \The [src] flashes <i>[get_coordinates()]</i>.</span>")
+	to_chat(user, "<span class='notice'>[html_icon(src)] \The [src] flashes <i>[get_coordinates()]</i>.</span>")
 
 /obj/item/gps/examine(mob/user)
 	. = ..()

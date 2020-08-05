@@ -47,9 +47,12 @@
 	var/cold_damage_per_tick = 2	//same as heat_damage_per_tick, only if the bodytemperature it's lower than minbodytemp
 	var/fire_alert = 0
 
-	//Atmos effect - Yes, you can make creatures that require phoron or co2 to survive. N2O is a trace gas and handled separately, hence why it isn't here. It'd be hard to add it. Hard and me don't mix (Yes, yes make all the dick jokes you want with that.) - Errorage
+	//Atmos effect - Yes, you can make creatures that require arbitrary gasses to survive. N2O is a trace gas and handled separately, hence why it isn't here. It'd be hard to add it. Hard and me don't mix (Yes, yes make all the dick jokes you want with that.) - Errorage
 	var/list/min_gas = list(/decl/material/gas/oxygen = 5)
-	var/list/max_gas = list(/decl/material/solid/phoron = 1, /decl/material/gas/carbon_dioxide = 5)
+	var/list/max_gas = list(
+		/decl/material/gas/chlorine = 1, 
+		/decl/material/gas/carbon_dioxide = 5
+	)
 
 	var/unsuitable_atmos_damage = 2	//This damage is taken when atmos doesn't fit all the requirements above
 	var/speed = 0 //LETS SEE IF I CAN SET SPEEDS FOR SIMPLE MOBS WITHOUT DESTROYING EVERYTHING. Higher speed is slower, negative speed is faster
@@ -309,7 +312,7 @@
 			return
 
 	if(meat_type && (stat == DEAD) && meat_amount)
-		if(istype(O, /obj/item/material/knife/kitchen/cleaver))
+		if(istype(O, /obj/item/knife/kitchen/cleaver))
 			var/victim_turf = get_turf(src)
 			if(!locate(/obj/structure/table, victim_turf))
 				to_chat(user, SPAN_NOTICE("You need to place \the [src] on a table to butcher it."))

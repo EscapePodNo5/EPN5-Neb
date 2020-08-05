@@ -111,13 +111,14 @@
 
 	// Update icon state
 	overlays.Cut()
-	switch(construct_state.type) //Never use the initial state. That'll just reset it to the mapping icon.
-		if(/decl/machine_construction/wall_frame/no_wires/simple)
-			icon_state = "[base_state]-construct-stage1"
-			return
-		if(/decl/machine_construction/wall_frame/panel_open/simple)
-			icon_state = "[base_state]-construct-stage2"
-			return
+	if(istype(construct_state))
+		switch(construct_state.type) //Never use the initial state. That'll just reset it to the mapping icon.
+			if(/decl/machine_construction/wall_frame/no_wires/simple)
+				icon_state = "[base_state]-construct-stage1"
+				return
+			if(/decl/machine_construction/wall_frame/panel_open/simple)
+				icon_state = "[base_state]-construct-stage2"
+				return
 
 	icon_state = "[base_state]_empty"
 
@@ -574,7 +575,7 @@
 	update_icon()
 
 // attack bulb/tube with object
-// if a syringe, can inject phoron to make it explode
+// if a syringe, can inject flammable liquids to make it explode
 /obj/item/light/attackby(var/obj/item/I, var/mob/user)
 	..()
 	if(istype(I, /obj/item/chems/syringe) && I.reagents?.total_volume)

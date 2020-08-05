@@ -3,6 +3,7 @@
 	icon = 'icons/obj/items/coin.dmi'
 	icon_state = "coin1"
 	applies_material_colour = TRUE
+	applies_material_name = TRUE
 	randpixel = 8
 	force = 1
 	throwforce = 1
@@ -138,6 +139,3 @@
 
 /obj/item/coin/platinum
 	material = /decl/material/solid/metal/platinum
-
-/obj/item/coin/phoron
-	material = /decl/material/solid/phoron

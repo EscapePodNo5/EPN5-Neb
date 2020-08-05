@@ -49,7 +49,7 @@
 		if(TT.speed >= 10 && isliving(hit_atom))
 			var/mob/living/L = hit_atom
 			//unfortuately we don't know where the dart will actually hit, since that's done by the parent.
-			if(L.can_inject(null, ran_zone(TT.target_zone, 30)) == CAN_INJECT && syringe.reagents)
+			if(L.can_inject(null, ran_zone(TT.target_zone, 30, L)) == CAN_INJECT && syringe.reagents)
 				var/reagent_log = syringe.reagents.get_reagents()
 				syringe.reagents.trans_to_mob(L, 15, CHEM_INJECT)
 				admin_inject_log(TT.thrower? TT.thrower : null, L, src, reagent_log, 15, violent=1)
@@ -63,9 +63,8 @@
 /obj/item/gun/launcher/syringe
 	name = "syringe gun"
 	desc = "A spring loaded rifle designed to fit syringes, designed to incapacitate unruly patients from a distance."
-	on_mob_icon = 'icons/obj/guns/launcher/syringe.dmi'
 	icon = 'icons/obj/guns/launcher/syringe.dmi'
-	icon_state = "world"
+	icon_state = ICON_STATE_WORLD
 	w_class = ITEM_SIZE_LARGE
 	force = 7
 	material = /decl/material/solid/metal/steel
@@ -133,7 +132,7 @@
 /obj/item/gun/launcher/syringe/rapid
 	name = "syringe gun revolver"
 	desc = "A modification of the syringe gun design, using a rotating cylinder to store up to five syringes. The spring still needs to be drawn between shots."
-	on_mob_icon = 'icons/obj/guns/launcher/syringe_rapid.dmi'
+	icon = 'icons/obj/guns/launcher/syringe_rapid.dmi'
 	max_darts = 5
 	material = /decl/material/solid/metal/steel
 	matter = list(/decl/material/solid/glass = MATTER_AMOUNT_REINFORCEMENT)

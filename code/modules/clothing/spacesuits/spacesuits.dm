@@ -6,8 +6,6 @@
 	name = "space helmet"
 	desc = "A special helmet designed for work in a hazardous, low-pressure environment."
 	icon = 'icons/clothing/spacesuit/generic/helmet.dmi'
-	on_mob_icon = 'icons/clothing/spacesuit/generic/helmet.dmi'
-	icon_state = "world"
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_AIRTIGHT
 	flags_inv = BLOCKHAIR
 	permeability_coefficient = 0
@@ -99,17 +97,6 @@
 		ret.icon_state = "[ret.icon_state]_dark"
 	return ret
 
-/obj/item/clothing/head/helmet/space/apply_overlays(var/mob/user_mob, var/bodytype, var/image/overlay, var/slot)
-	var/image/ret = ..()
-	if(on && check_state_in_icon("[ret.icon_state]_light", ret.icon))
-		var/image/light_overlay = image(ret.icon, "[ret.icon_state]_light")
-		if(ishuman(user_mob))
-			var/mob/living/carbon/human/H = user_mob
-			if(H.species.get_bodytype(H) != bodytype)
-				light_overlay = H.species.get_offset_overlay_image(FALSE, light_overlay.icon, light_overlay.icon_state, null, slot)
-		ret.overlays += light_overlay
-	return ret
-
 /obj/item/clothing/head/helmet/space/on_update_icon(mob/user)
 	. = ..()
 	var/base_icon = get_world_inventory_state()
@@ -120,20 +107,10 @@
 	else
 		icon_state = base_icon
 
-/obj/item/clothing/head/helmet/space/add_light_overlay()
-	if(!on_mob_icon)
-		..()
-	var/cache_key = "[icon]-[get_world_inventory_state()]_icon"
-	if(!light_overlay_cache[cache_key])
-		light_overlay_cache[cache_key] = image(icon, "[get_world_inventory_state()]_light")
-	overlays |= light_overlay_cache[cache_key]
-
 /obj/item/clothing/suit/space
 	name = "space suit"
 	desc = "A suit that protects against low pressure environments."
 	icon = 'icons/clothing/spacesuit/generic/suit.dmi'
-	on_mob_icon = 'icons/clothing/spacesuit/generic/suit.dmi'
-	icon_state = "world"
 	w_class = ITEM_SIZE_LARGE//large item
 	gas_transfer_coefficient = 0
 	permeability_coefficient = 0
@@ -163,4 +140,4 @@
 
 /obj/item/clothing/suit/space/Initialize()
 	. = ..()
-	slowdown_per_slot[slot_wear_suit] = 1
+	LAZYSET(slowdown_per_slot, slot_wear_suit_str, 1)

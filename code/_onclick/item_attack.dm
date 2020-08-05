@@ -49,6 +49,17 @@ avoid code duplication. This includes items that may sometimes act as a standard
 		return 0
 	if(can_operate(src,user) && I.do_surgery(src,user)) //Surgery
 		return 1
+
+	if(user.a_intent == I_HELP && istype(I, /obj/item/clothing/head))
+		var/datum/extension/hattable/hattable = get_extension(src, /datum/extension/hattable)
+		if(hattable)
+			if(hattable.hat)
+				to_chat(user, SPAN_WARNING("\The [src] is already wearing \the [hattable.hat]."))
+				return TRUE
+			if(user.unEquip(I) && hattable.wear_hat(src, I))
+				user.visible_message(SPAN_NOTICE("\The [user] puts \the [I] on \the [src]."))
+				return TRUE
+
 	return I.attack(src, user, user.zone_sel ? user.zone_sel.selecting : ran_zone())
 
 /mob/living/carbon/human/attackby(obj/item/I, mob/user)
@@ -101,8 +112,13 @@ avoid code duplication. This includes items that may sometimes act as a standard
 
 //Called when a weapon is used to make a successful melee attack on a mob. Returns whether damage was dealt.
 /obj/item/proc/apply_hit_effect(mob/living/target, mob/living/user, var/hit_zone)
-	if(hitsound)
-		playsound(loc, hitsound, 50, 1, -1)
+	var/use_hitsound = hitsound
+	if(!use_hitsound)
+		if(edge || sharp)
+			use_hitsound = 'sound/weapons/bladeslice.ogg'
+		else
+			use_hitsound = "swing_hit"
+	playsound(loc, use_hitsound, 50, 1, -1)
 
 	var/power = force
 	if(MUTATION_HULK in user.mutations)

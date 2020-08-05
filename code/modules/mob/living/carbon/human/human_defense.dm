@@ -9,7 +9,7 @@ meteor_act
 
 /mob/living/carbon/human/bullet_act(var/obj/item/projectile/P, var/def_zone)
 
-	def_zone = check_zone(def_zone)
+	def_zone = check_zone(def_zone, src)
 	if(!has_organ(def_zone))
 		return PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
 
@@ -29,7 +29,7 @@ meteor_act
 	return blocked
 
 /mob/living/carbon/human/stun_effect_act(var/stun_amount, var/agony_amount, var/def_zone)
-	var/obj/item/organ/external/affected = get_organ(check_zone(def_zone))
+	var/obj/item/organ/external/affected = get_organ(def_zone)
 	if(!affected)
 		return
 
@@ -63,7 +63,7 @@ meteor_act
 	if(!def_zone)
 		def_zone = ran_zone()
 	if(!istype(def_zone))
-		def_zone = get_organ(check_zone(def_zone))
+		def_zone = get_organ(def_zone)
 	if(!def_zone)
 		return
 	var/list/protective_gear = list(head, wear_mask, wear_suit, w_uniform, gloves, shoes)
@@ -307,7 +307,7 @@ meteor_act
 
 		var/zone = BP_CHEST
 		if (TT.target_zone)
-			zone = check_zone(TT.target_zone)
+			zone = check_zone(TT.target_zone, src)
 		else
 			zone = ran_zone()	//Hits a random part of the body, -was already geared towards the chest
 
@@ -322,15 +322,13 @@ meteor_act
 			else if(shield_check)
 				return
 
-		if(!zone)
-			visible_message("<span class='notice'>\The [O] misses [src] narrowly!</span>")
+		var/obj/item/organ/external/affecting = (zone && get_organ(zone))
+		if(!affecting)
+			visible_message(SPAN_NOTICE("\The [O] misses \the [src] narrowly!"))
 			return
 
-		var/obj/item/organ/external/affecting = get_organ(zone)
-		var/hit_area = affecting.name
 		var/datum/wound/created_wound
-
-		src.visible_message("<span class='warning'>\The [src] has been hit in the [hit_area] by \the [O].</span>")
+		visible_message(SPAN_DANGER("\The [src] has been hit in \the [affecting.name] by \the [O]."))
 		created_wound = apply_damage(throw_damage, dtype, zone, O.damage_flags(), O, O.armor_penetration)
 
 		if(TT.thrower)
@@ -369,7 +367,7 @@ meteor_act
 		affecting.embed(O, supplied_wound = supplied_wound)
 
 /mob/living/carbon/human/proc/bloody_hands(var/mob/living/source, var/amount = 2)
-	var/obj/item/clothing/gloves/gloves = get_equipped_item(slot_gloves)
+	var/obj/item/clothing/gloves/gloves = get_equipped_item(slot_gloves_str)
 	if(istype(gloves))
 		gloves.add_blood(source)
 		gloves.transfer_blood = amount
