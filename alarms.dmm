@@ -1,0 +1,19 @@
+"a" = (/turf/space,/area/space)
+"b" = (/obj/effect/landmark{name = "Observer-Start"},/turf/space,/area/space)
+"c" = (/obj/effect/landmark{name = "JoinLateCryo"},/turf/space,/area/space)
+"d" = (/obj/effect/landmark{name = "JoinLateCryoTwo"},/turf/space,/area/space)
+"e" = (/obj/machinery/firealarm{dir = 8; pixel_x = -24; pixel_y = 0},/obj/machinery/firealarm{dir = 1; pixel_y = -24},/obj/machinery/firealarm{dir = 4; pixel_x = 24; pixel_y = 0},/obj/machinery/firealarm,/turf/space,/area/space)
+"f" = (/obj/item/radio/intercom{dir = 8; pixel_x = 22},/obj/item/radio/intercom{dir = 1; pixel_y = -30},/obj/item/radio/intercom{dir = 4; pixel_x = -22},/obj/item/radio/intercom,/turf/space,/area/space)
+
+(1,1,1) = {"
+aaaaaaaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+aabacadaaa
+aaeafaaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+aaaaaaaaaa
+"}

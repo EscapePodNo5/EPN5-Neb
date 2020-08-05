@@ -1,22 +1,22 @@
-/obj/item/missile_equipment/targeting_package/point
+/obj/item/projectile_equipment/targeting_package/point
 	name = "point to point targeting package"
 	desc = "The DA1 'Pointman' is a dumb set of avionics capable of navigating through space and avoiding objects, until it arrives at a designated point."
 
 	var/target_x
 	var/target_y
 
-/obj/item/missile_equipment/targeting_package/point/set_target(var/n_x, var/n_y)
+/obj/item/projectile_equipment/targeting_package/point/set_target(var/n_x, var/n_y)
 	target_x = n_x
 	target_y = n_y
 
-/obj/item/missile_equipment/targeting_package/point/guide_missile() //No inheritance because this thing is dumb.
+/obj/item/projectile_equipment/targeting_package/point/guide_missile() //No inheritance because this thing is dumb.
 	if(!target_x || !target_y)
 		return
 
 	missile.overmap_missile.target_x = target_x
 	missile.overmap_missile.target_y = target_y
 
-/obj/item/missile_equipment/targeting_package/point/attackby(var/obj/item/I, var/mob/user)
+/obj/item/projectile_equipment/targeting_package/point/attackby(var/obj/item/I, var/mob/user)
 	var/targ_x = 0
 	var/targ_y = 0
 
