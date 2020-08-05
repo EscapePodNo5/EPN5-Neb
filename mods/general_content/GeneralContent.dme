@@ -5,6 +5,9 @@
 #include "mob_defines.dm"
 #include "global_defines.dm"
 #include "species/vulpkanin.dm"
+
+#include "species/lizard.dm"
+
 #include "music.dm"
 #include "species/vox/vox.dm"
 #include "species/vox/organs.dm"
@@ -12,6 +15,7 @@
 #include "species/skrell.dm"
 #include "organs/internal/skrell/eyes.dm"
 #include "organs/internal/skrell/gills.dm"
+
 #include "sprite_accessory/_cosmetics_selection.dm"
 #include "sprite_accessory/_hooks.dm"
 #include "sprite_accessory/_mob_overwrites.dm"
