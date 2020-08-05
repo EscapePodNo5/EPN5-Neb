@@ -78,7 +78,6 @@ Class Procs:
 
 /obj/machinery
 	name = "machinery"
-	icon = 'icons/obj/stationobjs.dmi'
 	w_class = ITEM_SIZE_STRUCTURE
 	layer = STRUCTURE_LAYER // Layer under items
 	throw_speed = 1
@@ -312,8 +311,7 @@ Class Procs:
 	set_broken(!!missing, MACHINE_BROKEN_NO_PARTS)
 
 /obj/machinery/proc/state(var/msg)
-	for(var/mob/O in hearers(src, null))
-		O.show_message("\icon[src] <span class = 'notice'>[msg]</span>", 2)
+	audible_message(SPAN_NOTICE("[html_icon(src)] [msg]"), null, 2)
 
 /obj/machinery/proc/ping(text=null)
 	if (!text)

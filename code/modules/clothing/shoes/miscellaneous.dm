@@ -2,7 +2,6 @@
 	name = "brown shoes"
 	desc = "A pair of brown shoes. They seem to have extra grip."
 	icon = 'icons/clothing/feet/colored_shoes.dmi'
-	on_mob_icon = 'icons/clothing/feet/colored_shoes.dmi'
 	markings_icon = "_coloring"
 	markings_color = WOOD_COLOR_CHOCOLATE
 	permeability_coefficient = 0.05
@@ -63,7 +62,6 @@
 	name = "dress shoes"
 	desc = "The height of fashion, and they're pre-polished!"
 	icon = 'icons/clothing/feet/laceups.dmi'
-	on_mob_icon = 'icons/clothing/feet/laceups.dmi'
 	can_add_hidden_item = FALSE
 	can_add_cuffs = FALSE
 	color = "#1c1c1c"
@@ -85,7 +83,6 @@
 	name = "sandals"
 	desc = "A pair of rather plain wooden sandals."
 	icon = 'icons/clothing/feet/sandals.dmi'
-	on_mob_icon = 'icons/clothing/feet/sandals.dmi'
 	bodytype_restricted = null
 	body_parts_covered = 0
 	wizard_garb = 1
@@ -96,7 +93,6 @@
 	name = "magic shoes"
 	desc = "A pair of magic, black shoes."
 	icon = 'icons/clothing/feet/generic_shoes.dmi'
-	on_mob_icon = 'icons/clothing/feet/generic_shoes.dmi'
 	color = COLOR_GRAY40
 	body_parts_covered = FEET
 
@@ -112,7 +108,7 @@
 
 /obj/item/clothing/shoes/clown_shoes/Initialize()
 	. = ..()
-	slowdown_per_slot[slot_shoes]  = 1
+	LAZYSET(slowdown_per_slot, slot_shoes_str, 1)
 
 /obj/item/clothing/shoes/clown_shoes/handle_movement(var/turf/walking, var/running)
 	if(running)
@@ -128,7 +124,6 @@
 	name = "boots"
 	desc = "A pair of boots worn by the followers of Nar-Sie."
 	icon = 'icons/clothing/feet/cult.dmi'
-	on_mob_icon = 'icons/clothing/feet/cult.dmi'
 	force = 2
 	siemens_coefficient = 0.7
 
@@ -142,7 +137,6 @@
 	name = "bunny slippers"
 	desc = "Fluffy!"
 	icon = 'icons/clothing/feet/bunny_slippers.dmi'
-	on_mob_icon = 'icons/clothing/feet/bunny_slippers.dmi'
 	force = 0
 	bodytype_restricted = null
 	w_class = ITEM_SIZE_SMALL
@@ -153,7 +147,6 @@
 	name = "swimming fins"
 	desc = "Help you swim good."
 	icon = 'icons/clothing/feet/flippers.dmi'
-	on_mob_icon = 'icons/clothing/feet/flippers.dmi'
 	item_flags = ITEM_FLAG_NOSLIP
 	bodytype_restricted = null
 	can_add_hidden_item = FALSE
@@ -161,7 +154,7 @@
 
 /obj/item/clothing/shoes/swimmingfins/Initialize()
 	. = ..()
-	slowdown_per_slot[slot_shoes] = 1
+	LAZYSET(slowdown_per_slot, slot_shoes_str, 1)
 
 /obj/item/clothing/shoes/athletic
 	name = "athletic shoes"
@@ -177,7 +170,6 @@
 	name = "high heels"
 	desc = "A pair of colourable high heels."
 	icon = 'icons/clothing/feet/high_heels.dmi'
-	on_mob_icon = 'icons/clothing/feet/high_heels.dmi'
 	can_add_cuffs = FALSE
 
 /obj/item/clothing/shoes/heels/black
@@ -194,13 +186,11 @@ obj/item/clothing/shoes/heels/red
 	name = "rainbow shoes"
 	desc = "Very fabulous shoes."
 	icon = 'icons/clothing/feet/rainbow.dmi'
-	on_mob_icon = 'icons/clothing/feet/rainbow.dmi'
 
 /obj/item/clothing/shoes/flats
 	name = "flats"
 	desc = "Sleek flats."
 	icon = 'icons/clothing/feet/flats.dmi'
-	on_mob_icon = 'icons/clothing/feet/flats.dmi'
 
 /obj/item/clothing/shoes/flats/black
 	name = "black flats"

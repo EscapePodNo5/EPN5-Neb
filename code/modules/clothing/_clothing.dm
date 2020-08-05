@@ -118,6 +118,8 @@
 		for(var/T in starting_accessories)
 			var/obj/item/clothing/accessory/tie = new T(src)
 			src.attach_accessory(null, tie)
+	if(markings_color && markings_icon)
+		update_icon()
 
 /obj/item/clothing/mob_can_equip(M, slot, disable_warning = 0)
 
@@ -141,7 +143,7 @@
 				if(H.species.get_bodytype(H) in bodytype_restricted)
 					wearable = 1
 
-			if(!wearable && !(slot in list(slot_l_store, slot_r_store, slot_s_store)))
+			if(!wearable && !(slot in list(slot_l_store_str, slot_r_store_str, slot_s_store_str)))
 				if(!disable_warning)
 					to_chat(H, SPAN_WARNING("\The [src] does not fit you."))
 				return 0
@@ -156,7 +158,7 @@
 	if(!bodytype_restricted)
 		return
 	bodytype_restricted = list(target_bodytype)
-	if(!on_mob_icon)
+	if(!use_single_icon)
 		if (sprite_sheets_obj && (target_bodytype in sprite_sheets_obj))
 			icon = sprite_sheets_obj[target_bodytype]
 		else
@@ -188,14 +190,14 @@
 			if(length(accessories) && can_see)
 				var/list/ties = list()
 				for(var/accessory in accessories)
-					ties += "\icon[accessory] \a [accessory]"
+					ties += "[html_icon(accessory)] \a [accessory]"
 				to_chat(user, "Attached to \the [src] are [english_list(ties)].")
 			return TOPIC_HANDLED
 		if(href_list["list_armor_damage"] && can_see)
 			var/datum/extension/armor/ablative/armor_datum = get_extension(src, /datum/extension/armor)
 			if(istype(armor_datum))
 				var/list/damages = armor_datum.get_visible_damage()
-				to_chat(user, "\The [src] \icon[src] has some damage:")
+				to_chat(user, "\The [src] [html_icon(src)] has some damage:")
 				for(var/key in damages)
 					to_chat(user, "<li><b>[capitalize(damages[key])]</b> damage to the <b>[key]</b> armor.")
 			return TOPIC_HANDLED

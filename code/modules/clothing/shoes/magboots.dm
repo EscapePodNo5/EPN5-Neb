@@ -2,9 +2,8 @@
 /obj/item/clothing/shoes/magboots
 	name = "magboots"
 	desc = "Magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle. They're large enough to be worn over other footwear."
-	icon_state = "world0"
+	icon_state = ICON_STATE_WORLD
 	icon = 'icons/clothing/feet/magboots.dmi'
-	on_mob_icon = 'icons/clothing/feet/magboots.dmi'
 	bodytype_restricted = null
 	force = 3
 	overshoes = 1
@@ -19,9 +18,10 @@
 	origin_tech = "{'materials':2,'engineering':2,'magnets':3}"
 
 /obj/item/clothing/shoes/magboots/proc/set_slowdown()
-	slowdown_per_slot[slot_shoes] = shoes? max(0, shoes.slowdown_per_slot[slot_shoes]): 0	//So you can't put on magboots to make you walk faster.
+	LAZYINITLIST(slowdown_per_slot[slot_shoes_str])
+	slowdown_per_slot[slot_shoes_str] = shoes? max(0, shoes.slowdown_per_slot[slot_shoes_str]): 0	//So you can't put on magboots to make you walk faster.
 	if (magpulse)
-		slowdown_per_slot[slot_shoes] += online_slowdown
+		slowdown_per_slot[slot_shoes_str] += online_slowdown
 
 /obj/item/clothing/shoes/magboots/attack_self(mob/user)
 	if(magpulse)
@@ -70,7 +70,7 @@
 
 	if(!..())
 		if(shoes) 	//Put the old shoes back on if the check fails.
-			if(H.equip_to_slot_if_possible(shoes, slot_shoes))
+			if(H.equip_to_slot_if_possible(shoes, slot_shoes_str))
 				src.shoes = null
 		return 0
 
@@ -93,7 +93,7 @@
 
 	var/mob/living/carbon/human/H = wearer
 	if(shoes && istype(H))
-		if(!H.equip_to_slot_if_possible(shoes, slot_shoes))
+		if(!H.equip_to_slot_if_possible(shoes, slot_shoes_str))
 			shoes.dropInto(loc)
 		src.shoes = null
 	wearer.update_floating()

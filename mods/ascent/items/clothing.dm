@@ -30,20 +30,32 @@
 	)
 
 	bodytype_restricted = list(BODYTYPE_MANTID_SMALL, BODYTYPE_MANTID_LARGE)
-	filtered_gases = list(/decl/material/solid/phoron,/decl/material/gas/nitrous_oxide,/decl/material/gas/chlorine,/decl/material/gas/ammonia,/decl/material/gas/carbon_monoxide,/decl/material/gas/methane)
+	filtered_gases = list(
+		/decl/material/gas/nitrous_oxide,
+		/decl/material/gas/chlorine,
+		/decl/material/gas/ammonia,
+		/decl/material/gas/carbon_monoxide,
+		/decl/material/gas/methane
+	)
 	flags_inv = 0
 
 /obj/item/clothing/mask/gas/ascent/monarch
 	name = "serpentid facemask"
 	desc = "An alien facemask with chunky gas filters and a breathing valve."
-	filtered_gases = list(/decl/material/solid/phoron,/decl/material/gas/nitrous_oxide,/decl/material/gas/chlorine,/decl/material/gas/ammonia,/decl/material/gas/carbon_monoxide,/decl/material/gas/methyl_bromide,/decl/material/gas/methane)
+	filtered_gases = list(
+		/decl/material/gas/nitrous_oxide,
+		/decl/material/gas/chlorine,
+		/decl/material/gas/ammonia,
+		/decl/material/gas/carbon_monoxide,
+		/decl/material/gas/methyl_bromide,
+		/decl/material/gas/methane
+	)
 	bodytype_restricted = list(BODYTYPE_SNAKE)
 
 /obj/item/clothing/shoes/magboots/ascent
 	name = "mantid mag-claws"
 	desc = "A set of powerful gripping claws."
 	icon = 'mods/ascent/icons/magboots/boots.dmi'
-	on_mob_icon = 'mods/ascent/icons/magboots/boots.dmi'
 	bodytype_restricted = list(BODYTYPE_MANTID_SMALL, BODYTYPE_MANTID_LARGE)
 	sprite_sheets = list(
 		BODYTYPE_MANTID_LARGE = 'mods/ascent/icons/magboots/boots_gyne.dmi'
@@ -61,7 +73,13 @@
 	name = "mantid gear harness"
 	desc = "A complex tangle of articulated cables and straps."
 	bodytype_restricted = list(BODYTYPE_MANTID_LARGE, BODYTYPE_MANTID_SMALL, BODYTYPE_SNAKE)
-	icon_state = "ascent_harness"
+	icon_state = ICON_STATE_WORLD
+	icon = 'mods/ascent/icons/harness/alate.dmi'
+	on_mob_use_spritesheets = TRUE
+	sprite_sheets = list(
+		BODYTYPE_MANTID_LARGE = 'mods/ascent/icons/harness/gyne.dmi',
+		BODYTYPE_SNAKE =        'mods/ascent/icons/harness/serpentid.dmi'
+		)
 	body_parts_covered = 0
 	slot_flags = SLOT_OCLOTHING | SLOT_BELT
 	allowed = list(

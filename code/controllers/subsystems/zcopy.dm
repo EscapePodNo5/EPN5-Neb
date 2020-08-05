@@ -203,6 +203,12 @@ SUBSYSTEM_DEF(zcopy)
 						if (T.z_flags & ZM_FIX_BIGTURF)
 							override_depth = min((zstack_maximums[T.z] - object.z) + 1, OPENTURF_MAX_DEPTH)
 
+					if (/atom/movable/openspace/turf_overlay)
+						// If we're a turf overlay (the mimic for a non-OVERWRITE turf), we need to make sure copies of us respect space parallax too
+						if (T.z_eventually_space)
+							// Yes, this is an awful hack; I don't want to add yet another override_* var.
+							override_depth = OPENTURF_MAX_PLANE - SPACE_PLANE
+
 				var/atom/movable/openspace/overlay/OO = object.bound_overlay
 
 				// If the OO was queued for destruction but was claimed by another OT, stop the destruction timer.
@@ -310,14 +316,14 @@ SUBSYSTEM_DEF(zcopy)
 		if (istype(A, /atom/movable/openspace/overlay))
 			var/atom/movable/openspace/overlay/OO = A
 			var/atom/movable/AA = OO.associated_atom
-			out += "<li>\icon[A] plane [A.plane], layer [A.layer], depth [OO.depth], associated Z-level [AA.z] - [OO.type] copying [AA] ([AA.type], eventually [OO.mimiced_type])</li>"
+			out += "<li>[html_icon(A)] plane [A.plane], layer [A.layer], depth [OO.depth], associated Z-level [AA.z] - [OO.type] copying [AA] ([AA.type], eventually [OO.mimiced_type])</li>"
 		else if (isturf(A))
 			if (A == T)
-				out += "<li>\icon[A] plane [A.plane], layer [A.layer], depth [A:z_depth], Z-level [A.z] - [A] ([A.type]) - <font color='green'>SELF</font></li>"
+				out += "<li>[html_icon(A)] plane [A.plane], layer [A.layer], depth [A:z_depth], Z-level [A.z] - [A] ([A.type]) - <font color='green'>SELF</font></li>"
 			else	// foreign turfs - not visible here, but good for figuring out layering
-				out += "<li>\icon[A] plane [A.plane], layer [A.layer], depth [A:z_depth], Z-level [A.z] - [A] ([A.type]) - <font color='red'>FOREIGN</font></li>"
+				out += "<li>[html_icon(A)] plane [A.plane], layer [A.layer], depth [A:z_depth], Z-level [A.z] - [A] ([A.type]) - <font color='red'>FOREIGN</font></li>"
 		else
-			out += "<li>\icon[A] plane [A.plane], layer [A.layer], Z-level [A.z] - [A] ([A.type])</li>"
+			out += "<li>[html_icon(A)] plane [A.plane], layer [A.layer], Z-level [A.z] - [A] ([A.type])</li>"
 
 	out += "</ul>"
 

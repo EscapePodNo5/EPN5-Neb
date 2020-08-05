@@ -96,7 +96,7 @@
 
 /datum/species/unathi/equip_survival_gear(var/mob/living/carbon/human/H)
 	..()
-	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes_str)
 
 /datum/species/unathi/get_bodytype(var/mob/living/carbon/human/H)
 	return BODYTYPE_HUMANOID

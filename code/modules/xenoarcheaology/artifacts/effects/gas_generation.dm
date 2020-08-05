@@ -7,7 +7,7 @@
 	if(!spawned_gas)
 		spawned_gas = pick(subtypesof(/decl/material/gas))
 	operation_type = pick(EFFECT_TOUCH, EFFECT_AURA)
-	origin_type = pick(EFFECT_BLUESPACE, EFFECT_SYNTH)
+	origin_type = EFFECT_SYNTH
 
 /datum/artifact_effect/gas/DoEffectTouch(var/mob/user)
 	if(holder)
@@ -25,9 +25,9 @@
 	name = "O2 creation"
 	spawned_gas = /decl/material/gas/oxygen
 
-/datum/artifact_effect/gas/phoron
-	name = "phoron creation"
-	spawned_gas = /decl/material/solid/phoron
+/datum/artifact_effect/gas/hydrogen
+	name = "H2 creation"
+	spawned_gas = /decl/material/gas/hydrogen
 
 /datum/artifact_effect/gas/sleeping
 	name = "N2O creation"

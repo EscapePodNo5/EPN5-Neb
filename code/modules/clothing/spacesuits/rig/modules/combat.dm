@@ -17,7 +17,7 @@
 	name = "mounted flash"
 	desc = "You are the law."
 	icon_state = "flash"
-	
+
 	selectable = 0
 	toggleable = 1
 	activates_on_touch = 1
@@ -312,7 +312,7 @@
 		/decl/material/solid/glass = MATTER_AMOUNT_REINFORCEMENT,
 		/decl/material/solid/plastic = MATTER_AMOUNT_TRACE,
 		/decl/material/solid/metal/gold = MATTER_AMOUNT_TRACE,
-		/decl/material/solid/phoron = MATTER_AMOUNT_TRACE
+		/decl/material/solid/metal/uranium = MATTER_AMOUNT_TRACE
 	)
 	
 /obj/item/rig_module/mounted/plasmacutter/engage(atom/target)
@@ -347,7 +347,7 @@
 	selectable = 1
 	toggleable = 1
 	use_power_cost = 10 KILOWATTS
-	active_power_cost = 500
+	active_power_cost = 0.5 KILOWATTS
 	passive_power_cost = 0
 
 	gun = /obj/item/gun/energy/crossbow/ninja/mounted
@@ -355,17 +355,13 @@
 /obj/item/rig_module/mounted/energy_blade/Process()
 
 	if(holder && holder.wearer)
-		if(!(locate(/obj/item/melee/energy/blade) in holder.wearer))
+		if(!(locate(/obj/item/energy_blade/blade) in holder.wearer))
 			deactivate()
 			return 0
 
 	return ..()
 
 /obj/item/rig_module/mounted/energy_blade/activate()
-
-	if(!..() || !gun)
-		return 0
-
 	var/mob/living/M = holder.wearer
 
 	if(M.l_hand && M.r_hand)
@@ -373,9 +369,12 @@
 		deactivate()
 		return
 
-	var/obj/item/melee/energy/blade/blade = new(M)
+	var/obj/item/energy_blade/blade/blade = new(M)
 	blade.creator = M
 	M.put_in_hands(blade)
+
+	if(!..() || !gun)
+		return 0
 
 /obj/item/rig_module/mounted/energy_blade/deactivate()
 
@@ -386,7 +385,7 @@
 	if(!M)
 		return
 
-	for(var/obj/item/melee/energy/blade/blade in M.contents)
+	for(var/obj/item/energy_blade/blade/blade in M.contents)
 		qdel(blade)
 
 /obj/item/rig_module/fabricator
@@ -403,7 +402,7 @@
 	interface_name = "death blossom launcher"
 	interface_desc = "An integrated microfactory that produces poisoned throwing stars from thin air and electricity."
 
-	var/fabrication_type = /obj/item/material/star/ninja
+	var/fabrication_type = /obj/item/star/ninja
 	var/fire_force = 30
 	var/fire_distance = 10
 

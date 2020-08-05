@@ -252,7 +252,7 @@
 
 /obj/item/cell/infinite
 	name = "experimental power cell"
-	desc = "This special experimental power cell has both very large capacity, and ability to recharge itself by draining power from contained bluespace pocket."
+	desc = "This special experimental power cell has both very large capacity, and ability to recharge itself with zero-point energy."
 	icon_state = "icell"
 	origin_tech =  null
 	maxcharge = 3000
@@ -262,12 +262,27 @@
 		/decl/material/solid/metal/aluminium = MATTER_AMOUNT_TRACE
 	)
 
-/obj/item/cell/infinite/check_charge()
-	return 1
+/obj/item/cell/infinite/percent()
+	return 100
 
-/obj/item/cell/infinite/use()
-	return 1
+/obj/item/cell/infinite/fully_charged()
+	return TRUE
 
+/obj/item/cell/infinite/check_charge(var/amount)
+	return (maxcharge >= amount)
+
+/obj/item/cell/infinite/use(var/amount)
+	return min(maxcharge, amount)
+
+/obj/item/cell/infinite/checked_use(var/amount)
+	return check_charge(amount)
+
+/obj/item/cell/infinite/give()
+	return 0
+
+/obj/item/cell/infinite/get_electrocute_damage()
+	charge = maxcharge
+	return ..()
 
 /obj/item/cell/potato
 	name = "potato battery"
@@ -280,7 +295,7 @@
 
 /obj/item/cell/slime
 	name = "charged slime core"
-	desc = "A yellow slime core infused with phoron, it crackles with power."
+	desc = "A yellow slime core that crackles with power."
 	origin_tech = "{'powerstorage':2,'biotech':4}"
 	icon = 'icons/mob/simple_animal/slimes.dmi' //'icons/obj/harvest.dmi'
 	icon_state = "yellow slime extract" //"potato_battery"

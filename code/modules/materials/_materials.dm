@@ -143,6 +143,9 @@
 	var/ore_spread_chance
 	var/ore_scan_icon
 	var/ore_icon_overlay
+	var/ore_type_value
+	var/ore_data_value
+
 	var/value = 1
 
 	// Xenoarch behavior.
@@ -318,7 +321,7 @@
 // As above.
 /decl/material/proc/place_shard(var/turf/target)
 	if(shard_type)
-		return new /obj/item/material/shard(target, type)
+		return new /obj/item/shard(target, type)
 
 // Used by walls and weapons to determine if they break or not.
 /decl/material/proc/is_brittle()

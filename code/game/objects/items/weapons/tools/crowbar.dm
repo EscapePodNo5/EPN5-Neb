@@ -2,8 +2,7 @@
 	name = "crowbar"
 	desc = "A heavy crowbar, good and solid in your hand."
 	icon = 'icons/obj/items/tool/crowbar.dmi'
-	on_mob_icon = 'icons/obj/items/tool/crowbar.dmi'
-	icon_state = "world1"
+	icon_state = ICON_STATE_WORLD
 	slot_flags = SLOT_BELT
 	material_force_multiplier = 0.25
 	attack_cooldown = 2*DEFAULT_WEAPON_COOLDOWN
@@ -55,7 +54,7 @@
 		playsound(user, 'sound/effects/snap.ogg', 40, 1)
 		to_chat(user, SPAN_WARNING("\The [src] shatters like the cheap garbage it was!"))
 		qdel(src)
-		user.put_in_hands(new /obj/item/material/shard(get_turf(user), material.type))
+		user.put_in_hands(new /obj/item/shard(get_turf(user), material.type))
 	return
 
 /obj/item/crowbar/red

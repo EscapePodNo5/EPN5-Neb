@@ -141,7 +141,7 @@
 // This only works on broken doors or doors without power. Also allows repair with Plasteel.
 /obj/machinery/door/blast/attackby(obj/item/C, mob/user)
 	add_fingerprint(user, 0, C)
-	if(isCrowbar(C) || (istype(C, /obj/item/material/twohanded/fireaxe) && C:wielded == 1))
+	if(isCrowbar(C) || (istype(C, /obj/item/twohanded/fireaxe) && C:wielded == 1))
 		if(((stat & NOPOWER) || (stat & BROKEN)) && !( operating ))
 			to_chat(user, "<span class='notice'>You begin prying at \the [src]...</span>")
 			if(do_after(user, 2 SECONDS, src))
@@ -230,9 +230,9 @@
 	)
 
 /obj/machinery/button/blast_door
-	icon = 'icons/obj/stationobjs.dmi'
 	name = "remote blast door-control"
 	desc = "It controls blast doors, remotely."
+	icon = 'icons/obj/machines/button_blastdoor.dmi'
 	icon_state = "blastctrl"
 	stock_part_presets = list(
 		/decl/stock_part_preset/radio/event_transmitter/blast_door_button = 1,

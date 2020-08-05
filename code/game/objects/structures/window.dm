@@ -7,7 +7,7 @@
 
 	layer = SIDE_WINDOW_LAYER
 	anchored = 1.0
-	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CHECKS_BORDER
+	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE
 	obj_flags = OBJ_FLAG_ROTATABLE
 	alpha = 180
 	material = /decl/material/solid/glass
@@ -264,8 +264,8 @@
 	if (!G.force_danger())
 		to_chat(G.assailant, SPAN_DANGER("You need a better grip to do that!"))
 		return TRUE
-	var/def_zone = ran_zone(BP_HEAD, 20)
 	var/mob/affecting_mob = G.get_affecting_mob()
+	var/def_zone = ran_zone(BP_HEAD, 20, affecting_mob)
 	if(!affecting_mob)
 		attackby(G.affecting, G.assailant)
 		return TRUE
@@ -402,7 +402,7 @@
 
 /obj/structure/window/borosilicate_reinforced
 	name = "reinforced borosilicate window"
-	icon_state = "phoronrwindow"
+	icon_state = "rwindow"
 	color = GLASS_COLOR_SILICATE
 	material = /decl/material/solid/glass/borosilicate
 	reinf_material = /decl/material/solid/metal/steel

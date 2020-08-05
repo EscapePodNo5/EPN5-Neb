@@ -1,7 +1,8 @@
 /obj/item/clothing/head/champhelm
 	name = "champion's crown"
 	desc = "A spiky, golden crown. It's probably worth more than your bank account."
-	icon_state = "champhelm"
+
+	icon = 'icons/clothing/head/champion.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_AP,
@@ -15,7 +16,7 @@
 /obj/item/clothing/suit/champarmor
 	name = "champion's armor"
 	desc = "A mighty suit of silver and gold armor, with a gleaming blue crystal inlaid into its left gaunlet."
-	icon_state = "champarmor"
+	icon = 'icons/clothing/suit/wizard/servant/champion.dmi'
 	siemens_coefficient = 0.5
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	armor = list(
@@ -52,21 +53,21 @@
 	)
 	artificail_shine = 0
 
-/obj/item/material/sword/excalibur
+/obj/item/sword/excalibur
 	name = "champion's blade"
 	desc = "<i>For at his belt hung Excalibur, the finest sword that there was, which sliced through iron as through wood.</i>"
-	on_mob_icon = 'icons/obj/items/weapon/swords/excalibur.dmi'
+	icon = 'icons/obj/items/weapon/swords/excalibur.dmi'
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "cleaved", "sundered")
 	applies_material_colour = FALSE
 	applies_material_name = FALSE
 
-/obj/item/material/sword/excalibur/pickup(var/mob/living/user)
+/obj/item/sword/excalibur/pickup(var/mob/living/user)
 	if(user.mind)
 		if(!GLOB.wizards.is_antagonist(user.mind) || user.mind.special_role != ANTAG_SERVANT)
 			START_PROCESSING(SSobj, src)
 			to_chat(user,"<span class='danger'>\The [src] heats up in your hands, burning you!</span>")
 
-/obj/item/material/sword/excalibur/Process()
+/obj/item/sword/excalibur/Process()
 	if(istype(loc, /mob/living))
 		if(istype(loc, /mob/living/carbon/human))
 			var/mob/living/carbon/human/H = loc
@@ -82,5 +83,5 @@
 			to_chat(loc,"<span class='danger'>\The [src] is burning you!</span>")
 	return 1
 
-/obj/item/material/sword/excalibur/dropped()
+/obj/item/sword/excalibur/dropped()
 	STOP_PROCESSING(SSobj, src)

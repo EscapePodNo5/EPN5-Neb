@@ -81,7 +81,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	if(stat & BROKEN || !I || !user)
 		return
 
-	if(istype(I, /obj/item/melee/energy/blade))
+	if(istype(I, /obj/item/energy_blade/blade))
 		to_chat(user, "You can't place that item inside the disposal unit.")
 		return
 
@@ -513,7 +513,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 			found = 1
 			break
 	if(!found)
-		to_chat(user, "\icon[src]<span class=notice>\The [src] is not linked to any junctions!</span>")
+		to_chat(user, "[html_icon(src)]<span class=notice>\The [src] is not linked to any junctions!</span>")
 		return
 	var/obj/machinery/disposal_switch/NC = new/obj/machinery/disposal_switch(A, id_tag)
 	transfer_fingerprints_to(NC)

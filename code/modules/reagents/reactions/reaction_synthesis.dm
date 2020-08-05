@@ -13,7 +13,7 @@
 	) // Interferes with resin globules.
 
 /datum/chemical_reaction/synthesis/crystalization/can_happen(datum/reagents/holder)
-	. = ..() && length(holder.reagent_volumes > 1)
+	. = ..() && length(holder.reagent_volumes) > 1
 	if(.)
 		. = FALSE
 		for(var/rtype in holder.reagent_volumes)
@@ -45,9 +45,6 @@
 	required_reagents = list(
 		/decl/material/liquid/crystal_agent = 1,
 		/decl/material/solid/silicon = 2
-	)
-	catalysts = list(
-		/decl/material/solid/phoron = 1
 	)
 	result_amount = 3
 	mix_message = "The solution hardens and begins to crystallize."
