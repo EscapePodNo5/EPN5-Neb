@@ -13,7 +13,7 @@
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE
 
-	//unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/tail, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
+	unarmed_attacks = list(/decl/natural_attack/stomp, /decl/natural_attack/tail, /decl/natural_attack/claws, /decl/natural_attack/punch, /decl/natural_attack/bite/sharp)
 	primitive_form = "Stok"
 	darksight_range = 4
 	darksight_tint = DARKTINT_MODERATE
@@ -29,7 +29,7 @@
 	hunger_factor = DEFAULT_HUNGER_FACTOR * 2
 
 	min_age = 18
-	max_age = 280
+	max_age = 120 //At the request of the Unathi lore dev, pending lore update
 
 	body_temperature = null //Makes their body temperature the same as environment, cold blooded
 
@@ -71,7 +71,7 @@
 		"You feel sluggish and cold.",
 		"Your scales bristle against the cold."
 		)
-	breathing_sound = 'sound/lizard.ogg'
+	breathing_sound = 'sound/voice/lizard.ogg'
 
 	/*base_auras = list(
 		/obj/aura/regenerating/human/unathi
@@ -80,7 +80,7 @@
 	inherent_verbs = list(  
 		/mob/living/carbon/human/proc/diona_heal_toggle
 		) */
-        //Regeneration is commented out for the meantime. TODO: Add regen aura for Unathi
+        //Regeneration is commented out, pending Unathi lore update.
 
 	prone_overlay_offset = list(-4, -4)
 
@@ -100,4 +100,4 @@
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes)
 
 /datum/species/unathi/get_bodytype(var/mob/living/carbon/human/H)
-	return SPECIES_UNATHI
+	return BODYTYPE_HUMANOID
