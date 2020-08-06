@@ -1785,13 +1785,11 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/bridge/cic)
 "em" = (
-/obj/machinery/alarm{
-	dir = 4;
-	icon_state = "alarm0";
-	pixel_x = -24
+/obj/machinery/light/small/red{
+	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/decktwo/fore/starboard)
+/area/ship/wolf/maintenance/decktwo/fore/port)
 "en" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -3062,10 +3060,6 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
-	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/second_deck)
 "hx" = (
@@ -3861,9 +3855,8 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
+/obj/structure/sign/warning/nosmoking_1{
+	pixel_z = -32
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/second_deck)
@@ -5146,12 +5139,8 @@
 /turf/simulated/floor/reinforced/hydrogen,
 /area/ship/wolf/engineering/atmospherics)
 "ls" = (
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
-	},
-/turf/simulated/floor/tiled,
-/area/ship/wolf/hallway/second_deck)
+/turf/simulated/wall/ocp_wall,
+/area/ship/wolf/maintenance/decktwo/aft/port)
 "lt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -7597,9 +7586,8 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/decktwo/aft/starboard)
 "qX" = (
-/obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/decktwo/aft/starboard)
+/turf/simulated/wall/ocp_wall,
+/area/ship/wolf/engineering/fuel_bay/hydrogen)
 "qY" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -7623,18 +7611,8 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/hallway/second_deck)
 "qZ" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/floor_decal/corner/yellow{
-	icon_state = "corner_white";
-	dir = 10
-	},
-/obj/structure/sign/warning/nosmoking_1{
-	pixel_z = -32
-	},
-/turf/simulated/floor/tiled,
-/area/ship/wolf/hallway/second_deck)
+/turf/simulated/wall/ocp_wall,
+/area/ship/wolf/engineering/fuel_bay/co2)
 "ra" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/dark,
@@ -7887,6 +7865,39 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/wolf/engineering/engine_room)
+"rK" = (
+/turf/simulated/wall/ocp_wall,
+/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"rL" = (
+/obj/machinery/vending/hotfood{
+	desc = "The one vending machine on the Oddesy, courtesy of your employers. You doubt any of this is still edible..."
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"rM" = (
+/obj/random/closet,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"rN" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/fore/starboard)
+"rO" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/fore/starboard)
+"rP" = (
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/random/junk,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/fore/starboard)
 
 (1,1,1) = {"
 aa
@@ -14326,14 +14337,14 @@ pA
 oO
 qN
 qN
-oP
-oP
-ad
-ad
-ad
-ad
-ad
-oP
+ls
+ls
+qZ
+qZ
+qZ
+qZ
+qZ
+ls
 qN
 oN
 oN
@@ -14453,14 +14464,14 @@ pA
 rE
 qN
 ad
-ad
+qZ
 ex
 ex
 ex
 ex
 ex
 ex
-ad
+qZ
 oO
 pU
 oN
@@ -14580,14 +14591,14 @@ bQ
 ad
 ad
 ad
-ad
+qZ
 ex
 ex
 ex
 ex
 ex
 ex
-ad
+qZ
 oP
 rk
 oN
@@ -14714,7 +14725,7 @@ ex
 ex
 ex
 ex
-ad
+qZ
 oP
 oO
 oO
@@ -14779,7 +14790,7 @@ fL
 aH
 aH
 aH
-cg
+em
 cg
 oG
 eB
@@ -14841,7 +14852,7 @@ ex
 ex
 ex
 ex
-ad
+qZ
 oP
 oP
 oO
@@ -14906,7 +14917,7 @@ fL
 qg
 qg
 qi
-mk
+cg
 oG
 oG
 bU
@@ -14968,7 +14979,7 @@ ex
 ex
 ex
 ex
-ad
+qZ
 ab
 oP
 qN
@@ -15088,14 +15099,14 @@ kg
 mT
 mT
 mW
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+qZ
+qZ
+qZ
+qZ
+qZ
+qZ
+qZ
+qZ
 ab
 oP
 oO
@@ -15478,7 +15489,7 @@ dy
 aq
 aq
 ab
-ab
+rL
 rn
 rB
 oN
@@ -16331,7 +16342,7 @@ bY
 gu
 la
 jN
-iN
+ht
 aC
 jO
 le
@@ -16367,7 +16378,7 @@ ab
 ab
 ab
 ab
-oU
+oT
 oT
 rp
 oU
@@ -16458,7 +16469,7 @@ bY
 gu
 gu
 gE
-qZ
+iN
 aC
 hg
 hg
@@ -16494,7 +16505,7 @@ ab
 ab
 ab
 ab
-oT
+rM
 oV
 oV
 oU
@@ -16612,16 +16623,16 @@ my
 dq
 mM
 dq
-dq
-dq
-dq
-dq
-dq
-dq
-dq
-dq
+qX
+qX
+qX
+qX
+qX
+qX
+qX
+qX
 ab
-oT
+oV
 oV
 oU
 oU
@@ -16684,8 +16695,8 @@ qM
 qh
 qh
 qj
-mB
 mJ
+rc
 oH
 gV
 jE
@@ -16746,7 +16757,7 @@ eA
 eA
 eA
 eA
-dq
+qX
 ab
 oT
 oV
@@ -16811,8 +16822,8 @@ qM
 cb
 cb
 cb
-mJ
-mJ
+rN
+rO
 oH
 iB
 oH
@@ -16839,7 +16850,7 @@ go
 bY
 gu
 iC
-ls
+gM
 hj
 bB
 hj
@@ -16873,7 +16884,7 @@ eA
 eA
 eA
 eA
-dq
+qX
 oT
 oT
 pV
@@ -16940,14 +16951,14 @@ cb
 cb
 cb
 mJ
-mJ
-mJ
+rO
+rO
 iB
 mJ
 rc
 rc
 mJ
-em
+rP
 mB
 mJ
 rc
@@ -17000,7 +17011,7 @@ eA
 eA
 eA
 eA
-dq
+qX
 oT
 oV
 oV
@@ -17120,14 +17131,14 @@ qL
 dq
 dq
 dq
-dq
+qX
 eA
 eA
 eA
 eA
 eA
 eA
-dq
+qX
 oT
 oV
 oU
@@ -17247,14 +17258,14 @@ oT
 oT
 qO
 oT
-oT
+rK
 eA
 eA
 eA
 eA
 eA
 eA
-dq
+qX
 oV
 oV
 oU
@@ -17374,14 +17385,14 @@ pN
 pK
 qP
 oV
-oT
-dq
-dq
-dq
-dq
-dq
-dq
-oT
+rK
+qX
+qX
+qX
+qX
+qX
+qX
+rK
 oV
 oU
 oU
@@ -17506,7 +17517,7 @@ oT
 oT
 qU
 qW
-qX
+oV
 oT
 oV
 oV
