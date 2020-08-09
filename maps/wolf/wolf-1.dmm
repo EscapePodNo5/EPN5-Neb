@@ -2112,18 +2112,12 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/escape_pod/six)
 "fi" = (
-/obj/structure/table/rack,
-/obj/random/maintenance/clean,
-/obj/item/storage/belt/utility,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/space)
 "fj" = (
-/obj/structure/table/rack,
-/obj/random/maintenance,
-/obj/random/maintenance,
-/obj/random/maintenance,
-/turf/simulated/floor/plating,
-/area/space)
+/obj/effect/wallframe_spawn/reinforced_borosilicate,
+/turf/simulated/floor/tiled,
+/area/ship/wolf/hallway/first_deck)
 "fk" = (
 /obj/structure/disposalpipe/trunk{
 	icon_state = "pipe-t";
@@ -2433,8 +2427,8 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/inertial_damper)
 "fV" = (
-/obj/random/maintenance,
 /turf/simulated/floor/plating,
+/turf/simulated/wall/cult/reinf,
 /area/space)
 "fW" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
@@ -3806,8 +3800,7 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/hallway/first_deck)
 "iP" = (
-/obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/plating,
+/turf/simulated/wall/walnut,
 /area/space)
 "iQ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
@@ -3821,15 +3814,13 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/port)
 "iS" = (
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 8
-	},
-/obj/structure/cable/green{
-	icon_state = "0-2"
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
 	},
 /turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckone/aft/starboard)
+/area/space)
 "iT" = (
 /obj/structure/table/reinforced,
 /obj/item/ashtray/glass,
@@ -3897,13 +3888,13 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/janitorial)
 "jb" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckone/aft/starboard)
+/area/space)
 "jc" = (
-/obj/machinery/door/airlock/hatch/maintenance,
+/obj/effect/wallframe_spawn/reinforced_borosilicate,
 /turf/simulated/floor/plating,
 /area/ship/wolf/hallway/first_deck)
 "jd" = (
@@ -4354,7 +4345,7 @@
 "jU" = (
 /obj/effect/paint/red,
 /turf/simulated/wall/r_wall/prepainted,
-/area/ship/wolf/maintenance/deckone/aft/starboard)
+/area/space)
 "jV" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	icon_state = "intact";
@@ -4901,17 +4892,14 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/port)
 "lb" = (
-/obj/machinery/light/small/red{
-	dir = 8
+/obj/structure/cable/green{
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckone/aft/port)
+/area/ship/wolf/maintenance/deckone/aft/starboard)
 "lc" = (
 /obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/machinery/light/small/red{
-	dir = 8
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
@@ -5060,11 +5048,10 @@
 /area/ship/wolf/cargo/disposals)
 "lx" = (
 /obj/structure/cable/green{
-	icon_state = "1-2"
+	icon_state = "4-8"
 	},
-/obj/random/junk,
 /turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckone/aft/starboard)
+/area/space)
 "ly" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -5361,17 +5348,15 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/cargo/disposals)
 "mk" = (
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 4
+	},
 /obj/structure/cable/green{
-	icon_state = "1-2"
+	icon_state = "0-8"
 	},
-/obj/machinery/alarm{
-	dir = 4;
-	icon_state = "alarm0";
-	pixel_x = -24
-	},
-/obj/random/junk,
 /turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckone/aft/starboard)
+/area/space)
 "ml" = (
 /obj/structure/table/rack,
 /obj/random/drinkbottle,
@@ -5652,10 +5637,6 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/machinery/light/small{
-	icon_state = "bulb_map";
-	dir = 8
-	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "ng" = (
@@ -5778,12 +5759,8 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/amidships/port)
 "nw" = (
-/obj/structure/closet/firecloset,
-/turf/simulated/floor/plating,
-/area/space)
-"nx" = (
-/obj/structure/closet/boxinggloves,
-/turf/simulated/floor/plating,
+/obj/effect/paint/red,
+/turf/simulated/wall/voxshuttle,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "ny" = (
 /obj/random/closet,
@@ -11544,11 +11521,11 @@ ad
 bd
 eH
 eH
-aa
-aa
-aa
-aa
-aa
+bd
+bd
+bd
+jU
+jU
 aa
 aa
 aa
@@ -11672,13 +11649,13 @@ ad
 eH
 eH
 eH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+ac
+jb
+ac
+jU
+jU
+jU
+jU
 aa
 aa
 aa
@@ -11799,13 +11776,13 @@ ad
 iR
 lv
 eH
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+ac
+ac
+ac
+ac
+ac
+ac
+jU
 aa
 aa
 aa
@@ -11925,14 +11902,14 @@ aq
 ad
 iR
 eE
-eH
-eH
-aa
-aa
-aa
-aa
-aa
-aa
+eE
+eE
+ac
+ac
+ac
+ac
+ac
+jU
 aa
 aa
 aa
@@ -12052,13 +12029,13 @@ ar
 ap
 iR
 lN
-lb
-eH
-eH
-jI
-jI
-jI
-jI
+eE
+eE
+eE
+eE
+eE
+eE
+eE
 jI
 eH
 eH
@@ -14465,10 +14442,10 @@ jF
 lV
 cB
 bm
-bm
-bm
+fj
+fj
 jc
-bm
+fj
 bm
 bm
 bm
@@ -14592,10 +14569,10 @@ jG
 lV
 cB
 fi
-ac
-ac
-ac
-fV
+fi
+fi
+fi
+fi
 fG
 fH
 fK
@@ -14718,10 +14695,10 @@ cB
 cB
 cB
 cB
-nw
 ac
 fV
-ac
+iP
+fV
 ac
 fG
 fH
@@ -14845,10 +14822,10 @@ cA
 cA
 cA
 cx
-fj
 ac
-ac
-ac
+fV
+iP
+fV
 nm
 fG
 fI
@@ -14972,9 +14949,9 @@ cA
 cA
 cA
 cx
+ac
+fV
 iP
-ac
-ac
 fV
 ac
 fG
@@ -15099,9 +15076,9 @@ fB
 fB
 fB
 cx
-fV
 ac
 ac
+iP
 ac
 ac
 fG
@@ -15227,10 +15204,10 @@ cx
 cx
 cx
 jh
-iu
-jh
-jh
-jh
+dn
+dn
+dn
+dn
 jh
 jh
 jh
@@ -15353,16 +15330,16 @@ nI
 nI
 iu
 dn
-iS
-jb
+jh
+jh
+jh
+dn
+dn
+jh
+lb
 nf
-lx
-mk
-jb
-lx
-jb
-jb
-lc
+nf
+nf
 ki
 kk
 fw
@@ -15479,14 +15456,14 @@ cO
 cO
 cO
 cO
-dn
+nI
 dn
 mS
+jh
 dn
 dn
-mm
-dn
-dn
+jh
+lc
 dn
 mm
 mm
@@ -15607,15 +15584,15 @@ aa
 aa
 ir
 dn
-nI
+jh
+jh
+jh
 dn
-cO
-cO
-jU
-jU
-jU
-jU
-jU
+dn
+jh
+lc
+dn
+nw
 cO
 dc
 dh
@@ -15714,7 +15691,7 @@ aa
 aa
 aa
 aa
-io
+aK
 kQ
 io
 aa
@@ -15735,14 +15712,14 @@ aa
 ir
 dn
 dn
-cO
-cO
-aa
-aa
-aa
-aa
-aa
-aa
+dn
+jh
+ab
+ab
+ab
+lx
+ac
+jU
 aa
 aa
 aa
@@ -15841,7 +15818,7 @@ aa
 aa
 aa
 aa
-io
+aK
 iE
 io
 ad
@@ -15861,15 +15838,15 @@ ad
 ad
 ir
 dn
-nx
-cO
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+dn
+dn
+ac
+ac
+iS
+ac
+mk
+jU
+jU
 aa
 aa
 aa
@@ -15968,7 +15945,7 @@ aa
 aa
 aa
 aa
-io
+aK
 iT
 io
 aa
@@ -15990,12 +15967,12 @@ ir
 lM
 cO
 cO
-aa
-aa
-aa
-aa
-aa
-aa
+ab
+ab
+jU
+jU
+jU
+jU
 aa
 aa
 aa
@@ -16095,9 +16072,9 @@ aa
 aa
 aa
 aa
+aK
 io
-io
-io
+aK
 ad
 ad
 ad
