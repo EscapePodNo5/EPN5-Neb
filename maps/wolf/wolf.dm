@@ -15,7 +15,10 @@
 	#include "machines\smes.dm"
 	#include "machines\atmos_machinery.dm"
 	#include "machines\autoset_doors.dm"
+	#include "machines\celltimers.dm"
 	#include "turfs\fuel_tank.dm"
+	#include "wolf_presets.dm"
+	#include "wolf_spawns.dm"
 
 	#define USING_MAP_DATUM /datum/map/wolf
 

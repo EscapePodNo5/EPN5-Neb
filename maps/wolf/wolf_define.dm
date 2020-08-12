@@ -23,7 +23,7 @@
 	use_overmap = 1
 	num_exoplanets = 3
 	welcome_sound = 'sound/effects/cowboysting.ogg'
-	emergency_shuttle_leaving_dock = "Attention all hands: the escape pods have been launched, maintaining burn for %ETA%."
+	emergency_shuttle_leaving_dock = "Attention all hands: escape pods are now launching. Brace for acceleration."
 	emergency_shuttle_called_message = "Attention all hands: emergency evacuation procedures are now in effect. Escape pods will launch in %ETA%"
 	emergency_shuttle_recall_message = "Attention all hands: emergency evacuation sequence aborted. Return to normal operating conditions."
 	evac_controller_type = /datum/evacuation_controller/starship/wolf

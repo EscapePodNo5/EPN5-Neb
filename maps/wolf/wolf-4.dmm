@@ -12,6 +12,9 @@
 "ad" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	id_tag = "battledoors"
+	},
 /turf/simulated/floor/airless,
 /area/ship/wolf/command/bridge)
 "ae" = (
@@ -109,15 +112,19 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/command/office/cmo)
 "ax" = (
+/obj/machinery/alarm{
+	pixel_y = 17
+	},
+/obj/structure/table/woodentable/walnut,
+/obj/machinery/photocopier/faxmachine,
+/turf/simulated/floor/carpet/orange,
+/area/ship/wolf/command/office/ce)
+"ay" = (
 /obj/effect/catwalk_plated/dark,
+/obj/structure/table/steel_reinforced,
+/obj/machinery/photocopier/faxmachine,
 /turf/simulated/floor/plating,
 /area/ship/wolf/command/bridge)
-"ay" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/carpet/blue3,
-/area/ship/wolf/command/office/xo)
 "az" = (
 /turf/simulated/wall/prepainted,
 /area/ship/wolf/command/office/cmo)
@@ -253,17 +260,28 @@
 /turf/simulated/floor/carpet/red,
 /area/ship/wolf/command/office/maa)
 "aX" = (
-/obj/machinery/computer/ship/sensors,
 /obj/effect/floor_decal/corner/b_green/mono,
+/obj/machinery/computer/ship/navigation,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/bridge)
 "aY" = (
-/obj/effect/paint/black,
-/turf/simulated/wall/r_wall/prepainted,
-/area/ship/wolf/command/office/captain)
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "cebed"
+	},
+/obj/machinery/door/blast/regular/open{
+	dir = 8;
+	icon_state = "pdoor1";
+	id_tag = "battledoors"
+	},
+/turf/simulated/floor/airless,
+/area/ship/wolf/command/office/ce/bedroom)
 "aZ" = (
-/turf/simulated/floor/wood/walnut,
-/area/ship/wolf/command/office/captain)
+/obj/structure/cable/green{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/carpet/blue3,
+/area/ship/wolf/command/office/xo)
 "ba" = (
 /turf/simulated/floor/carpet/blue,
 /area/ship/wolf/command/office/captain)
@@ -318,11 +336,11 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/bridge)
 "bg" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	icon_state = "intact-scrubbers";
-	dir = 9
-	},
-/turf/simulated/floor/tiled/dark,
+/obj/effect/catwalk_plated/dark,
+/obj/structure/table/steel_reinforced,
+/obj/item/pen/retractable,
+/obj/item/paper_bin,
+/turf/simulated/floor/plating,
 /area/ship/wolf/command/bridge)
 "bh" = (
 /obj/structure/closet/secure_closet/engineering_chief,
@@ -366,8 +384,11 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/utility_shaft)
 "bm" = (
-/obj/machinery/power/apc,
-/obj/structure/cable/green,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/bridge)
 "bn" = (
@@ -389,15 +410,14 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/autoname/wolf/command,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/multi_tile/command,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/bridge)
 "bp" = (
 /obj/effect/catwalk_plated/dark,
-/obj/machinery/door/airlock/autoname/wolf/command,
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -435,14 +455,13 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/four)
 "bt" = (
-/obj/machinery/alarm{
-	pixel_y = 17
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "intact-scrubbers";
+	dir = 9
 	},
-/obj/structure/table/woodentable/walnut,
-/obj/item/paper_bin,
-/obj/item/pen/retractable,
-/turf/simulated/floor/carpet/orange,
-/area/ship/wolf/command/office/ce)
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/command/bridge)
 "bu" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced{
@@ -466,6 +485,7 @@
 	icon_state = "map_vent_out";
 	dir = 4
 	},
+/obj/structure/bed/chair/comfy/blue,
 /turf/simulated/floor/carpet/blue3,
 /area/ship/wolf/command/office/xo)
 "bw" = (
@@ -497,15 +517,22 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/four)
 "bz" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/command/hallway)
-"bA" = (
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
+/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/hallway)
+"bA" = (
+/obj/machinery/power/apc,
+/obj/structure/cable/green,
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/command/bridge)
 "bB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	icon_state = "intact-supply";
@@ -551,18 +578,11 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/ship/wolf/security/gunship_bay)
 "bE" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	icon_state = "map_vent_out";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/blue/mono,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/wolf/command/hallway)
+/obj/machinery/computer/modular/preset/cardslot/command,
+/turf/simulated/floor/carpet/blue3,
+/area/ship/wolf/command/office/xo)
 "bF" = (
-/obj/structure/table/steel_reinforced,
+/obj/structure/table/woodentable/maple,
 /turf/simulated/floor/carpet/blue3,
 /area/ship/wolf/command/office/xo)
 "bG" = (
@@ -575,13 +595,11 @@
 /turf/simulated/floor/airless,
 /area/space)
 "bH" = (
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 4
+/obj/machinery/light{
+	dir = 1
 	},
-/obj/structure/cable/green{
-	icon_state = "0-8"
-	},
+/obj/structure/table/woodentable/maple,
+/obj/machinery/photocopier/faxmachine,
 /turf/simulated/floor/carpet/blue3,
 /area/ship/wolf/command/office/xo)
 "bI" = (
@@ -680,16 +698,11 @@
 /turf/simulated/floor/airless,
 /area/space)
 "bT" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	icon_state = "map-scrubbers";
-	dir = 8
-	},
-/obj/structure/disposalpipe/junction/mirrored,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/command/bridge)
+/obj/structure/table/woodentable/maple,
+/obj/item/paper_bin,
+/obj/item/pen/retractable,
+/turf/simulated/floor/carpet/blue3,
+/area/ship/wolf/command/office/xo)
 "bU" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -704,12 +717,22 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "bV" = (
-/obj/effect/wallframe_spawn/reinforced/polarized,
-/turf/simulated/floor/airless,
-/area/space)
+/obj/structure/closet/secure_closet/captains,
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain/bedroom)
 "bW" = (
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/wolf/command/hallway)
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/obj/structure/disposalpipe/junction/mirrored,
+/obj/effect/floor_decal/corner/blue/mono,
+/obj/structure/closet/walllocker/emerglocker/west,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/command/bridge)
 "bX" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/carpet/orange,
@@ -727,8 +750,29 @@
 /turf/simulated/floor/airless,
 /area/space)
 "bZ" = (
+/obj/structure/bed,
+/obj/item/bedsheet/captain,
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "maabed";
+	name = "door bolts control";
+	pixel_x = -10;
+	pixel_y = 24
+	},
+/obj/machinery/button/windowtint{
+	id_tag = "maabed";
+	pixel_y = 24
+	},
+/obj/machinery/light_switch{
+	pixel_x = 8;
+	pixel_y = 24
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
 /turf/simulated/floor/wood/walnut,
-/area/space)
+/area/ship/wolf/command/office/captain/bedroom)
 "ca" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -738,16 +782,16 @@
 "cb" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/ship/wolf/command/office/xo/bedroom)
-"cc" = (
-/obj/structure/cable/green{
-	icon_state = "2-4"
+/obj/machinery/door/blast/regular/open{
+	dir = 8;
+	icon_state = "pdoor1";
+	id_tag = "battledoors"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/carpet/blue3,
+/turf/simulated/floor/plating,
 /area/ship/wolf/command/office/xo)
+"cc" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/ship/wolf/command/office/captain/bedroom)
 "cd" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -798,6 +842,7 @@
 	icon_state = "pipe-s";
 	dir = 4
 	},
+/obj/effect/floor_decal/corner/blue/mono,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/bridge)
 "ch" = (
@@ -830,10 +875,15 @@
 /area/ship/wolf/command/office/ce)
 "cj" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
-	id = "cebed"
+	id = "cmobed"
+	},
+/obj/machinery/door/blast/regular/open{
+	dir = 8;
+	icon_state = "pdoor1";
+	id_tag = "battledoors"
 	},
 /turf/simulated/floor/airless,
-/area/ship/wolf/command/office/ce/bedroom)
+/area/ship/wolf/command/office/cmo/bedroom)
 "ck" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/light_switch{
@@ -865,13 +915,15 @@
 /turf/simulated/floor/carpet/orange,
 /area/ship/wolf/command/office/ce/bedroom)
 "co" = (
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/airless,
-/area/ship/wolf/security/gunship_bay)
+/obj/machinery/door/blast/regular/open{
+	dir = 8;
+	icon_state = "pdoor1";
+	id_tag = "battledoors"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/command/office/xo/bedroom)
 "cp" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -892,15 +944,22 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "cr" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/structure/table/woodentable/walnut,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	icon_state = "map-supply";
-	dir = 8
+	dir = 1
 	},
-/obj/effect/floor_decal/corner/blue/mono,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/wolf/command/hallway)
+/obj/item/paper_bin,
+/obj/item/pen/retractable,
+/turf/simulated/floor/carpet/orange,
+/area/ship/wolf/command/office/ce)
 "cs" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
@@ -921,7 +980,8 @@
 /turf/simulated/floor/carpet/orange,
 /area/ship/wolf/command/office/ce/bedroom)
 "cu" = (
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/machinery/photocopier,
+/turf/simulated/floor/carpet/blue3,
 /area/ship/wolf/command/office/xo)
 "cv" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -933,20 +993,28 @@
 	icon_state = "map-scrubbers"
 	},
 /obj/structure/disposalpipe/junction,
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "cw" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/gunship_bay)
-"cx" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	icon_state = "map_scrubber_on";
-	dir = 4
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "maabed"
 	},
+/obj/machinery/door/blast/regular/open{
+	dir = 8;
+	icon_state = "pdoor1";
+	id_tag = "battledoors"
+	},
+/turf/simulated/floor/airless,
+/area/ship/wolf/command/office/maa/bedroom)
+"cx" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/command/bridge)
+/area/ship/wolf/command/hallway)
 "cy" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -963,30 +1031,31 @@
 /turf/simulated/floor/carpet/blue3,
 /area/ship/wolf/command/office/xo)
 "cz" = (
+/obj/machinery/light{
+	dir = 4
+	},
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	icon_state = "map_scrubber_on";
-	dir = 8
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "cA" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/structure/table/woodentable/walnut,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	icon_state = "map-supply";
-	dir = 1
+	dir = 8
 	},
-/turf/simulated/floor/carpet/orange,
-/area/ship/wolf/command/office/ce)
+/obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/ship/wolf/command/hallway)
 "cB" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	icon_state = "map-scrubbers";
@@ -994,6 +1063,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "cC" = (
@@ -1051,6 +1124,25 @@
 /area/ship/wolf/command/office/ce/bedroom)
 "cH" = (
 /obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/command/hallway)
+"cI" = (
+/obj/structure/cable/green{
 	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -1065,26 +1157,9 @@
 	icon_state = "pipe-c";
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/command/hallway)
-"cI" = (
-/obj/structure/cable/green{
-	icon_state = "2-4"
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	icon_state = "map-scrubbers";
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
 	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	icon_state = "map-supply";
-	dir = 1
-	},
-/obj/structure/disposalpipe/junction{
-	icon_state = "pipe-j1";
-	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
@@ -1194,6 +1269,31 @@
 /area/ship/wolf/command/office/xo/bedroom)
 "cR" = (
 /obj/structure/cable/green{
+	icon_state = "2-4"
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 1
+	},
+/obj/structure/disposalpipe/junction{
+	icon_state = "pipe-j1";
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/command/hallway)
+"cS" = (
+/obj/structure/cable/green{
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1208,23 +1308,9 @@
 	icon_state = "pipe-s";
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/command/hallway)
-"cS" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	icon_state = "pipe-s";
-	dir = 4
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
@@ -1242,19 +1328,32 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/blue/mono,
-/obj/machinery/door/airlock/autoname/wolf/glass/command,
 /obj/structure/disposalpipe/segment{
 	icon_state = "pipe-s";
 	dir = 4
 	},
+/obj/machinery/door/airlock/autoname/wolf/glass/command,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/hallway)
 "cU" = (
-/obj/machinery/light{
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "intact-supply";
 	dir = 4
 	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
@@ -1376,12 +1475,11 @@
 /turf/simulated/floor/carpet/orange,
 /area/ship/wolf/command/office/ce/bedroom)
 "df" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue/half,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "dg" = (
@@ -1396,10 +1494,13 @@
 /turf/simulated/floor/wood,
 /area/ship/wolf/command/office/xo/bedroom)
 "di" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	icon_state = "map_vent_out";
-	dir = 1
+/obj/structure/cable/green{
+	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue/half,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "dj" = (
@@ -1410,10 +1511,12 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/command/hallway)
 "dk" = (
-/obj/structure/bed,
-/obj/item/bedsheet/captain,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "intact-scrubbers";
+	dir = 6
+	},
 /turf/simulated/floor/wood/walnut,
-/area/ship/wolf/command/office/captain)
+/area/ship/wolf/command/office/captain/bedroom)
 "dl" = (
 /obj/effect/floor_decal/corner/blue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -1437,12 +1540,12 @@
 /turf/simulated/floor/wood,
 /area/ship/wolf/command/office/xo/bedroom)
 "do" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/floor_decal/corner/blue/mono,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/blue/half,
+/turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "dp" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -1586,6 +1689,10 @@
 	dir = 4
 	},
 /obj/machinery/light,
+/obj/structure/bed/chair{
+	icon_state = "chair";
+	dir = 1
+	},
 /turf/simulated/floor/carpet/blue3,
 /area/ship/wolf/command/office/xo)
 "dH" = (
@@ -1601,25 +1708,17 @@
 /turf/simulated/floor/wood,
 /area/ship/wolf/command/office/xo/bedroom)
 "dI" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue/half,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "dJ" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	icon_state = "map-scrubbers";
-	dir = 8
-	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/corner/blue/mono,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/hallway)
 "dK" = (
 /obj/machinery/power/apc{
@@ -1714,6 +1813,7 @@
 	},
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/structure/disposalpipe/junction/mirrored,
+/obj/structure/closet/walllocker/emerglocker/west,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/hallway)
 "dV" = (
@@ -1825,9 +1925,19 @@
 /turf/simulated/floor/carpet/blue2,
 /area/ship/wolf/command/office/cmo)
 "ec" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/wood/walnut,
-/area/ship/wolf/command/office/captain)
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/ship/wolf/command/hallway)
 "ed" = (
 /obj/effect/wallframe_spawn/no_grille,
 /obj/machinery/door/firedoor,
@@ -1845,10 +1955,16 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/command/hallway)
 "ef" = (
+/obj/machinery/door/firedoor,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/obj/effect/floor_decal/corner/blue/mono,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/hallway)
 "eg" = (
 /obj/structure/closet/secure_closet/CMO,
@@ -1886,9 +2002,14 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/security/gunship_bay)
 "ej" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/wood/walnut,
-/area/ship/wolf/command/office/captain)
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 1
+	},
+/obj/structure/bed,
+/obj/item/bedsheet/hop,
+/turf/simulated/floor/wood,
+/area/ship/wolf/command/office/xo/bedroom)
 "ek" = (
 /obj/machinery/power/solar,
 /obj/structure/cable/yellow,
@@ -1916,34 +2037,43 @@
 "em" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	icon_state = "intact-scrubbers";
-	dir = 6
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 5
+	dir = 6;
+	icon_state = "intact-supply"
 	},
-/turf/simulated/floor/wood/walnut,
-/area/ship/wolf/command/office/captain)
-"en" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	icon_state = "map-supply";
-	dir = 1
-	},
-/turf/simulated/floor/wood/walnut,
-/area/ship/wolf/command/office/captain)
-"eo" = (
-/obj/machinery/power/apc,
 /obj/structure/cable/green{
-	icon_state = "0-4"
+	icon_state = "2-4"
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain/bedroom)
+"en" = (
+/obj/machinery/door/airlock/autoname/wolf/command,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "intact-scrubbers";
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	icon_state = "intact-supply";
 	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain/bedroom)
+"eo" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4;
+	icon_state = "map-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10;
+	icon_state = "intact-scrubbers"
+	},
+/obj/structure/cable/green{
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/wolf/command/office/captain)
@@ -1962,26 +2092,28 @@
 /turf/simulated/floor/wood/walnut,
 /area/ship/wolf/command/office/captain)
 "eq" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/structure/cable/green{
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "er" = (
 /obj/structure/cable/green{
-	icon_state = "1-2"
+	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	icon_state = "map_vent_out";
-	dir = 8
+/obj/structure/cable/green{
+	icon_state = "2-8"
 	},
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
@@ -2037,14 +2169,18 @@
 /area/ship/wolf/engineering/utility_shaft)
 "ew" = (
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	icon_state = "map-supply";
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
 	dir = 8
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "ex" = (
@@ -2061,14 +2197,17 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/utility_shaft)
 "ey" = (
-/obj/structure/cable{
+/obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/floor_decal/corner/blue/mono,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
 "ez" = (
 /obj/structure/cable/green{
@@ -2252,10 +2391,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	icon_state = "map_vent_out";
-	dir = 1
-	},
+/obj/structure/closet/walllocker/emerglocker/south,
 /turf/simulated/floor/tiled/steel_grid,
 /area/ship/wolf/security/gunship_bay)
 "eM" = (
@@ -2550,16 +2686,27 @@
 /turf/simulated/floor/carpet/red,
 /area/ship/wolf/command/office/maa)
 "fq" = (
-/obj/effect/wallframe_spawn/reinforced/polarized{
-	id = "cmobed"
+/obj/effect/wallframe_spawn/reinforced/polarized,
+/obj/machinery/door/blast/regular/open{
+	dir = 8;
+	icon_state = "pdoor1";
+	id_tag = "battledoors"
 	},
 /turf/simulated/floor/airless,
-/area/ship/wolf/command/office/cmo/bedroom)
+/area/ship/wolf/command/office/captain/bedroom)
 "fr" = (
-/obj/effect/wallframe_spawn/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/ship/wolf/command/office/xo)
+/obj/machinery/door/blast/regular/open{
+	dir = 8;
+	icon_state = "pdoor1";
+	id_tag = "battledoors"
+	},
+/turf/simulated/floor/airless,
+/area/ship/wolf/security/gunship_bay)
 "fs" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -2568,13 +2715,14 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/ship/wolf/security/gunship_bay)
 "ft" = (
-/obj/structure/cable/green{
+/obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/light{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/corner/blue/mono,
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/multi_tile/glass/command,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/hallway)
 "fu" = (
@@ -2921,10 +3069,9 @@
 	icon_state = "map_scrubber_on";
 	dir = 8
 	},
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
@@ -2954,21 +3101,23 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/office/cmo)
 "gk" = (
-/obj/machinery/alarm{
-	pixel_y = 17
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 4
 	},
-/obj/structure/table/woodentable/maple,
-/obj/item/paper_bin,
-/obj/item/pen/retractable,
-/turf/simulated/floor/carpet/blue2,
-/area/ship/wolf/command/office/cmo)
+/obj/structure/cable/green{
+	icon_state = "0-8"
+	},
+/obj/machinery/papershredder,
+/turf/simulated/floor/carpet/blue3,
+/area/ship/wolf/command/office/xo)
 "gl" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	icon_state = "map_vent_out";
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
 	dir = 1
 	},
-/turf/simulated/floor/wood,
-/area/ship/wolf/command/office/xo/bedroom)
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain/bedroom)
 "gm" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced{
@@ -3131,37 +3280,37 @@
 /turf/simulated/floor/carpet/red,
 /area/ship/wolf/command/office/maa)
 "gA" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/structure/table/woodentable/maple,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	icon_state = "map-supply";
-	dir = 1
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/ship/wolf/command/office/cmo)
-"gB" = (
-/obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/corner/blue/mono,
-/obj/machinery/light{
-	dir = 4
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/hallway)
-"gC" = (
-/obj/structure/cable/green{
-	icon_state = "1-8"
+"gB" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 1
+	},
+/obj/machinery/light_switch{
+	dir = 8;
+	icon_state = "light0";
+	pixel_x = 24
 	},
 /obj/structure/cable/green{
-	icon_state = "2-8"
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain/bedroom)
+"gC" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/hallway)
@@ -3177,14 +3326,12 @@
 /turf/simulated/floor/carpet/blue2,
 /area/ship/wolf/command/office/cmo)
 "gE" = (
-/obj/machinery/alarm{
-	pixel_y = 17
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 1
 	},
-/obj/structure/table/woodentable/mahogany,
-/obj/item/paper_bin,
-/obj/item/pen/retractable,
-/turf/simulated/floor/carpet/red,
-/area/ship/wolf/command/office/maa)
+/turf/simulated/floor/tiled/dark/monotile,
+/area/ship/wolf/command/office/xo)
 "gF" = (
 /turf/simulated/wall/prepainted,
 /area/ship/wolf/command/office/maa)
@@ -3416,11 +3563,15 @@
 /turf/simulated/floor/carpet/red,
 /area/ship/wolf/command/office/maa)
 "gZ" = (
-/obj/effect/wallframe_spawn/reinforced/polarized{
-	id = "maabed"
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular/open{
+	dir = 8;
+	icon_state = "pdoor1";
+	id_tag = "battledoors"
 	},
-/turf/simulated/floor/airless,
-/area/ship/wolf/command/office/maa/bedroom)
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/gunship_bay)
 "ha" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/light_switch{
@@ -3431,20 +3582,12 @@
 /turf/simulated/floor/carpet/red,
 /area/ship/wolf/command/office/maa)
 "hb" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/structure/table/woodentable/mahogany,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	icon_state = "map-supply";
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
 	dir = 1
 	},
-/turf/simulated/floor/carpet/red,
-/area/ship/wolf/command/office/maa)
+/turf/simulated/floor/tiled/dark/monotile,
+/area/ship/wolf/command/hallway)
 "hc" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3589,9 +3732,186 @@
 /turf/simulated/floor/airless,
 /area/space)
 "hr" = (
-/obj/machinery/door/airlock/autoname/wolf/command,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "intact-supply";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/obj/machinery/light_switch{
+	dir = 4;
+	icon_state = "light0";
+	pixel_x = -24
+	},
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/wolf/command/office/captain)
+"hs" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain)
+"ht" = (
+/obj/machinery/computer/modular/preset/cardslot/command{
+	icon_state = "computer";
+	dir = 1
+	},
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain/bedroom)
+"hu" = (
+/obj/machinery/power/apc,
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "intact-supply";
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain)
+"hv" = (
+/obj/structure/table/woodentable/ebony,
+/obj/machinery/power/apc,
+/obj/structure/cable/green,
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain/bedroom)
+"hw" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/corner/blue/mono,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/ship/wolf/command/hallway)
+"hx" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/command/hallway)
+"hy" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/effect/floor_decal/corner/blue/half{
+	icon_state = "bordercolorhalf";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/command/hallway)
+"hz" = (
+/obj/machinery/alarm{
+	pixel_y = 17
+	},
+/obj/structure/table/woodentable/maple,
+/obj/machinery/photocopier/faxmachine,
+/turf/simulated/floor/carpet/blue2,
+/area/ship/wolf/command/office/cmo)
+"hA" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/structure/table/woodentable/maple,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 1
+	},
+/obj/item/paper_bin,
+/obj/item/pen/retractable,
+/turf/simulated/floor/carpet/blue2,
+/area/ship/wolf/command/office/cmo)
+"hB" = (
+/obj/machinery/alarm{
+	pixel_y = 17
+	},
+/obj/structure/table/woodentable/mahogany,
+/obj/machinery/photocopier/faxmachine,
+/turf/simulated/floor/carpet/red,
+/area/ship/wolf/command/office/maa)
+"hC" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/structure/table/woodentable/mahogany,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 1
+	},
+/obj/item/paper_bin,
+/obj/item/pen/retractable,
+/turf/simulated/floor/carpet/red,
+/area/ship/wolf/command/office/maa)
+"hD" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/table/woodentable/ebony,
+/obj/machinery/photocopier/faxmachine,
+/turf/simulated/floor/wood/walnut,
+/area/ship/wolf/command/office/captain)
+"hE" = (
+/obj/effect/paint/black,
+/turf/simulated/wall/r_wall/prepainted,
+/area/ship/wolf/command/office/captain/bedroom)
+"hF" = (
+/turf/simulated/floor/reinforced/airless,
+/area/ship/wolf/command/office/captain/bedroom)
+"hG" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 1
+	},
+/obj/structure/closet/walllocker/emerglocker/south,
+/turf/simulated/floor/tiled/steel_grid,
+/area/ship/wolf/security/gunship_bay)
+"hH" = (
+/obj/structure/sign/deck/bridge,
+/turf/simulated/wall/prepainted,
+/area/ship/wolf/command/hallway)
 
 (1,1,1) = {"
 aa
@@ -10253,9 +10573,9 @@ ab
 ab
 am
 am
-fr
-fr
-fr
+cb
+cb
+cb
 am
 ab
 ab
@@ -10263,12 +10583,12 @@ ab
 ab
 ab
 ac
-bV
-bV
-bV
-bV
-ac
-ab
+fq
+fq
+fq
+fq
+hE
+hF
 bP
 ab
 ab
@@ -10379,23 +10699,23 @@ ab
 ab
 ab
 am
+bE
 as
-as
-as
+bF
 as
 am
 ac
 ac
 aN
-cb
-cb
+co
+co
 aN
-aZ
-aZ
-bZ
-bZ
-ac
-ab
+bV
+dk
+gl
+ht
+hE
+hF
 bP
 ab
 ab
@@ -10506,7 +10826,7 @@ aq
 aq
 aq
 aq
-ay
+bH
 bv
 bF
 dG
@@ -10515,24 +10835,24 @@ cF
 dl
 aO
 el
-gl
+ej
 aO
-dk
-aZ
-aZ
-aZ
-ac
-ab
+bZ
+em
+gB
+hv
+hE
+hF
 bP
 ak
 ak
-cw
-cw
-cw
+gZ
+gZ
+gZ
 ak
-cw
-cw
-cw
+gZ
+gZ
+gZ
 ak
 ak
 ak
@@ -10635,21 +10955,21 @@ aq
 aq
 as
 bw
-cc
+aZ
 cy
 cC
-cH
-cq
+cI
+df
 aO
 dq
 fn
 aO
-dR
-hr
-dR
-aY
-aY
-aY
+cc
+en
+cc
+hE
+hE
+hE
 bP
 ak
 dt
@@ -10760,33 +11080,33 @@ aq
 aq
 aq
 aq
-as
-as
-bH
+bT
+cu
+gk
 dF
 aC
-cI
-df
+cR
+di
 dn
 dH
 dh
 aO
-ec
-ej
-em
+hD
+eo
+hr
 dX
 fw
 ae
-co
+fr
 ae
 du
 ae
-cw
-cw
+gZ
+gZ
 ak
-cw
-cw
-cw
+gZ
+gZ
+gZ
 ak
 dB
 ak
@@ -10900,7 +11220,7 @@ cM
 aO
 dN
 ba
-en
+hs
 eu
 eF
 ak
@@ -11013,11 +11333,11 @@ eV
 fB
 ag
 aG
-ax
+ay
 ao
 av
 fH
-cu
+gE
 ao
 cK
 aJ
@@ -11027,7 +11347,7 @@ cQ
 aO
 dQ
 fu
-eo
+hu
 bb
 bb
 ak
@@ -11140,11 +11460,11 @@ eQ
 eR
 ag
 aG
-ax
+bg
 aE
 aF
 fI
-bW
+hb
 ed
 cK
 cP
@@ -11267,10 +11587,10 @@ eY
 fe
 ag
 aR
-cx
+bm
 aE
-bA
-bW
+bz
+gA
 dl
 ed
 cN
@@ -11394,14 +11714,14 @@ ar
 fC
 ah
 aU
-bg
+bt
 aE
-bz
+cx
 bI
 cq
 ed
-cR
-di
+cS
+do
 bd
 aD
 bq
@@ -11414,7 +11734,7 @@ fk
 ak
 ce
 fJ
-dv
+eL
 ae
 ab
 ab
@@ -11521,14 +11841,14 @@ al
 fD
 ff
 bc
-bm
+bA
 aE
 dd
 cs
 aH
 ed
-cS
-aH
+cU
+dI
 bd
 br
 by
@@ -11541,7 +11861,7 @@ fK
 fL
 gi
 gp
-eL
+hG
 ae
 ab
 ab
@@ -11650,7 +11970,7 @@ au
 bf
 aE
 aE
-aI
+hH
 bU
 ed
 aI
@@ -11776,20 +12096,20 @@ fa
 eS
 bB
 bo
-bT
-cr
+bW
+cA
 cv
 cB
 cD
 cY
 dj
-do
-dI
 dJ
-dU
 eq
 ew
-ey
+dU
+gC
+hx
+ft
 fi
 ee
 ak
@@ -11904,19 +12224,19 @@ ag
 bi
 bp
 cg
-bE
-cU
-gg
+ec
+cz
+cH
 gx
 da
 dM
-gB
-gC
-cz
-dW
 ef
 er
-ft
+gg
+dW
+ey
+hy
+hw
 eB
 eH
 ak
@@ -12282,19 +12602,19 @@ ab
 fz
 fz
 ap
-bt
+ax
 at
-cA
+cr
 dO
 gh
-gk
+hz
 aL
-gA
+hA
 gW
 az
-gE
+hB
 aW
-hb
+hC
 hh
 aT
 es
@@ -12917,20 +13237,20 @@ ca
 aM
 ab
 aK
-cj
-cj
-cj
-cj
+aY
+aY
+aY
+aY
 aK
-fq
-fq
-fq
-fq
+cj
+cj
+cj
+cj
 gS
-gZ
-gZ
-gZ
-gZ
+cw
+cw
+cw
+cw
 ac
 ab
 gb
