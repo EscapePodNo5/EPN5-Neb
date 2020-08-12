@@ -67,6 +67,9 @@
 /area/ship/wolf/engineering/atmospherics/pump_room
 	name = "Coolant Pump Bay"
 
+/area/ship/wolf/engineering/atmospherics/monitoring_room
+	name = "Atmospherics Monitoring Room"
+
 /area/ship/wolf/engineering/EVA
 	name = "\improper EVA Bay"
 	icon_state = "EVA"
@@ -254,7 +257,10 @@
 	icon_state = "comoffice"
 
 /area/ship/wolf/command/office/captain
-	name = "\improper Captain's Quarters"
+	name = "\improper Captain's Office"
+
+/area/ship/wolf/command/office/captain/bedroom
+	name = "Captain's Quarters"
 	icon_state = "combed"
 
 /area/ship/wolf/command/office/xo
