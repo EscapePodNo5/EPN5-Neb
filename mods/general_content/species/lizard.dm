@@ -72,14 +72,15 @@
 		)
 	breathing_sound = 'sound/voice/lizard.ogg'
 
-	/*base_auras = list(
-		/obj/aura/regenerating/human/unathi
+	has_organ = list(
+		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_STOMACH =  /obj/item/organ/internal/stomach,
+		BP_LUNGS =    /obj/item/organ/internal/lungs,
+		BP_LIVER =    /obj/item/organ/internal/liver,
+		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,
+		BP_BRAIN =    /obj/item/organ/internal/brain,
+		BP_EYES =     /obj/item/organ/internal/eyes/unathi
 		)
-
-	inherent_verbs = list(
-		/mob/living/carbon/human/proc/diona_heal_toggle
-		) */
-        //Regeneration is commented out, pending Unathi lore update.
 
 	prone_overlay_offset = list(-4, -4)
 

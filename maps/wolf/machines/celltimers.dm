@@ -19,6 +19,28 @@
 		set_broken(TRUE)
 	queue_icon_update()
 
+/obj/machinery/door_timer/wolf/timer_start()
+	if(stat & (NOPOWER|BROKEN))	return 0
+
+	// Set releasetime
+	releasetime = world.timeofday + timetoset
+
+
+	//set timing
+	timing = 1
+
+	for(var/obj/machinery/door/airlock/door in targets)
+		door.unlock()
+		spawn(10)
+			door.close()
+
+	for(var/obj/structure/closet/secure_closet/brig/C in targets)
+		if(C.broken)	continue
+		if(C.opened && !C.close())	continue
+		C.locked = TRUE
+		C.queue_icon_update()
+	return 1
+
 /obj/machinery/door_timer/wolf/timer_end(var/broadcast_to_huds = TRUE)
 	if(stat & (NOPOWER|BROKEN))	return 0
 
@@ -33,7 +55,7 @@
 
 	for(var/obj/machinery/door/airlock/door in targets)
 		door.open()
-		spawn(0)
+		spawn(10)
 			door.lock(TRUE)
 
 

@@ -27,3 +27,23 @@
 	license = /decl/license/cc_by_nc_3_0
 	url = "https://freemusicarchive.org/music/Kai_Engel/Satin_1564/Kai_Engel_-_Satin_-_01_Augmentations"
 
+/music_track/wolf/space_hero
+	artist = "Vic Tyler"
+	title = "Space Hero"
+	album = "Space Heros and Other Fools"
+	song = 'mods/general_content/sounds/music/space_hero.ogg'
+
+/music_track/wolf/speedoflight
+	artist = "Julia Ecklar & Anne Harlan Prather"
+	title = "Pushing The Speed of Light"
+	album = "Space Heros and Other Fools"
+	song = 'mods/general_content/sounds/music/speedoflight.ogg'
+
+/music_track/wolf/negative_space
+	artist = "MintyFreshThoughts"
+	title = "Negative Space"
+	song = 'mods/general_content/sounds/music/negative_space.ogg'
+	license = /decl/license/cc_by_nc_3_0
+
+
+
