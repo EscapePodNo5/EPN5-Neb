@@ -589,13 +589,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/thruster_bay/one)
-"bI" = (
-/obj/machinery/atmospherics/unary/engine{
-	icon_state = "nozzle";
-	dir = 1
-	},
-/turf/simulated/floor/reinforced/airless,
-/area/ship/wolf/engineering/thruster_bay/one)
 "bJ" = (
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/thruster_bay/one)
@@ -5855,6 +5848,16 @@
 /obj/structure/closet/firecloset,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/fore/starboard)
+"nm" = (
+/obj/machinery/atmospherics/unary/engine{
+	icon_state = "nozzle";
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced/airless,
+/area/ship/wolf/engineering/thruster_bay/one)
 "nn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
@@ -14424,7 +14427,7 @@ mo
 mL
 bo
 bt
-bI
+nm
 bi
 bi
 bi
@@ -14551,7 +14554,7 @@ mO
 kS
 bq
 bu
-bI
+nm
 bi
 bi
 bi
@@ -14805,7 +14808,7 @@ mQ
 kg
 bq
 bu
-bI
+nm
 bi
 bi
 bi
@@ -14932,7 +14935,7 @@ kg
 mC
 bq
 bu
-bI
+nm
 bi
 bi
 bi
@@ -15443,7 +15446,7 @@ lD
 fZ
 my
 bt
-bI
+nm
 bi
 bi
 aa
@@ -15570,7 +15573,7 @@ bE
 lQ
 bJ
 bu
-bI
+nm
 bi
 bi
 aa
@@ -15824,7 +15827,7 @@ mw
 iz
 bJ
 bu
-bI
+nm
 bi
 bi
 aa
@@ -15951,7 +15954,7 @@ lD
 bJ
 bJ
 bH
-bI
+nm
 bi
 bi
 aa
@@ -16456,7 +16459,7 @@ kR
 mW
 bq
 bu
-bI
+nm
 bi
 bi
 bi
@@ -16583,7 +16586,7 @@ mG
 mp
 bq
 bu
-bI
+nm
 bi
 bi
 bi
@@ -16837,7 +16840,7 @@ mI
 mX
 bq
 bu
-bI
+nm
 bi
 bi
 bi
@@ -16964,7 +16967,7 @@ no
 mW
 bq
 bH
-bI
+nm
 bi
 bi
 bi
