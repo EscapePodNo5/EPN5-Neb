@@ -15,6 +15,7 @@
 #include "species/skrell.dm"
 #include "organs/internal/skrell/eyes.dm"
 #include "organs/internal/skrell/gills.dm"
+#include "organs/internal/unathi/eyes.dm"
 
 #include "sprite_accessory/_cosmetics_selection.dm"
 #include "sprite_accessory/_hooks.dm"

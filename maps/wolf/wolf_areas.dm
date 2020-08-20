@@ -230,9 +230,17 @@
 	name = "Medical Storage"
 	icon_state = "medstore"
 
-/area/ship/wolf/medical/breakroom
-	name = "Medical Lounge"
-	icon_state = "medbreak"
+/area/ship/wolf/medical/morgue
+	name = "Morgue"
+	icon_state = "morgue"
+
+/area/ship/wolf/medical/morgue/viewing
+	name = "Burial Observation"
+	icon_state = "morgueview"
+
+/area/ship/wolf/medical/medtech
+	name = "Medical Technician Bay"
+	icon_state = "medtech"
 
 //Command
 
@@ -291,6 +299,14 @@
 	name = "\improper Executive Officer's Quarters"
 	icon_state = "combed"
 
+/area/ship/wolf/command/office/bosun
+	name = "Bosun's Office"
+	icon_state = "bosunoffice"
+
+/area/ship/wolf/command/office/bosun/bed
+	name = "Bosun's Quarters"
+	icon_state = "bosunbed"
+
 /area/ship/wolf/ai/core
 	icon_state = "aicore"
 	name = "AI Core"
@@ -318,6 +334,14 @@
 /area/ship/wolf/cargo/disposals
 	name = "Disposals Bay"
 	icon_state = "disposal"
+
+/area/ship/wolf/cargo/salvage
+	name = "Salvage Technician Bay"
+	icon_state = "salvageprep"
+
+/area/ship/wolf/cargo/lockers
+	name = "Cargo Locker Room"
+	icon_state = "cargolocker"
 
 //Science
 
@@ -458,4 +482,25 @@
 /area/ship/wolf/janitorial
 	name = "Janitorial Closet"
 	icon_state = "janitor"
+
+//Shuttles
+
+/area/ship/wolf/shuttle/gnat
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/ship/wolf/shuttle/gnat/cockpit
+	name = "Gnat - Cockpit"
+	icon_state = "gnatpilot"
+
+/area/ship/wolf/shuttle/gnat/passenger
+	name = "Gnat - Passenger Bay"
+	icon_state = "gnatpass"
+
+/area/ship/wolf/shuttle/gnat/cargo
+	name = "Gnat - Cargo Bay"
+	icon_state = "gnatcargo"
+
+/area/ship/wolf/shuttle/gnat/maint
+	name = "Gnat - Atmos Compartment"
+	icon_state = "gnatmaint"
 
