@@ -1,3 +1,5 @@
+/music_track/wolf
+
 /music_track/wolf/great_expectations
 	artist = "Kai Engel"
 	title = "Great Expectations"
@@ -32,18 +34,29 @@
 	title = "Space Hero"
 	album = "Space Heros and Other Fools"
 	song = 'mods/general_content/sounds/music/space_hero.ogg'
+	license = /decl/license/grandfathered
+	url = "https://www.prometheus-music.com/"
 
 /music_track/wolf/speedoflight
 	artist = "Julia Ecklar & Anne Harlan Prather"
 	title = "Pushing The Speed of Light"
 	album = "Space Heros and Other Fools"
 	song = 'mods/general_content/sounds/music/speedoflight.ogg'
+	url = "https://www.prometheus-music.com/"
+	license = /decl/license/grandfathered
 
 /music_track/wolf/negative_space
 	artist = "MintyFreshThoughts"
 	title = "Negative Space"
 	song = 'mods/general_content/sounds/music/negative_space.ogg'
 	license = /decl/license/cc_by_nc_3_0
+	url = "https://mintyfreshthoughts.newgrounds.com/"
 
-
+/music_track/wolf/the_settler
+	artist = "Chris Remo"
+	album = "Spacebase DF9 Soundtrack"
+	title = "The Settler"
+	song = 'mods/general_content/sounds/music/settler.ogg'
+	url = "https://chrisremo.bandcamp.com"
+	license = /decl/license/grandfathered
 

@@ -2,7 +2,6 @@
 	#include "../../mods/general_content/GeneralContent.dme"
 	#include "../../mods/ship_combat2/_spacebattles.dme"
 
-	#include "wolf-0.dmm"
 	#include "wolf-1.dmm"
 	#include "wolf-2.dmm"
 	#include "wolf-3.dmm"
@@ -14,6 +13,9 @@
 	#include "wolf_presets.dm"
 	#include "wolf_spawns.dm"
 	#include "wolf_shuttles.dm"
+	#include "wolf_uniforms.dm"
+	#include "wolf_outfits.dm"
+	#include "wolf_misc.dm"
 
 	#include "decals\floor_decals.dm"
 
@@ -24,6 +26,7 @@
 	#include "machines/coffeemachine.dm"
 	#include "machines/morgue_machines.dm"
 	#include "machines/consoles.dm"
+	#include "machines/telecomms.dm"
 
 	#include "turfs\fuel_tank.dm"
 
