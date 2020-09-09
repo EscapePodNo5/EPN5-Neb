@@ -7702,6 +7702,12 @@
 /obj/effect/floor_decal/industrial/outline/orange,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"qg" = (
+/obj/structure/catwalk,
+/obj/machinery/door/airlock/hatch/maintenance,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/aft/starboard)
 "qj" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -18937,7 +18943,7 @@ pz
 oU
 oU
 Au
-Au
+qg
 qS
 oV
 oV
