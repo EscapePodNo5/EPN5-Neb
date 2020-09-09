@@ -1610,6 +1610,21 @@
 /obj/effect/paint/silver,
 /turf/simulated/wall/r_titanium,
 /area/space)
+"dA" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-2"
+	},
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/effect/floor_decal/solarpanel,
+/obj/machinery/power/solar,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/airless,
+/area/space)
 "dB" = (
 /obj/effect/paint/red,
 /turf/simulated/wall/r_titanium,
@@ -3907,6 +3922,14 @@
 "hN" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/white/monotile,
+/area/space)
+"hO" = (
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/solar,
+/obj/effect/floor_decal/solarpanel,
+/turf/simulated/floor/reinforced/airless,
 /area/space)
 
 (1,1,1) = {"
@@ -13511,7 +13534,7 @@ fX
 fX
 fX
 fX
-ge
+dA
 fZ
 fR
 fX
@@ -13638,7 +13661,7 @@ ab
 ab
 ab
 ab
-ab
+bP
 ab
 ab
 ab
@@ -13764,8 +13787,8 @@ ab
 ab
 ab
 ab
-aa
-aa
+ab
+hO
 ab
 ab
 ab
@@ -13890,13 +13913,13 @@ ab
 ab
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+ab
+ab
+ab
+ab
+ab
+ab
+ab
 aa
 aa
 aa
