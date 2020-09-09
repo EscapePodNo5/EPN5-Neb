@@ -343,6 +343,10 @@
 	name = "Cargo Locker Room"
 	icon_state = "cargolocker"
 
+/area/ship/wolf/cargo/comissary
+	name = "Comissary"
+	icon_state = "commiss"
+
 //Science
 
 /area/ship/wolf/science

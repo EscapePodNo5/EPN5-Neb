@@ -23,7 +23,7 @@
 
 //Processors
 
-/obj/machinery/telecomms/processor/preset_one
+/obj/machinery/telecomms/processor/wolf
 	id = "Main Processor"
 	network = "tcommsat"
 	autolinkers = list("mainprocessor") // processors are sort of isolated; they don't need backward links

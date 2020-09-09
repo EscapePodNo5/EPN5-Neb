@@ -44,3 +44,7 @@
 	helmet = /obj/item/clothing/head/helmet/space
 	suit = /obj/item/clothing/suit/space
 
+/obj/machinery/suit_cycler/wolf/salvage
+	helmet = /obj/item/clothing/head/helmet/space/void/mining
+	suit = /obj/item/clothing/suit/space/void/mining
+
