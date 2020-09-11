@@ -942,6 +942,7 @@
 	icon_state = "corner_white_three_quarters";
 	dir = 8
 	},
+/obj/machinery/computer/modular/preset/supply_public,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "cz" = (
@@ -1658,6 +1659,12 @@
 	icon_state = "corner_white";
 	dir = 5
 	},
+/obj/structure/table/reinforced,
+/obj/item/disk/integrated_circuit,
+/obj/item/integrated_circuit/arithmetic,
+/obj/item/integrated_circuit_printer,
+/obj/random/assembly,
+/obj/random/advdevice,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "ed" = (
@@ -2305,6 +2312,10 @@
 	icon_state = "corner_white_three_quarters";
 	dir = 1
 	},
+/obj/structure/table/reinforced,
+/obj/item/integrated_circuit/trig/cosine,
+/obj/random/assembly,
+/obj/random/technology_scanner,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "ft" = (
@@ -3160,6 +3171,10 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
+/obj/item/integrated_circuit_printer/debug,
+/obj/structure/table/reinforced,
+/obj/item/stack/material/steel/ten,
+/obj/random/assembly,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "hg" = (
@@ -3282,6 +3297,11 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/research/three_quarters,
+/obj/structure/table/reinforced,
+/obj/random/technology_scanner,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/advdevice,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "hy" = (
@@ -3473,7 +3493,6 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/first_deck)
 "hS" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/disposalpipe/segment{
 	icon_state = "pipe-s";
 	dir = 4
@@ -3482,6 +3501,7 @@
 	icon_state = "corner_white";
 	dir = 5
 	},
+/obj/machinery/computer/modular/preset/medical,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "hT" = (
@@ -3496,13 +3516,12 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/first_deck)
 "hU" = (
-/obj/structure/disposalpipe/segment{
-	icon_state = "pipe-s";
-	dir = 4
+/obj/machinery/light{
+	dir = 8
 	},
-/obj/effect/floor_decal/corner/research{
-	icon_state = "corner_white";
-	dir = 5
+/obj/effect/floor_decal/corner/research/three_quarters{
+	icon_state = "corner_white_three_quarters";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
@@ -5207,6 +5226,10 @@
 	icon_state = "corner_white";
 	dir = 5
 	},
+/obj/machinery/computer/modular{
+	icon_state = "computer";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "lm" = (
@@ -5427,6 +5450,7 @@
 	icon_state = "bulb_map";
 	dir = 4
 	},
+/obj/random/masks,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "lN" = (
@@ -7143,6 +7167,8 @@
 	},
 /obj/item/stack/material/plastic/fifty,
 /obj/item/stack/material/steel/fifty,
+/obj/random/loot,
+/obj/random/maintenance/clean,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "pv" = (
@@ -8000,6 +8026,10 @@
 /obj/random/snack,
 /obj/random/snack,
 /obj/random/snack,
+/obj/random/mre,
+/obj/random/mre,
+/obj/random/mre/dessert,
+/obj/random/mre/dessert,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rg" = (
@@ -8014,6 +8044,10 @@
 /obj/item/chems/food/drinks/bottle/cola,
 /obj/item/chems/food/drinks/bottle/cola,
 /obj/item/chems/food/drinks/bottle/cola,
+/obj/item/chems/food/drinks/cans/cola,
+/obj/item/chems/food/drinks/cans/sodawater,
+/obj/item/chems/food/drinks/cans/thirteenloko,
+/obj/random/maintenance/clean,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rh" = (
@@ -8115,6 +8149,10 @@
 	},
 /obj/item/chems/food/drinks/bottle/gin,
 /obj/item/chems/food/drinks/bottle/bluecuracao,
+/obj/item/chems/food/drinks/bottle/whiskey,
+/obj/item/chems/food/drinks/bottle/whiskey,
+/obj/item/chems/food/drinks/bottle/whiskey,
+/obj/random/maintenance/clean,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rq" = (
@@ -8145,6 +8183,9 @@
 /obj/item/chems/food/drinks/glass2/fitnessflask/proteinshake,
 /obj/item/chems/food/drinks/glass2/fitnessflask/proteinshake,
 /obj/item/chems/food/drinks/glass2/fitnessflask/proteinshake,
+/obj/item/chems/food/drinks/glass2/fitnessflask/proteinshake,
+/obj/item/chems/food/drinks/glass2/fitnessflask/proteinshake,
+/obj/random/loot,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rt" = (
@@ -8188,6 +8229,7 @@
 /obj/item/chems/food/condiment/small/packet/watermelon,
 /obj/item/chems/food/condiment/small/packet/apple,
 /obj/item/chems/food/condiment/small/packet/apple,
+/obj/random/loot,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rx" = (
@@ -8231,6 +8273,9 @@
 	icon_state = "left";
 	dir = 1
 	},
+/obj/random/single/lighter,
+/obj/random/single/lighter,
+/obj/item/chems/food/drinks/bottle/absinthe,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rz" = (
@@ -8259,6 +8304,10 @@
 	},
 /obj/item/storage/fancy/cigarettes/killthroat,
 /obj/item/storage/fancy/cigarettes/luckystars,
+/obj/random/single/lighter,
+/obj/random/single/lighter,
+/obj/random/single/lighter,
+/obj/item/chems/food/drinks/bottle/agedwhiskey,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rA" = (
@@ -8340,6 +8389,7 @@
 /obj/structure/table/rack,
 /obj/machinery/power/apc,
 /obj/structure/cable/green,
+/obj/random/loot,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rI" = (
@@ -8365,14 +8415,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/maintenance/deckone/fore/port)
 "rK" = (
-/obj/machinery/light{
-	dir = 8
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
 	},
-/obj/effect/floor_decal/corner/research/three_quarters{
-	icon_state = "corner_white_three_quarters";
-	dir = 8
+/obj/effect/floor_decal/corner/research{
+	icon_state = "corner_white";
+	dir = 5
 	},
-/obj/structure/reagent_dispensers/water_cooler,
+/obj/machinery/computer/modular/preset/supply_public,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "rL" = (
@@ -8414,6 +8466,10 @@
 /obj/item/stack/cable_coil/random,
 /obj/random/maintenance,
 /obj/random/snack,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckone/aft/starboard)
+"rR" = (
+/obj/random/obstruction,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "rS" = (
@@ -15210,7 +15266,7 @@ kO
 bx
 bz
 bz
-cy
+hU
 iP
 hs
 hV
@@ -15463,7 +15519,7 @@ hd
 bM
 bM
 bM
-hS
+rK
 hP
 oW
 ht
@@ -15583,14 +15639,14 @@ cZ
 di
 dq
 hd
-rK
+cy
 gP
 hc
 hc
 hf
 hx
 hd
-hU
+hS
 hQ
 oX
 ig
@@ -18773,7 +18829,7 @@ dn
 on
 dn
 dn
-dn
+rR
 dn
 dn
 fB
