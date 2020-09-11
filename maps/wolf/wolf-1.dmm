@@ -568,11 +568,14 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/thruster_bay/one)
 "bF" = (
-/obj/structure/bed/chair,
 /obj/effect/floor_decal/corner/brown/three_quarters{
 	icon_state = "corner_white_three_quarters";
 	dir = 8
 	},
+/obj/structure/fireaxecabinet{
+	pixel_z = 30
+	},
+/obj/structure/bed/chair,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/lobby)
 "bG" = (
@@ -909,9 +912,6 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/lobby)
 "cv" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/ship/wolf/cargo/lobby)
@@ -1618,15 +1618,11 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/cargo/lobby)
 "dY" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	icon_state = "map_vent_out";
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	icon_state = "pipe-s";
+/obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/effect/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/ship/wolf/cargo/lobby)
 "dZ" = (
 /obj/machinery/alarm{
@@ -1996,8 +1992,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/shuttle/gnat/cockpit)
 "eN" = (
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/lobby)
 "eO" = (
 /obj/effect/paint/black,
@@ -2266,8 +2269,7 @@
 /turf/simulated/floor/tiled,
 /area/space)
 "fp" = (
-/obj/effect/catwalk_plated/white,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "fq" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -4008,11 +4010,7 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/port)
 "iS" = (
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "iT" = (
@@ -5124,15 +5122,23 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/port)
 "lb" = (
-/obj/structure/cable/green{
-	icon_state = "2-4"
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "lc" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 4
 	},
+/obj/structure/cable/green{
+	icon_state = "0-8"
+	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "ld" = (
@@ -5291,13 +5297,11 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/cargo/disposals)
 "lx" = (
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 4
-	},
 /obj/structure/cable/green{
-	icon_state = "0-8"
+	icon_state = "1-2"
 	},
+/obj/structure/table/reinforced,
+/obj/item/shard,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "ly" = (
@@ -5414,11 +5418,15 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/port)
 "lM" = (
-/obj/item/chems/glass/beaker/vial/random,
 /obj/structure/table/rack,
-/obj/item/tape_roll,
 /obj/random/toolbox,
 /obj/random/tool,
+/obj/item/tape_roll,
+/obj/item/chems/glass/beaker/vial/random,
+/obj/machinery/light/small{
+	icon_state = "bulb_map";
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "lN" = (
@@ -5611,7 +5619,16 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/port)
 "mm" = (
-/obj/random/junk,
+/obj/structure/railing/mapped,
+/obj/structure/railing/mapped{
+	dir = 8
+	},
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/obj/structure/table/rack,
+/obj/random/maintenance,
+/obj/random/maintenance/clean,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "mn" = (
@@ -5888,9 +5905,13 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/one)
 "nf" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
+/obj/structure/railing/mapped,
+/obj/structure/railing/mapped{
+	dir = 1
 	},
+/obj/random/junk,
+/obj/item/storage/mre/random,
+/obj/random/maintenance/clean,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/aft/starboard)
 "ng" = (
@@ -6941,6 +6962,12 @@
 /area/ship/wolf/cargo/salvage)
 "pd" = (
 /obj/effect/floor_decal/corner/brown/three_quarters,
+/obj/structure/closet/crate,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/glass/fifty,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/fabrication)
 "pe" = (
@@ -7101,19 +7128,23 @@
 /obj/structure/table/reinforced,
 /obj/random/material,
 /obj/random/material,
-/obj/effect/floor_decal/corner/brown/three_quarters,
+/obj/effect/floor_decal/corner/brown/full,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/fabrication)
 "pu" = (
-/obj/structure/table/reinforced,
-/obj/random/material,
-/obj/random/material,
-/obj/effect/floor_decal/corner/brown/three_quarters{
-	icon_state = "corner_white_three_quarters";
-	dir = 4
+/obj/effect/floor_decal/corner/brown{
+	icon_state = "corner_white";
+	dir = 5
 	},
+/obj/structure/table/rack,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/tiled,
-/area/ship/wolf/cargo/fabrication)
+/area/ship/wolf/cargo/comissary)
 "pv" = (
 /obj/effect/floor_decal/corner/brown/three_quarters{
 	icon_state = "corner_white_three_quarters";
@@ -7950,18 +7981,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/wolf/science/server_room)
 "rf" = (
-/obj/effect/floor_decal/corner/brown{
-	icon_state = "corner_white";
-	dir = 5
-	},
-/obj/structure/table/rack,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/turf/simulated/floor/tiled,
-/area/ship/wolf/cargo/comissary)
-"rg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	icon_state = "map_scrubber_on";
 	dir = 8
@@ -7974,6 +7993,27 @@
 	icon_state = "corner_white_three_quarters";
 	dir = 1
 	},
+/obj/random/snack,
+/obj/random/snack,
+/obj/random/snack,
+/obj/random/snack,
+/obj/random/snack,
+/obj/random/snack,
+/obj/random/snack,
+/turf/simulated/floor/tiled,
+/area/ship/wolf/cargo/comissary)
+"rg" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/corner/brown/three_quarters{
+	icon_state = "corner_white_three_quarters";
+	dir = 1
+	},
+/obj/item/chems/food/drinks/bottle/space_mountain_wind,
+/obj/item/chems/food/drinks/bottle/space_up,
+/obj/item/chems/food/drinks/bottle/space_up,
+/obj/item/chems/food/drinks/bottle/cola,
+/obj/item/chems/food/drinks/bottle/cola,
+/obj/item/chems/food/drinks/bottle/cola,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rh" = (
@@ -8063,11 +8103,18 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/cargo/comissary)
 "rp" = (
+/obj/structure/table/rack,
 /obj/effect/floor_decal/corner/brown{
 	icon_state = "corner_white";
 	dir = 6
 	},
-/obj/structure/table/rack,
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/item/chems/food/drinks/bottle/gin,
+/obj/item/chems/food/drinks/bottle/bluecuracao,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rq" = (
@@ -8094,29 +8141,26 @@
 "rs" = (
 /obj/effect/floor_decal/corner/brown/three_quarters,
 /obj/structure/table/rack,
+/obj/item/chems/food/drinks/glass2/fitnessflask/proteinshake,
+/obj/item/chems/food/drinks/glass2/fitnessflask/proteinshake,
+/obj/item/chems/food/drinks/glass2/fitnessflask/proteinshake,
+/obj/item/chems/food/drinks/glass2/fitnessflask/proteinshake,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rt" = (
-/obj/structure/table/rack,
-/obj/effect/floor_decal/corner/brown/three_quarters{
-	icon_state = "corner_white_three_quarters";
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/ship/wolf/cargo/comissary)
-"ru" = (
-/obj/structure/table/rack,
 /obj/effect/floor_decal/corner/brown{
 	icon_state = "corner_white";
 	dir = 6
 	},
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
+"ru" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/maintenance/deckone/fore/port)
 "rv" = (
 /obj/effect/floor_decal/corner/brown{
 	icon_state = "corner_white";
@@ -8130,6 +8174,20 @@
 	dir = 10
 	},
 /obj/structure/table/rack,
+/obj/item/chems/food/condiment/small/packet/coffee,
+/obj/item/chems/food/condiment/small/packet/coffee,
+/obj/item/chems/food/condiment/small/packet/coffee,
+/obj/item/chems/food/condiment/small/packet/coffee,
+/obj/item/chems/food/condiment/small/packet/coffee,
+/obj/item/chems/food/condiment/small/packet/coffee,
+/obj/item/chems/food/condiment/small/packet/tea,
+/obj/item/chems/food/condiment/small/packet/tea,
+/obj/item/chems/food/condiment/small/packet/tea,
+/obj/item/chems/food/condiment/small/packet/tea,
+/obj/item/chems/food/condiment/small/packet/watermelon,
+/obj/item/chems/food/condiment/small/packet/watermelon,
+/obj/item/chems/food/condiment/small/packet/apple,
+/obj/item/chems/food/condiment/small/packet/apple,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rx" = (
@@ -8148,6 +8206,31 @@
 	icon_state = "corner_white";
 	dir = 10
 	},
+/obj/structure/table/rack,
+/obj/item/storage/fancy/cigarettes/carcinomas,
+/obj/item/storage/fancy/cigarettes/cigarello,
+/obj/item/storage/fancy/cigarettes/cigarello/mint,
+/obj/item/storage/fancy/cigarettes/cigarello/variety,
+/obj/item/storage/fancy/cigarettes/dromedaryco,
+/obj/item/storage/fancy/cigarettes/jerichos,
+/obj/item/storage/fancy/cigarettes/professionals,
+/obj/item/storage/fancy/cigarettes/menthols,
+/obj/random/smokes,
+/obj/random/smokes,
+/obj/random/smokes,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/machinery/door/window{
+	icon_state = "left";
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rz" = (
@@ -8156,6 +8239,26 @@
 	dir = 4
 	},
 /obj/structure/table/rack,
+/obj/random/smokes,
+/obj/random/smokes,
+/obj/random/smokes,
+/obj/random/smokes,
+/obj/random/smokes,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	icon_state = "rwindow";
+	dir = 4
+	},
+/obj/machinery/door/window{
+	icon_state = "left";
+	dir = 1
+	},
+/obj/item/storage/fancy/cigarettes/killthroat,
+/obj/item/storage/fancy/cigarettes/luckystars,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rA" = (
@@ -8217,6 +8320,10 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/space)
+"rF" = (
+/obj/machinery/door/airlock/hatch/maintenance,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckone/aft/starboard)
 "rG" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	icon_state = "map_vent_out";
@@ -8253,6 +8360,68 @@
 	},
 /turf/simulated/floor/tiled,
 /area/space)
+"rJ" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/maintenance/deckone/fore/port)
+"rK" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/research/three_quarters{
+	icon_state = "corner_white_three_quarters";
+	dir = 8
+	},
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/simulated/floor/tiled/white,
+/area/ship/wolf/science/science_hall)
+"rL" = (
+/obj/structure/reagent_dispensers/beerkeg,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckone/aft/starboard)
+"rM" = (
+/obj/structure/cable/green{
+	icon_state = "2-4"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckone/aft/starboard)
+"rN" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckone/aft/starboard)
+"rO" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckone/aft/starboard)
+"rP" = (
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckone/aft/starboard)
+"rQ" = (
+/obj/structure/railing/mapped,
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/obj/structure/table/rack,
+/obj/item/stack/cable_coil/random,
+/obj/random/maintenance,
+/obj/random/snack,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckone/aft/starboard)
+"rS" = (
+/obj/random/junk,
+/obj/structure/catwalk,
+/obj/item/shard,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckone/aft/starboard)
 
 (1,1,1) = {"
 aa
@@ -15405,8 +15574,8 @@ du
 gk
 gH
 bw
-eL
-eL
+ru
+rJ
 cZ
 cZ
 cZ
@@ -15414,7 +15583,7 @@ cZ
 di
 dq
 hd
-cy
+rK
 gP
 hc
 hc
@@ -16945,7 +17114,7 @@ ct
 cu
 dX
 eF
-eN
+cv
 lH
 ee
 fx
@@ -16959,7 +17128,7 @@ oG
 oR
 pg
 pn
-pu
+pt
 ph
 ph
 rj
@@ -17070,8 +17239,8 @@ do
 do
 ct
 cW
+cv
 eN
-dY
 px
 lI
 ef
@@ -17197,7 +17366,7 @@ cU
 cU
 ct
 dC
-cv
+dY
 fc
 px
 dH
@@ -17215,7 +17384,7 @@ hN
 jc
 oJ
 ph
-rf
+pu
 rl
 rr
 rl
@@ -17469,7 +17638,7 @@ pi
 po
 qW
 ph
-rg
+rf
 ri
 rG
 rl
@@ -17597,9 +17766,9 @@ cx
 cx
 cx
 ph
-rt
-ru
+rg
 rp
+rt
 rz
 jh
 jh
@@ -17728,11 +17897,11 @@ jh
 jh
 ph
 ph
-dn
-lb
-nf
-nf
-nf
+iS
+rM
+rO
+lx
+rO
 ki
 kk
 fw
@@ -17853,13 +18022,13 @@ nI
 dn
 mS
 jh
-dn
-dn
-dn
-lc
-dn
-mm
-mm
+rL
+iS
+iS
+rN
+iS
+rP
+rS
 dc
 dg
 dg
@@ -17980,11 +18149,11 @@ dn
 jh
 jh
 jh
-dn
-dn
-dn
-lc
-dn
+iS
+iS
+mm
+rN
+iS
 nw
 cO
 dc
@@ -18105,13 +18274,13 @@ pr
 jh
 dn
 dn
-lM
-jh
 dn
-dn
-dn
-lc
-dn
+rF
+iS
+iS
+nf
+rN
+iS
 jU
 aa
 aa
@@ -18232,12 +18401,12 @@ ps
 jh
 dn
 dn
-dn
-fB
-dn
+lM
+jh
 iS
-dn
-lx
+lb
+rQ
+lc
 jU
 jU
 aa
@@ -18484,7 +18653,7 @@ ob
 ob
 ob
 jh
-dn
+rF
 cO
 aa
 aa
