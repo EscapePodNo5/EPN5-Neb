@@ -109,6 +109,7 @@
 	access = list(access_bridge, access_heads, access_security, access_RC_announce, access_keycard_auth, access_external_airlocks, access_eva)
 	total_positions = 2
 	spawn_positions = 2
+	outfit_type = /decl/hierarchy/outfit/job/wolf/bridge_officer
 
 /datum/job/wolf/command/bridge_officer/get_description_blurb()
 	var/desc = {"You are a bridge officer aboard the FTE Odyssey. Not quite high enough on the chain of command to have any real power, your job lies in piloting the ship, operating sensors
@@ -163,6 +164,7 @@
 	access = list(access_security, access_brig, access_sec_doors, access_forensics_lockers, access_armory, access_external_airlocks, access_maint_tunnels, access_eva)
 	total_positions = 1
 	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/wolf/brig_chief
 
 /datum/job/wolf/security/brig_chief/get_description_blurb()
 	var/desc = {"You are the Brig Chief aboard the FTE Odyssey. Your job is to watch over the brig and armory while maintaining a careful eye on any crew or captured individuals who've been placed
@@ -175,6 +177,7 @@
 	access = list(access_security, access_brig, access_sec_doors, access_forensics_lockers, access_external_airlocks, access_maint_tunnels, access_eva)
 	total_positions = 2
 	spawn_positions = 2
+	outfit_type = /decl/hierarchy/outfit/job/wolf/armsman
 
 /datum/job/wolf/security/armsmen/get_description_blurb()
 	var/desc = {"You are an Armsman aboard the FTE Odyssey. A fancy word for a hired gun. Your job is to keep the crew in order and arrest any who violate ship's regulations, and to defend the ship by
@@ -187,6 +190,7 @@
 	access = list(access_security, access_brig, access_sec_doors, access_forensics_lockers, access_external_airlocks, access_maint_tunnels, access_eva)
 	total_positions = 1
 	spawn_positions = 1
+	outfit_type = 	/decl/hierarchy/outfit/job/wolf/gunship_pilot
 
 /datum/job/wolf/security/gunship_pilot/get_description_blurb()
 	var/desc = {"You are a Gunship Pilot aboard the FTE Odyssey. The chances are that either you showed enough aptitude in a simulator for FENRIS to pay your way in exchange for a contract,
@@ -198,6 +202,7 @@
 	selection_color = COLOR_AMBER
 	department_refs = list(DEPT_ENGINEERING)
 	supervisors = "the Chief Engineer"
+	outfit_type = 	/decl/hierarchy/outfit/job/wolf/engineering
 
 /datum/job/wolf/engineering/CE
 	title = "Chief Engineer"
@@ -311,6 +316,7 @@
 		)
 	total_positions = 1
 	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/wolf/medtech
 
 /datum/job/wolf/medical/medtech/get_description_blurb()
 	var/desc = {"You are the Medical Support Technician aboard the FTE Odyssey. Your job is to function as a mix between a doctor and paramedic. You exist to rescue people who are in dangerous situations
@@ -332,6 +338,7 @@
 		)
 	total_positions = 2
 	spawn_positions = 2
+	outfit_type = /decl/hierarchy/outfit/job/wolf/doctor
 
 /datum/job/wolf/medical/doctor/get_description_blurb()
 	var/desc = {"You are a Medical Doctor aboard the FTE Odyssey. Hired to patch up the gun-slingers and greasemonkeys that run this ship and inevitably get injured in combat, your job is to mind
@@ -352,6 +359,7 @@
 		)
 	total_positions = 1
 	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/wolf/pharmacist
 
 /datum/job/wolf/medical/pharmacist/get_description_blurb()
 	var/desc = {"You are the Pharmacist aboard the FTE Odyssey, placed in charge of the Chemistry Lab. Your main function is to make sure Medbay is supplied with a steady stream of useful medicines
@@ -417,6 +425,7 @@
 		)
 	total_positions = 2
 	spawn_positions = 2
+	outfit_type = /decl/hierarchy/outfit/job/wolf/research_tech
 
 /datum/job/wolf/science/research_tech/get_description_blurb()
 	var/desc = {"You are a Research Technician aboard the FTE Odyssey. Grants are hard to get, and a bunk on a proper science ship even harder to get. Sometimes you have to compromise. You are here
@@ -434,6 +443,7 @@
 		)
 	total_positions = 1
 	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/wolf/robotics
 
 /datum/job/wolf/science/robotics/get_description_blurb()
 	var/desc = {"You are the Robotics Specialist aboard the FTE Odyssey. Given the tendency for full-body-prosthetic crew members and unlawed IPCs to take damage during combat - be it boarding
@@ -499,6 +509,7 @@
 		)
 	total_positions = 2
 	spawn_positions = 2
+	outfit_type = /decl/hierarchy/outfit/job/wolf/deck_hand
 
 /datum/job/wolf/civilian/deck_hand/get_description_blurb()
 	var/desc = {"You are a Deck Hand aboard the FTE Odyssey. Your job is to organize and manage the mess that is the Cargo bay, storing materials and running the commissary to sell goods to the crew
@@ -540,6 +551,7 @@
 		)
 	total_positions = 1
 	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/wolf/chef
 
 /datum/job/wolf/civilian/chef/get_description_blurb()
 	var/desc = {"You are the Mess Cook aboard the FTE Odyssey. Your job is to keep the crew fat and happy by providing at least somewhat servicable food to them. You're not expected to be the best
@@ -558,6 +570,7 @@
 		)
 	total_positions = 1
 	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/wolf/bartender
 
 /datum/job/wolf/civilian/bartender/get_description_blurb()
 	var/desc = {"You are the Bartender aboard the FTE Odyssey. Your job is to keep the crew's Alcohol Blood Level at a place where they're nice and happy, and willing to forget the fact that
@@ -576,6 +589,7 @@
 		)
 	total_positions = 1
 	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/wolf/botanist
 
 /datum/job/wolf/civilian/botanist/get_description_blurb()
 	var/desc = {"You are the Botanist aboard the FTE Odyssey. Your job is to make sure the crew has plenty of fresh produce to keep them happy and healthy. Space scurvy would be pretty bad, wouldn't it?
@@ -592,6 +606,7 @@
 
 	total_positions = 1
 	spawn_positions = 1
+	outfit_type = /decl/hierarchy/outfit/job/wolf/janitor
 
 /datum/job/wolf/civilian/janitor/get_description_blurb()
 	var/desc = {"You are the Janitor aboard the FTE Odyssey. A simple job, but a never the less vital one. Your job is to keep the ship clean during routine life - replace bulbs, and preform general maintenance
