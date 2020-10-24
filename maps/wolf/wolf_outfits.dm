@@ -212,19 +212,6 @@
 	pda_type = /obj/item/modular_computer/pda/security
 	l_ear = /obj/item/radio/headset/heads/hos
 
-/decl/hierarchy/outfit/job/wolf/brig_chief/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/security/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/security/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 /decl/hierarchy/outfit/job/wolf/armsman
 	name = WOLF_OUTFIT_JOB_NAME("Armsman")
@@ -235,20 +222,6 @@
 	pda_type = /obj/item/modular_computer/pda/security
 	l_ear = /obj/item/radio/headset/sec
 
-/decl/hierarchy/outfit/job/wolf/armsman/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/security/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/security/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
-
 /decl/hierarchy/outfit/job/wolf/gunship_pilot
 	name = WOLF_OUTFIT_JOB_NAME("Gunship Pilot")
 	flags = OUTFIT_HAS_BACKPACK
@@ -258,19 +231,6 @@
 	pda_type = /obj/item/modular_computer/pda/security
 	l_ear = /obj/item/radio/headset/sec
 
-/decl/hierarchy/outfit/job/wolf/gunship_pilot/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/security/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/security/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 //ENGINEERING//
 
@@ -283,19 +243,6 @@
 	pda_type = /obj/item/modular_computer/pda/engineering
 	l_ear = /obj/item/radio/headset/headset_eng
 
-/decl/hierarchy/outfit/job/wolf/engineering/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/engineering/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/engineering/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 //MEDICAL//
 
@@ -309,19 +256,6 @@
 	belt = /obj/item/scanner/health
 	l_ear = /obj/item/radio/headset/headset_med
 
-/decl/hierarchy/outfit/job/wolf/medtech/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/medical/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/medical/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 /decl/hierarchy/outfit/job/wolf/doctor
 	name = WOLF_OUTFIT_JOB_NAME("Doctor")
@@ -333,19 +267,6 @@
 	belt = /obj/item/scanner/health
 	l_ear = /obj/item/radio/headset/headset_med
 
-/decl/hierarchy/outfit/job/wolf/doctor/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/medical/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/medical/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 /decl/hierarchy/outfit/job/wolf/pharmacist
 	name = WOLF_OUTFIT_JOB_NAME("Pharmacist")
@@ -356,19 +277,6 @@
 	pda_type = /obj/item/modular_computer/pda/medical
 	l_ear = /obj/item/radio/headset/headset_med
 
-/decl/hierarchy/outfit/job/wolf/pharmacist/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/medical/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/medical/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 //SCIENCE//
 
@@ -381,19 +289,6 @@
 	pda_type = /obj/item/modular_computer/pda/science
 	l_ear = /obj/item/radio/headset/headset_sci
 
-/decl/hierarchy/outfit/job/wolf/research_tech/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/science/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/science/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 /decl/hierarchy/outfit/job/wolf/robotics
 	name = WOLF_OUTFIT_JOB_NAME("Robotics Specialist")
@@ -404,19 +299,6 @@
 	pda_type = /obj/item/modular_computer/pda/science
 	l_ear = /obj/item/radio/headset/headset_sci
 
-/decl/hierarchy/outfit/job/wolf/robotics/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/science/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/science/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 //CARGO//
 
@@ -430,19 +312,7 @@
 	belt = /obj/item/clipboard/ebony
 	l_ear = /obj/item/radio/headset/headset_cargo
 
-/decl/hierarchy/outfit/job/wolf/deck_hand/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/cargo/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/cargo/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
+
 
 /decl/hierarchy/outfit/job/wolf/salvage_technician
 	name = WOLF_OUTFIT_JOB_NAME("Salvage Technician")
@@ -453,19 +323,7 @@
 	pda_type = /obj/item/modular_computer/pda/cargo
 	l_ear = /obj/item/radio/headset/headset_cargo
 
-/decl/hierarchy/outfit/job/wolf/deck_hand/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/cargo/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/cargo/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
+
 
 //SERVICE//
 
@@ -478,19 +336,6 @@
 	pda_type = /obj/item/modular_computer/pda
 	l_ear = /obj/item/radio/headset/headset_service
 
-/decl/hierarchy/outfit/job/wolf/chef/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 /decl/hierarchy/outfit/job/wolf/bartender
 	name = WOLF_OUTFIT_JOB_NAME("Bartender")
@@ -501,19 +346,6 @@
 	pda_type = /obj/item/modular_computer/pda
 	l_ear = /obj/item/radio/headset/headset_service
 
-/decl/hierarchy/outfit/job/wolf/bartender/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 /decl/hierarchy/outfit/job/wolf/botanist
 	name = WOLF_OUTFIT_JOB_NAME("Botanist")
@@ -524,19 +356,7 @@
 	pda_type = /obj/item/modular_computer/pda
 	l_ear = /obj/item/radio/headset/headset_service
 
-/decl/hierarchy/outfit/job/wolf/botanist/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
+
 
 /decl/hierarchy/outfit/job/wolf/janitor
 	name = WOLF_OUTFIT_JOB_NAME("Janitor")
@@ -547,19 +367,6 @@
 	pda_type = /obj/item/modular_computer/pda
 	l_ear = /obj/item/radio/headset/headset_service
 
-/decl/hierarchy/outfit/job/wolf/janitor/post_equip(var/mob/living/carbon/human/H)
-	..()
-	var/obj/item/clothing/uniform = H.w_uniform
-	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/chevrons = new()
-		var/obj/item/clothing/accessory/dept_stripes/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
-		if(uniform.can_attach_accessory(stripes))
-			uniform.attach_accessory(null, stripes)
-		else
-			qdel(chevrons)
-			qdel(stripes)
 
 
 /obj/item/card/id/wolf
