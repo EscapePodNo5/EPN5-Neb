@@ -6,7 +6,7 @@
 	icon_state = "handcuff"
 	health = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_LOWER_BODY
 	throwforce = 5
 	w_class = ITEM_SIZE_SMALL
 	throw_speed = 2
@@ -123,7 +123,7 @@ var/last_chew = 0
 	if (H.wear_mask) return
 	if (istype(H.wear_suit, /obj/item/clothing/suit/straight_jacket)) return
 
-	var/obj/item/organ/external/O = H.organs_by_name[(H.hand ? BP_L_HAND : BP_R_HAND)]
+	var/obj/item/organ/external/O = H.organs_by_name[H.get_active_held_item_slot()]
 	if (!O) return
 
 	H.visible_message("<span class='warning'>\The [H] chews on \his [O.name]!</span>", "<span class='warning'>You chew on your [O.name]!</span>")

@@ -5,7 +5,8 @@
 	stack_type = /obj/item/stack/material/mhydrogen
 	color = "#e6c5de"
 	stack_origin_tech = "{'materials':6,'powerstorage':6,'magnets':5}"
-	ore_smelts_to = /decl/material/gas/hydrogen/tritium
+	heating_products = list(/decl/material/gas/hydrogen/tritium = 1)
+	heating_point = 990
 	ore_name = "raw hydrogen"
 	ore_scan_icon = "mineral_rare"
 	ore_icon_overlay = "gems"
@@ -20,7 +21,7 @@
 	gas_specific_heat = 100
 	gas_molar_mass = 0.002
 	gas_flags = XGM_GAS_FUEL
-	gas_burn_product = /decl/material/liquid/water
+	burn_product = /decl/material/liquid/water
 	gas_symbol_html = "H<sub>2</sub>"
 	gas_symbol = "H2"
 	ore_type_value = ORE_EXOTIC
@@ -37,7 +38,7 @@
 	stack_origin_tech = "{'wormholes':2,'materials':6,'exoticmatter':4}"
 	luminescence = 3
 	value = 3
-	icon_base = "stone"
+	icon_base = 'icons/turf/walls/stone.dmi'
 	table_icon_base = "stone"
 	shard_type = SHARD_SHARD
 	hardness = MAT_VALUE_RIGID

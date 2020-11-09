@@ -311,8 +311,8 @@
 
 /turf/simulated/floor/ice
 	name = "ice"
-	icon = 'icons/turf/snow.dmi'
-	icon_state = "ice"
+	icon = 'icons/turf/exterior/ice.dmi'
+	icon_state = "0"
 
 /turf/simulated/floor/snow
 	name = "snow"
@@ -333,7 +333,6 @@
 
 /turf/simulated/floor/beach/sand/desert
 	icon_state = "desert"
-	has_resources = 1
 
 /turf/simulated/floor/beach/sand/desert/Initialize()
 	. = ..()

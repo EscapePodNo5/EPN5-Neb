@@ -37,9 +37,8 @@ var/list/outfits_decls_by_type_
 	var/l_pocket = null
 	var/r_pocket = null
 	var/suit_store = null
-	var/r_hand = null
-	var/l_hand = null
 	var/holster = null
+	var/list/hands
 	var/list/backpack_contents = list() // In the list(path=count,otherpath=count) format
 
 	var/id_type
@@ -93,7 +92,7 @@ var/list/outfits_decls_by_type_
 
 	if(!(OUTFIT_ADJUSTMENT_SKIP_POST_EQUIP & equip_adjustments))
 		post_equip(H)
-	H.regenerate_icons()
+	H.update_icons()
 	if(W) // We set ID info last to ensure the ID photo is as correct as possible.
 		H.set_id_info(W)
 	return 1
@@ -104,6 +103,8 @@ var/list/outfits_decls_by_type_
 	//Start with uniform,suit,backpack for additional slots
 	if(uniform)
 		H.equip_to_slot_or_del(new uniform(H),slot_w_uniform_str)
+		if(!H.get_equipped_item(slot_w_uniform_str))
+			H.equip_to_slot_or_del(new /obj/item/clothing/under/harness, slot_w_uniform_str)
 	if(holster && H.w_uniform)
 		var/obj/item/clothing/accessory/equip_holster = new holster
 		H.w_uniform.attackby(H, equip_holster)
@@ -139,10 +140,8 @@ var/list/outfits_decls_by_type_
 		H.equip_to_slot_or_del(new r_pocket(H),slot_r_store_str)
 	if(suit_store)
 		H.equip_to_slot_or_del(new suit_store(H),slot_s_store_str)
-	if(l_hand)
-		H.put_in_l_hand(new l_hand(H))
-	if(r_hand)
-		H.put_in_r_hand(new r_hand(H))
+	for(var/hand in hands)
+		H.put_in_hands(new hand(H))
 
 	if((flags & OUTFIT_HAS_BACKPACK) && !(OUTFIT_ADJUSTMENT_SKIP_BACKPACK & equip_adjustments))
 		var/decl/backpack_outfit/bo

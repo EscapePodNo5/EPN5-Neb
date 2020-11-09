@@ -52,7 +52,7 @@ var/list/laser_wavelengths
 	charge_cost = 100
 	accuracy = 2
 	fire_delay = 10
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_LOWER_BODY
 	cell_type = /obj/item/cell/high
 	material = /decl/material/solid/metal/steel
 	projectile_type = /obj/item/projectile/beam/variable
@@ -219,14 +219,11 @@ var/list/laser_wavelengths
 
 	if(ismob(loc))
 		var/mob/M = loc
-		if(M.l_hand == src)
-			M.update_inv_l_hand()
-		else if(M.r_hand == src)
-			M.update_inv_r_hand()
+		M.update_inv_hands()
 
 /obj/item/gun/energy/capacitor/get_mob_overlay(mob/user_mob, slot)
 	var/image/ret = ..()
-	if(slot == slot_l_hand_str || slot == slot_r_hand_str || slot == slot_back_str)
+	if(slot == BP_L_HAND || slot == BP_R_HAND || slot == slot_back_str)
 		var/image/I = image(icon, "[ret.icon_state]-wiring")
 		I.color = wiring_color
 		I.appearance_flags |= RESET_COLOR

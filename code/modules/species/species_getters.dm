@@ -60,10 +60,11 @@
 		return
 
 	var/covered = 0 // Basic coverage can help.
+	var/held_items = H.get_held_items()
 	for(var/obj/item/clothing/clothes in H)
-		if(H.l_hand == clothes || H.r_hand == clothes)
+		if(clothes in held_items)
 			continue
-		if((clothes.body_parts_covered & UPPER_TORSO) && (clothes.body_parts_covered & LOWER_TORSO))
+		if((clothes.body_parts_covered & SLOT_UPPER_BODY) && (clothes.body_parts_covered & SLOT_LOWER_BODY))
 			covered = 1
 			break
 

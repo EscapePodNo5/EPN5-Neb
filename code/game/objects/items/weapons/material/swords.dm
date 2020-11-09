@@ -3,7 +3,7 @@
 	desc = "What are you standing around staring at this for? Get to killing!"
 	icon_state = ICON_STATE_WORLD
 	icon = 'icons/obj/items/weapon/swords/claymore.dmi'
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_LOWER_BODY
 	w_class = ITEM_SIZE_LARGE
 	material_force_multiplier = 0.5 // 30 when wielded with hardnes 60 (steel)
 	armor_penetration = 10
@@ -38,7 +38,7 @@
 		if(material.reflectiveness >= MAT_VALUE_SHINY)
 			add_overlay(get_mutable_overlay(icon, "[icon_state]_shine"), adjust_brightness(color, 20 + material.reflectiveness))
 
-/obj/item/sword/experimental_mob_overlay(mob/user_mob, slot)
+/obj/item/sword/experimental_mob_overlay(mob/user_mob, slot, bodypart)
 	var/image/res = ..()
 	//Do not color scabbarded blades
 	if(applies_material_colour && (slot == slot_back_str || slot == slot_belt_str))
@@ -56,7 +56,7 @@
 	name = "katana"
 	desc = "Woefully underpowered in D20. This one looks pretty sharp."
 	icon = 'icons/obj/items/weapon/swords/katana.dmi'
-	slot_flags = SLOT_BELT | SLOT_BACK
+	slot_flags = SLOT_LOWER_BODY | SLOT_BACK
 
 /obj/item/sword/katana/set_material(new_material)
 	. = ..()
@@ -78,7 +78,7 @@
 	material = /decl/material/solid/metal/plasteel/titanium
 	hitsound = 'sound/weapons/anime_sword.wav'
 
-/obj/item/sword/katana/vibro/equipped(mob/user, slot)
-	if(slot == slot_l_hand_str || slot == slot_r_hand_str)
+/obj/item/sword/katana/vibro/equipped(mob/living/user, slot)
+	if(slot in user.held_item_slots)
 		playsound(src, 'sound/weapons/katana_out.wav', 50, 1, -5)
 	

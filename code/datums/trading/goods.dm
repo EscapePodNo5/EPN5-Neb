@@ -3,7 +3,7 @@
 	name_language = TRADER_DEFAULT_NAME
 	origin = "Toy Shop"
 	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY
-	possible_origins = list("Toys R Ours", "LEGS GO", "Kay-Cee Toys", "Build-a-Cat", "Magic Box", "The Positronic's Dungeon and Baseball Card Shop")
+	possible_origins = list("Toys R Ours", "LET'S GO", "Kay-Cee Toys", "Build-a-Cat", "Magic Box", "The Positronic's Dungeon and Baseball Card Shop")
 	speech = list("hail_generic"    = "Uhh... hello? Welcome to ORIGIN, I hope you have a, uhh.... good shopping trip.",
 				"hail_deny"         = "Nah, you're not allowed here. At all",
 
@@ -184,12 +184,11 @@ Sells devices, odds and ends, and medical stuff
 								/obj/item/binoculars                = TRADER_THIS_TYPE,
 								/obj/item/cable_painter             = TRADER_THIS_TYPE,
 								/obj/item/flash                     = TRADER_THIS_TYPE,
-								/obj/item/floor_painter             = TRADER_THIS_TYPE,
+								/obj/item/paint_sprayer             = TRADER_THIS_TYPE,
 								/obj/item/multitool                 = TRADER_THIS_TYPE,
 								/obj/item/lightreplacer             = TRADER_THIS_TYPE,
 								/obj/item/megaphone                 = TRADER_THIS_TYPE,
 								/obj/item/paicard                   = TRADER_THIS_TYPE,
-								/obj/item/pipe_painter              = TRADER_THIS_TYPE,
 								/obj/item/scanner/health            = TRADER_THIS_TYPE,
 								/obj/item/scanner/gas                  = TRADER_ALL,
 								/obj/item/scanner/spectrometer         = TRADER_ALL,

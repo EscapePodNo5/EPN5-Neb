@@ -28,7 +28,7 @@
 	tool_interaction_flags = initial(tool_interaction_flags)
 
 /obj/structure/hygiene/attackby(var/obj/item/thing, var/mob/user)
-	if(clogged > 0 && isPlunger(thing))
+	if(clogged > 0 && isplunger(thing))
 		user.visible_message("<span class='notice'>\The [user] strives valiantly to unclog \the [src] with \the [thing]!</span>")
 		spawn
 			playsound(loc, 'sound/effects/plunger.ogg', 75, 1)
@@ -400,9 +400,7 @@
 /obj/structure/hygiene/sink/attack_hand(var/mob/user)
 	if (ishuman(user))
 		var/mob/living/carbon/human/H = user
-		var/obj/item/organ/external/temp = H.organs_by_name[BP_R_HAND]
-		if (user.hand)
-			temp = H.organs_by_name[BP_L_HAND]
+		var/obj/item/organ/external/temp = H.organs_by_name[H.get_active_held_item_slot()]
 		if(temp && !temp.is_usable())
 			to_chat(user,"<span class='notice'>You try to move your [temp.name], but cannot!</span>")
 			return
@@ -433,8 +431,7 @@
 
 
 /obj/structure/hygiene/sink/attackby(obj/item/O, var/mob/living/user)
-
-	if(isPlunger(O) && clogged > 0)
+	if(isplunger(O) && clogged > 0)
 		return ..()
 
 	if(busy)
@@ -541,7 +538,7 @@
 	tape_type = /obj/item/tape/bog
 	icon_state = "bogroll"
 	item_state = "mummy_poor"
-	slot_flags = SLOT_HEAD | SLOT_OCLOTHING
+	slot_flags = SLOT_HEAD | SLOT_OVER_BODY
 	var/sheets = 30
 
 /obj/item/tape/bog

@@ -7,7 +7,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	caliber = CALIBER_PISTOL_SMALL
 	origin_tech = "{'combat':5,'materials':2}"
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_LOWER_BODY|SLOT_BACK
 	ammo_type = /obj/item/ammo_casing/pistol/small
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/smg/rubber
@@ -84,7 +84,7 @@
 		..()
 
 /obj/item/gun/projectile/automatic/assault_rifle/attack_hand(mob/user)
-	if(user.get_inactive_hand() == src && use_launcher)
+	if(user.is_holding_offhand(src) && use_launcher)
 		launcher.unload(user)
 	else
 		..()

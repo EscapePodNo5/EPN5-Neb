@@ -1,3 +1,5 @@
+#define DAMAGE_OVERLAY_COUNT 16
+
 SUBSYSTEM_DEF(materials)
 	name = "Materials"
 	init_order = SS_INIT_MATERIALS
@@ -6,9 +8,6 @@ SUBSYSTEM_DEF(materials)
 	// Material vars.
 	var/list/materials
 	var/list/materials_by_name
-	var/list/alloy_components
-	var/list/alloy_products
-	var/list/processable_ores
 	var/list/fusion_reactions
 	var/list/weighted_minerals_sparse = list()
 	var/list/weighted_minerals_rich = list()
@@ -22,6 +21,9 @@ SUBSYSTEM_DEF(materials)
 	var/list/processing_holders =              list()
 	var/list/pending_reagent_change =          list()
 	var/list/cocktails_by_primary_ingredient = list()
+
+	// Overlay caches
+	var/list/wall_damage_overlays
 
 /datum/controller/subsystem/materials/Initialize()
 
@@ -58,22 +60,21 @@ SUBSYSTEM_DEF(materials)
 	// Various other material functions.
 	build_material_lists()       // Build core material lists.
 	build_fusion_reaction_list() // Build fusion reaction tree.
-	build_gas_lists()             // Cache our gas data.
+
+	var/alpha_inc = 256 / DAMAGE_OVERLAY_COUNT
+	for(var/i = 1; i <= DAMAGE_OVERLAY_COUNT; i++)
+		var/image/img = image(icon = 'icons/turf/walls.dmi', icon_state = "overlay_damage")
+		img.blend_mode = BLEND_MULTIPLY
+		img.alpha = (i * alpha_inc) - 1
+		LAZYADD(wall_damage_overlays, img)
+
 	. = ..()
 
-/datum/controller/subsystem/materials/proc/build_gas_lists()
-
 /datum/controller/subsystem/materials/proc/build_material_lists()
-
 	if(LAZYLEN(materials))
 		return
-
 	materials =         list()
 	materials_by_name = list()
-	alloy_components =  list()
-	alloy_products =    list()
-	processable_ores =  list()
-
 	for(var/mtype in subtypesof(/decl/material))
 		var/decl/material/new_mineral = mtype
 		if(!initial(new_mineral.name))
@@ -85,13 +86,6 @@ SUBSYSTEM_DEF(materials)
 			weighted_minerals_sparse[new_mineral.type] = new_mineral.sparse_material_weight
 		if(new_mineral.rich_material_weight)
 			weighted_minerals_rich[new_mineral.type] = new_mineral.rich_material_weight
-		if(new_mineral.ore_smelts_to || new_mineral.ore_compresses_to)
-			processable_ores[mtype] = TRUE
-		if(new_mineral.alloy_product && LAZYLEN(new_mineral.alloy_materials))
-			alloy_products[new_mineral] = TRUE
-			for(var/component in new_mineral.alloy_materials)
-				processable_ores[component] = TRUE
-				alloy_components[component] = TRUE
 
 /datum/controller/subsystem/materials/proc/build_fusion_reaction_list()
 	fusion_reactions = list()

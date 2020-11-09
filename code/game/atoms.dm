@@ -46,6 +46,7 @@
 
 /atom/proc/Initialize(mapload, ...)
 	SHOULD_CALL_PARENT(TRUE)
+	SHOULD_NOT_SLEEP(TRUE)
 	if(atom_flags & ATOM_FLAG_INITIALIZED)
 		crash_with("Warning: [src]([type]) initialized multiple times!")
 	atom_flags |= ATOM_FLAG_INITIALIZED
@@ -337,6 +338,7 @@ its easier to just keep the beam vertical.
 	. = TRUE
 
 /atom/proc/hitby(atom/movable/AM, var/datum/thrownthing/TT)//already handled by throw impact
+	SHOULD_CALL_PARENT(TRUE)
 	if(isliving(AM))
 		var/mob/living/M = AM
 		M.apply_damage(TT.speed*5, BRUTE)
@@ -429,7 +431,7 @@ its easier to just keep the beam vertical.
 // message is the message output to anyone who can hear.
 // deaf_message (optional) is what deaf people will see.
 // hearing_distance (optional) is the range, how many tiles away the message can be heard.
-/atom/proc/audible_message(var/message, var/deaf_message, var/hearing_distance = world.view, var/checkghosts = null)
+/atom/proc/audible_message(var/message, var/deaf_message, var/hearing_distance = world.view, var/checkghosts = null, var/radio_message)
 	var/turf/T = get_turf(src)
 	var/list/mobs = list()
 	var/list/objs = list()
@@ -592,6 +594,9 @@ its easier to just keep the beam vertical.
 
 /atom/proc/get_color()
 	return color
+
+/atom/proc/set_color(new_color)
+	color = new_color
 
 /atom/proc/get_cell()
 	return

@@ -24,7 +24,7 @@
 
 	var/decl/cultural_info/culture = SSlore.get_culture(cultural_info[TAG_CULTURE])
 	if(culture)
-		real_name = culture.get_random_name(gender, species.name)
+		real_name = culture.get_random_name(src, gender, species.name)
 		name = real_name
 		if(mind)
 			mind.name = real_name
@@ -53,6 +53,7 @@
 /mob/living/carbon/human/Destroy()
 	GLOB.human_mob_list -= src
 	worn_underwear = null
+	LAZYCLEARLIST(smell_cooldown)
 	for(var/organ in organs)
 		qdel(organ)
 	return ..()
@@ -202,9 +203,10 @@
 				dat += "<BR><A href='?src=\ref[src];item=tie;holder=\ref[C]'>Remove accessory</A>"
 	dat += "<BR><HR>"
 
-	if(species.hud.has_hands)
-		dat += "<BR><b>Left hand:</b> <A href='?src=\ref[src];item=[slot_l_hand_str]'>[istype(l_hand) ? l_hand : "nothing"]</A>"
-		dat += "<BR><b>Right hand:</b> <A href='?src=\ref[src];item=[slot_r_hand_str]'>[istype(r_hand) ? r_hand : "nothing"]</A>"
+	for(var/bp in held_item_slots)
+		var/datum/inventory_slot/inv_slot = held_item_slots[bp]
+		var/obj/item/organ/external/E = organs_by_name[bp]
+		dat += "<BR><b>[capitalize(E.name)]:</b> <A href='?src=\ref[src];item=[bp]'>[inv_slot.holding?.name || "nothing"]</A>"
 
 	// Do they get an option to set internals?
 	if(istype(wear_mask, /obj/item/clothing/mask) || istype(head, /obj/item/clothing/head/helmet/space))
@@ -295,7 +297,7 @@
 //Useful when player is being seen by other mobs
 /mob/living/carbon/human/proc/get_id_name(var/if_no_id = "Unknown")
 	. = if_no_id
-	var/obj/item/card/id/I = GetIdCard()
+	var/obj/item/card/id/I = GetIdCard(exceptions = list(/obj/item/holder))
 	if(istype(I))
 		return I.registered_name
 
@@ -1304,21 +1306,21 @@
 	var/feet_exposed = 1
 
 	for(var/obj/item/clothing/C in equipment)
-		if(C.body_parts_covered & HEAD)
+		if(C.body_parts_covered & SLOT_HEAD)
 			head_exposed = 0
-		if(C.body_parts_covered & FACE)
+		if(C.body_parts_covered & SLOT_FACE)
 			face_exposed = 0
-		if(C.body_parts_covered & EYES)
+		if(C.body_parts_covered & SLOT_EYES)
 			eyes_exposed = 0
-		if(C.body_parts_covered & UPPER_TORSO)
+		if(C.body_parts_covered & SLOT_UPPER_BODY)
 			torso_exposed = 0
-		if(C.body_parts_covered & ARMS)
+		if(C.body_parts_covered & SLOT_ARMS)
 			arms_exposed = 0
-		if(C.body_parts_covered & HANDS)
+		if(C.body_parts_covered & SLOT_HANDS)
 			hands_exposed = 0
-		if(C.body_parts_covered & LEGS)
+		if(C.body_parts_covered & SLOT_LEGS)
 			legs_exposed = 0
-		if(C.body_parts_covered & FEET)
+		if(C.body_parts_covered & SLOT_FEET)
 			feet_exposed = 0
 
 	flavor_text = ""
@@ -1740,7 +1742,7 @@
 
 /mob/living/carbon/human/get_sound_volume_multiplier()
 	. = ..()
-	for(var/obj/item/clothing/ears/C in list(l_ear, r_ear))
+	for(var/obj/item/clothing/ears/C in list(l_ear, r_ear, head))
 		. = min(., C.volume_multiplier)
 
 /mob/living/carbon/human/get_bullet_impact_effect_type(var/def_zone)
@@ -1770,7 +1772,7 @@
 
 /mob/living/carbon/human/check_dexterity(var/dex_level = DEXTERITY_FULL, var/silent, var/force_active_hand)
 	if(isnull(force_active_hand))
-		force_active_hand = hand ? BP_L_HAND : BP_R_HAND
+		force_active_hand = get_active_held_item_slot()
 	var/obj/item/organ/external/active_hand = organs_by_name[force_active_hand]
 	if(!active_hand)
 		if(!silent)

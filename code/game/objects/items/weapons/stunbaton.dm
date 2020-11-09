@@ -5,7 +5,7 @@
 	icon = 'icons/obj/items/weapon/stunbaton.dmi'
 	icon_state = "stunbaton"
 	item_state = "baton"
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_LOWER_BODY
 	force = 15
 	sharp = 0
 	edge = 0
@@ -102,12 +102,6 @@
 /obj/item/baton/attack_self(mob/user)
 	set_status(!status, user)
 	add_fingerprint(user)
-
-/obj/item/baton/throw_impact(atom/hit_atom, var/datum/thrownthing/TT)
-	if(istype(hit_atom,/mob/living))
-		apply_hit_effect(hit_atom, hit_zone = ran_zone(TT.target_zone, 30, hit_atom)) // more likely to hit the zone you target!
-	else
-		..()
 
 /obj/item/baton/proc/set_status(var/newstatus, mob/user)
 	if(bcell && bcell.charge >= hitcost)

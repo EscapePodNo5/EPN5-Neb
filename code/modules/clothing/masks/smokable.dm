@@ -17,6 +17,8 @@
 	var/ignitermes = "USER lights NAME with FLAME"
 	var/brand
 	var/gas_consumption = 0.04
+	var/smoke_effect = 0
+	var/smoke_amount = 1
 
 /obj/item/clothing/mask/smokable/Initialize()
 	. = ..()
@@ -37,16 +39,25 @@
 /obj/item/clothing/mask/smokable/fire_act()
 	light(0)
 
-/obj/item/clothing/mask/smokable/proc/smoke(amount)
+/obj/item/clothing/mask/smokable/proc/smoke(amount, manual)
 	smoketime -= amount
 	if(reagents && reagents.total_volume) // check if it has any reagents at all
+		var/smoke_loc = loc
 		if(ishuman(loc))
 			var/mob/living/carbon/human/C = loc
-			if (src == C.wear_mask && C.check_has_mouth()) // if it's in the human/monkey mouth, transfer reagents to the mob
-				reagents.trans_to_mob(C, REM, CHEM_INGEST, 0.2) // Most of it is not inhaled... balance reasons.
+			smoke_loc = C.loc
+			if ((src == C.wear_mask || manual) && C.check_has_mouth()) // if it's in the human/monkey mouth, transfer reagents to the mob
+				reagents.trans_to_mob(C, smoke_amount * amount, CHEM_INGEST, 0.2)
 				add_trace_DNA(C)
 		else // else just remove some of the reagents
-			reagents.remove_any(REM)
+			reagents.remove_any(smoke_amount * amount)
+
+		smoke_effect++
+
+		if(smoke_effect >= 4 || manual)
+			smoke_effect = 0
+			new /obj/effect/effect/cig_smoke(smoke_loc)
+
 	var/turf/T = get_turf(src)
 	if(T)
 		var/datum/gas_mixture/environment = T.return_air()
@@ -80,8 +91,7 @@
 	if(ismob(loc))
 		var/mob/living/M = loc
 		M.update_inv_wear_mask(0)
-		M.update_inv_l_hand(0)
-		M.update_inv_r_hand(1)
+		M.update_inv_hands()
 
 /obj/item/clothing/mask/smokable/fluid_act(var/datum/reagents/fluids)
 	..()
@@ -109,6 +119,7 @@
 		if(flavor_text)
 			var/turf/T = get_turf(src)
 			T.visible_message(flavor_text)
+		smoke_amount = reagents.total_volume / smoketime
 		START_PROCESSING(SSobj, src)
 
 /obj/item/clothing/mask/smokable/proc/extinguish(var/mob/user, var/no_message)
@@ -154,7 +165,7 @@
 	throw_speed = 0.5
 	item_state = "cigoff"
 	w_class = ITEM_SIZE_TINY
-	slot_flags = SLOT_EARS | SLOT_MASK
+	slot_flags = SLOT_EARS | SLOT_FACE
 	attack_verb = list("burnt", "singed")
 	type_butt = /obj/item/trash/cigbutt
 	chem_volume = 5
@@ -308,10 +319,19 @@
 		if(blocked)
 			to_chat(H, "<span class='warning'>\The [blocked] is in the way!</span>")
 			return 1
-		to_chat(H, "<span class='notice'>You take a drag on your [name].</span>")
-		smoke(5)
+		user.visible_message(\
+			"[user] takes a [pick("drag","puff","pull")] on \his [name].", \
+			"You take a [pick("drag","puff","pull")] on your [name].")
+		smoke(12, TRUE)
 		add_trace_DNA(H)
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		return 1
+
+	if(!lit && istype(H) && H.on_fire)
+		user.do_attack_animation(H)
+		light(H, user)
+		return 1
+
 	return ..()
 
 /obj/item/clothing/mask/smokable/cigarette/afterattack(obj/item/chems/glass/glass, var/mob/user, proximity)
@@ -340,7 +360,7 @@
 /obj/item/clothing/mask/smokable/cigarette/get_icon_state(mob/user_mob, slot)
 	return item_state
 
-/obj/item/clothing/mask/smokable/cigarette/get_mob_overlay(mob/user_mob, slot)
+/obj/item/clothing/mask/smokable/cigarette/get_mob_overlay(mob/user_mob, slot, bodypart)
 	var/image/res = ..()
 	if(lit == 1)
 		var/image/ember = overlay_image(res.icon, "cigember", flags=RESET_COLOR)
@@ -408,10 +428,8 @@
 
 /obj/item/clothing/mask/smokable/cigarette/cigar/attackby(var/obj/item/W, var/mob/user)
 	..()
-
 	user.update_inv_wear_mask(0)
-	user.update_inv_l_hand(0)
-	user.update_inv_r_hand(1)
+	user.update_inv_hands()
 
 //Bizarre
 /obj/item/clothing/mask/smokable/cigarette/rolled/sausage
@@ -472,8 +490,7 @@
 		if(ismob(loc))
 			var/mob/living/M = loc
 			M.update_inv_wear_mask(0)
-			M.update_inv_l_hand(0)
-			M.update_inv_r_hand(1)
+			M.update_inv_hands()
 		set_scent_by_reagents(src)
 
 /obj/item/clothing/mask/smokable/pipe/extinguish(var/mob/user, var/no_message)
@@ -534,8 +551,7 @@
 		light("<span class='notice'>[user] fiddles with [W], and manages to light their [name] with the power of science.</span>")
 
 	user.update_inv_wear_mask(0)
-	user.update_inv_l_hand(0)
-	user.update_inv_r_hand(1)
+	user.update_inv_hands()
 
 /obj/item/clothing/mask/smokable/pipe/cobpipe
 	name = "corn cob pipe"

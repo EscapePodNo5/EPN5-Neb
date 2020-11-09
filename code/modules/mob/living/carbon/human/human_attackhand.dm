@@ -2,20 +2,21 @@
 	if(!hit_zone)
 		hit_zone = zone_sel.selecting
 	var/list/available_attacks = get_natural_attacks()
-	if(!default_attack || !default_attack.is_usable(src, target, hit_zone) || !(default_attack.type in available_attacks))
-		default_attack = null
+	var/decl/natural_attack/use_attack = default_attack
+	if(!use_attack || !use_attack.is_usable(src, target, hit_zone) || !(use_attack.type in available_attacks))
+		use_attack = null
 		var/list/other_attacks = list()
 		for(var/u_attack_type in available_attacks)
 			var/decl/natural_attack/u_attack = decls_repository.get_decl(u_attack_type)
 			if(!u_attack.is_usable(src, target, hit_zone))
 				continue
 			if(u_attack.is_starting_default)
-				default_attack = u_attack
+				use_attack = u_attack
 				break
 			other_attacks += u_attack
-		if(!default_attack && length(other_attacks))
-			default_attack = pick(other_attacks)
-	. = default_attack && default_attack.resolve_to_soft_variant(src)
+		if(!use_attack && length(other_attacks))
+			use_attack = pick(other_attacks)
+	. = use_attack?.resolve_to_soft_variant(src)
 
 /mob/living/carbon/human/proc/get_natural_attacks()
 	. = list()
@@ -25,15 +26,11 @@
 
 /mob/living/carbon/human/attack_hand(mob/living/carbon/M)
 
-	. = ..()
-	if(.)
-		return
-
 	remove_cloaking_source(species)
 
 	// Grabs are handled at a lower level.
 	if(istype(M) && M.a_intent == I_GRAB)
-		return 0
+		return ..()
 
 	// Should this all be in Touch()?
 	var/mob/living/carbon/human/H = M
@@ -85,10 +82,10 @@
 				if(!check_has_mouth())
 					to_chat(H, "<span class='warning'>They don't have a mouth, you cannot do mouth-to-mouth resuscitation!</span>")
 					return TRUE
-				if((H.head && (H.head.body_parts_covered & FACE)) || (H.wear_mask && (H.wear_mask.body_parts_covered & FACE)))
+				if((H.head && (H.head.body_parts_covered & SLOT_FACE)) || (H.wear_mask && (H.wear_mask.body_parts_covered & SLOT_FACE)))
 					to_chat(H, "<span class='warning'>You need to remove your mouth covering for mouth-to-mouth resuscitation!</span>")
 					return TRUE
-				if((head && (head.body_parts_covered & FACE)) || (wear_mask && (wear_mask.body_parts_covered & FACE)))
+				if((head && (head.body_parts_covered & SLOT_FACE)) || (wear_mask && (wear_mask.body_parts_covered & SLOT_FACE)))
 					to_chat(H, "<span class='warning'>You need to remove \the [src]'s mouth covering for mouth-to-mouth resuscitation!</span>")
 					return TRUE
 				if (!H.internal_organs_by_name[H.species.breathing_organ])
@@ -229,28 +226,20 @@
 				admin_attack_log(M, src, "Disarmed their victim.", "Was disarmed.", "disarmed")
 				H.species.disarm_attackhand(H, src)
 				return TRUE
+	. = ..()
 
 /mob/living/carbon/human/proc/afterattack(atom/target, mob/living/user, inrange, params)
 	return
 
 //Breaks all grips and pulls that the mob currently has.
 /mob/living/carbon/human/proc/break_all_grabs(mob/living/carbon/user)
-	var/success = 0
-	if(istype(l_hand, /obj/item/grab))
-		var/obj/item/grab/lgrab = l_hand
-		if(lgrab.affecting)
-			visible_message("<span class='danger'>[user] has broken [src]'s grip on [lgrab.affecting]!</span>")
-			success = 1
-		spawn(1)
-			qdel(lgrab)
-	if(istype(r_hand, /obj/item/grab))
-		var/obj/item/grab/rgrab = r_hand
-		if(rgrab.affecting)
-			visible_message("<span class='danger'>[user] has broken [src]'s grip on [rgrab.affecting]!</span>")
-			success = 1
-		spawn(1)
-			qdel(rgrab)
-	return success
+	. = FALSE
+	for(var/obj/item/grab/grab in get_active_grabs())
+		if(grab.affecting)
+			visible_message(SPAN_DANGER("\The [user] has broken \the [src]'s grip on [grab.affecting]!"))
+			. = TRUE
+		drop_from_inventory(grab)
+
 /*
 	We want to ensure that a mob may only apply pressure to one organ of one mob at any given time. Currently this is done mostly implicitly through
 	the behaviour of do_after() and the fact that applying pressure to someone else requires a grab:
