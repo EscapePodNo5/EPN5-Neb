@@ -9,7 +9,7 @@
 	density = 0
 	anchored = 0.0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT|SLOT_HOLSTER
+	slot_flags = SLOT_LOWER_BODY|SLOT_HOLSTER
 	force = 10.0
 	throwforce = 10.0
 	throw_speed = 1
@@ -270,7 +270,7 @@
 	work_type = /turf/simulated/floor/airless
 
 /decl/hierarchy/rcd_mode/floor_and_walls/base_turf/can_handle_work(var/rcd, var/turf/target)
-	return istype(target) && (isspace(target) || istype(target, get_base_turf_by_area(target)))
+	return istype(target) && (isspaceturf(target) || istype(target, get_base_turf_by_area(target)))
 
 /decl/hierarchy/rcd_mode/floor_and_walls/floor_turf
 	cost = 3

@@ -3,8 +3,8 @@
 	lore_text = "A generic polymeric material. Probably the most flexible and useful substance ever created by human science; mostly used to make disposable cutlery."
 	stack_type = /obj/item/stack/material/plastic
 	flags = MAT_FLAG_BRITTLE
-	icon_base = "solid"
-	icon_reinf = "reinf_over"
+	icon_base = 'icons/turf/walls/solid.dmi'
+	icon_reinf = 'icons/turf/walls/reinforced.dmi'
 	color = COLOR_EGGSHELL
 	hardness = MAT_VALUE_SOFT
 	weight = MAT_VALUE_LIGHT
@@ -15,6 +15,8 @@
 	reflectiveness = MAT_VALUE_SHINY
 	wall_support_value = MAT_VALUE_EXTREMELY_LIGHT
 	taste_description = "plastic"
+	fuel_value = 0.6
+	burn_product = /decl/material/gas/carbon_monoxide // placeholder for more appropriate toxins
 
 /decl/material/solid/plastic/generate_recipes(var/reinforce_material)
 	. = ..()
@@ -43,8 +45,8 @@
 	stack_type = /obj/item/stack/material/cardboard
 	flags = MAT_FLAG_BRITTLE
 	integrity = 10
-	icon_base = "solid"
-	icon_reinf = "reinf_over"
+	icon_base = 'icons/turf/walls/solid.dmi'
+	icon_reinf = 'icons/turf/walls/reinforced.dmi'
 	color = "#aaaaaa"
 	hardness = MAT_VALUE_SOFT
 	brute_armor = 1
@@ -144,6 +146,40 @@
 	weight = MAT_VALUE_EXTREMELY_LIGHT
 	wall_support_value = MAT_VALUE_EXTREMELY_LIGHT
 	hidden_from_codex = TRUE
+
+/decl/material/solid/plantmatter
+	name = "plant matter"
+	color = COLOR_GREEN_GRAY
+	flags = MAT_FLAG_PADDING
+	ignition_point = T0C+300
+	melting_point = T0C+300
+	conductive = 1
+	hidden_from_codex = TRUE
+	construction_difficulty = MAT_VALUE_NORMAL_DIY
+	integrity = 70
+	hardness = MAT_VALUE_SOFT
+	weight = MAT_VALUE_NORMAL
+	explosion_resistance = 1
+	reflectiveness = MAT_VALUE_DULL
+	wall_support_value = MAT_VALUE_LIGHT
+	value = 0.8
+
+/decl/material/solid/meat
+	name = "meat"
+	color = COLOR_DARK_RED
+	flags = MAT_FLAG_PADDING
+	ignition_point = T0C+300
+	melting_point = T0C+300
+	conductive = 1
+	hidden_from_codex = TRUE
+	construction_difficulty = MAT_VALUE_NORMAL_DIY
+	integrity = 60
+	hardness = MAT_VALUE_SOFT
+	weight = MAT_VALUE_NORMAL
+	explosion_resistance = 1
+	reflectiveness = MAT_VALUE_DULL
+	wall_support_value = MAT_VALUE_LIGHT
+	value = 0.8
 
 /decl/material/solid/skin
 	name = "skin"

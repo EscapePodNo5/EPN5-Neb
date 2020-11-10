@@ -18,7 +18,7 @@
 	var/datum/wires/taperecorder/wires = null // Wires datum
 	var/maintenance = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_LOWER_BODY
 	throwforce = 2
 	throw_speed = 4
 	throw_range = 20
@@ -70,10 +70,9 @@
 
 
 /obj/item/taperecorder/attack_hand(mob/user)
-	if(user.get_inactive_hand() == src)
-		if(mytape)
-			eject()
-			return
+	if(user.is_holding_offhand(src) && mytape)
+		eject()
+		return
 	..()
 
 

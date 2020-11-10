@@ -2,7 +2,7 @@
 	name = "head"
 	icon_state = ICON_STATE_WORLD
 	icon = 'icons/clothing/head/softcap.dmi'
-	body_parts_covered = HEAD
+	body_parts_covered = SLOT_HEAD
 	slot_flags = SLOT_HEAD
 	w_class = ITEM_SIZE_SMALL
 	blood_overlay_type = "helmetblood"
@@ -17,7 +17,7 @@
 	light_overlay_image = null
 	..(user, slot)
 
-/obj/item/clothing/head/get_mob_overlay(mob/user_mob, slot)
+/obj/item/clothing/head/get_mob_overlay(mob/user_mob, slot, bodypart)
 	var/image/ret = ..()
 	if(light_overlay_image)
 		ret.overlays -= light_overlay_image

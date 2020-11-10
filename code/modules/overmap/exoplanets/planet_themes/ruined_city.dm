@@ -99,7 +99,7 @@
 
 /datum/random_map/city/get_appropriate_path(var/value)
 	if(value == ROAD_VALUE)
-		return /turf/simulated/floor/exoplanet/concrete/reinforced/road
+		return /turf/exterior/concrete/reinforced/road
 
 /datum/random_map/city/apply_to_map()
 	..()
@@ -107,11 +107,15 @@
 		building.apply_to_map()
 
 // Buildings
+/turf/simulated/wall/concrete
+	icon_state = "stone"
+	floor_type = null
+	material = /decl/material/solid/stone/concrete
 
 //Generic ruin
 /datum/random_map/maze/concrete
 	wall_type =  /turf/simulated/wall/concrete
-	floor_type = /turf/simulated/floor/exoplanet/concrete/reinforced
+	floor_type = /turf/exterior/concrete/reinforced
 	preserve_map = 0
 
 /datum/random_map/maze/concrete/get_appropriate_path(var/value)
@@ -119,7 +123,7 @@
 		if(prob(80))
 			return /turf/simulated/wall/concrete
 		else
-			return /turf/simulated/floor/exoplanet/concrete/reinforced/damaged
+			return /turf/exterior/concrete/reinforced/damaged
 	return ..()
 
 /datum/random_map/maze/concrete/get_additional_spawns(var/value, var/turf/simulated/floor/T)

@@ -5,7 +5,7 @@
 
 	var/last_damage_message
 	var/health = 0
-	var/maxhealth = -1
+	var/maxhealth = 50
 	var/hitsound = 'sound/weapons/smash.ogg'
 	var/breakable
 	var/parts_type
@@ -135,7 +135,7 @@
 /obj/structure/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	. = ..()
 	var/dmg = 100
-	if(material)
+	if(istype(material))
 		dmg = round(dmg * material.combustion_effect(get_turf(src),temperature, 0.3))
 	if(dmg)
 		take_damage(dmg)
@@ -214,7 +214,7 @@
 
 /obj/structure/explosion_act(severity)
 	..()
-	if(QDELETED(src))
+	if(!QDELETED(src))
 		if(severity == 1)
 			physically_destroyed()
 		else if(severity == 2)

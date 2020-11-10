@@ -98,8 +98,8 @@
 	take_damage(proj_damage)
 
 /obj/structure/window/explosion_act(severity)
-	. = ..()
-	if(. && !QDELETED(src) && (severity != 3 || prob(50)))
+	..()
+	if(!QDELETED(src) && (severity != 3 || prob(50)))
 		physically_destroyed()
 
 /obj/structure/window/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
@@ -519,6 +519,7 @@
 	return
 
 /obj/structure/window/reinforced/crescent/hitby()
+	SHOULD_CALL_PARENT(FALSE)
 	return
 
 /obj/structure/window/reinforced/crescent/take_damage()

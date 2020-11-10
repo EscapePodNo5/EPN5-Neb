@@ -57,6 +57,8 @@
 
 #define isobj(A) istype(A, /obj)
 
+#define iseffect(A) istype(A, /obj/effect)
+
 #define isghost(A) istype(A, /mob/observer/ghost)
 
 #define isobserver(A) istype(A, /mob/observer)
@@ -65,7 +67,9 @@
 
 #define isstack(A) istype(A, /obj/item/stack)
 
-#define isspace(A) istype(A, /area/space)
+#define isspacearea(A) istype(A, /area/space)
+
+#define isspaceturf(A) istype(A, /turf/space)
 
 #define ispAI(A) istype(A, /mob/living/silicon/pai)
 
@@ -85,7 +89,7 @@
 
 #define isopenspace(A) istype(A, /turf/simulated/open)
 
-#define isPlunger(A) istype(A, /obj/item/clothing/mask/plunger) || istype(A, /obj/item/plunger/robot)
+#define isplunger(A) istype(A, /obj/item/plunger)
 
 /proc/isspecies(A, B)
 	if(!iscarbon(A))
@@ -109,7 +113,7 @@
 #define send_rsc(target, rsc_content, rsc_name)             target << browse_rsc(rsc_content, rsc_name)
 #define open_link(target, url)             target << link(url)
 
-/proc/html_icon(var/thing) // Proc instead of macro to avoid precompiler problems. 
+/proc/html_icon(var/thing) // Proc instead of macro to avoid precompiler problems.
 	. = "\icon[thing]"
 
 #define MAP_IMAGE_PATH "nano/images/[GLOB.using_map.path]/"

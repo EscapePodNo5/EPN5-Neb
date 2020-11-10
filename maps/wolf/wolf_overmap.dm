@@ -1,5 +1,5 @@
 /obj/effect/overmap/visitable/ship/wolf
-	name = "FTE Odyssey"
+	name = "USN Odyssey"
 	color = "#00ffff"
 	start_x = 4
 	start_y = 4

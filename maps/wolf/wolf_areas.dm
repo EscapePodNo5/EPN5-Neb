@@ -7,10 +7,12 @@
 
 /area/ship/wolf/engineering
 	icon_state = "enghall"
+	req_access = list(access_engine)
 
 /area/ship/wolf/engineering/engine_room
 	name = "\improper Engine Room"
 	icon_state = "engineroom"
+	req_access = list(access_engine, access_engine_equip)
 
 /area/ship/wolf/engineering/smes
 	name = "\improper Primary Power Storage"
@@ -59,13 +61,16 @@
 /area/ship/wolf/engineering/reactor
 	name = "\improper Primary Reactor Core"
 	icon_state = "reactor"
+	req_access = list(access_engine, access_engine_equip)
 
 /area/ship/wolf/engineering/atmospherics
 	icon_state = "atmos"
 	name = "\improper Atmospherics"
+	req_access = list(access_engine, access_atmospherics)
 
 /area/ship/wolf/engineering/atmospherics/pump_room
 	name = "Coolant Pump Bay"
+	req_access = list(access_engine, access_engine_equip)
 
 /area/ship/wolf/engineering/atmospherics/monitoring_room
 	name = "Atmospherics Monitoring Room"
@@ -114,10 +119,12 @@
 /area/ship/wolf/habitation/bar/backroom
 	icon_state = "barback"
 	name = "Bar Backroom"
+	req_access = list(access_bar)
 
 /area/ship/wolf/habitation/kitchen
 	icon_state = "kitchen"
 	name = "\improper Kitchen"
+	req_access = list(access_kitchen)
 
 /area/ship/wolf/habitation/bathroom
 	icon_state = "bathroom"
@@ -131,6 +138,7 @@
 /area/ship/wolf/habitation/hydroponics
 	icon_state = "hydroponic"
 	name = "\improper Hydroponics Bay"
+	req_access = list(access_hydroponics)
 
 /area/ship/wolf/habitation/cabins
 	icon_state = "cabin"
@@ -160,19 +168,26 @@
 	name = "Observation Lounge"
 	icon_state = "observation"
 
+/area/ship/wolf/habitation/garden
+	name = "Garden"
+	icon_state = "garden"
+
 //Security
 
 /area/ship/wolf/security
 	icon_state = "sec"
 	name = "Security"
+	req_access = list(access_sec_doors)
 
 /area/ship/wolf/security/lockers
 	name = "Locker Room"
 	icon_state = "lockers"
+	req_access = list(access_sec_doors, access_brig)
 
 /area/ship/wolf/security/maa_office
 	icon_state = "maa"
 	name = "\improper Master At Arms Office"
+	req_access = list(access_armory, access_brig, access_sec_doors)
 
 /area/ship/wolf/security/cell
 	icon_state = "cell"
@@ -181,12 +196,14 @@
 /area/ship/wolf/security/armory
 	icon_state = "armory"
 	name = "\improper Armory"
+	req_access = list(access_armory)
 
 /area/ship/wolf/security/gunship_bay
 	name = "\improper Gunship Munitions Bay"
 
 /area/ship/wolf/security/weapons_bay
 	icon_state = "weaponsbay"
+	req_access = list(access_security)
 
 /area/ship/wolf/security/weapons_bay/one
 	name = "\improper Torpedo Bay One"
@@ -208,6 +225,7 @@
 /area/ship/wolf/medical
 	icon_state = "medbay"
 	name = "\improper Medbay"
+	req_access = list(access_medical)
 
 /area/ship/wolf/medical/treatment
 	icon_state = "etc"
@@ -225,10 +243,12 @@
 /area/ship/wolf/medical/chemistry
 	icon_state = "chem"
 	name = "\improper Chemistry Lab"
+	req_access = list(access_chemistry, access_medical)
 
 /area/ship/wolf/medical/storage
 	name = "Medical Storage"
 	icon_state = "medstore"
+	req_access = list(access_medical, access_medical_equip)
 
 /area/ship/wolf/medical/morgue
 	name = "Morgue"
@@ -246,26 +266,32 @@
 
 /area/ship/wolf/command
 	icon_state = "comhall"
+	req_access = list(access_heads)
 
 /area/ship/wolf/command/bridge
 	icon_state = "bridge"
 	name = "\improper Bridge"
+	req_access = list(access_bridge)
 
 /area/ship/wolf/command/bridge/cic
 	icon_state = "cic"
 	name = "\improper Combat Information Center"
+	req_access = list(access_bridge)
 
 /area/ship/wolf/command/hallway
 	name = "\improper Bridge Hallway"
+	req_access = null
 
 /area/ship/wolf/command/hallway/cic
 	name = "\improper CIC Hallway"
+	req_access = null
 
 /area/ship/wolf/command/office
 	icon_state = "comoffice"
 
 /area/ship/wolf/command/office/captain
 	name = "\improper Captain's Office"
+	req_access = list(access_heads, access_captain)
 
 /area/ship/wolf/command/office/captain/bedroom
 	name = "Captain's Quarters"
@@ -273,9 +299,11 @@
 
 /area/ship/wolf/command/office/xo
 	name = "\improper Executive Officer's Office"
+	req_access = list(access_heads, access_hop)
 
 /area/ship/wolf/command/office/ce
 	name = "\improper Chief Engineer's Office"
+	req_access = list(access_heads, access_ce)
 
 /area/ship/wolf/command/office/ce/bedroom
 	name = "\improper Chief Engineer's Quarters"
@@ -283,16 +311,18 @@
 
 /area/ship/wolf/command/office/cmo
 	name = "\improper CMO's Office"
+	req_access = list(access_heads, access_cmo)
 
 /area/ship/wolf/command/office/cmo/bedroom
 	name = "\improper CMO's Quarters"
 	icon_state = "combed"
 
 /area/ship/wolf/command/office/maa
-	name = "\improper Master at Arms's Office"
+	name = "\improper Ship Security Commander's Office"
+	req_access = list(access_heads, access_hos)
 
 /area/ship/wolf/command/office/maa/bedroom
-	name = "\improper Master at Arms's Quarters"
+	name = "\improper Ship Security Commander's Quarters"
 	icon_state = "combed"
 
 /area/ship/wolf/command/office/xo/bedroom
@@ -302,23 +332,51 @@
 /area/ship/wolf/command/office/bosun
 	name = "Bosun's Office"
 	icon_state = "bosunoffice"
+	req_access = list(access_heads, access_qm)
 
 /area/ship/wolf/command/office/bosun/bed
 	name = "Bosun's Quarters"
 	icon_state = "bosunbed"
 
+/area/ship/wolf/command/office/rd
+	name = "Technology Director's Office"
+	icon_state = "rdoffice"
+	req_access = list(access_heads, access_rd)
+
+/area/ship/wolf/command/office/rd/bed
+	name = "Technology Director's Quarters"
+	icon_state = "rdoffice"
+
 /area/ship/wolf/ai/core
 	icon_state = "aicore"
 	name = "AI Core"
+	req_access = list(access_heads, access_ai_upload)
 
 /area/ship/wolf/ai/upload
 	icon_state = "aiupload"
 	name = "AI Upload"
+	req_access = list(access_heads, access_ai_upload)
+
+/area/ship/wolf/command/bathroom
+	name = "Officer Bathroom"
+	icon_state = "headbath"
+	req_access = list(access_heads)
+
+/area/ship/wolf/command/meetingroom
+	name = "Meeting Room"
+	icon_state = "meetingroom"
+	req_access = list(access_bridge)
+
+/area/ship/wolf/command/vault
+	name = "Vault"
+	icon_state = "vault"
+	req_access = list(access_heads_vault)
 
 //Cargo
 
 /area/ship/wolf/cargo
 	icon_state = "cargo"
+	req_access = list(access_cargo)
 
 /area/ship/wolf/cargo/general
 	name = "Cargo Bay"
@@ -326,10 +384,12 @@
 /area/ship/wolf/cargo/lobby
 	name = "Cargo Lobby"
 	icon_state = "cargolobby"
+	req_access = null
 
 /area/ship/wolf/cargo/fabrication
 	name = "Fabrication Bay"
 	icon_state = "fabrication"
+	req_access = list(access_manufacturing)
 
 /area/ship/wolf/cargo/disposals
 	name = "Disposals Bay"
@@ -338,6 +398,7 @@
 /area/ship/wolf/cargo/salvage
 	name = "Salvage Technician Bay"
 	icon_state = "salvageprep"
+	req_access = list(access_mining, access_cargo)
 
 /area/ship/wolf/cargo/lockers
 	name = "Cargo Locker Room"
@@ -351,26 +412,47 @@
 
 /area/ship/wolf/science
 	icon_state = "science"
+	req_access = list(access_research)
 
 /area/ship/wolf/science/robotics
 	icon_state = "robotics"
 	name = "Robotics Bay"
+	req_access = list(access_robotics, access_research)
 
 /area/ship/wolf/science/science_hall
 	name = "Science Hallway"
 	icon_state = "sciencehall"
 
-/area/ship/wolf/science/rd_office
-	name = "Technology Director's Office"
-	icon_state = "rdoffice"
-
 /area/ship/wolf/science/materials_lab
 	name = "Materials Laboratory"
 	icon_state = "matlab"
 
+/area/ship/wolf/science/circuit_lab
+	name = "Electrical Engineering"
+	icon_state = "science"
+
+/area/ship/wolf/science/xenobio
+	name = "Xenobioflora Laboratory"
+	icon_state = "science"
+	req_access = list(access_research, access_xenobiology)
+
+/area/ship/wolf/science/xenoarch
+	name = "Xenoarcheology"
+	icon_state = "science"
+	req_access = list(access_research, access_xenoarch)
+
+/area/ship/wolf/science/xenoarch/storage
+	name = "Xenoarcheology Storage"
+	icon_state = "science"
+
+/area/ship/wolf/science/xenoarch/lab
+	name = "Xenoarcheology Lab"
+	icon_state = "science"
+
 /area/ship/wolf/science/server_room
 	name = "Server Room"
 	icon_state = "server"
+	req_access = list(access_tcomsat)
 
 //Hallways.
 
@@ -474,6 +556,7 @@
 /area/ship/wolf/eva
 	name = "General EVA Bay"
 	icon_state = "gen_eva"
+	req_access = list(access_eva)
 
 /area/ship/wolf/hangar
 	name = "Hangar Bay"
@@ -486,6 +569,7 @@
 /area/ship/wolf/janitorial
 	name = "Janitorial Closet"
 	icon_state = "janitor"
+	req_access = list(access_janitor)
 
 //Shuttles
 

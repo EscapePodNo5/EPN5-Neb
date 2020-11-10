@@ -10,7 +10,7 @@
 	throw_range = 10
 	var/obj/item/pen/haspen		//The stored pen.
 	var/obj/item/toppaper	//The topmost piece of paper.
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_LOWER_BODY
 	material = /decl/material/solid/wood
 	applies_material_name = FALSE
 	material = /decl/material/solid/wood
@@ -25,20 +25,14 @@
 /obj/item/clipboard/MouseDrop(obj/over_object) //Quick clipboard fix. -Agouri
 	if(ishuman(usr))
 		var/mob/M = usr
-		if(!(istype(over_object, /obj/screen) ))
+		if(!(istype(over_object, /obj/screen/inventory) ))
 			return ..()
 
 		if(!M.restrained() && !M.stat)
-			switch(over_object.name)
-				if("r_hand")
-					if(M.unEquip(src))
-						M.put_in_r_hand(src)
-				if("l_hand")
-					if(M.unEquip(src))
-						M.put_in_l_hand(src)
-
-			add_fingerprint(usr)
-			return
+			var/obj/screen/inventory/inv = over_object
+			src.add_fingerprint(M)
+			if(M.unEquip(src))
+				M.equip_to_slot_if_possible(src, inv.slot_id)
 
 /obj/item/clipboard/on_update_icon()
 	..()

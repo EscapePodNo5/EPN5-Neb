@@ -66,7 +66,7 @@
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/command/heads/CE
 	shoes = /obj/item/clothing/shoes/workboots
-	uniform = /obj/item/clothing/under/wolf/tan
+	uniform = /obj/item/clothing/under/wolf/blue
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	l_ear = /obj/item/radio/headset/heads/ce
 
@@ -74,7 +74,7 @@
 	..()
 	var/obj/item/clothing/uniform = H.w_uniform
 	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/engineering/chevrons = new()
+		var/obj/item/clothing/accessory/chevrons/command/chevrons = new()
 		var/obj/item/clothing/accessory/dept_stripes/engineering/stripes = new()
 		if(uniform.can_attach_accessory(chevrons))
 			uniform.attach_accessory(null, chevrons)
@@ -89,7 +89,7 @@
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/command/heads/SSC
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	uniform = /obj/item/clothing/under/wolf/black
+	uniform = /obj/item/clothing/under/wolf/blue
 	pda_type = /obj/item/modular_computer/pda/security
 	l_ear = /obj/item/radio/headset/heads/hos
 
@@ -97,7 +97,7 @@
 	..()
 	var/obj/item/clothing/uniform = H.w_uniform
 	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/security/chevrons = new()
+		var/obj/item/clothing/accessory/chevrons/command/chevrons = new()
 		var/obj/item/clothing/accessory/dept_stripes/security/stripes = new()
 		if(uniform.can_attach_accessory(chevrons))
 			uniform.attach_accessory(null, chevrons)
@@ -121,7 +121,7 @@
 	..()
 	var/obj/item/clothing/uniform = H.w_uniform
 	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/medical/chevrons = new()
+		var/obj/item/clothing/accessory/chevrons/command/chevrons = new()
 		var/obj/item/clothing/accessory/dept_stripes/medical/stripes = new()
 		if(uniform.can_attach_accessory(chevrons))
 			uniform.attach_accessory(null, chevrons)
@@ -144,7 +144,7 @@
 	..()
 	var/obj/item/clothing/uniform = H.w_uniform
 	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/science/chevrons = new()
+		var/obj/item/clothing/accessory/chevrons/command/chevrons = new()
 		var/obj/item/clothing/accessory/dept_stripes/science/stripes = new()
 		if(uniform.can_attach_accessory(chevrons))
 			uniform.attach_accessory(null, chevrons)
@@ -159,7 +159,7 @@
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/command/heads/bosun
 	shoes = /obj/item/clothing/shoes/workboots
-	uniform = /obj/item/clothing/under/wolf/olive
+	uniform = /obj/item/clothing/under/wolf/blue
 	pda_type = /obj/item/modular_computer/pda/cargo
 	belt = /obj/item/clipboard/ebony
 	l_ear = /obj/item/radio/headset/headset_bosun
@@ -168,7 +168,7 @@
 	..()
 	var/obj/item/clothing/uniform = H.w_uniform
 	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/cargo/chevrons = new()
+		var/obj/item/clothing/accessory/chevrons/command/chevrons = new()
 		var/obj/item/clothing/accessory/dept_stripes/cargo/stripes = new()
 		if(uniform.can_attach_accessory(chevrons))
 			uniform.attach_accessory(null, chevrons)
@@ -191,19 +191,25 @@
 	..()
 	var/obj/item/clothing/uniform = H.w_uniform
 	if(uniform)
-		var/obj/item/clothing/accessory/chevrons/command/chevrons = new()
 		var/obj/item/clothing/accessory/dept_stripes/command/stripes = new()
-		if(uniform.can_attach_accessory(chevrons))
-			uniform.attach_accessory(null, chevrons)
 		if(uniform.can_attach_accessory(stripes))
 			uniform.attach_accessory(null, stripes)
 		else
-			qdel(chevrons)
 			qdel(stripes)
 
 //SECURITY//
 
-/decl/hierarchy/outfit/job/wolf/brig_chief
+/decl/hierarchy/outfit/job/wolf/security/post_equip(var/mob/living/carbon/human/H)
+	..()
+	var/obj/item/clothing/uniform = H.w_uniform
+	if(uniform)
+		var/obj/item/clothing/accessory/dept_stripes/security/stripes = new()
+		if(uniform.can_attach_accessory(stripes))
+			uniform.attach_accessory(null, stripes)
+		else
+			qdel(stripes)
+
+/decl/hierarchy/outfit/job/wolf/security/brig_chief
 	name = WOLF_OUTFIT_JOB_NAME("Chief Officer")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/security/brig_chief
@@ -212,8 +218,7 @@
 	pda_type = /obj/item/modular_computer/pda/security
 	l_ear = /obj/item/radio/headset/heads/hos
 
-
-/decl/hierarchy/outfit/job/wolf/armsman
+/decl/hierarchy/outfit/job/wolf/security/armsman
 	name = WOLF_OUTFIT_JOB_NAME("Armsman")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/security/armsman
@@ -222,7 +227,7 @@
 	pda_type = /obj/item/modular_computer/pda/security
 	l_ear = /obj/item/radio/headset/sec
 
-/decl/hierarchy/outfit/job/wolf/gunship_pilot
+/decl/hierarchy/outfit/job/wolf/security/gunship_pilot
 	name = WOLF_OUTFIT_JOB_NAME("Gunship Pilot")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/security/gunship_pilot
@@ -243,10 +248,31 @@
 	pda_type = /obj/item/modular_computer/pda/engineering
 	l_ear = /obj/item/radio/headset/headset_eng
 
+/decl/hierarchy/outfit/job/wolf/engineering/post_equip(var/mob/living/carbon/human/H)
+	..()
+	var/obj/item/clothing/uniform = H.w_uniform
+	if(uniform)
+		var/obj/item/clothing/accessory/dept_stripes/engineering/stripes = new()
+		if(uniform.can_attach_accessory(stripes))
+			uniform.attach_accessory(null, stripes)
+		else
+			qdel(stripes)
+
 
 //MEDICAL//
 
-/decl/hierarchy/outfit/job/wolf/medtech
+
+/decl/hierarchy/outfit/job/wolf/medical/post_equip(var/mob/living/carbon/human/H)
+	..()
+	var/obj/item/clothing/uniform = H.w_uniform
+	if(uniform)
+		var/obj/item/clothing/accessory/dept_stripes/medical/stripes = new()
+		if(uniform.can_attach_accessory(stripes))
+			uniform.attach_accessory(null, stripes)
+		else
+			qdel(stripes)
+
+/decl/hierarchy/outfit/job/wolf/medical/medtech
 	name = WOLF_OUTFIT_JOB_NAME("Medical Support Technician")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/medical/medtech
@@ -257,7 +283,7 @@
 	l_ear = /obj/item/radio/headset/headset_med
 
 
-/decl/hierarchy/outfit/job/wolf/doctor
+/decl/hierarchy/outfit/job/wolf/medical/doctor
 	name = WOLF_OUTFIT_JOB_NAME("Doctor")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/medical/doctor
@@ -268,7 +294,7 @@
 	l_ear = /obj/item/radio/headset/headset_med
 
 
-/decl/hierarchy/outfit/job/wolf/pharmacist
+/decl/hierarchy/outfit/job/wolf/medical/pharmacist
 	name = WOLF_OUTFIT_JOB_NAME("Pharmacist")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/medical/pharmacist
@@ -280,7 +306,17 @@
 
 //SCIENCE//
 
-/decl/hierarchy/outfit/job/wolf/research_tech
+/decl/hierarchy/outfit/job/wolf/research/post_equip(var/mob/living/carbon/human/H)
+	..()
+	var/obj/item/clothing/uniform = H.w_uniform
+	if(uniform)
+		var/obj/item/clothing/accessory/dept_stripes/science/stripes = new()
+		if(uniform.can_attach_accessory(stripes))
+			uniform.attach_accessory(null, stripes)
+		else
+			qdel(stripes)
+
+/decl/hierarchy/outfit/job/wolf/research/research_tech
 	name = WOLF_OUTFIT_JOB_NAME("Research Technician")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/science/research_tech
@@ -290,7 +326,7 @@
 	l_ear = /obj/item/radio/headset/headset_sci
 
 
-/decl/hierarchy/outfit/job/wolf/robotics
+/decl/hierarchy/outfit/job/wolf/research/robotics
 	name = WOLF_OUTFIT_JOB_NAME("Robotics Specialist")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/science/robotics
@@ -302,7 +338,17 @@
 
 //CARGO//
 
-/decl/hierarchy/outfit/job/wolf/deck_hand
+/decl/hierarchy/outfit/job/wolf/cargo/post_equip(var/mob/living/carbon/human/H)
+	..()
+	var/obj/item/clothing/uniform = H.w_uniform
+	if(uniform)
+		var/obj/item/clothing/accessory/dept_stripes/cargo/stripes = new()
+		if(uniform.can_attach_accessory(stripes))
+			uniform.attach_accessory(null, stripes)
+		else
+			qdel(stripes)
+
+/decl/hierarchy/outfit/job/wolf/cargo/deck_hand
 	name = WOLF_OUTFIT_JOB_NAME("Deck Hand")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/cargo/deck_hand
@@ -312,9 +358,7 @@
 	belt = /obj/item/clipboard/ebony
 	l_ear = /obj/item/radio/headset/headset_cargo
 
-
-
-/decl/hierarchy/outfit/job/wolf/salvage_technician
+/decl/hierarchy/outfit/job/wolf/cargo/salvage_technician
 	name = WOLF_OUTFIT_JOB_NAME("Salvage Technician")
 	flags = OUTFIT_HAS_BACKPACK
 	id_type = /obj/item/card/id/wolf/cargo/salvage_technician
@@ -355,8 +399,6 @@
 	uniform = /obj/item/clothing/under/wolf/black
 	pda_type = /obj/item/modular_computer/pda
 	l_ear = /obj/item/radio/headset/headset_service
-
-
 
 /decl/hierarchy/outfit/job/wolf/janitor
 	name = WOLF_OUTFIT_JOB_NAME("Janitor")

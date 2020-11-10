@@ -14,7 +14,7 @@
 	volume = 30
 	possible_transfer_amounts = null
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_LOWER_BODY
 
 	// autoinjectors takes less time than a normal syringe (overriden for hypospray).
 	// This delay is only applied when injecting concious mobs, and is not applied for self-injection
@@ -104,7 +104,7 @@
 		to_chat(user, "You remove the vial from the [src].")
 
 /obj/item/chems/hypospray/vial/attack_hand(mob/user)
-	if(user.get_inactive_hand() == src)
+	if(user.is_holding_offhand(src))
 		if(!loaded_vial)
 			to_chat(user, "<span class='notice'>There is no vial loaded in the [src].</span>")
 			return
@@ -151,7 +151,7 @@
 	amount_per_transfer_from_this = 5
 	volume = 5
 	origin_tech = "{'materials':2,'biotech':2}"
-	slot_flags = SLOT_BELT | SLOT_EARS
+	slot_flags = SLOT_LOWER_BODY | SLOT_EARS
 	w_class = ITEM_SIZE_TINY
 	var/list/starts_with = list(/decl/material/liquid/adrenaline = 5)
 	var/band_color = COLOR_CYAN

@@ -1,8 +1,8 @@
-/datum/codex_category/substances
+/decl/codex_category/substances
 	name = "Substances"
 	desc = "Various natural and artificial substances."
 
-/datum/codex_category/substances/Initialize()
+/decl/codex_category/substances/Initialize()
 	for(var/thing in SSmaterials.materials)
 		var/decl/material/mat = thing
 		if(!mat.hidden_from_codex)
@@ -34,13 +34,6 @@
 					production_strings += "Mixing [english_list(reactant_values)], catalyzed by [english_list(catalysts)], producing [reaction.result_amount]u [lowertext(initial(result.name))]."
 				else
 					production_strings += "Mixing [english_list(reactant_values)], producing [reaction.result_amount]u [lowertext(initial(result.name))]."
-
-			if(LAZYLEN(mat.alloy_materials))
-				var/parts = list()
-				for(var/alloy_part in mat.alloy_materials)
-					var/decl/material/part = SSmaterials.materials_by_name[alloy_part]
-					parts += "[mat.alloy_materials[alloy_part]]u [part.name]"
-				production_strings += "Alloying [english_list(parts)]."
 
 			if(length(production_strings))
 				material_info += "<br>This substance can be produced by:<ul>"
@@ -80,9 +73,19 @@
 			if(mat.ore_compresses_to && mat.ore_compresses_to != mat.type)
 				var/decl/material/M = decls_repository.get_decl(mat.ore_compresses_to)
 				material_info += "<li>It can be compressed into [M.solid_name].</li>"
-			if(mat.ore_smelts_to && mat.ore_smelts_to != mat.type)
-				var/decl/material/M = decls_repository.get_decl(mat.ore_smelts_to)
-				material_info += "<li>It can be smelted into [M.solid_name].</li>"
+			if(length(mat.heating_products))
+				var/list/heat_prod = list()
+				for(var/mtype in mat.heating_products)
+					var/decl/material/M = decls_repository.get_decl(mtype)
+					heat_prod += "[mat.heating_products[mtype] * 100]% [M.solid_name]"
+				material_info += "<li>It can be smelted into [english_list(heat_prod)] at a temperature of [mat.heating_point] Kelvin.</li>"
+			if(length(mat.chilling_products))
+				var/list/chill_prod = list()
+				for(var/mtype in mat.chilling_products)
+					var/decl/material/M = decls_repository.get_decl(mtype)
+					chill_prod += "[mat.chilling_products[mtype] * 100]% [M.solid_name]"
+				material_info += "<li>It can be cooled into [english_list(chill_prod)] at a temperature of [mat.chilling_point] Kelvin.</li>"
+
 			material_info += "</ul>"
 
 			material_info += "As a gas or vapor, it has the following properties:<ul>"
@@ -91,8 +94,8 @@
 			gas_info+= "<li>It has a molar mass of [mat.gas_molar_mass] kg/mol.</li>"
 			if(mat.gas_flags & XGM_GAS_FUEL)
 				gas_info+= "<li>It is flammable.</li>"
-				if(mat.gas_burn_product)
-					var/decl/material/firemat = decls_repository.get_decl(mat.gas_burn_product)
+				if(mat.burn_product)
+					var/decl/material/firemat = decls_repository.get_decl(mat.burn_product)
 					gas_info+= "<li>It produces [firemat.gas_name] when burned.</li>"
 			if(mat.gas_flags & XGM_GAS_OXIDIZER)
 				gas_info+= "<li>It is an oxidizer, required to sustain fire.</li>"
@@ -157,4 +160,4 @@
 			entry.mechanics_text = jointext(material_info, null)
 			SScodex.add_entry_by_string(entry.display_name, entry)
 			items += entry.display_name
-	..()
+	. = ..()

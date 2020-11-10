@@ -10,7 +10,7 @@
 	storage_slots = 7
 	item_flags = ITEM_FLAG_IS_BELT
 	max_w_class = ITEM_SIZE_NORMAL
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_LOWER_BODY
 	var/overlay_flags
 	attack_verb = list("whipped", "lashed", "disciplined")
 
@@ -34,13 +34,13 @@
 			else
 				overlays += image('icons/obj/clothing/obj_belt_overlays.dmi', "[I.icon_state]")
 
-/obj/item/storage/belt/get_mob_overlay(mob/user_mob, slot)
+/obj/item/storage/belt/get_mob_overlay(mob/user_mob, slot, bodypart)
 	var/image/ret = ..()
 	if(slot == slot_belt_str && contents.len)
 		var/list/ret_overlays = list()
 		for(var/obj/item/I in contents)
 			if(I.use_single_icon)
-				ret_overlays += I.get_mob_overlay(user_mob, slot)
+				ret_overlays += I.get_mob_overlay(user_mob, slot, bodypart)
 			else
 				var/use_state = (I.item_state ? I.item_state : I.icon_state)
 				if(ishuman(user_mob))
@@ -315,7 +315,7 @@
 		/obj/item/clothing/gloves,
 		/obj/item/assembly/mousetrap,
 		/obj/item/crowbar,
-		/obj/item/clothing/mask/plunger
+		/obj/item/plunger
 		)
 
 /obj/item/storage/belt/holster/general
@@ -464,7 +464,7 @@
 	storage_slots = null
 	max_w_class = ITEM_SIZE_SMALL
 	max_storage_space = ITEM_SIZE_SMALL * 4
-	slot_flags = SLOT_BELT | SLOT_BACK
+	slot_flags = SLOT_LOWER_BODY | SLOT_BACK
 
 /obj/item/storage/belt/waistpack/big
 	name = "large waist pack"
