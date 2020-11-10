@@ -41,7 +41,7 @@
 		C.queue_icon_update()
 	return 1
 
-/obj/machinery/door_timer/wolf/timer_end(var/broadcast_to_huds = TRUE)
+/obj/machinery/door_timer/wolf/timer_end(var/broadcast_to_huds = FALSE)
 	if(stat & (NOPOWER|BROKEN))	return 0
 
 	// Reset releasetime

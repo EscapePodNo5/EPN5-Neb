@@ -1188,15 +1188,10 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/engineering/hallway)
 "cH" = (
-/obj/structure/table/rack,
-/obj/item/rig/zero,
-/obj/item/rig/zero,
-/obj/item/rig/zero,
-/obj/item/rig/zero,
-/obj/item/rig/zero,
-/obj/item/rig/zero,
-/obj/machinery/door/window,
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/network/relay{
+	initial_network_id = "wolfnet"
+	},
+/turf/simulated/floor/bluegrid,
 /area/ship/wolf/command/bridge/cic)
 "cI" = (
 /obj/structure/cable/green{
@@ -1215,9 +1210,6 @@
 "cJ" = (
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 1
-	},
-/obj/machinery/keycard_auth{
-	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/bridge/cic)
@@ -1570,9 +1562,6 @@
 "ds" = (
 /obj/effect/floor_decal/borderfloorblack/corner{
 	dir = 4
-	},
-/obj/machinery/keycard_auth{
-	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/bridge/cic)
@@ -9119,11 +9108,150 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/second_deck)
-"ux" = (
+"uv" = (
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/camera/network/second_deck,
+/turf/simulated/floor/plating,
+/area/ship/wolf/command/hallway/cic)
+"vf" = (
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/keycard_auth{
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/command/bridge/cic)
+"wF" = (
+/obj/effect/catwalk_plated,
+/obj/effect/landmark/start{
+	name = "Engineer"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/engineering/EVA)
+"xW" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/camera/network/security{
+	icon_state = "camera";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/security/weapons_bay/three)
+"yl" = (
+/obj/machinery/camera/network/security{
+	icon_state = "camera";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/security/weapons_bay/one)
+"Au" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"Ay" = (
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/obj/random/maintenance,
 /obj/random/trash,
 /turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/aft/port)
+"CC" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/random/maintenance,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
 /area/ship/wolf/security/weapons_bay/two)
-"uE" = (
+"En" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
+"ED" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "intact-supply";
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/obj/effect/catwalk_plated,
+/obj/machinery/camera/network/second_deck,
+/turf/simulated/floor/plating,
+/area/ship/wolf/hallway/second_deck)
+"FF" = (
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
+"GA" = (
+/obj/machinery/pointdefense_control{
+	initial_id_tag = "pd"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/ship/wolf/command/bridge/cic)
+"GD" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/aft/port)
+"GH" = (
+/obj/random/contraband,
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
+"GX" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
+"Hm" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/aft/port)
+"Jk" = (
+/obj/random/obstruction,
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
+"Jq" = (
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "intact-supply";
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/obj/machinery/keycard_auth{
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/command/bridge/cic)
+"Ka" = (
+/obj/random/obstruction,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/decktwo/fore/port)
+"Kj" = (
 /obj/random/contraband,
 /obj/structure/closet,
 /obj/random/contraband,
@@ -9137,96 +9265,7 @@
 /obj/random/drinkbottle,
 /turf/simulated/floor/plating,
 /area/ship/wolf/security/weapons_bay/two)
-"uU" = (
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"wl" = (
-/obj/random/junk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"Au" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/decktwo/aft/starboard)
-"Ay" = (
-/obj/structure/railing/mapped{
-	dir = 1
-	},
-/obj/random/maintenance,
-/obj/random/trash,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/decktwo/aft/port)
-"AD" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"AT" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 8
-	},
-/obj/effect/landmark/start{
-	name = "Bridge Officer"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/command/bridge/cic)
-"AW" = (
-/obj/machinery/camera/network/security{
-	icon_state = "camera";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/security/weapons_bay/one)
-"BH" = (
-/obj/effect/catwalk_plated/dark,
-/obj/machinery/camera/network/second_deck,
-/turf/simulated/floor/plating,
-/area/ship/wolf/command/hallway/cic)
-"Dp" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/random/obstruction,
-/obj/random/trash,
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"Ej" = (
-/obj/random/contraband,
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"Fg" = (
-/obj/random/technology_scanner,
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"GD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/decktwo/aft/port)
-"GU" = (
-/obj/random/maintenance,
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"Hm" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/decktwo/aft/port)
-"Hq" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"Hw" = (
+"Ml" = (
 /obj/effect/floor_decal/corner/green{
 	icon_state = "corner_white";
 	dir = 10
@@ -9237,75 +9276,40 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/second_deck)
-"Ig" = (
-/obj/machinery/camera/network/engineering{
-	icon_state = "camera";
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/ship/wolf/engineering/engine_room)
-"JM" = (
-/obj/effect/catwalk_plated,
-/obj/effect/landmark/start{
-	name = "Engineer"
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/engineering/EVA)
-"JS" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/random/maintenance,
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"Ka" = (
-/obj/random/obstruction,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/decktwo/fore/port)
-"Mq" = (
+"Nu" = (
 /obj/machinery/camera/network/security{
 	icon_state = "camera";
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/wolf/security/weapons_bay/one)
-"MU" = (
-/obj/machinery/pointdefense_control{
-	initial_id_tag = "pd"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/wolf/command/bridge/cic)
 "NR" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/decktwo/aft/port)
-"OZ" = (
-/obj/item/stack/material/wood/walnut/twentyfive,
+"Oz" = (
+/obj/random/technology_scanner,
 /turf/simulated/floor/plating,
 /area/ship/wolf/security/weapons_bay/two)
-"Po" = (
+"OO" = (
+/obj/machinery/suit_cycler/wolf/engineering,
+/obj/effect/floor_decal/industrial/outline/orange,
+/obj/machinery/camera/network/engineering{
+	icon_state = "camera";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/ship/wolf/maintenance/decktwo/amidship/starboard)
+"OS" = (
+/obj/random/maintenance,
 /obj/structure/catwalk,
-/obj/machinery/door/airlock/hatch/maintenance,
-/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/decktwo/aft/starboard)
+/area/ship/wolf/security/weapons_bay/two)
 "Qz" = (
 /obj/random/closet,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/decktwo/fore/starboard)
-"QH" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/camera/network/security{
-	icon_state = "camera";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/security/weapons_bay/three)
 "QO" = (
 /obj/structure/railing/mapped,
 /obj/effect/decal/cleanable/dirt,
@@ -9318,6 +9322,25 @@
 /obj/random/closet,
 /turf/simulated/floor/plating,
 /area/space)
+"QU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/random/obstruction,
+/obj/random/trash,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
+"QY" = (
+/obj/effect/floor_decal/borderfloorblack{
+	dir = 8
+	},
+/obj/effect/landmark/start{
+	name = "Bridge Officer"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/command/bridge/cic)
 "RM" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -9329,6 +9352,10 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/decktwo/aft/port)
+"RQ" = (
+/obj/item/stack/material/wood/walnut/twentyfive,
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
 "Ss" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -9351,6 +9378,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/second_deck)
+"Tb" = (
+/obj/random/junk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
 "Th" = (
 /obj/effect/floor_decal/corner/green{
 	icon_state = "corner_white";
@@ -9364,15 +9395,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/decktwo/aft/port)
-"Tq" = (
-/obj/machinery/suit_cycler/wolf/engineering,
-/obj/effect/floor_decal/industrial/outline/orange,
-/obj/machinery/camera/network/engineering{
-	icon_state = "camera";
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
-/area/ship/wolf/maintenance/decktwo/amidship/starboard)
 "TA" = (
 /obj/structure/railing/mapped{
 	dir = 8
@@ -9394,6 +9416,11 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/decktwo/aft/port)
+"UJ" = (
+/obj/random/obstruction,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
 "Vm" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -9414,6 +9441,10 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/decktwo/aft/port)
+"WI" = (
+/obj/random/trash,
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/weapons_bay/two)
 "WU" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/hatch/maintenance,
@@ -9427,35 +9458,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/decktwo/aft/port)
-"XC" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	icon_state = "pipe-s";
-	dir = 4
-	},
-/obj/effect/catwalk_plated,
-/obj/machinery/camera/network/second_deck,
-/turf/simulated/floor/plating,
-/area/ship/wolf/hallway/second_deck)
-"Zt" = (
-/obj/random/obstruction,
+"Zx" = (
 /obj/structure/catwalk,
+/obj/machinery/door/airlock/hatch/maintenance,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
-"ZT" = (
-/obj/random/obstruction,
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/weapons_bay/two)
+/area/ship/wolf/maintenance/decktwo/aft/starboard)
+"ZN" = (
+/obj/machinery/camera/network/engineering{
+	icon_state = "camera";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/wolf/engineering/engine_room)
 
 (1,1,1) = {"
 aa
@@ -15227,7 +15242,7 @@ fB
 fB
 fB
 fF
-GU
+OS
 gg
 jB
 no
@@ -15350,11 +15365,11 @@ aa
 aa
 fB
 fB
-wl
-uU
-OZ
+Tb
+FF
+RQ
 fG
-ZT
+Jk
 ig
 fG
 gv
@@ -15477,11 +15492,11 @@ aa
 aa
 fB
 fB
-Ej
-ZT
-Fg
-GU
-OZ
+GH
+Jk
+Oz
+OS
+RQ
 bs
 kP
 gN
@@ -15604,17 +15619,17 @@ aa
 aa
 fB
 fB
-ux
-uE
-ZT
+WI
+Kj
+Jk
 fH
-ZT
+Jk
 kW
 bK
 gT
 fI
 qY
-Hw
+Ml
 eH
 ac
 aL
@@ -15734,7 +15749,7 @@ fB
 fI
 fI
 fI
-ux
+WI
 hX
 gh
 bK
@@ -16117,9 +16132,9 @@ rb
 rd
 rq
 fI
-wl
+Tb
 gn
-ux
+WI
 fI
 ie
 lb
@@ -16245,7 +16260,7 @@ oG
 fI
 fI
 bt
-JS
+CC
 gv
 fI
 ih
@@ -16372,8 +16387,8 @@ fN
 fI
 fI
 mg
-Dp
-wl
+QU
+Tb
 fI
 Ss
 Vm
@@ -16498,9 +16513,9 @@ pe
 pi
 fI
 fI
-ux
-Hq
-ux
+WI
+En
+WI
 fI
 gE
 rV
@@ -16744,7 +16759,7 @@ eD
 eZ
 fh
 fn
-fs
+Jq
 iL
 fm
 eN
@@ -16752,7 +16767,7 @@ gJ
 gb
 rh
 fI
-Zt
+UJ
 bt
 fI
 fI
@@ -16879,8 +16894,8 @@ eO
 gc
 hc
 fI
-GU
-ux
+OS
+WI
 fI
 eY
 iI
@@ -16997,7 +17012,7 @@ eN
 cJ
 fc
 fk
-AT
+QY
 fs
 fr
 fW
@@ -17006,7 +17021,7 @@ fv
 gi
 fI
 fI
-AD
+GX
 lC
 fI
 ed
@@ -17129,7 +17144,7 @@ fw
 fo
 fV
 eN
-BH
+uv
 gj
 fI
 fI
@@ -17629,7 +17644,7 @@ ja
 jd
 mS
 eN
-MU
+GA
 ft
 ft
 ft
@@ -17871,7 +17886,7 @@ ai
 cP
 cP
 cP
-QH
+xW
 cE
 cE
 cE
@@ -17896,7 +17911,7 @@ hJ
 rr
 gu
 bY
-AW
+yl
 gu
 gO
 jN
@@ -18014,7 +18029,7 @@ eP
 fa
 fi
 fn
-ft
+vf
 jI
 sv
 eN
@@ -18054,7 +18069,7 @@ lS
 gw
 ki
 rJ
-Ig
+ZN
 sJ
 sK
 sL
@@ -18659,9 +18674,9 @@ gu
 gu
 bY
 go
-AW
+yl
 gu
-XC
+ED
 gM
 gM
 nP
@@ -18797,7 +18812,7 @@ bo
 bB
 hu
 iu
-JM
+wF
 cZ
 mi
 sS
@@ -19051,7 +19066,7 @@ cy
 cy
 lB
 qe
-Tq
+OO
 qf
 nw
 pX
@@ -19198,7 +19213,7 @@ pz
 oU
 oU
 Au
-Po
+Zx
 qS
 oV
 oV
@@ -19545,7 +19560,7 @@ fB
 fB
 fB
 fP
-Mq
+Nu
 gr
 kg
 np
