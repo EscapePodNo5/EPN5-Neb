@@ -32,11 +32,4 @@
 #include "overmap\missiles\equipment\warheads\antiship.dm"
 #include "overmap\missiles\equipment\warheads\emp.dm"
 #include "unsorted\helpers.dm"
-// END_INCLUDE
-// BEGIN_INTERNALS
-// END_INTERNALS
-// BEGIN_FILE_DIR
-#define FILE_DIR .
-// END_FILE_DIR
-// BEGIN_PREFERENCES
-// END_PREFERENCES
+#endif

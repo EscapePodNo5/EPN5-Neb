@@ -5,6 +5,7 @@
 #include "mob_defines.dm"
 #include "global_defines.dm"
 #include "species/vulpkanin.dm"
+#include "overwrites.dm"
 
 #include "species/lizard.dm"
 
