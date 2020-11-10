@@ -17,6 +17,7 @@
 /area/ship/wolf/engineering/smes
 	name = "\improper Primary Power Storage"
 	icon_state = "smes"
+	req_access = list(access_engine, access_engine_equip)
 
 /area/ship/wolf/engineering/fuel_bay
 	icon_state = "fuelbay"
@@ -453,6 +454,16 @@
 	name = "Server Room"
 	icon_state = "server"
 	req_access = list(access_tcomsat)
+
+/area/ship/wolf/science/network_closet
+	req_access = list(access_tcomsat)
+	icon_state = "netcloset"
+
+/area/ship/wolf/science/network_closet/third_deck
+	name = "Third Deck Network Node"
+
+/area/ship/wolf/science/network_closet/bridge_deck
+	name = "Bridge Deck Network Node"
 
 //Hallways.
 

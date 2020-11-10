@@ -74,4 +74,4 @@
 		forceMove(nloc)
 
 /obj/machinery/cryopod/lifepod/Process() //We just want the default cryopod behavior - the evac controller handles launching.
-	..()
+	return //Don't want any of the machinery behavior, really.

@@ -242,7 +242,7 @@
 /decl/hierarchy/outfit/job/wolf/engineering
 	name = WOLF_OUTFIT_JOB_NAME("Engineer")
 	flags = OUTFIT_HAS_BACKPACK
-	id_type = /obj/item/card/id/wolf/engineering
+	id_type = /obj/item/card/id/wolf/engineering/engineer
 	shoes = /obj/item/clothing/shoes/workboots
 	uniform = /obj/item/clothing/under/wolf/tan
 	pda_type = /obj/item/modular_computer/pda/engineering
