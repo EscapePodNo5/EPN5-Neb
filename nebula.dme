@@ -3255,7 +3255,7 @@
 #include "maps\random_ruins\space_ruins\space_ruins.dm"
 #include "maps\wolf\wolf.dm"
 #include "maps\wolf\wolf_define.dm"
-#include "maps\wolf\structures\chairs.dm"
+#include "maps\wolf\structures\lockers.dm"
 #include "maps\~mapsystem\map_preferences.dm"
 #include "maps\~mapsystem\map_ranks.dm"
 #include "maps\~mapsystem\maps.dm"

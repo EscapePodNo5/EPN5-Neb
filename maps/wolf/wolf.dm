@@ -30,6 +30,8 @@
 	#include "machines/consoles.dm"
 	#include "machines/telecomms.dm"
 
+	#include "structures/lockers.dm"
+
 	#include "turfs\fuel_tank.dm"
 
 //	#include "wolf_security_state.dm"
