@@ -31,9 +31,11 @@
 /area/ship/wolf/engineering/hallway
 	icon_state = "enghall"
 	name = "\improper Engineering Hallway"
+	req_access = list(access_engine)
 
 /area/ship/wolf/engineering/hallway/upper
 	name = "\improper Upper Engineering Hallway"
+	req_access = list(access_engine)
 
 /area/ship/wolf/engineering/utility_shaft
 	name = "\improper Utility Shaft"
@@ -46,6 +48,7 @@
 /area/ship/wolf/engineering/monitoring
 	name = "\improper Engineering Control Room"
 	icon_state = "monitoring"
+	req_access = list(access_engine)
 
 /area/ship/wolf/engineering/solars
 	name = "\improper Bridge Solar Array"
@@ -79,6 +82,7 @@
 /area/ship/wolf/engineering/EVA
 	name = "\improper EVA Bay"
 	icon_state = "EVA"
+	req_access = list(access_engine)
 
 /area/ship/wolf/engineering/substation
 	icon_state = "substation"
