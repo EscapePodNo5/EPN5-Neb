@@ -9,8 +9,13 @@
 	icon_state = "enghall"
 	req_access = list(access_engine)
 
+/area/ship/wolf/engineering/secure_storage
+	name = "Secure Storage"
+	icon_state = "secstore"
+	req_access = list(access_engine)
+
 /area/ship/wolf/engineering/engine_room
-	name = "\improper Engine Room"
+	name = "\improper Engine Monitoring Room"
 	icon_state = "engineroom"
 	req_access = list(access_engine, access_engine_equip)
 
@@ -116,6 +121,10 @@
 
 /area/ship/wolf/habitation
 	icon_state = "habitation"
+
+/area/ship/wolf/habitation/gentool
+	icon_state = "gentool"
+	name = "General Tool Storage"
 
 /area/ship/wolf/habitation/bar
 	icon_state = "bar"

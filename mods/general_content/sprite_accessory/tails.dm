@@ -9,6 +9,7 @@
 	var/clothing_can_hide = 1 // If true, clothing with HIDETAIL hides it
 	var/ani_state // State when wagging/animated
 	var/extra_overlay_w // Wagging state for extra overlay
+	var/is_large = FALSE //Is this tail really big? Checked, very specifically, for voidsuits.
 
 /datum/sprite_accessory/tail/invisible
 	name = "hide species-sprite tail"
@@ -240,13 +241,6 @@
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
-/datum/sprite_accessory/tail/tailmaw
-	name = "tailmaw, colorable"
-
-	icon_state = "tailmaw"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
 /datum/sprite_accessory/tail/curltail
 	name = "curltail (vwag)"
 
@@ -274,6 +268,7 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "sneptail_mark"
 	extra_overlay_w = "sneptail_mark_w"
+	is_large = TRUE
 
 /datum/sprite_accessory/tail/tiger_new
 	name = "tiger tail (vwag)"
@@ -303,14 +298,6 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-/datum/sprite_accessory/tail/newtailmaw
-	name = "new tailmaw (vwag)"
-
-	icon_state = "newtailmaw"
-	ani_state = "newtailmaw_w"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/ztail
 	name = "jagged flufftail"
 
@@ -324,6 +311,7 @@
 	icon_state = "snaketail"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
+	is_large = TRUE
 
 /datum/sprite_accessory/tail/vulpan_alt
 	name = "vulpkanin alt style, colorable"
@@ -355,11 +343,3 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "deertail_mark"
-
-/datum/sprite_accessory/tail/teshari_fluffytail
-	name = "Teshari alternative, colorable"
-
-	icon_state = "teshari_fluffytail"
-	extra_overlay = "teshari_fluffytail_mark"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY

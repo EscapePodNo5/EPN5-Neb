@@ -75,3 +75,27 @@
 
 /obj/machinery/cryopod/lifepod/Process() //We just want the default cryopod behavior - the evac controller handles launching.
 	return //Don't want any of the machinery behavior, really.
+
+/datum/department/engineering
+	request_console_flags = RC_ASSIST|RC_SUPPLY|RC_INFO
+
+/datum/department/security
+	request_console_flags = RC_ASSIST|RC_SUPPLY|RC_INFO
+
+/datum/department/medical
+	request_console_flags = RC_ASSIST|RC_SUPPLY|RC_INFO
+
+/datum/department/science
+	request_console_flags = RC_ASSIST|RC_SUPPLY|RC_INFO
+
+/datum/department/civilian
+	request_console_flags = RC_ASSIST|RC_SUPPLY|RC_INFO
+
+/datum/department/command
+	request_console_flags = RC_ASSIST|RC_SUPPLY|RC_INFO
+
+/datum/department/service
+	request_console_flags = RC_ASSIST|RC_SUPPLY|RC_INFO
+
+/datum/department/supply
+	request_console_flags = RC_ASSIST|RC_SUPPLY|RC_INFO
