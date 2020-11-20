@@ -22,3 +22,59 @@
 		/obj/item/holowarrant,
 		/obj/item/clothing/suit/armor/pcarrier/medium
 	)
+
+/obj/structure/closet/secure_closet/brig_chief
+	name = "brig chief's locker"
+	req_access = list(access_armory)
+	closet_appearance = /decl/closet_appearance/secure_closet/security/warden
+
+/obj/structure/closet/secure_closet/warden/WillContain()
+	return list(
+		new/datum/atom_creator/weighted(list(/obj/item/storage/backpack/security, /obj/item/storage/backpack/satchel/sec)),
+		new/datum/atom_creator/simple(/obj/item/storage/backpack/dufflebag/sec, 50),
+		/obj/item/clothing/under/rank/warden,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
+		/obj/item/clothing/accessory/armor/tag/warden,
+		/obj/item/clothing/head/warden,
+		/obj/item/radio/headset/headset_sec,
+		/obj/item/clothing/glasses/sunglasses/sechud,
+		/obj/item/taperoll/police,
+		/obj/item/storage/box/flashbangs,
+		/obj/item/storage/box/teargas,
+		/obj/item/storage/belt/holster/security,
+		/obj/item/chems/spray/pepper,
+		/obj/item/baton/loaded,
+		/obj/item/gun/energy/gun,
+		/obj/item/storage/box/holobadge,
+		/obj/item/holowarrant
+	)
+
+/obj/structure/closet/secure_closet/ssc
+	name = "ship security commander's locker"
+	req_access = list(access_hos)
+	closet_appearance = /decl/closet_appearance/secure_closet/security/hos
+
+/obj/structure/closet/secure_closet/hos/WillContain()
+	return list(
+		new/datum/atom_creator/weighted(list(/obj/item/storage/backpack/security, /obj/item/storage/backpack/satchel/sec)),
+		/obj/item/clothing/head/HoS,
+		/obj/item/clothing/suit/armor/vest/heavy/hos,
+		/obj/item/clothing/under/rank/head_of_security/jensen,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
+		/obj/item/clothing/accessory/armor/tag/hos,
+		/obj/item/clothing/accessory/armorplate/merc,
+		/obj/item/clothing/suit/armor/hos/jensen,
+		/obj/item/clothing/suit/armor/hos,
+		/obj/item/radio/headset/heads/hos,
+		/obj/item/clothing/glasses/sunglasses/sechud,
+		/obj/item/taperoll/police,
+		/obj/item/shield/riot,
+		/obj/item/storage/box/flashbangs,
+		/obj/item/storage/belt/holster/security,
+		/obj/item/flash,
+		/obj/item/baton/loaded,
+		/obj/item/gun/energy/gun,
+		/obj/item/clothing/accessory/storage/holster/waist,
+		/obj/item/telebaton,
+		/obj/item/holowarrant
+	)

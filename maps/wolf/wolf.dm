@@ -2,6 +2,8 @@
 	#include "../../mods/general_content/GeneralContent.dme"
 	#include "../../mods/ship_combat2/_spacebattles.dme"
 
+	#include "../away/supply_station/supply_station.dm"
+
 	#include "wolf-1.dmm"
 	#include "wolf-2.dmm"
 	#include "wolf-3.dmm"
@@ -29,6 +31,7 @@
 	#include "machines/morgue_machines.dm"
 	#include "machines/consoles.dm"
 	#include "machines/telecomms.dm"
+	#include "machines/shield_generator.dm"
 
 	#include "structures/lockers.dm"
 
