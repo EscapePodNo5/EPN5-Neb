@@ -27,9 +27,8 @@
 /turf/simulated/floor/airless,
 /area/space)
 "ae" = (
-/obj/effect/shuttle_landmark/supply/station,
 /turf/simulated/floor/airless,
-/area/space)
+/area/supply_station/supply_dock)
 "af" = (
 /obj/effect/floor_decal/solarpanel,
 /obj/machinery/power/solar/fake,
@@ -138,9 +137,16 @@
 /turf/simulated/wall/r_wall,
 /area/supply_station)
 "av" = (
-/obj/machinery/door/blast/regular,
-/turf/simulated/floor/airless,
-/area/space)
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "stripe";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "intact-supply";
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/supply_station)
 "aw" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	icon_state = "map_scrubber_on";
@@ -150,8 +156,16 @@
 /turf/simulated/floor/tiled,
 /area/supply_station)
 "ax" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "stripe";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "intact-scrubbers";
+	dir = 5
+	},
 /turf/simulated/floor/tiled,
-/area/space)
+/area/supply_station)
 "ay" = (
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
@@ -162,17 +176,18 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/space)
+/area/supply_station)
 "aA" = (
-/turf/simulated/floor/plating,
-/area/space)
-"aB" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "stripe";
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/space)
+/area/supply_station)
+"aB" = (
+/obj/machinery/door/blast/regular,
+/turf/simulated/floor/airless,
+/area/supply_station)
 "aC" = (
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/airless,
@@ -204,7 +219,7 @@
 	use_power = 1
 	},
 /turf/simulated/floor/airless,
-/area/space)
+/area/supply_station)
 "aG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	icon_state = "intact";
@@ -448,27 +463,8 @@
 /turf/simulated/floor/tiled,
 /area/supply_station)
 "bn" = (
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "stripe";
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 9
-	},
-/turf/simulated/floor/tiled,
-/area/space)
-"bo" = (
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "stripe";
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	icon_state = "intact-scrubbers";
-	dir = 5
-	},
-/turf/simulated/floor/tiled,
-/area/space)
+/turf/simulated/floor/airless,
+/area/supply_station)
 "bp" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	icon_state = "map_scrubber_on";
@@ -597,30 +593,14 @@
 	},
 /turf/simulated/floor/tiled,
 /area/supply_station)
-"bE" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	icon_state = "map_vent_out";
-	dir = 4
-	},
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
-/area/space)
-"bF" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	icon_state = "map_scrubber_on";
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/space)
 "bG" = (
 /obj/effect/shuttle_landmark/nav_supply_station/nav1,
 /turf/simulated/floor/plating,
 /area/supply_station)
+"bH" = (
+/obj/effect/shuttle_landmark/supply/station,
+/turf/simulated/floor/airless,
+/area/supply_station/supply_dock)
 
 (1,1,1) = {"
 ak
@@ -7156,8 +7136,8 @@ ak
 ak
 ak
 aF
-ad
-ah
+bn
+aa
 aa
 am
 by
@@ -7172,10 +7152,10 @@ by
 bC
 am
 am
-ax
-bE
-ax
-ax
+am
+bC
+am
+am
 ah
 ak
 ak
@@ -7300,7 +7280,7 @@ bj
 bl
 bl
 bl
-bn
+av
 az
 az
 ah
@@ -7427,11 +7407,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -7524,11 +7504,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 aa
 aa
 aa
@@ -7554,11 +7534,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -7651,11 +7631,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 ab
 ac
 am
@@ -7681,11 +7661,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -7778,11 +7758,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 ab
 ba
 ao
@@ -7808,11 +7788,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -7905,11 +7885,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 ab
 ag
 ap
@@ -7935,11 +7915,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -8032,11 +8012,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 aa
 ai
 ap
@@ -8062,11 +8042,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -8159,11 +8139,11 @@ ak
 ak
 ak
 aa
-ad
-ad
 ae
-ad
-ad
+ae
+bH
+ae
+ae
 aa
 aj
 ap
@@ -8189,11 +8169,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -8286,11 +8266,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 aa
 al
 aq
@@ -8316,11 +8296,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -8413,11 +8393,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 ab
 ag
 ap
@@ -8443,11 +8423,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -8540,11 +8520,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 ab
 ba
 ar
@@ -8570,11 +8550,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -8667,11 +8647,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 ab
 ag
 bb
@@ -8697,11 +8677,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -8794,11 +8774,11 @@ ak
 ak
 ak
 aa
-ad
-ad
-ad
-ad
-ad
+ae
+ae
+ae
+ae
+ae
 aa
 aa
 aa
@@ -8824,11 +8804,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -8951,11 +8931,11 @@ at
 at
 at
 at
-aA
-aA
-aA
-aA
-av
+at
+at
+at
+at
+aB
 ak
 ak
 ak
@@ -9078,9 +9058,9 @@ bk
 bm
 bm
 bm
-bo
-aB
-aB
+ax
+aA
+aA
 ah
 ah
 ak
@@ -9204,10 +9184,10 @@ bb
 bD
 am
 am
-ax
-bF
-ax
-ax
+am
+bD
+am
+am
 ah
 ak
 ak

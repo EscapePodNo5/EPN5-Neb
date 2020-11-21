@@ -616,3 +616,12 @@
 	name = "Gnat - Atmos Compartment"
 	icon_state = "gnatmaint"
 
+/area/supply
+	requires_power = 0
+
+/area/supply_station/supply_dock
+	name = "Supply Shuttle Dock"
+	icon_state = "shuttle3"
+	base_turf = /turf/space
+
+//Supply station stuff.

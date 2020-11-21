@@ -69,12 +69,12 @@
 	switch(chance)
 		if(1) //Dimmer
 			for(var/obj/effect/shield/S in field_segments)
-				animate(S, alpha = 65, time = 0.5 SECONDS)
-				addtimer(CALLBACK(src, .proc/reset_shield_alpha), 1.5 SECONDS)
+				animate(S, alpha = 65, time = 0.3 SECONDS)
+				addtimer(CALLBACK(src, .proc/reset_shield_alpha), 1.9 SECONDS)
 		if(2)//Brighter
 			for(var/obj/effect/shield/S in field_segments)
-				animate(S, alpha = 155, time = 0.5 SECONDS)
-				addtimer(CALLBACK(src, .proc/reset_shield_alpha), 1.5 SECONDS)
+				animate(S, alpha = 155, time = 0.3 SECONDS)
+				addtimer(CALLBACK(src, .proc/reset_shield_alpha), 1.9 SECONDS)
 
 /obj/machinery/power/shield_generator/proc/reset_shield_alpha()
 	for(var/obj/effect/shield/S in field_segments)
