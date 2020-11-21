@@ -1793,7 +1793,7 @@
 "ef" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/blast_door{
-	id_tag = "cargodesk";
+	id_tag = "cargo_desk";
 	name = "desk shutter control"
 	},
 /obj/effect/floor_decal/corner/brown{
@@ -7924,8 +7924,7 @@
 	icon_state = "apc0"
 	},
 /obj/structure/cable/orange{
-	dir = 1;
-	icon_state = "0-1"
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/shuttle/gnat/maint)
