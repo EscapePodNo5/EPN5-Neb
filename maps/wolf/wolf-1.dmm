@@ -1793,7 +1793,7 @@
 "ef" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/blast_door{
-	id_tag = "cargo_desk";
+	id_tag = "cargodesk";
 	name = "desk shutter control"
 	},
 /obj/effect/floor_decal/corner/brown{

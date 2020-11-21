@@ -15,7 +15,7 @@
 	name = "Supply Station"
 	id = "awaysite_supplystation"
 	description = "An automated supply station."
-	suffixes = list("supply_station/supply_station-1.dmm", "supply_station/supply_station-2.dmm")
+	suffixes = list("supply_station/supply_station-1.dmm","supply_station/supply_station-2.dmm")
 	cost = 1
 	area_usage_test_exempted_root_areas = list(/area/supply_station)
 	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED

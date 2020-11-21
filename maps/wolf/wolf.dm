@@ -8,6 +8,7 @@
 	#include "wolf-2.dmm"
 	#include "wolf-3.dmm"
 	#include "wolf-4.dmm"
+	#include "extras.dmm"
 	#include "wolf_branches.dm"
 	#include "wolf_overmap.dm"
 	#include "wolf_jobs.dm"

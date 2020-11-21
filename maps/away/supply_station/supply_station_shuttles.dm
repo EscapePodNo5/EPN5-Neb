@@ -1,4 +1,3 @@
-//supply
 /datum/shuttle/autodock/ferry/supply/cargo
 	name = "Supply"
 	warmup_time = 10
@@ -7,7 +6,7 @@
 	shuttle_area = /area/supply
 	waypoint_offsite = "nav_cargo_start"
 	waypoint_station = "nav_cargo_station"
-	defer_initialisation = TRUE
+
 
 /obj/effect/shuttle_landmark/supply/start
 	landmark_tag ="nav_cargo_start"
