@@ -34,3 +34,5 @@
 /obj/effect/shuttle_landmark/near_bow_bridge
 	name = "Near Odyssey Bow Bridge Deck"
 	landmark_tag = "nav_odyssey_near_bow_bridge"
+
+
