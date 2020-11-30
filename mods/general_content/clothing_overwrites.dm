@@ -20,8 +20,6 @@
 	. = ..()
 	if(. && length(bodytype_restricted) && ishuman(M) && !(slot in list(slot_l_store_str, slot_r_store_str, slot_s_store_str)) && !(slot in M.held_item_slots))
 		var/mob/living/carbon/human/H = M
-		if(!check_tail(H))
-			return FALSE //Don't even bother checking the bodytype because the tail's too big.
 		. = ("exclude" in bodytype_restricted) ? !(H.species.get_bodytype(H) in bodytype_restricted) : (H.species.get_bodytype(H) in bodytype_restricted)
 		if(!. && !disable_warning)
 			to_chat(H, SPAN_WARNING("\The [src] [gender == PLURAL ? "do" : "does"] not fit you."))

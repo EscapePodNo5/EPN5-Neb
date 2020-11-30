@@ -6,6 +6,7 @@
 //Engineering
 
 /area/ship/wolf/engineering
+	name = "Engineering Bay"
 	icon_state = "enghall"
 	req_access = list(access_engine)
 
@@ -384,6 +385,11 @@
 /area/ship/wolf/command/vault
 	name = "Vault"
 	icon_state = "vault"
+	req_access = list(access_heads_vault)
+
+/area/ship/wolf/command/sensitive_storage
+	name = "Sensitive Storage"
+	icon_state = "selfdestruct"
 	req_access = list(access_heads_vault)
 
 //Cargo

@@ -8,6 +8,13 @@
 #include "overwrites.dm"
 #include "clothing_overwrites.dm"
 
+#include "background_info/background_info_defines.dm"
+#include "background_info/background_info_overwrites.dm"
+#include "background_info/cultures.dm"
+#include "background_info/locations.dm"
+#include "background_info/factions.dm"
+
+
 #include "species/lizard.dm"
 
 #include "music.dm"
