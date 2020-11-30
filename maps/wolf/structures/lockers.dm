@@ -28,7 +28,7 @@
 	req_access = list(access_armory)
 	closet_appearance = /decl/closet_appearance/secure_closet/security/warden
 
-/obj/structure/closet/secure_closet/warden/WillContain()
+/obj/structure/closet/secure_closet/brig_chief/WillContain()
 	return list(
 		new/datum/atom_creator/weighted(list(/obj/item/storage/backpack/security, /obj/item/storage/backpack/satchel/sec)),
 		new/datum/atom_creator/simple(/obj/item/storage/backpack/dufflebag/sec, 50),
@@ -54,7 +54,7 @@
 	req_access = list(access_hos)
 	closet_appearance = /decl/closet_appearance/secure_closet/security/hos
 
-/obj/structure/closet/secure_closet/hos/WillContain()
+/obj/structure/closet/secure_closet/ssc/WillContain()
 	return list(
 		new/datum/atom_creator/weighted(list(/obj/item/storage/backpack/security, /obj/item/storage/backpack/satchel/sec)),
 		/obj/item/clothing/head/HoS,
