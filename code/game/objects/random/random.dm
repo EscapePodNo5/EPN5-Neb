@@ -299,7 +299,7 @@
 				/obj/item/gun/projectile/revolver = 2,
 				/obj/item/gun/projectile/shotgun/doublebarrel = 4,
 				/obj/item/gun/projectile/shotgun/doublebarrel/sawn = 3,
-				/obj/item/gun/projectile/heavysniper = 1
+				/obj/item/gun/projectile/bolt_action/sniper = 1
 				)
 
 /obj/random/handgun
@@ -970,7 +970,6 @@ something, make sure it's not in one of the other lists.*/
 				/obj/random/voidsuit = 10,
 				/obj/random/hardsuit = 10,
 				/obj/item/clothing/mask/muzzle = 7,
-				/obj/item/clothing/mask/gas/vox = 8,
 				/obj/item/clothing/mask/gas/syndicate = 10,
 				/obj/item/clothing/glasses/night = 3,
 				/obj/item/clothing/glasses/thermal = 1,
