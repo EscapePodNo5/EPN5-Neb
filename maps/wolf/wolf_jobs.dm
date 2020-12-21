@@ -42,6 +42,18 @@
 	outfit_type = /decl/hierarchy/outfit/job/wolf/captain
 	allowed_ranks = list(/datum/mil_rank/exo/o6)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_WEAPONS  = SKILL_BASIC,
+		SKILL_FINANCE  = SKILL_EXPERT,
+		SKILL_PILOT    = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_PILOT =   SKILL_MAX,
+		SKILL_FINANCE = SKILL_MAX,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 30
 
 /datum/job/wolf/command/captain/get_description_blurb()
 	var/desc = {"You are the Captain assigned to the USN Odyssey. In your hands is a significant investment of trust from Exoplanetary Affairs - and the lives of everyone on your ship.
@@ -98,6 +110,18 @@
 	outfit_type = /decl/hierarchy/outfit/job/wolf/first_officer
 	allowed_ranks = list(/datum/mil_rank/exo/o5)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_WEAPONS  = SKILL_BASIC,
+		SKILL_FINANCE  = SKILL_EXPERT,
+		SKILL_PILOT    = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_PILOT =   SKILL_MAX,
+		SKILL_FINANCE = SKILL_MAX,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 30
 
 /datum/job/wolf/command/first_officer/get_description_blurb()
 	var/desc = {"You are the First Officer aboard the USN Odyssey. You are the Captain's finger on the pulse of the crew, and the one who executes his orders by passing information down to
@@ -115,6 +139,16 @@
 	outfit_type = /decl/hierarchy/outfit/job/wolf/bridge_officer
 	allowed_ranks = list(/datum/mil_rank/exo/o1, /datum/mil_rank/exo/o2)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_WEAPONS  = SKILL_BASIC,
+		SKILL_PILOT    = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_PILOT =   SKILL_MAX,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 20
 
 /datum/job/wolf/command/bridge_officer/get_description_blurb()
 	var/desc = {"You are a bridge officer aboard the USN Odyssey. Not quite high enough on the chain of command to have any real power, your job lies in piloting the ship, operating sensors
@@ -159,6 +193,20 @@
 	allowed_ranks = list(/datum/mil_rank/exo/o3)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_WEAPONS  = SKILL_ADEPT,
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_FORENSICS = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_WEAPONS = SKILL_MAX,
+		SKILL_EVA = SKILL_MAX,
+		SKILL_FORENSICS = SKILL_MAX,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 24
+
 /datum/job/wolf/security/SSC/get_description_blurb()
 	var/desc = {"You are the Ship Security Commander aboard the USN Odyssey. Chosen for your ability to lead or your skills, you've been placed in charge of the ship's security. A serious task
 	considering where it's main area of operations is. Under your purview are a handful of security staff, and the power to deputize anyone who you see fit. Your underlings man it's weapons, and keep the crew in good order.
@@ -175,6 +223,20 @@
 	allowed_ranks = list(/datum/mil_rank/exo/e5)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_WEAPONS  = SKILL_ADEPT,
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_FORENSICS = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_WEAPONS = SKILL_EXPERT,
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_FORENSICS = SKILL_EXPERT,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 20
+
 /datum/job/wolf/security/brig_chief/get_description_blurb()
 	var/desc = {"You are the Brig Chief aboard the USN Odyssey. Your job is to watch over the brig and armory while maintaining a careful eye on any crew or captured individuals who've been placed
 	within your brig. When the situation requires it, your job also mandates that you open the ship's armory and hand out weapons to the Armsmen or those the HoS has deputized to act in defense of the ship.
@@ -189,6 +251,20 @@
 	outfit_type = /decl/hierarchy/outfit/job/wolf/security/armsman
 	allowed_ranks = list(/datum/mil_rank/exo/e3, /datum/mil_rank/exo/e4)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
+
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_WEAPONS  = SKILL_ADEPT,
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_FORENSICS = SKILL_BASIC
+	)
+	max_skill = list(
+		SKILL_WEAPONS = SKILL_EXPERT,
+		SKILL_EVA = SKILL_MAX,
+		SKILL_FORENSICS = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 16
 
 /datum/job/wolf/security/armsmen/get_description_blurb()
 	var/desc = {"You are an Armsman aboard the USN Odyssey. A fancy word for a hired gun - You might be exmilitary or some career member of EXO. Your job is to keep the crew in order and arrest any who violate ship's regulations, and to defend the ship by
@@ -246,6 +322,27 @@
 	allowed_ranks = list(/datum/mil_rank/exo/o3)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_ENGINES = SKILL_ADEPT,
+		SKILL_COMPUTER = SKILL_ADEPT,
+		SKILL_CONSTRUCTION = SKILL_ADEPT,
+		SKILL_ELECTRICAL = SKILL_ADEPT,
+		SKILL_ATMOS = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_MAX,
+		SKILL_ENGINES = SKILL_MAX,
+		SKILL_COMPUTER = SKILL_MAX,
+		SKILL_CONSTRUCTION = SKILL_MAX,
+		SKILL_ELECTRICAL = SKILL_MAX,
+		SKILL_ATMOS = SKILL_MAX,
+		SKILL_MECH = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 24
+
 /datum/job/wolf/engineering/CE/get_description_blurb()
 	var/desc = {"You are the Chief Engineer aboard the USN Odyssey. You are a highly skilled professional at least somewhat understanding of how to coordinate a team of enginers to maintain,
 	repair and run a ship like the Odyssey. Given the high-tech nature of many of it's systems, you are likely to be highly educated - or have significant hands-on experience."}
@@ -270,6 +367,26 @@
 	spawn_positions = 3
 	allowed_ranks = list(/datum/mil_rank/exo/e3, /datum/mil_rank/exo/e4, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
+
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_ENGINES = SKILL_BASIC,
+		SKILL_COMPUTER = SKILL_BASIC,
+		SKILL_CONSTRUCTION = SKILL_BASIC,
+		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_ATMOS = SKILL_BASIC
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_ENGINES = SKILL_EXPERT,
+		SKILL_COMPUTER = SKILL_EXPERT,
+		SKILL_CONSTRUCTION = SKILL_EXPERT,
+		SKILL_ELECTRICAL = SKILL_EXPERT,
+		SKILL_ATMOS = SKILL_EXPERT,
+		SKILL_MECH = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_MAX
+	)
 
 /datum/job/wolf/engineering/engineer/get_description_blurb()
 	var/desc = {"You are an Engineer aboard the USN Odyssey. A rough and tumble greasemonkey, or a nerd more comfortable with computer systems than fighting, it doesn't matter. You've been hired
@@ -312,6 +429,21 @@
 	allowed_ranks = list(/datum/mil_rank/exo/o4)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_MEDICAL = SKILL_ADEPT,
+		SKILL_ANATOMY = SKILL_ADEPT,
+		SKILL_CHEMISTRY = SKILL_ADEPT,
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_MEDICAL = SKILL_MAX,
+		SKILL_ANATOMY = SKILL_MAX,
+		SKILL_CHEMISTRY = SKILL_MAX,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 30
+
 /datum/job/wolf/medical/CMO/get_description_blurb()
 	var/desc = {"You are the Chief Medical Officer aboard the USN Odyssey. Your job is to keep the crew alive and reasonably healthy within your abilities. You oversee the medical department and
 	coordinate rescue efforts when in combat, or providing aid to ships in need. You are not front-line personnel - your skills are better used in medical, patching up those who get dragged in from the
@@ -338,6 +470,21 @@
 	allowed_ranks = list(/datum/mil_rank/exo/e3, /datum/mil_rank/exo/e4, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
 
+	min_skill = list(
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_ANATOMY = SKILL_BASIC,
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_MEDICAL = SKILL_EXPERT,
+		SKILL_ANATOMY = SKILL_EXPERT,
+		SKILL_CHEMISTRY = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 20
+
 /datum/job/wolf/medical/medtech/get_description_blurb()
 	var/desc = {"You are the Medical Support Technician aboard the USN Odyssey. Your job is to function as a mix between a doctor and paramedic. You exist to rescue people who are in dangerous situations
 	who may be injured and in need of urgent medical attention. To this end, you have specialized gear and training that means you are fully capable of preforming EVA rescues in and out of combat.
@@ -362,6 +509,21 @@
 	allowed_ranks = list(/datum/mil_rank/exo/o3, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_ANATOMY = SKILL_BASIC,
+		SKILL_CHEMISTRY = SKILL_BASIC,
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_MEDICAL = SKILL_EXPERT,
+		SKILL_ANATOMY = SKILL_EXPERT,
+		SKILL_CHEMISTRY = SKILL_EXPERT,
+		SKILL_HAULING = SKILL_EXPERT
+	)
+	skill_points = 26
+
 /datum/job/wolf/medical/doctor/get_description_blurb()
 	var/desc = {"You are a Medical Doctor aboard the USN Odyssey. Hired to patch up the gun-slingers and greasemonkeys that run this ship and inevitably get injured in combat, your job is to mind
 	the medical bay and keep everything nice and tidy - while waiting for the bodies to roll in. When the going gets tough, you're expected to work under pressure and in conditions that are not ideal.
@@ -384,6 +546,21 @@
 	outfit_type = /decl/hierarchy/outfit/job/wolf/medical/pharmacist
 	allowed_ranks = list(/datum/mil_rank/exo/o1, /datum/mil_rank/exo/o2, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
+
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_MEDICAL = SKILL_BASIC,
+		SKILL_ANATOMY = SKILL_BASIC,
+		SKILL_CHEMISTRY = SKILL_ADEPT,
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_MEDICAL = SKILL_ADEPT,
+		SKILL_ANATOMY = SKILL_ADEPT,
+		SKILL_CHEMISTRY = SKILL_MAX,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 16
 
 /datum/job/wolf/medical/pharmacist/get_description_blurb()
 	var/desc = {"You are the Pharmacist aboard the USN Odyssey, placed in charge of the Chemistry Lab. Your main function is to make sure Medbay is supplied with a steady stream of useful medicines
@@ -427,6 +604,30 @@
 	allowed_ranks = list(/datum/mil_rank/exo/o3)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_EVA = SKILL_BASIC,
+		SKILL_COMPUTER = SKILL_ADEPT,
+		SKILL_DEVICES = SKILL_ADEPT,
+		SKILL_SCIENCE = SKILL_ADEPT,
+		SKILL_ANATOMY = SKILL_BASIC,
+		SKILL_CHEMISTRY = SKILL_BASIC,
+		SKILL_MECH = SKILL_BASIC,
+		SKILL_PILOT = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_COMPUTER = SKILL_MAX,
+		SKILL_DEVICES = SKILL_MAX,
+		SKILL_SCIENCE = SKILL_MAX,
+		SKILL_ANATOMY = SKILL_MAX,
+		SKILL_CHEMISTRY = SKILL_MAX,
+		SKILL_MECH = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_MAX,
+		SKILL_PILOT = SKILL_ADEPT
+	)
+	skill_points = 26
+
 
 /datum/job/wolf/science/TD/get_description_blurb()
 	var/desc = {"You are the Technology Director aboard the USN Odyssey. Almost a token position, all things considered, given the fact that it is a converted warship. Regardless, you do have a role to
@@ -456,6 +657,30 @@
 	allowed_ranks = list(/datum/mil_rank/exo/o1, /datum/mil_rank/exo/o2, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_EVA = SKILL_BASIC,
+		SKILL_COMPUTER = SKILL_BASIC,
+		SKILL_DEVICES = SKILL_BASIC,
+		SKILL_SCIENCE = SKILL_BASIC,
+		SKILL_ANATOMY = SKILL_BASIC,
+		SKILL_CHEMISTRY = SKILL_BASIC,
+		SKILL_MECH = SKILL_BASIC,
+		SKILL_PILOT = SKILL_BASIC
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_COMPUTER = SKILL_EXPERT,
+		SKILL_DEVICES = SKILL_EXPERT,
+		SKILL_SCIENCE = SKILL_EXPERT,
+		SKILL_ANATOMY = SKILL_EXPERT,
+		SKILL_CHEMISTRY = SKILL_EXPERT,
+		SKILL_MECH = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_MAX,
+		SKILL_PILOT = SKILL_ADEPT
+	)
+	skill_points = 20
+
 /datum/job/wolf/science/research_tech/get_description_blurb()
 	var/desc = {"You are a Research Technician aboard the USN Odyssey. Grants are hard to get, and a bunk on a proper science ship even harder to get. Sometimes you have to compromise. You are here
 	to either find whatever you can while the ship patrols, or hired by the USN to assist the Technology Director in their mission of making sure that the ship's machinery and such are functioning
@@ -475,6 +700,26 @@
 	outfit_type = /decl/hierarchy/outfit/job/wolf/research/robotics
 	allowed_ranks = list(/datum/mil_rank/exo/o1, /datum/mil_rank/exo/o2, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
+
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_EVA = SKILL_BASIC,
+		SKILL_COMPUTER = SKILL_BASIC,
+		SKILL_DEVICES = SKILL_BASIC,
+		SKILL_SCIENCE = SKILL_BASIC,
+		SKILL_ANATOMY = SKILL_BASIC,
+		SKILL_MECH = SKILL_ADEPT,
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_COMPUTER = SKILL_EXPERT,
+		SKILL_DEVICES = SKILL_EXPERT,
+		SKILL_SCIENCE = SKILL_EXPERT,
+		SKILL_ANATOMY = SKILL_ADEPT,
+		SKILL_MECH = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 20
 
 /datum/job/wolf/science/robotics/get_description_blurb()
 	var/desc = {"You are the Robotics Specialist aboard the USN Odyssey. Given the tendency for full-body-prosthetic crew members and unlawed IPCs to take damage during combat - be it boarding
@@ -519,6 +764,27 @@
 	allowed_ranks = list(/datum/mil_rank/exo/e6, /datum/mil_rank/exo/e7)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_FINANCE = SKILL_ADEPT,
+		SKILL_EVA = SKILL_BASIC,
+		SKILL_CONSTRUCTION = SKILL_BASIC,
+		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_COOKING = SKILL_BASIC,
+		SKILL_BOTANY = SKILL_BASIC,
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_FINANCE = SKILL_MAX
+		SKILL_MECH = SKILL_ADEPT,
+		SKILL_BOTANY = SKILL_MAX,
+		SKILL_COOKING = SKILL_MAX,
+		SKILL_CONSTRUCTION = SKILL_EXPERT,
+		SKILL_ELECTRICAL = SKILL_EXPERT,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 20
+
 /datum/job/wolf/civilian/bosun/get_description_blurb()
 	var/desc = {"You are the Bosun aboard the USN Odyssey. Your job is to oversee all the civilian functions of the ship, and ensure that supplies are evenly, and quickly distributed.
 	You also oversee the bar, kitchen, and botany. It is your job to make sure these departments are functioning appropriately and have the materials they need to keep the crew fat and happy.
@@ -546,6 +812,27 @@
 	allowed_ranks = list(/datum/mil_rank/exo/e3, /datum/mil_rank/exo/e4, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_FINANCE = SKILL_BASIC,
+		SKILL_EVA = SKILL_BASIC,
+		SKILL_CONSTRUCTION = SKILL_BASIC,
+		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_COOKING = SKILL_BASIC,
+		SKILL_BOTANY = SKILL_BASIC,
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_FINANCE = SKILL_EXPERT
+		SKILL_MECH = SKILL_ADEPT,
+		SKILL_BOTANY = SKILL_MAX,
+		SKILL_COOKING = SKILL_MAX,
+		SKILL_CONSTRUCTION = SKILL_ADEPT,
+		SKILL_ELECTRICAL = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_MAX
+	)
+	skill_points = 16
+
 /datum/job/wolf/civilian/deck_hand/get_description_blurb()
 	var/desc = {"You are a Deck Hand aboard the USN Odyssey. Your job is to organize and manage the mess that is the Cargo bay, storing materials and running the commissary to sell goods to the crew
 	. Keep in mind that the goods in the comissary aren't free for you. You also deliver supplies across the ship to any department that asks for them. You may be called on to assist on any expeditions,
@@ -571,6 +858,23 @@
 	outfit_type = /decl/hierarchy/outfit/job/wolf/cargo/deck_hand
 	allowed_ranks = list(/datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/civilian)
+
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_CONSTRUCTION = SKILL_BASIC,
+		SKILL_ELECTRICAL = SKILL_BASIC,
+		SKILL_PILOT = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_EVA = SKILL_EXPERT,
+		SKILL_MECH = SKILL_ADEPT,
+		SKILL_CONSTRUCTION = SKILL_EXPERT,
+		SKILL_ELECTRICAL = SKILL_EXPERT,
+		SKILL_HAULING = SKILL_MAX,
+		SKILL_PILOT = SKILL_EXPERT
+	)
+	skill_points = 16
 
 /datum/job/wolf/civilian/salvage_tech/get_description_blurb()
 	var/desc = {"You are a Salvage Technician aboard the USN Odyssey. Exoplanetary Affairs expects the ship's main source of materials to be from valuable materials and technologies recovered from ships the Odyssey

@@ -7,6 +7,7 @@
 #include "species/vulpkanin.dm"
 #include "overwrites.dm"
 #include "clothing_overwrites.dm"
+#include "pda_overwrites.dm"
 
 #include "background_info/background_info_defines.dm"
 #include "background_info/background_info_overwrites.dm"
