@@ -12,6 +12,7 @@
 	status_flags = PASSEMOTES
 	a_intent =     I_HURT
 	mob_size =     MOB_SIZE_LARGE
+	atom_flags = ATOM_FLAG_SHIELD_CONTENTS | ATOM_FLAG_NO_TEMP_CHANGE
 
 	meat_type = null
 	meat_amount = 0
@@ -69,6 +70,7 @@
 	var/obj/screen/exosuit/health/hud_health
 	var/obj/screen/exosuit/toggle/hatch_open/hud_open
 	var/obj/screen/exosuit/power/hud_power
+	var/obj/screen/exosuit/heat/hud_heat
 
 /mob/living/exosuit/is_flooded(lying_mob, absolute)
 	. = (body && body.pilot_coverage >= 100 && hatch_closed) ? FALSE : ..()
@@ -191,6 +193,8 @@
 	if(.)
 		update_pilots()
 
-
+/mob/living/exosuit/increaseBodyTemp(value)
+	bodytemperature += value
+	return bodytemperature
 
 

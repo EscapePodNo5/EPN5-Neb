@@ -1,8 +1,13 @@
 #if !defined(USING_MAP_DATUM)
 
+	#include "../antag_spawn/heist/heist.dm"
+
+	#include "../../mods/utility_frames/_utility_frames.dme"
 	#include "../../mods/corporate/_corporate.dme"
 	#include "../../mods/ascent/_ascent.dme"
 	#include "../../mods/general_content/GeneralContent.dme"
+
+	#include "../random_ruins/exoplanet_ruins/playablecolony/playablecolony.dm"
 
 	#include "../../mods/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/government/ruins/ec_old_crash/ec_old_crash.dm"
