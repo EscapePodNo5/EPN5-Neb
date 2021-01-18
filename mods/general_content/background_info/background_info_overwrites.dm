@@ -1,5 +1,5 @@
 //Needed to add cultures and factions to humans.
-/datum/species/human
+/decl/species/human
 	available_cultural_info = list(
 		TAG_CULTURE =   list(
 			CULTURE_HUMAN_COREWORLD,

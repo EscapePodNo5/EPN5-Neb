@@ -1,4 +1,4 @@
-/datum/species/vulpkanin
+/decl/species/vulpkanin
 	name = SPECIES_VULP
 	name_plural = SPECIES_VULP
 
@@ -25,8 +25,23 @@
 	sexybits_location = BP_GROIN //For groin shots.
 
 
-	available_cultural_info = list( //Cultures and stuff.
-		TAG_CULTURE = list(
-			CULTURE_HUMAN
+	available_cultural_info = list(
+		TAG_CULTURE =   list(
+			CULTURE_HUNDARI_HOMEWOLRDER,
+			CULTURE_HUNDARI_COLONYWORLDER,
+			CULTURE_HUNDARI_EXPAT
+		),
+		TAG_HOMEWORLD = list(
+			HOME_SYSTEM_OTHER,
+			HUNDARI_HOMEWORLD
+		),
+		TAG_FACTION = list(
+			FACTION_HDR
 		)
+	)
+
+	default_cultural_info = list(
+		TAG_CULTURE   = CULTURE_HUNDARI_HOMEWOLRDER,
+		TAG_HOMEWORLD = HUNDARI_HOMEWORLD,
+		TAG_FACTION   = FACTION_HDR,
 	)

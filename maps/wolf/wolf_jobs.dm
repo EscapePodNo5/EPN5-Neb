@@ -898,6 +898,19 @@
 	allowed_ranks = list(/datum/mil_rank/exo/e3, /datum/mil_rank/exo/e4, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_COOKING = SKILL_ADEPT,
+		SKILL_BOTANY = SKILL_BASIC,
+		SKILL_HAULING = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_COOKING = SKILL_MAX,
+		SKILL_HAULING = SKILL_MAX,
+		SKILL_BOTANY = SKILL_EXPERT
+	)
+	skill_points = 16
+
 /datum/job/wolf/civilian/chef/get_description_blurb()
 	var/desc = {"You are the Mess Cook aboard the USN Odyssey. Your job is to keep the crew fat and happy by providing at least somewhat servicable food to them. You're not expected to be the best
 	at your job, but you are expected to be able to feed the crew without making anyone sick or killing them. Anticipate working closely with the Bosun and Botany to see to the needs of the crew,
@@ -918,6 +931,21 @@
 	outfit_type = /decl/hierarchy/outfit/job/wolf/bartender
 	allowed_ranks = list(/datum/mil_rank/exo/e3, /datum/mil_rank/exo/e4, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
+
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_COOKING = SKILL_BASIC,
+		SKILL_BOTANY = SKILL_BASIC,
+		SKILL_HAULING = SKILL_ADEPT,
+		SKILL_CHEMISTRY = SKILL_BASIC
+	)
+	max_skill = list(
+		SKILL_COOKING = SKILL_EXPERT,
+		SKILL_BOTANY = SKILL_EXPERT,
+		SKILL_HAULING = SKILL_MAX,
+		SKILL_CHEMISTRY = SKILL_EXPERT
+	)
+	skill_points = 16
 
 /datum/job/wolf/civilian/bartender/get_description_blurb()
 	var/desc = {"You are the Bartender aboard the USN Odyssey. Your job is to keep the crew's Alcohol Blood Level at a place where they're nice and happy, and willing to forget the fact that
@@ -940,6 +968,17 @@
 	allowed_ranks = list(/datum/mil_rank/exo/e3, /datum/mil_rank/exo/e4, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_BOTANY = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_ADEPT
+	)
+	max_skill = list(
+		SKILL_HAULING = SKILL_MAX,
+		SKILL_BOTANY = SKILL_MAX
+	)
+	skill_points = 16
+
 /datum/job/wolf/civilian/botanist/get_description_blurb()
 	var/desc = {"You are the Botanist aboard the USN Odyssey. Your job is to make sure the crew has plenty of fresh produce to keep them happy and healthy. Space scurvy would be pretty bad, wouldn't it?
 	Expect to work with the chef and bartender routinely to attend to the needs of the crew, and deal with special requests from the Bosun or First Officer for anything the heads of staff might want."}
@@ -959,6 +998,20 @@
 	allowed_ranks = list(/datum/mil_rank/exo/e3, /datum/mil_rank/exo/e4, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
 
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_ADEPT,
+		SKILL_CONSTRUCTION = SKILL_BASIC,
+		SKILL_ELECTRICAL = SKILL_BASIC
+	)
+	max_skill = list(
+		SKILL_HAULING = SKILL_MAX,
+		SKILL_CONSTRUCTION = SKILL_EXPERT,
+		SKILL_ELECTRICAL = SKILL_EXPERT,
+	)
+	skill_points = 16
+
 /datum/job/wolf/civilian/janitor/get_description_blurb()
 	var/desc = {"You are the Janitor aboard the USN Odyssey. A simple job, but a never the less vital one. Your job is to keep the ship clean during routine life - replace bulbs, and preform general maintenance
 	Anything Engineering is too busy to handle, you should be doing. In the aftermath of battle, of course, your services are vital for keeping areas like Medbay clear of blood and reducing the
@@ -971,6 +1024,17 @@
 	hud_icon = "hudcargotechnician"
 	allowed_ranks = list(/datum/mil_rank/exo/e2, /datum/mil_rank/exo/e3)
 	allowed_branches = list(/datum/mil_branch/exoplanetary_affairs)
+	skill_points = 16
+
+	min_skill = list(
+		SKILL_LITERACY = SKILL_ADEPT,
+		SKILL_EVA = SKILL_ADEPT,
+		SKILL_HAULING = SKILL_ADEPT,
+	)
+
+	max_skill = list(
+		SKILL_HAULING = SKILL_MAX
+	)
 
 /datum/job/assistant/get_description_blurb()
 	var/desc = {"You're a Crewmember aboard the USN Odyssey. Your answer to absolutely everyone. You are a jack of all trades but master of none, answering directly to literally everyone with a preference
@@ -982,6 +1046,7 @@
 	hud_icon = "hudcargotechnician"
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
 	allowed_branches = list(/datum/mil_branch/civilian)
+	skill_points = 8
 
 /datum/job/passenger/get_description_blurb()
 	var/desc = {"You're a passenger aboard the USN Odyssey. You answer to everyone. You are probably here to sight-see and observe the inner workings of a ship, and generally make a nuisance of yourself."}

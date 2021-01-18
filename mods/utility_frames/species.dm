@@ -35,12 +35,12 @@
 		"You are dangerously close to overheating!"
 	)
 	unarmed_attacks = list(
-		/decl/natural_attack/stomp, 
-		/decl/natural_attack/kick, 
+		/decl/natural_attack/stomp,
+		/decl/natural_attack/kick,
 		/decl/natural_attack/punch
 	)
 	genders = list(
-		NEUTER, 
+		NEUTER,
 		PLURAL
 	)
 	available_cultural_info = list(

@@ -1,4 +1,4 @@
-/datum/species/skrell
+/decl/species/skrell
 	name = SPECIES_SKRELL
 	name_plural = SPECIES_SKRELL
 	description = "insert big bad lore description here."
@@ -35,9 +35,26 @@
 		BP_EYES =     /obj/item/organ/internal/eyes/skrell
 		)
 
+	available_cultural_info = list(
+		TAG_CULTURE =   list(
+			CULTURE_SKRELL_GENERIC
+		),
+		TAG_HOMEWORLD = list(
+			HOME_SYSTEM_OTHER
+		),
+		TAG_FACTION = list(
+			FACTION_SKRELL_GENERIC
+		)
+	)
 
-/datum/species/skrell/get_sex(var/mob/living/carbon/human/H)
+	default_cultural_info = list(
+		TAG_CULTURE   = CULTURE_SKRELL_GENERIC,
+		TAG_HOMEWORLD = HOME_SYSTEM_OTHER,
+		TAG_FACTION   = FACTION_SKRELL_GENERIC,
+	)
+
+/decl/species/skrell/get_sex(var/mob/living/carbon/human/H)
 	return istype(H) && (H.descriptors["headtail length"] == 1 ? MALE : FEMALE)
 
-/datum/species/skrell/check_background()
+/decl/species/skrell/check_background()
 	return TRUE
