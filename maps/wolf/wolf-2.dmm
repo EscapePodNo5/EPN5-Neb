@@ -284,7 +284,7 @@
 "fx" = (/obj/structure/disposalpipe/trunk{icon_state = "pipe-t"; dir = 8},/obj/machinery/disposal,/obj/effect/floor_decal/corner/orange/three_quarters{icon_state = "corner_white_three_quarters"; dir = 4},/turf/simulated/floor/tiled/dark,/area/ship/wolf/engineering)
 "fy" = (/obj/effect/catwalk_plated/dark,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4; icon_state = "intact-scrubbers"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 4},/turf/simulated/floor/plating,/area/ship/wolf/command/bridge/cic)
 "fz" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/photocopier,/turf/simulated/floor/tiled/dark/monotile,/area/ship/wolf/command/bridge/cic)
-"fA" = (/obj/structure/cable/green{icon_state = "1-2"},/obj/machinery/papershredder,/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/bridge/cic)
+"fA" = (/obj/machinery/papershredder,/turf/simulated/floor/tiled/dark,/area/ship/wolf/command/bridge/cic)
 "fB" = (/obj/effect/paint/black,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/two)
 "fC" = (/obj/effect/paint/red,/turf/simulated/wall/r_wall/prepainted,/area/ship/wolf/security/weapons_bay/two)
 "fD" = (/turf/simulated/floor/reinforced,/area/ship/wolf/security/weapons_bay/two)

@@ -1,13 +1,6 @@
 /datum/category_item/player_setup_item/cosmetics/content(var/mob/user)
 	. += "<h2>Genemod Selection</h2>"
 
-	if(!pref.preview_icon)
-		pref.update_preview_icon()
- 	user << browse_rsc(pref.preview_icon, "previewicon.png")
-
-	. += "<b>Preview</b><br>"
-	. += "<div class='statusDisplay'><center><img src=previewicon.png width=[pref.preview_icon.Width()] height=[pref.preview_icon.Height()]></center></div>"
-
 	var/ear_display = "Normal"
 	if(pref.ear_style && (pref.ear_style in GLOB.ear_styles_list))
 		var/datum/sprite_accessory/ears/instance = GLOB.ear_styles_list[pref.ear_style]

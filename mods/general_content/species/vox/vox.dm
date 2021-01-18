@@ -1,4 +1,4 @@
-/datum/species/vox
+/decl/species/vox
 	name = SPECIES_VOX
 	name_plural = SPECIES_VOX
 	icobase =         'mods/general_content/icons/vox/body.dmi'
@@ -51,7 +51,7 @@
 		BP_LUNGS =      /obj/item/organ/internal/lungs/vox,
 		BP_LIVER =      /obj/item/organ/internal/liver/vox,
 		BP_KIDNEYS =    /obj/item/organ/internal/kidneys/vox,
-		BP_BRAIN =      /obj/item/organ/internal/voxstack,
+		BP_STACK =      /obj/item/organ/internal/voxstack,
 		BP_EYES =       /obj/item/organ/internal/eyes/vox,
 		BP_HINDTONGUE = /obj/item/organ/internal/hindtongue
 		)
@@ -64,9 +64,9 @@
 
 	//available_cultural_info =
 
-/datum/species/vox/disfigure_msg(var/mob/living/carbon/human/H)
+/decl/species/vox/disfigure_msg(var/mob/living/carbon/human/H)
 	var/datum/gender/T = gender_datums[H.get_gender()]
 	return "<span class='danger'>[T.His] beak-segments are cracked and chipped! [T.He] [T.is] not even recognizable.</span>\n"
 
-/datum/species/vox/skills_from_age(age)
+/decl/species/vox/skills_from_age(age)
 	. = 8

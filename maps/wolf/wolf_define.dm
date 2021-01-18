@@ -11,6 +11,10 @@
 
 	lobby_tracks = list(/music_track/wolf/great_expectations, /music_track/wolf/yamato, /music_track/wolf/interception, /music_track/wolf/augmentations, /music_track/wolf/space_hero, /music_track/wolf/speedoflight, /music_track/wolf/negative_space, /music_track/wolf/the_settler)
 
+	species_to_branch_blacklist = list(
+		/decl/species/vox     = list(/datum/mil_branch/civilian, /datum/mil_branch/exoplanetary_affairs)
+	)
+
 	station_levels = list(1, 2, 3, 4)
 	contact_levels = list(1, 2, 3, 4)
 	player_levels = list(1, 2, 3, 4)

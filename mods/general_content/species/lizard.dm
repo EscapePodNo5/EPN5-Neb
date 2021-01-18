@@ -1,4 +1,4 @@
-/datum/species/unathi
+/decl/species/unathi
 	name = SPECIES_UNATHI
 	name_plural = SPECIES_UNATHI
 	icon_template = 'icons/mob/human_races/species/template_tall.dmi'
@@ -95,9 +95,27 @@
 			list(/decl/emote/audible/grunt, /decl/emote/audible/groan, /decl/emote/audible/hiss) = 20,
 		)
 
-/datum/species/unathi/equip_survival_gear(var/mob/living/carbon/human/H)
+	available_cultural_info = list(
+		TAG_CULTURE =   list(
+			CULTURE_UNATHI_GENERIC
+		),
+		TAG_HOMEWORLD = list(
+			HOME_SYSTEM_OTHER
+		),
+		TAG_FACTION = list(
+			FACTION_UNATHI_GENERIC
+		)
+	)
+
+	default_cultural_info = list(
+		TAG_CULTURE   = CULTURE_UNATHI_GENERIC,
+		TAG_HOMEWORLD = HOME_SYSTEM_OTHER,
+		TAG_FACTION   = FACTION_UNATHI_GENERIC,
+	)
+
+/decl/species/unathi/equip_survival_gear(var/mob/living/carbon/human/H)
 	..()
 	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/sandal(H),slot_shoes_str)
 
-/datum/species/unathi/get_bodytype(var/mob/living/carbon/human/H)
+/decl/species/unathi/get_bodytype(var/mob/living/carbon/human/H)
 	return BODYTYPE_HUMANOID

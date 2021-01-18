@@ -1,3 +1,11 @@
+/decl/cultural_info/culture/human
+	language = /decl/language/human/common
+	secondary_langs = list(
+		/decl/language/sign,
+		/decl/language/spacer,
+		/decl/language/gutter
+	)
+
 /decl/cultural_info/culture/human/coreworld
 	name = CULTURE_HUMAN_COREWORLD
 	description = "Core Worlders, referring to humans from the Galactic core or core worlds of Humanity, are commonly seen as well-off humans derived from either peacekeeper or merchant backgrounds. \

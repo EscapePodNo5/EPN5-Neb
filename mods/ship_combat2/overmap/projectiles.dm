@@ -29,6 +29,8 @@
 	var/self_destruct_time //If we haven't hit our target after x amount of time after launch, self destruct to avoid cluttering overmap.
 	var/self_destruct_delay = 5 MINUTES
 
+	var/first_launch_tick = FALSE
+
 /obj/effect/overmap/projectile/Initialize(var/maploading, var/start_turf)
 	. = ..()
 	forceMove(start_turf)
@@ -85,8 +87,8 @@
 	if(!moving)
 		return
 
-
-	check_enter()
+	if(first_launch_tick)
+		check_enter()
 
 	// let equipment alter speed/course
 	for(var/obj/item/projectile_equipment/E in actual_missile.equipment)
@@ -101,6 +103,9 @@
 
 	update_icon()
 
+	if(!first_launch_tick)
+		first_launch_tick = TRUE //This is ONLY to prevent missiles from hitting a ship right after they're fired.
+
 
 // Checks if the missile should enter the z level of an overmap object
 /obj/effect/overmap/projectile/proc/check_enter()
@@ -112,6 +117,12 @@
 	for(var/obj/effect/overmap/visitable/O in T)
 		if(!LAZYLEN(O.map_z))
 			continue
+
+		if(O == host_ship) //Do IFF things. No IFF, well ...
+			if(actual_missile.has_iff())
+				var/self_iff = actual_missile.get_iff_code()
+				if(O.IFF_code == self_iff)
+					continue
 
 		LAZYINITLIST(potential_levels)
 		potential_levels[O] = 0
