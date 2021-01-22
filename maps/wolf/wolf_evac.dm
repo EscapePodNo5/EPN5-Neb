@@ -1,18 +1,21 @@
-#define EVAC_IDLE       0
-#define EVAC_PREPPING   1
-#define EVAC_LAUNCHING  2
-#define EVAC_IN_TRANSIT 3
-#define EVAC_COOLDOWN   4
-#define EVAC_COMPLETE   5
+#define EVAC_WOLF_IDLE       0
+#define EVAC_WOLF_PREPPING   1
+#define EVAC_WOLF_LAUNCHING  2
+#define EVAC_WOLF_IN_TRANSIT 3
+#define EVAC_WOLF_COOLDOWN   4
+#define EVAC_WOLF_COMPLETE   5
 
 /datum/evacuation_controller/starship/wolf //We do some things differently. Literally. This just overwrites two lines.
+
+/datum/map/wolf
+	evac_controller_type = /datum/evacuation_controller/starship/wolf
 
 /datum/evacuation_controller/starship/wolf/cancel_evacuation() //Overwrites yay
 	if(!can_cancel())
 		return 0
 
 	evac_cooldown_time = world.time + (world.time - evac_called_at)
-	state = EVAC_COOLDOWN
+	state = EVAC_WOLF_COOLDOWN
 
 	evac_ready_time =   null
 	evac_arrival_time = null
@@ -34,7 +37,7 @@
 
 /datum/evacuation_controller/starship/wolf/call_evacuation(var/mob/user, var/_emergency_evac, var/forced, var/skip_announce, var/autotransfer)
 
-	if(state != EVAC_IDLE)
+	if(state != EVAC_WOLF_IDLE)
 		return 0
 
 	if(!can_evacuate(user, forced))
@@ -63,7 +66,7 @@
 	var/evac_range = round((evac_launch_time - evac_called_at)/3)
 	auto_recall_time =  rand(evac_called_at + evac_range, evac_launch_time - evac_range)
 
-	state = EVAC_PREPPING
+	state = EVAC_WOLF_PREPPING
 
 	if(emergency_evacuation)
 		for(var/area/A in world)
@@ -85,8 +88,8 @@
 		launch_delay += 0.2
 	..()
 
-#undef EVAC_IDLE
-#undef EVAC_PREPPING
-#undef EVAC_IN_TRANSIT
-#undef EVAC_COOLDOWN
-#undef EVAC_COMPLETE
+#undef EVAC_WOLF_IDLE
+#undef EVAC_WOLF_PREPPING
+#undef EVAC_WOLF_IN_TRANSIT
+#undef EVAC_WOLF_COOLDOWN
+#undef EVAC_WOLF_COMPLETE

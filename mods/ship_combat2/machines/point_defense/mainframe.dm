@@ -95,6 +95,3 @@
 	else
 		var/extra_miss_chance = (100-sensor_integrity) / 2
 		return extra_miss_chance
-
-
-

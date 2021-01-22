@@ -199,6 +199,9 @@
 
 //SECURITY//
 
+/decl/hierarchy/outfit/job/wolf/security
+	name = WOLF_OUTFIT_JOB_NAME("Security Officer")
+
 /decl/hierarchy/outfit/job/wolf/security/post_equip(var/mob/living/carbon/human/H)
 	..()
 	var/obj/item/clothing/uniform = H.w_uniform
@@ -261,6 +264,8 @@
 
 //MEDICAL//
 
+/decl/hierarchy/outfit/job/wolf/medical
+	name = WOLF_OUTFIT_JOB_NAME("Medical")
 
 /decl/hierarchy/outfit/job/wolf/medical/post_equip(var/mob/living/carbon/human/H)
 	..()
@@ -306,6 +311,9 @@
 
 //SCIENCE//
 
+/decl/hierarchy/outfit/job/wolf/research
+	name = WOLF_OUTFIT_JOB_NAME("Research")
+
 /decl/hierarchy/outfit/job/wolf/research/post_equip(var/mob/living/carbon/human/H)
 	..()
 	var/obj/item/clothing/uniform = H.w_uniform
@@ -337,6 +345,9 @@
 
 
 //CARGO//
+
+/decl/hierarchy/outfit/job/wolf/cargo
+	name = WOLF_OUTFIT_JOB_NAME("Cargo")
 
 /decl/hierarchy/outfit/job/wolf/cargo/post_equip(var/mob/living/carbon/human/H)
 	..()

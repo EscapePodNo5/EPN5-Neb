@@ -5,16 +5,6 @@
 	ground_noun = "deckplate"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 
-	branch_types = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
-
-	spawn_branch_types = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
-
-	lobby_tracks = list(/music_track/wolf/great_expectations, /music_track/wolf/yamato, /music_track/wolf/interception, /music_track/wolf/augmentations, /music_track/wolf/space_hero, /music_track/wolf/speedoflight, /music_track/wolf/negative_space, /music_track/wolf/the_settler)
-
-	species_to_branch_blacklist = list(
-		/decl/species/vox     = list(/datum/mil_branch/civilian, /datum/mil_branch/exoplanetary_affairs)
-	)
-
 	station_levels = list(1, 2, 3, 4)
 	contact_levels = list(1, 2, 3, 4)
 	player_levels = list(1, 2, 3, 4)
@@ -27,15 +17,16 @@
 	boss_short    = "Exoplanetary Affairs"
 	company_name  = "Exoplanetary Affairs"
 	company_short = "EXA"
+
 	overmap_event_areas = 11
-	lobby_screens = list('maps/wolf/icons/wolf_lobby.png')
 	use_overmap = 1
 	num_exoplanets = 3
+
 	welcome_sound = 'maps/wolf/sounds/wolf_intro_sting.ogg'
+
 	emergency_shuttle_leaving_dock = "Attention all hands: escape pods are now launching. Brace for acceleration."
 	emergency_shuttle_called_message = "Attention all hands: emergency evacuation procedures are now in effect. Escape pods will launch in %ETA%"
 	emergency_shuttle_recall_message = "Attention all hands: emergency evacuation sequence aborted. Return to normal operating conditions."
-	evac_controller_type = /datum/evacuation_controller/starship/wolf
 
 	starting_money = 5000
 	department_money = 0

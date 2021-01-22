@@ -25,11 +25,9 @@
 		targ_y = input(user, "Enter target Y coordinate", "Input coordinates") as null|num
 	if(!targ_x || !targ_y || targ_x <= 0 || targ_x >= GLOB.using_map.overmap_size || targ_y <= 0 || targ_y >= GLOB.using_map.overmap_size)
 		to_chat(user, SPAN_NOTICE("The targeting computer display lets you know that's an invalid target."))
-		return
+		return TRUE
 
 	set_target(targ_x, targ_y)
 	to_chat(user, SPAN_NOTICE("Target successfully set to [targ_x], [targ_y]."))
-	return
-
-	..()
+	return ..()
 

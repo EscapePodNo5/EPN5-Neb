@@ -1,3 +1,14 @@
+/datum/map/wolf
+	branch_types = list(
+		/datum/mil_branch/exoplanetary_affairs,
+		/datum/mil_branch/civilian
+	)
+
+	spawn_branch_types = list(
+		/datum/mil_branch/exoplanetary_affairs,
+		/datum/mil_branch/civilian
+	)
+
 /datum/mil_branch/exoplanetary_affairs
 	name = "Exoplanetary Affairs"
 	name_short = "EXA"
