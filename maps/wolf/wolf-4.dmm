@@ -6,12 +6,17 @@
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "ac" = (
-/obj/structure/cable/yellow,
-/obj/effect/floor_decal/solarpanel,
-/obj/machinery/power/solar,
-/obj/structure/cable/yellow,
-/turf/simulated/floor/airless,
-/area/space)
+/obj/machinery/power/breakerbox/activated{
+	RCon_tag = "Bridge Deck Breaker"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/engineering/substation/four)
 "ad" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -143,6 +148,16 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/bridge)
+"av" = (
+/obj/structure/lattice,
+/obj/structure/catwalk,
+/obj/structure/ladder,
+/obj/structure/disposalpipe/down,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/open,
+/area/ship/wolf/engineering/utility_shaft)
 "aw" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/command/office/cmo)
@@ -175,14 +190,14 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/command/office/xo)
 "aD" = (
-/obj/machinery/power/breakerbox/activated{
-	RCon_tag = "Bridge Deck Breaker"
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
+/obj/structure/cable/green{
 	icon_state = "0-4"
+	},
+/obj/machinery/power/smes/buildable/preset/wolf/subgrid{
+	RCon_tag = "Bridge Deck SMES"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/four)
@@ -468,18 +483,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/four)
-"br" = (
-/obj/structure/cable/green{
-	icon_state = "0-4"
-	},
-/obj/structure/cable/green{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/smes/buildable/preset/wolf/subgrid{
-	RCon_tag = "Bridge Deck SMES"
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/engineering/substation/four)
 "bs" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -611,19 +614,6 @@
 	},
 /turf/simulated/floor/carpet/orange,
 /area/ship/wolf/command/office/ce/bedroom)
-"bD" = (
-/obj/structure/lattice,
-/obj/structure/catwalk,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/ladder,
-/obj/structure/disposalpipe/down,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/simulated/open,
-/area/ship/wolf/engineering/utility_shaft)
 "bE" = (
 /obj/machinery/computer/modular/preset/cardslot/command,
 /turf/simulated/floor/carpet/green,
@@ -3577,21 +3567,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/space)
-"gO" = (
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/structure/cable/yellow,
-/obj/effect/floor_decal/solarpanel,
-/obj/machinery/power/solar,
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/airless,
-/area/space)
 "gP" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
@@ -3621,19 +3596,6 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
-	},
-/turf/simulated/floor/airless,
-/area/space)
-"gR" = (
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/structure/cable/yellow,
-/obj/effect/floor_decal/solarpanel,
-/obj/machinery/power/solar,
-/obj/structure/cable/yellow,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
 	},
 /turf/simulated/floor/airless,
 /area/space)
@@ -13276,7 +13238,7 @@ ed
 cS
 do
 bd
-aD
+ac
 bq
 cO
 bl
@@ -13403,10 +13365,10 @@ ed
 cU
 dI
 bd
-br
+aD
 by
 cO
-bD
+av
 cp
 ex
 eI
@@ -15313,10 +15275,10 @@ bL
 bS
 ab
 gN
-gO
+bL
 gQ
-gR
-ac
+fX
+gf
 bi
 ab
 ab
