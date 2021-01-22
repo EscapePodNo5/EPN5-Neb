@@ -2640,8 +2640,8 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/security/weapons_bay/two)
 "fD" = (
-/turf/simulated/floor/reinforced,
-/area/ship/wolf/security/weapons_bay/two)
+/turf/simulated/wall/r_wall/prepainted,
+/area/ship/wolf/command/hallway/cic)
 "fE" = (
 /turf/simulated/floor/reinforced,
 /area/ship/wolf/security/weapons_bay/one)
@@ -4966,6 +4966,13 @@
 /obj/effect/catwalk_plated/dark,
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering)
+"jA" = (
+/obj/item/storage/firstaid,
+/obj/item/storage/firstaid/stab,
+/obj/item/storage/med_pouch/oxyloss,
+/obj/structure/table/rack,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/maintenance/decktwo/fore/port)
 "jB" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -6484,6 +6491,10 @@
 "mm" = (
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/hallway)
+"mn" = (
+/obj/machinery/portable_atmospherics/powered/pump/filled,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/maintenance/decktwo/fore/port)
 "mo" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -6817,7 +6828,7 @@
 	},
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/engineering/engine_room)
+/area/ship/wolf/engineering/reactor)
 "mW" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
@@ -8668,12 +8679,12 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/wolf/engineering/reactor)
 "rg" = (
-/obj/item/storage/firstaid,
-/obj/item/storage/firstaid/stab,
-/obj/item/storage/med_pouch/oxyloss,
-/obj/structure/table/rack,
+/obj/structure/bed/chair/comfy/black{
+	dir = 4;
+	icon_state = "comfychair"
+	},
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/security/weapons_bay/two)
+/area/ship/wolf/command/hallway/cic)
 "rh" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled/dark,
@@ -8712,6 +8723,11 @@
 /obj/random/closet,
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/reactor)
+"rn" = (
+/obj/random/advdevice,
+/obj/structure/table/woodentable/walnut,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/command/hallway/cic)
 "ro" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -8727,31 +8743,15 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/decktwo/aft/starboard)
 "rq" = (
-/obj/machinery/portable_atmospherics/powered/pump/filled,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/security/weapons_bay/two)
-"rr" = (
-/obj/structure/bed/chair/comfy/black{
-	dir = 4;
-	icon_state = "comfychair"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/security/weapons_bay/one)
-"rs" = (
-/obj/random/advdevice,
-/obj/structure/table/woodentable/walnut,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/security/weapons_bay/one)
-"rt" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 8;
 	icon_state = "comfychair"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/security/weapons_bay/one)
-"ru" = (
+/area/ship/wolf/command/hallway/cic)
+"rr" = (
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/security/weapons_bay/one)
+/area/ship/wolf/command/hallway/cic)
 "rv" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
@@ -17175,8 +17175,8 @@ gl
 gl
 gl
 gl
-rg
-fI
+jA
+eY
 dC
 dv
 tC
@@ -17302,8 +17302,8 @@ uf
 pc
 rb
 rd
-rq
-fI
+mn
+eY
 tN
 bK
 tH
@@ -17429,8 +17429,8 @@ oG
 oG
 df
 oG
-fI
-fI
+oG
+eY
 af
 kl
 iN
@@ -17556,8 +17556,8 @@ ii
 cT
 pd
 fN
-fI
-fI
+fD
+eY
 im
 tI
 ty
@@ -17683,8 +17683,8 @@ eu
 ey
 pe
 pi
-fI
-fI
+fD
+eY
 tA
 tD
 tB
@@ -17811,7 +17811,7 @@ eN
 mZ
 gb
 he
-fI
+eY
 tP
 tE
 tJ
@@ -17938,7 +17938,7 @@ eN
 gJ
 gb
 rh
-fI
+eY
 tQ
 tF
 eY
@@ -18065,7 +18065,7 @@ eN
 eO
 gc
 hc
-fI
+eY
 tR
 tF
 tz
@@ -18191,8 +18191,8 @@ fW
 eN
 fv
 gi
-fI
-fI
+eY
+eY
 tS
 tG
 tz
@@ -18318,8 +18318,8 @@ sA
 eN
 BZ
 gj
-fI
-fI
+eY
+eY
 tz
 tz
 sB
@@ -19080,7 +19080,7 @@ qs
 eN
 ez
 hJ
-rr
+rg
 gu
 bZ
 Lm
@@ -19207,7 +19207,7 @@ sv
 eN
 gJ
 gK
-rs
+rn
 gu
 bY
 bY
@@ -19334,7 +19334,7 @@ eN
 eN
 mZ
 gK
-rt
+rq
 gu
 kY
 cM
@@ -19461,7 +19461,7 @@ fX
 eE
 pf
 if
-ru
+rr
 gu
 bY
 go
@@ -19560,7 +19560,7 @@ aa
 pz
 aH
 aH
-aH
+cb
 cb
 cb
 cb
@@ -19820,7 +19820,7 @@ aa
 aa
 aa
 aa
-aH
+cb
 cb
 cb
 cb
@@ -20218,11 +20218,11 @@ aa
 aa
 aa
 cb
-fB
-fB
-fI
-fI
-fI
+gG
+gG
+gu
+gu
+gu
 fP
 lV
 gq
@@ -20345,11 +20345,11 @@ aa
 aa
 aa
 aa
-fB
-fB
-fD
-fD
-fD
+gG
+gG
+fE
+fE
+fE
 fQ
 gd
 kZ
@@ -20472,11 +20472,11 @@ aa
 aa
 aa
 aa
-fB
-fB
-fD
-fD
-fD
+gG
+gG
+fE
+fE
+fE
 fE
 ge
 bw
@@ -20599,11 +20599,11 @@ aa
 aa
 aa
 aa
-fB
-fB
-fD
-fD
-fD
+gG
+gG
+fE
+fE
+fE
 fR
 gf
 kO
@@ -20726,11 +20726,11 @@ aa
 aa
 aa
 aa
-fB
-fB
-fB
-fB
-fB
+gG
+gG
+gG
+gG
+gG
 fP
 zV
 gr
@@ -20854,9 +20854,9 @@ aa
 aa
 aa
 aa
-fB
-fB
-fB
+gG
+gG
+gG
 gG
 gG
 gG

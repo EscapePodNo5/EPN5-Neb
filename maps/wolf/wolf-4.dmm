@@ -190,14 +190,14 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/command/office/xo)
 "aD" = (
-/obj/structure/cable/green{
-	icon_state = "0-4"
-	},
 /obj/machinery/power/smes/buildable/preset/wolf/subgrid{
 	RCon_tag = "Bridge Deck SMES"
 	},
-/obj/structure/cable{
-	icon_state = "0-8"
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/four)
@@ -3553,17 +3553,6 @@
 /obj/structure/cable/yellow,
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
-	},
-/turf/simulated/floor/airless,
-/area/space)
-"gN" = (
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/obj/effect/floor_decal/solarpanel,
-/obj/machinery/power/solar,
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
 	},
 /turf/simulated/floor/airless,
 /area/space)
@@ -15274,7 +15263,7 @@ bL
 bL
 bS
 ab
-gN
+fR
 bL
 gQ
 fX
