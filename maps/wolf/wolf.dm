@@ -23,6 +23,7 @@
 	#include "wolf_misc.dm"
 	#include "wolf_cameras.dm"
 	#include "wolf_antag.dm"
+	#include "wolf_unit_tests.dm"
 
 	#include "decals\floor_decals.dm"
 

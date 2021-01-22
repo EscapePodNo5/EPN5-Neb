@@ -5,6 +5,22 @@
 "ab" = (
 /turf/simulated/floor/reinforced/airless,
 /area/space)
+"ac" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/door/airlock/autoname/wolf/civilian,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/ship/wolf/habitation/bathroom/one)
 "ad" = (
 /obj/machinery/computer/cryopod{
 	pixel_y = 24
@@ -571,24 +587,25 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/third_deck/fore)
 "bB" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor,
+/obj/effect/catwalk_plated/dark,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4;
+	dir = 9;
 	icon_state = "intact-supply"
 	},
-/obj/machinery/door/airlock/autoname/wolf/civilian,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -24
 	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/freezer,
-/area/ship/wolf/habitation/bathroom/one)
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/lockers)
 "bC" = (
 /turf/simulated/floor/wood/walnut,
 /area/ship/wolf/habitation/observation)
@@ -9183,30 +9200,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/escape_pod/four)
-"rF" = (
-/obj/effect/catwalk_plated/dark,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	icon_state = "intact-supply"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	icon_state = "intact-supply"
-	},
-/obj/structure/cable/green{
-	icon_state = "1-4"
-	},
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_x = 0;
-	pixel_y = -24
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/lockers)
 "rG" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4;
@@ -18477,7 +18470,7 @@ pA
 pD
 pK
 pE
-rF
+bB
 fz
 gF
 tQ
@@ -20607,7 +20600,7 @@ aE
 aE
 aN
 aN
-bB
+ac
 bR
 bT
 bR

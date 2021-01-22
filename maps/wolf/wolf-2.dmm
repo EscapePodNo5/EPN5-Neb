@@ -242,6 +242,24 @@
 	},
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/ship/wolf/engineering/atmospherics)
+"aG" = (
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	icon_state = "apc0"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/green{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/ship/wolf/security/hallway/weapons_bay/starboard)
 "aH" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall/prepainted,
@@ -988,22 +1006,20 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/security/hallway/weapons_bay/starboard)
 "cp" = (
-/obj/machinery/light/small/red{
-	dir = 8
-	},
 /obj/structure/cable/green{
-	dir = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/power/smes/buildable/preset/wolf/subgrid/engine,
+/obj/structure/cable/green{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/apc{
+/obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 4;
-	icon_state = "apc0"
+	icon_state = "intact"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/wolf/security/hallway/weapons_bay/starboard)
+/obj/effect/engine_setup/smes,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/wolf/engineering/reactor)
 "cq" = (
 /obj/machinery/door/firedoor,
 /obj/structure/table/steel_reinforced,
@@ -1081,6 +1097,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/security/hallway/weapons_bay/port)
+"cA" = (
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/smes/buildable/preset/wolf/subgrid{
+	RCon_tag = "Second Deck SMES"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/engineering/substation/two)
 "cB" = (
 /obj/effect/catwalk_plated/dark,
 /obj/structure/cable/green{
@@ -1656,17 +1684,10 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/engineering/atmospherics)
 "dF" = (
-/obj/structure/cable/green{
-	icon_state = "0-4"
-	},
-/obj/structure/cable/green{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/smes/buildable/preset/wolf/subgrid{
-	RCon_tag = "Second Deck SMES"
-	},
+/obj/random/bomb_supply,
+/obj/random/assembly,
 /turf/simulated/floor/plating,
-/area/ship/wolf/engineering/substation/two)
+/area/ship/wolf/maintenance/decktwo/aft/port)
 "dG" = (
 /obj/effect/floor_decal/corner/research/mono,
 /obj/structure/bed/chair/shuttle/black{
@@ -1761,23 +1782,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/bridge/cic)
 "dP" = (
+/obj/machinery/atmospherics/pipe/simple/visible/black,
+/obj/machinery/door/airlock/autoname/wolf/engineering,
 /obj/structure/cable/green{
-	icon_state = "0-4"
+	icon_state = "1-2"
 	},
-/obj/structure/cable/green{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/smes/buildable/preset/wolf/subgrid/engine,
-/obj/structure/cable/green{
-	icon_state = "0-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/green{
-	dir = 4;
-	icon_state = "intact"
-	},
-/obj/effect/engine_setup/smes,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor,
-/area/ship/wolf/engineering/reactor)
+/area/ship/wolf/engineering/engine_room)
 "dQ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4952,18 +4966,6 @@
 /obj/effect/catwalk_plated/dark,
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering)
-"jA" = (
-/obj/machinery/atmospherics/pipe/simple/visible/black,
-/obj/machinery/door/airlock/autoname/wolf/engineering,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/visible/black,
-/turf/simulated/floor/tiled/techfloor,
-/area/ship/wolf/engineering/engine_room)
 "jB" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -8710,12 +8712,6 @@
 /obj/random/closet,
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/reactor)
-"rn" = (
-/obj/item/gun/projectile/pistol/random,
-/obj/random/bomb_supply,
-/obj/random/assembly,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/decktwo/aft/port)
 "ro" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -16935,7 +16931,7 @@ in
 Th
 eH
 dn
-dF
+cA
 eH
 qZ
 pQ
@@ -17842,7 +17838,7 @@ sN
 sV
 ae
 ae
-dP
+cp
 fJ
 hB
 kF
@@ -18239,7 +18235,7 @@ aq
 aq
 aq
 rL
-rn
+dF
 rB
 oN
 aa
@@ -19113,7 +19109,7 @@ lu
 kx
 cU
 jf
-jA
+dP
 mo
 mV
 dY
@@ -19455,7 +19451,7 @@ cd
 co
 dM
 bR
-cp
+aG
 bR
 bR
 dd
