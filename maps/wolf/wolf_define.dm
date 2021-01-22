@@ -23,6 +23,7 @@
 	num_exoplanets = 3
 
 	welcome_sound = 'maps/wolf/sounds/wolf_intro_sting.ogg'
+	id_hud_icons = 'maps/wolf/icons/hud.dmi'
 
 	emergency_shuttle_leaving_dock = "Attention all hands: escape pods are now launching. Brace for acceleration."
 	emergency_shuttle_called_message = "Attention all hands: emergency evacuation procedures are now in effect. Escape pods will launch in %ETA%"

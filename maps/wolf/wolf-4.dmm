@@ -9,12 +9,6 @@
 /obj/machinery/power/breakerbox/activated{
 	RCon_tag = "Bridge Deck Breaker"
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/four)
 "ad" = (
