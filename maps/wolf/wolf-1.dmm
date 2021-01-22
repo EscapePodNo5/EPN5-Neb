@@ -2852,9 +2852,6 @@
 	dir = 4
 	},
 /obj/machinery/disposal,
-/obj/machinery/requests_console/preset/heads/td{
-	pixel_y = 32
-	},
 /turf/simulated/floor/carpet/purple,
 /area/ship/wolf/command/office/rd)
 "gc" = (
@@ -7955,9 +7952,6 @@
 	},
 /obj/machinery/keycard_auth{
 	pixel_y = 32
-	},
-/obj/machinery/requests_console/preset/heads/bosun{
-	pixel_x = -32
 	},
 /turf/simulated/floor/carpet,
 /area/ship/wolf/command/office/bosun)

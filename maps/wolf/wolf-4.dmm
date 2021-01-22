@@ -1887,9 +1887,6 @@
 	dir = 1
 	},
 /obj/structure/table/woodentable/walnut,
-/obj/machinery/requests_console/preset/heads/ce{
-	pixel_y = -32
-	},
 /turf/simulated/floor/carpet/orange,
 /area/ship/wolf/command/office/ce)
 "dM" = (
@@ -2797,9 +2794,6 @@
 	icon_state = "camera";
 	dir = 1
 	},
-/obj/machinery/requests_console/preset/heads/xo{
-	pixel_y = -32
-	},
 /turf/simulated/floor/carpet/green,
 /area/ship/wolf/command/office/xo)
 "fm" = (
@@ -3587,9 +3581,6 @@
 	dir = 1
 	},
 /obj/structure/table/woodentable/maple,
-/obj/machinery/requests_console/preset/heads/cmo{
-	pixel_y = -32
-	},
 /turf/simulated/floor/carpet/blue2,
 /area/ship/wolf/command/office/cmo)
 "gM" = (
@@ -3701,9 +3692,6 @@
 	dir = 1
 	},
 /obj/structure/table/woodentable/mahogany,
-/obj/machinery/requests_console/preset/heads/ssc{
-	pixel_y = -32
-	},
 /turf/simulated/floor/carpet/red,
 /area/ship/wolf/command/office/maa)
 "gV" = (

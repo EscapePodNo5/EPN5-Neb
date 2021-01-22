@@ -38,7 +38,9 @@
 	var/tail_animation                        // If set, the icon to obtain tail animation states from.
 	var/tail_blend = ICON_ADD
 	var/tail_hair
+	var/tail_hair_blend = ICON_ADD
 	var/tail_icon = 'icons/effects/species.dmi'
+	var/tail_states = 1
 
 	var/list/hair_styles
 	var/list/facial_hair_styles
@@ -282,6 +284,8 @@
 	var/exertion_reagent_path = null
 	var/list/exertion_emotes_biological = null
 	var/list/exertion_emotes_synthetic = null
+
+	var/list/traits = list() // An associative list of /decl/traits and trait level - See individual traits for valid levels
 /*
 These are all the things that can be adjusted for equipping stuff and
 each one can be in the NORTH, SOUTH, EAST, and WEST direction. Specify
