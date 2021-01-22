@@ -1,58 +1,47 @@
 /obj/item/clothing/under/wolf
-	item_icons = list(slot_w_uniform_str = 'maps/wolf/icons/onmob_under.dmi')
-	icon = 'maps/wolf/icons/uniforms.dmi'
-	gender_icons = FALSE
 	rolled_down = 0
 	rolled_sleeves = 0
 
 /obj/item/clothing/under/wolf/grey
 	name = "grey jumpsuit"
 	desc = "A utilitarian jumpsuit in grey. How typical."
-	icon_state = "grey_obj"
-	worn_state = "grey"
+	icon = 'maps/wolf/icons/uniforms/grey.dmi'
 
 /obj/item/clothing/under/wolf/olive
 	name = "olive jumpsuit"
 	desc = "A utilitarian jumpsuit in olive drab. It feels like canvas, and is festooned with gear attachment points."
-	icon_state = "olive_obj"
-	worn_state = "olive"
+	icon = 'maps/wolf/icons/uniforms/olive.dmi'
 
 /obj/item/clothing/under/wolf/white
 	name = "white jumpsuit"
 	desc = "A utilitarian jumpsuit in white. They feel like scrubs."
-	icon_state = "white_obj"
-	worn_state = "white"
+	icon = 'maps/wolf/icons/uniforms/white.dmi'
 
 /obj/item/clothing/under/wolf/black
 	name = "reinforced jumpsuit"
 	desc = "A utilitarian jumpsuit in a fetching black with kevlar inserts over vital organs."
-	icon_state = "black_obj"
-	worn_state = "black"
+	icon = 'maps/wolf/icons/uniforms/black.dmi'
 
 /obj/item/clothing/under/wolf/blue
 	name = "blue jumpsuit"
 	desc = "A utilitarian jumpsuit in a fancy blue color. Makes you feel calm and collected just looking at it."
-	icon_state = "blue_obj"
-	worn_state = "blue"
+	icon = 'maps/wolf/icons/uniforms/blue.dmi'
 
 /obj/item/clothing/under/wolf/darkbrown
 	name = "dark brown jumpsuit"
 	desc = "A utilitarian jumpsuit in dark brown."
-	icon_state = "brown_obj"
-	worn_state = "brown"
+	icon = 'maps/wolf/icons/uniforms/brown.dmi'
 
 /obj/item/clothing/under/wolf/tan
 	name = "tan jumpsuit"
 	desc = "A utilitarian jumpsuit in a tactical tan. It feels like it has insulation, and smells of engine grease."
-	icon_state = "tan_obj"
-	worn_state = "tan"
+	icon = 'maps/wolf/icons/uniforms/tan.dmi'
 
 /obj/item/clothing/accessory/chevrons
 	name = "rank chevrons"
 	desc = "A set of chevrons denoting rank at a glance."
 	slot = ACCESSORY_SLOT_INSIGNIA
 	on_rolled = list("down" = "none", "rolled" = "chevron")
-	accessory_icons = list(slot_w_uniform_str = 'maps/wolf/icons/rank_chevrons_onmob.dmi', slot_wear_suit_str = 'maps/wolf/icons/rank_chevrons_onmob.dmi')
 	icon = 'maps/wolf/icons/rank_chevrons.dmi'
 	icon_state = "chevron"
 
@@ -83,7 +72,6 @@
 	slot = ACCESSORY_SLOT_DEPT
 	on_rolled = list("down" = "none", "rolled" = "deptstripe_rolled")
 	icon = 'maps/wolf/icons/dept_stripes.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'maps/wolf/icons/dept_stripes_onmob.dmi', slot_wear_suit_str = 'maps/wolf/icons/dept_stripes_onmob.dmi')
 	icon_state = "deptstripe"
 
 /obj/item/clothing/accessory/dept_stripes/engineering

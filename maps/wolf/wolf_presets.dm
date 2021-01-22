@@ -19,30 +19,6 @@
 
 //Head of staff request consoles, mostly for announcements.
 
-/obj/machinery/requests_console/preset/heads/ce
-	department = "Chief Engineer's"
-	base_type = /obj/machinery/requests_console
-
-/obj/machinery/requests_console/preset/heads/xo
-	department = "First Officer's"
-	base_type = /obj/machinery/requests_console
-
-/obj/machinery/requests_console/preset/heads/cmo
-	department = "Chief Medical Officer's"
-	base_type = /obj/machinery/requests_console
-
-/obj/machinery/requests_console/preset/heads/ssc
-	department = "Ship Security Commander's"
-	base_type = /obj/machinery/requests_console
-
-/obj/machinery/requests_console/preset/heads/bosun
-	department = "Bosun's"
-	base_type = /obj/machinery/requests_console
-
-/obj/machinery/requests_console/preset/heads/td
-	department = "Technology Director's"
-	base_type = /obj/machinery/requests_console
-
 /obj/machinery/newscaster/bump/north
 	pixel_y = 32
 	base_type = /obj/machinery/newscaster
