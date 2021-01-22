@@ -844,10 +844,7 @@
 /area/ship/wolf/engineering/substation/one)
 "ca" = (
 /obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/one)
