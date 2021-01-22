@@ -21,6 +21,7 @@
 	#include "wolf_outfits.dm"
 	#include "wolf_misc.dm"
 	#include "wolf_cameras.dm"
+	#include "wolf_antag.dm"
 
 	#include "decals\floor_decals.dm"
 

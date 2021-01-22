@@ -4,7 +4,6 @@
 #include "example.dm"
 #include "mob_defines.dm"
 #include "global_defines.dm"
-#include "species/vulpkanin.dm"
 #include "overwrites.dm"
 #include "clothing_overwrites.dm"
 #include "pda_overwrites.dm"
@@ -28,6 +27,7 @@
 
 
 #include "species/lizard.dm"
+#include "species/vulpkanin.dm"
 
 #include "music.dm"
 #include "species/vox/vox.dm"
@@ -50,13 +50,3 @@
 #include "sprite_accessory/overwrites_head.dm"
 #include "decals/damagecontrol.dm"
 #endif
-
-// BEGIN_INTERNALS
-// END_INTERNALS
-// BEGIN_FILE_DIR
-#define FILE_DIR .
-// END_FILE_DIR
-// BEGIN_PREFERENCES
-// END_PREFERENCES
-// BEGIN_INCLUDE
-// END_INCLUDE
