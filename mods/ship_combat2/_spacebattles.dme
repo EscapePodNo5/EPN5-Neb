@@ -1,6 +1,5 @@
 #ifndef MODPACK_SHIPBATTLES
 #define MODPACK_SHIPBATTLES
-// BEGIN_INCLUDE
 #include "_defines.dm"
 #include "overwrites.dm"
 #include "ship_combat.dm"

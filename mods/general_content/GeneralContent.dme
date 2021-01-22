@@ -30,9 +30,6 @@
 #include "species/vulpkanin.dm"
 
 #include "music.dm"
-#include "species/vox/vox.dm"
-#include "species/vox/organs.dm"
-#include "machinery/thermal_fusion.dm"
 #include "species/skrell.dm"
 #include "organs/internal/skrell/eyes.dm"
 #include "organs/internal/skrell/gills.dm"

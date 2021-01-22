@@ -7,7 +7,7 @@ GLOBAL_LIST_EMPTY(latejoin_cryo_two)
 	. = ..()
 
 /datum/map/wolf
-	allowed_spawns = list("First Deck Cryogenic Storage", "Third Deck Cryogenic Storage", "Robot Storage")
+	allowed_spawns = list("First Deck Cryogenic Storage", "Third Deck Cryogenic Storage")
 	default_spawn = "Third Deck Cryogenic Storage"
 
 /datum/spawnpoint/cryo

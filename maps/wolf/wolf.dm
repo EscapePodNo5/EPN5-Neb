@@ -12,6 +12,7 @@
 	#include "wolf_branches.dm"
 	#include "wolf_overmap.dm"
 	#include "wolf_jobs.dm"
+	#include "wolf_lobby.dm"
 	#include "wolf_evac.dm"
 	#include "wolf_areas.dm"
 	#include "wolf_presets.dm"
