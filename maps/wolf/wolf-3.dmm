@@ -2978,10 +2978,6 @@
 /obj/machinery/power/breakerbox/activated{
 	RCon_tag = "Third Deck Breaker"
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/three)
 "gi" = (

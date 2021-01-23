@@ -193,9 +193,6 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
-/obj/structure/cable/green{
-	icon_state = "0-4"
-	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/four)
 "aE" = (
