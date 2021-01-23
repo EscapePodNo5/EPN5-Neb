@@ -197,7 +197,7 @@
 	icon_state = "weaponsbay"
 	req_access = list(access_security)
 
-/area/ship/wolf/security/weapons_bay/one
+/area/ship/wolf/security/weapons_bay/two
 	name = "\improper Torpedo Bay One"
 
 /area/ship/wolf/security/weapons_bay/three
