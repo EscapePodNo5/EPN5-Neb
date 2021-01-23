@@ -14,7 +14,7 @@
 	var/obj/machinery/disperser/front/front
 	var/obj/machinery/disperser/middle/middle
 	var/obj/machinery/disperser/back/back
-	var/const/link_range = 10 //How far can the above stuff be maximum before we start complaining
+	var/link_range = 10 //How far can the above stuff be maximum before we start complaining
 
 	var/overmapdir = 0
 

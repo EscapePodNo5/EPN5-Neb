@@ -28,9 +28,6 @@
 /area/ship/wolf/engineering/fuel_bay
 	icon_state = "fuelbay"
 
-/area/ship/wolf/engineering/fuel_bay/hydrogen
-	name = "\improper Hydrogen Storage Bay"
-
 /area/ship/wolf/engineering/fuel_bay/co2
 	name = "\improper Propellant Storage Bay"
 
@@ -47,15 +44,6 @@
 	name = "\improper Utility Shaft"
 	icon_state = "utilityshaft"
 
-/area/ship/wolf/engineering/material_storage
-	name = "\improper Material Storage"
-	icon_state = "matstore"
-
-/area/ship/wolf/engineering/monitoring
-	name = "\improper Engineering Control Room"
-	icon_state = "monitoring"
-	req_access = list(access_engine)
-
 /area/ship/wolf/engineering/solars
 	name = "\improper Bridge Solar Array"
 	icon_state = "solars"
@@ -63,10 +51,6 @@
 /area/ship/wolf/engineering/shield_generator
 	name = "\improper Primary Shield Generator"
 	icon_state = "shieldgen"
-
-/area/ship/wolf/engineering/heatcore
-	name = "\improper Primary Heat Core"
-	icon_state = "heatcore"
 
 /area/ship/wolf/engineering/reactor
 	name = "\improper Primary Reactor Core"
@@ -204,27 +188,17 @@
 	name = "\improper Master At Arms Office"
 	req_access = list(access_armory, access_brig, access_sec_doors)
 
-/area/ship/wolf/security/cell
-	icon_state = "cell"
-	name = "\improper Common Cell"
-
 /area/ship/wolf/security/armory
 	icon_state = "armory"
 	name = "\improper Armory"
 	req_access = list(access_armory)
 
-/area/ship/wolf/security/gunship_bay
-	name = "\improper Gunship Munitions Bay"
-
 /area/ship/wolf/security/weapons_bay
 	icon_state = "weaponsbay"
 	req_access = list(access_security)
 
-/area/ship/wolf/security/weapons_bay/one
-	name = "\improper Torpedo Bay One"
-
 /area/ship/wolf/security/weapons_bay/two
-	name = "\improper Torpedo Bay Two"
+	name = "\improper Torpedo Bay One"
 
 /area/ship/wolf/security/weapons_bay/three
 	name = "\improper Main Weapons Bay"
@@ -362,16 +336,6 @@
 	name = "Technology Director's Quarters"
 	icon_state = "rdoffice"
 
-/area/ship/wolf/ai/core
-	icon_state = "aicore"
-	name = "AI Core"
-	req_access = list(access_heads, access_ai_upload)
-
-/area/ship/wolf/ai/upload
-	icon_state = "aiupload"
-	name = "AI Upload"
-	req_access = list(access_heads, access_ai_upload)
-
 /area/ship/wolf/command/bathroom
 	name = "Officer Bathroom"
 	icon_state = "headbath"
@@ -392,6 +356,18 @@
 	icon_state = "selfdestruct"
 	req_access = list(access_heads_vault)
 
+/area/ship/wolf/command/ofd
+	name = "OFD Bay"
+	icon_state = "ofd"
+	req_access = list(access_bridge)
+
+/area/ship/wolf/command/ofdstorage
+	name = "OFD Charge Storage"
+	icon_state = "ofdammo"
+	req_access = list(access_bridge)
+
+
+
 //Cargo
 
 /area/ship/wolf/cargo
@@ -405,11 +381,6 @@
 	name = "Cargo Lobby"
 	icon_state = "cargolobby"
 	req_access = null
-
-/area/ship/wolf/cargo/fabrication
-	name = "Fabrication Bay"
-	icon_state = "fabrication"
-	req_access = list(access_manufacturing)
 
 /area/ship/wolf/cargo/disposals
 	name = "Disposals Bay"

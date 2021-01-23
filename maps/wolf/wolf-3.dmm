@@ -5,6 +5,22 @@
 "ab" = (
 /turf/simulated/floor/reinforced/airless,
 /area/space)
+"ac" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/door/airlock/autoname/wolf/civilian,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/ship/wolf/habitation/bathroom/one)
 "ad" = (
 /obj/machinery/computer/cryopod{
 	pixel_y = 24
@@ -571,24 +587,25 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/third_deck/fore)
 "bB" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/firedoor,
+/obj/effect/catwalk_plated/dark,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4;
+	dir = 9;
 	icon_state = "intact-supply"
 	},
-/obj/machinery/door/airlock/autoname/wolf/civilian,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -24
 	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/freezer,
-/area/ship/wolf/habitation/bathroom/one)
+/turf/simulated/floor/plating,
+/area/ship/wolf/security/lockers)
 "bC" = (
 /turf/simulated/floor/wood/walnut,
 /area/ship/wolf/habitation/observation)
@@ -1913,22 +1930,16 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/third_deck/fore)
 "eq" = (
-/obj/structure/cable/green,
-/obj/machinery/power/apc{
-	dir = 8;
-	icon_state = "apc0"
-	},
-/obj/structure/cable/green{
-	icon_state = "0-2"
-	},
-/obj/machinery/door/window{
-	dir = 1;
-	icon_state = "left";
-	req_access = list("ACCESS_BAR")
-	},
 /obj/structure/window/reinforced{
 	dir = 4;
 	icon_state = "rwindow"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/autoname/wolf/civilian{
+	autoset_access = 0;
+	req_access = list("ACCESS_BAR")
 	},
 /turf/simulated/floor/lino,
 /area/ship/wolf/habitation/bar)
@@ -2105,12 +2116,14 @@
 /turf/simulated/floor/lino,
 /area/ship/wolf/habitation/bar)
 "eE" = (
-/obj/machinery/light{
-	dir = 8
+/obj/machinery/power/apc{
+	dir = 8;
+	icon_state = "apc0"
 	},
 /obj/structure/cable/green{
-	icon_state = "1-2"
+	icon_state = "0-2"
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/lino,
 /area/ship/wolf/habitation/bar)
 "eF" = (
@@ -2689,6 +2702,9 @@
 /obj/structure/cable/green{
 	icon_state = "1-4"
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/lino,
 /area/ship/wolf/habitation/bar)
 "fK" = (
@@ -2961,10 +2977,6 @@
 /obj/machinery/power/breakerbox/activated{
 	RCon_tag = "Third Deck Breaker"
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/three)
 "gi" = (
@@ -2979,9 +2991,9 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/substation/three)
 "gj" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
+/obj/effect/paint/silver,
+/turf/simulated/wall/r_wall/prepainted,
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
 "gk" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -3761,11 +3773,15 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/third_deck/fore)
 "hB" = (
-/obj/machinery/light/small/red{
+/obj/structure/railing/mapped{
+	dir = 8
+	},
+/obj/random/obstruction,
+/obj/structure/railing/mapped{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
 "hC" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/table/standard,
@@ -6108,6 +6124,12 @@
 	dir = 8;
 	icon_state = "corner_white"
 	},
+/obj/machinery/power/sensor{
+	id_tag = "Third Deck Subgrid"
+	},
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/third_deck/fore)
 "lP" = (
@@ -6767,6 +6789,9 @@
 	icon_state = "1-2"
 	},
 /obj/structure/closet/walllocker/emerglocker/south,
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/third_deck/fore)
 "mY" = (
@@ -8848,17 +8873,24 @@
 /turf/simulated/wall/prepainted,
 /area/ship/wolf/medical/chemistry)
 "qS" = (
-/obj/effect/paint/red,
-/turf/simulated/wall/r_wall/prepainted,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
+/obj/structure/catwalk,
+/obj/random/junk,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
 "qT" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/security/lockers)
 "qU" = (
-/obj/effect/paint/silver,
-/turf/simulated/wall/r_wall/prepainted,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
+/obj/structure/railing/mapped{
+	dir = 8
+	},
+/obj/structure/railing/mapped{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
 "qV" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/r_wall/prepainted,
@@ -9184,29 +9216,8 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/escape_pod/four)
 "rF" = (
-/obj/effect/catwalk_plated/dark,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	icon_state = "intact-supply"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	icon_state = "intact-supply"
-	},
-/obj/structure/cable/green{
-	icon_state = "1-4"
-	},
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_x = 0;
-	pixel_y = -24
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/security/lockers)
+/turf/simulated/wall/r_wall/prepainted,
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
 "rG" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4;
@@ -10071,12 +10082,12 @@
 /obj/structure/railing/mapped{
 	dir = 8
 	},
-/obj/random/obstruction,
+/obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
 "ti" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -11383,16 +11394,6 @@
 /obj/random/shoes,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckthree/aft)
-"vJ" = (
-/obj/structure/railing/mapped{
-	dir = 8
-	},
-/obj/structure/railing/mapped,
-/obj/structure/railing/mapped{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
 "vK" = (
 /obj/machinery/door/airlock/autoname/wolf/medical,
 /turf/simulated/floor/plating,
@@ -12072,6 +12073,25 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/habitation/hydroponics)
+"wW" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
+"wX" = (
+/obj/effect/paint/red,
+/turf/simulated/wall/r_wall/prepainted,
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
+"wY" = (
+/obj/structure/ladder,
+/obj/structure/lattice,
+/obj/machinery/door/firedoor,
+/turf/simulated/open,
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
+"wZ" = (
+/obj/effect/paint/black,
+/turf/simulated/wall/r_wall/prepainted,
+/area/ship/wolf/maintenance/deckthree/aft/starboard)
 "xt" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 4
@@ -12168,15 +12188,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/ship/wolf/escape_pod/four)
-"Ap" = (
-/obj/structure/railing/mapped{
-	dir = 8
-	},
-/obj/structure/railing/mapped{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
 "BB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
@@ -12234,11 +12245,6 @@
 /obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckthree/aft/starboard)
-"Gw" = (
-/obj/effect/floor_decal/industrial/warning,
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
 "Hn" = (
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/effect/floor_decal/corner/b_green{
@@ -12495,12 +12501,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/hallway/upper)
-"VF" = (
-/obj/structure/catwalk,
-/obj/random/junk,
-/obj/random/maintenance,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
 "VX" = (
 /obj/machinery/network/relay{
 	initial_network_id = "wolfnet"
@@ -12562,11 +12562,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/medical/treatment)
-"Zx" = (
-/obj/structure/catwalk,
-/obj/random/maintenance,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckthree/fore/starboard)
 "ZQ" = (
 /obj/effect/floor_decal/techfloor/orange/corner{
 	dir = 8;
@@ -18477,7 +18472,7 @@ pA
 pD
 pK
 pE
-rF
+bB
 fz
 gF
 tQ
@@ -20607,7 +20602,7 @@ aE
 aE
 aN
 aN
-bB
+ac
 bR
 bT
 bR
@@ -21627,7 +21622,7 @@ at
 aC
 aC
 aC
-aC
+mq
 fq
 cd
 cd
@@ -22049,12 +22044,12 @@ bN
 bN
 bN
 ob
-fe
-fe
-fe
-fe
+rF
+rF
+rF
+rF
 Yc
-mq
+wZ
 pL
 pL
 pL
@@ -22181,7 +22176,7 @@ Gu
 Is
 sr
 su
-mq
+wZ
 ab
 ab
 ab
@@ -22302,13 +22297,13 @@ st
 tg
 sy
 pX
-fe
+rF
+hB
+qU
 th
-Ap
-vJ
-Gw
-rg
-mq
+wW
+wY
+wZ
 ab
 ab
 ab
@@ -22404,7 +22399,7 @@ aa
 aa
 aa
 ab
-mq
+cM
 aJ
 aJ
 aJ
@@ -22426,16 +22421,16 @@ sw
 vr
 qL
 pX
-mq
-mq
-mq
+wZ
+wZ
+wZ
+wX
 qS
-VF
-gj
-gj
-Zx
-gj
-mq
+zw
+zw
+Gu
+zw
+wZ
 ab
 ab
 aa
@@ -22531,7 +22526,7 @@ aa
 aa
 aa
 ab
-mq
+cM
 cL
 fT
 ik
@@ -22552,17 +22547,17 @@ gR
 De
 jL
 qL
-ci
-mq
+pX
+wZ
 ab
 ab
-qS
-qS
-qS
-qS
-qS
-mq
-mq
+wX
+wX
+wX
+wX
+wX
+wZ
+wZ
 ab
 aa
 aa
@@ -22658,7 +22653,7 @@ aa
 aa
 aa
 ab
-mq
+cM
 cL
 gL
 gV
@@ -22679,8 +22674,8 @@ qL
 qL
 qL
 qL
-ci
-mq
+pX
+wZ
 aa
 aa
 aa
@@ -22785,7 +22780,7 @@ aa
 aa
 aa
 aa
-mq
+cM
 cL
 gQ
 kL
@@ -22804,10 +22799,10 @@ pX
 vj
 qO
 pX
-hB
-ci
-ci
-mq
+ss
+pX
+pX
+wZ
 aa
 aa
 aa
@@ -22912,7 +22907,7 @@ aa
 aa
 aa
 aa
-mq
+cM
 cM
 cM
 cM
@@ -22923,18 +22918,18 @@ jQ
 vp
 vu
 ve
-qU
-qU
-qS
-qS
-qS
-mq
-mq
-mq
-mq
-mq
-mq
-mq
+gj
+gj
+wX
+wX
+wX
+wZ
+wZ
+wZ
+wZ
+wZ
+wZ
+wZ
 aa
 aa
 aa

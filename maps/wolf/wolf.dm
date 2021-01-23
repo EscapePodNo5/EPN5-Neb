@@ -1,6 +1,6 @@
 #if !defined(USING_MAP_DATUM)
 	#include "../../mods/general_content/GeneralContent.dme"
-	#include "../../mods/ship_combat2/_spacebattles.dme"
+//	#include "../../mods/ship_combat2/_spacebattles.dme"
 
 	#include "../away/supply_station/supply_station.dm"
 
@@ -23,6 +23,7 @@
 	#include "wolf_misc.dm"
 	#include "wolf_cameras.dm"
 	#include "wolf_antag.dm"
+	#include "wolf_unit_tests.dm"
 
 	#include "decals\floor_decals.dm"
 
