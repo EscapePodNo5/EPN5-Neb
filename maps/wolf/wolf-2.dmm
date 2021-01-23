@@ -4864,6 +4864,7 @@
 	pixel_y = 32
 	},
 /obj/machinery/door/window/southleft{
+	autoset_access = 0;
 	req_access = list("ACCESS_ENGINEERING")
 	},
 /obj/structure/window/reinforced{
