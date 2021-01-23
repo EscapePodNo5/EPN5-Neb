@@ -1,6 +1,6 @@
 #if !defined(USING_MAP_DATUM)
 	#include "../../mods/general_content/GeneralContent.dme"
-	#include "../../mods/ship_combat2/_spacebattles.dme"
+//	#include "../../mods/ship_combat2/_spacebattles.dme"
 
 	#include "../away/supply_station/supply_station.dm"
 

@@ -200,9 +200,6 @@
 /area/ship/wolf/security/weapons_bay/one
 	name = "\improper Torpedo Bay One"
 
-/area/ship/wolf/security/weapons_bay/two
-	name = "\improper Torpedo Bay Two"
-
 /area/ship/wolf/security/weapons_bay/three
 	name = "\improper Main Weapons Bay"
 
@@ -358,6 +355,18 @@
 	name = "Sensitive Storage"
 	icon_state = "selfdestruct"
 	req_access = list(access_heads_vault)
+
+/area/ship/wolf/command/ofd
+	name = "OFD Bay"
+	icon_state = "ofd"
+	req_access = list(access_bridge)
+
+/area/ship/wolf/command/ofdstorage
+	name = "OFD Charge Storage"
+	icon_state = "ofdammo"
+	req_access = list(access_bridge)
+
+
 
 //Cargo
 
