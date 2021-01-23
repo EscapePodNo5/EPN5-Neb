@@ -1930,22 +1930,16 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/third_deck/fore)
 "eq" = (
-/obj/structure/cable/green,
-/obj/machinery/power/apc{
-	dir = 8;
-	icon_state = "apc0"
-	},
-/obj/structure/cable/green{
-	icon_state = "0-2"
-	},
-/obj/machinery/door/window{
-	dir = 1;
-	icon_state = "left";
-	req_access = list("ACCESS_BAR")
-	},
 /obj/structure/window/reinforced{
 	dir = 4;
 	icon_state = "rwindow"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/autoname/wolf/civilian{
+	autoset_access = 0;
+	req_access = list("ACCESS_BAR")
 	},
 /turf/simulated/floor/lino,
 /area/ship/wolf/habitation/bar)
@@ -2122,12 +2116,14 @@
 /turf/simulated/floor/lino,
 /area/ship/wolf/habitation/bar)
 "eE" = (
-/obj/machinery/light{
-	dir = 8
+/obj/machinery/power/apc{
+	dir = 8;
+	icon_state = "apc0"
 	},
 /obj/structure/cable/green{
-	icon_state = "1-2"
+	icon_state = "0-2"
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/lino,
 /area/ship/wolf/habitation/bar)
 "eF" = (
@@ -2705,6 +2701,9 @@
 	},
 /obj/structure/cable/green{
 	icon_state = "1-4"
+	},
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/lino,
 /area/ship/wolf/habitation/bar)

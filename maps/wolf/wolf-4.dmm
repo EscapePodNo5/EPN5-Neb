@@ -1462,6 +1462,24 @@
 /obj/machinery/door/airlock/autoname/wolf/glass/command,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/hallway)
+"cU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/vault/bolted{
+	autoset_access = 0;
+	req_access = list("ACCESS_VAULT")
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/command/vault)
 "cV" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -5218,23 +5236,6 @@
 /obj/item/paper_bin,
 /turf/simulated/floor/wood/walnut,
 /area/ship/wolf/command/meetingroom)
-"Tw" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/vault/bolted{
-	req_access = list("ACCESS_VAULT")
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/command/vault)
 "Ug" = (
 /obj/structure/bed/chair/comfy/brown{
 	dir = 1;
@@ -13879,7 +13880,7 @@ lW
 lW
 lW
 lW
-Tw
+cU
 lW
 lW
 lW
