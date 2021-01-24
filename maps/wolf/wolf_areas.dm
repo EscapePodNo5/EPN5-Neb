@@ -486,12 +486,6 @@
 /area/ship/wolf/escape_pod/four
 	name = "Escape Pod Bay Four"
 
-/area/ship/wolf/escape_pod/five
-	name = "Escape Pod Bay Five"
-
-/area/ship/wolf/escape_pod/six
-	name = "Escape Pod Bay Six"
-
 //Maintenance
 
 /area/ship/wolf/maintenance
