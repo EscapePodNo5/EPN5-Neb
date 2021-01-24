@@ -11530,9 +11530,6 @@
 	icon_state = "stripe"
 	},
 /obj/item/radio/intercom/bump/south,
-/obj/machinery/computer/cryopod{
-	pixel_x = -32
-	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/escape_pod/four)
 "wd" = (
