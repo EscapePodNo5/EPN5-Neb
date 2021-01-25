@@ -2,6 +2,8 @@
 	#include "../../mods/general_content/GeneralContent.dme"
 //	#include "../../mods/ship_combat2/_spacebattles.dme"
 
+	#include "../../mods/species/skrell/_skrell.dme"
+
 	#include "../away/supply_station/supply_station.dm"
 
 	#include "wolf-1.dmm"

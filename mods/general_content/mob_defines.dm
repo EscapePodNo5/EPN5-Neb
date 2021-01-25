@@ -1,6 +1,2 @@
-#define SPECIES_VULP        "Vulpkanin"
-#define SPECIES_UNATHI      "Unathi"
-#define SPECIES_SKRELL		"Skrell"
-#define SPECIES_VOX			"Vox"
-
-#define BP_HINDTONGUE		"hindtongue"
+#define SPECIES_VULP   "Vulpkanin"
+#define SPECIES_UNATHI "Unathi"
