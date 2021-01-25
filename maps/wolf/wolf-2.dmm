@@ -115,6 +115,9 @@
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/command/bridge/cic)
 "aq" = (
@@ -3007,6 +3010,9 @@
 /area/ship/wolf/command/ofdstorage)
 "gr" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/command/ofdstorage)
 "gs" = (
@@ -5998,29 +6004,15 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/second_deck)
 "lm" = (
-/obj/structure/cable/green{
-	icon_state = "1-4"
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/black{
-	dir = 4;
-	icon_state = "intact"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/effect/floor_decal/corner/orange{
 	dir = 10;
 	icon_state = "corner_white"
 	},
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/engineering/engine_room)
+/area/ship/wolf/engineering)
 "ln" = (
 /obj/machinery/light{
 	dir = 4
@@ -7691,12 +7683,32 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/engineering)
 "oC" = (
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	dir = 4;
+	icon_state = "intact"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /obj/effect/floor_decal/corner/orange{
 	dir = 10;
 	icon_state = "corner_white"
 	},
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/engineering)
+/area/ship/wolf/engineering/engine_room)
 "oD" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/hatch{
@@ -10702,6 +10714,9 @@
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/wolf/command/ofdstorage)
+"vd" = (
+/turf/simulated/floor/shuttle_ceiling,
+/area/space)
 "vW" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 10;
@@ -17203,13 +17218,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+pz
+pz
+pz
+pz
+pz
+pz
+pz
 aH
 fB
 fB
@@ -17329,13 +17344,13 @@ aa
 aa
 aa
 aa
-aa
+pz
 eh
 ff
-aa
-aa
-aa
-aa
+pz
+pz
+pz
+pz
 aH
 aH
 aH
@@ -17455,8 +17470,8 @@ aa
 aa
 aa
 aa
-aa
-aa
+pz
+pz
 aH
 jr
 oI
@@ -18073,7 +18088,7 @@ aa
 aa
 aa
 aa
-aa
+vd
 pz
 pz
 pz
@@ -18199,8 +18214,8 @@ aa
 aa
 aa
 aa
-aa
-aa
+vd
+vd
 pz
 pz
 pz
@@ -18324,10 +18339,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+vd
+vd
+vd
+vd
 pz
 pz
 pz
@@ -18451,10 +18466,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+vd
+vd
+vd
+vd
 pz
 pz
 pz
@@ -18578,10 +18593,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+vd
+vd
+vd
+vd
 pz
 pz
 pz
@@ -18705,10 +18720,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+vd
+vd
+vd
+vd
 pz
 pz
 pz
@@ -18832,10 +18847,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+vd
+vd
+vd
+vd
 pz
 pz
 pz
@@ -18959,10 +18974,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+vd
+vd
+vd
+vd
 pz
 pz
 pz
@@ -19086,10 +19101,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+vd
+vd
+vd
+vd
 pz
 pz
 pz
@@ -19140,7 +19155,7 @@ hy
 hY
 ja
 ol
-oC
+lm
 ag
 la
 tW
@@ -19213,10 +19228,10 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
+vd
+vd
+vd
+vd
 pz
 pz
 pz
@@ -19273,7 +19288,7 @@ qA
 os
 bQ
 jP
-lm
+oC
 bQ
 bQ
 bQ
@@ -19341,9 +19356,9 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
+vd
+vd
+vd
 pz
 pz
 pz
@@ -19469,8 +19484,8 @@ aa
 aa
 aa
 aa
-aa
-aa
+vd
+vd
 pz
 pz
 pz
@@ -19597,7 +19612,7 @@ aa
 aa
 aa
 aa
-aa
+vd
 pz
 pz
 pz
@@ -20670,8 +20685,8 @@ ej
 nB
 uF
 ej
-oT
 qq
+oV
 oU
 oU
 oU
@@ -20800,11 +20815,11 @@ ej
 oU
 oU
 oU
-aa
-aa
-aa
-aa
-aa
+pz
+pz
+pz
+pz
+pz
 oU
 oU
 pb
@@ -20927,12 +20942,12 @@ uw
 uw
 uw
 uy
-aa
-aa
-aa
-aa
-aa
-aa
+pz
+pz
+pz
+pz
+pz
+pz
 aa
 aa
 aa
@@ -21053,11 +21068,11 @@ pz
 pz
 aa
 aa
-aa
-aa
-aa
-aa
-aa
+pz
+pz
+pz
+pz
+pz
 aa
 aa
 aa
