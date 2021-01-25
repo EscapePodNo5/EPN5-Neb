@@ -18,23 +18,15 @@
 #include "background_info/hundari/factions.dm"
 #include "background_info/hundari/locations.dm"
 #include "background_info/hundari/culture.dm"
-#include "background_info/skrell/languages.dm"
-#include "background_info/skrell/factions.dm"
-#include "background_info/skrell/culture.dm"
 #include "background_info/unathi/languages.dm"
 #include "background_info/unathi/culture.dm"
 #include "background_info/unathi/factions.dm"
-
 
 #include "species/lizard.dm"
 #include "species/vulpkanin.dm"
 
 #include "music.dm"
-#include "species/skrell.dm"
-#include "organs/internal/skrell/eyes.dm"
-#include "organs/internal/skrell/gills.dm"
 #include "organs/internal/unathi/eyes.dm"
-#include "sprite_accessories/accessory_skrell.dm"
 
 #include "sprite_accessory/_cosmetics_selection.dm"
 #include "sprite_accessory/_hooks.dm"
