@@ -4,7 +4,6 @@
 #define LANGUAGE_GUTTER "Gutter"
 #define LANGUAGE_HUNDARI "Hundarian"
 
-#define LANGUAGE_SKRELLIAN "Skrellian"
 #define LANGUAGE_UNATHI_SINTA "Sinta'Unathi"
 #define LANGUAGE_UNATHI_YEOSA "Yeosa'Unathi"
 
@@ -16,8 +15,6 @@
 #define CULTURE_HUNDARI_HOMEWOLRDER "Hundari Homewolder"
 #define CULTURE_HUNDARI_COLONYWOLRDER "Hundari Colonist"
 #define CULTURE_HUNDARI_EXPAT "Hundari Expat"
-
-#define CULTURE_SKRELL_GENERIC "Generic Skrellian"
 
 #define CULTURE_UNATHI_GENERIC "Generic Unathi"
 
