@@ -1881,6 +1881,19 @@
 	},
 /turf/simulated/floor/wood,
 /area/ship/wolf/command/office/xo/bedroom)
+"dI" = (
+/obj/effect/catwalk_plated/dark,
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/structure/closet/medical_wall/filled{
+	pixel_x = 32
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/command/bridge)
 "dJ" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4179,16 +4192,6 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/wolf/command/bridge)
-"hX" = (
-/obj/effect/catwalk_plated/dark,
-/obj/structure/cable/green{
-	icon_state = "2-8"
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
 /area/ship/wolf/command/bridge)
 "hY" = (
 /obj/structure/cable/green{
@@ -13731,7 +13734,7 @@ hT
 hU
 hV
 hW
-hX
+dI
 bp
 cg
 ec

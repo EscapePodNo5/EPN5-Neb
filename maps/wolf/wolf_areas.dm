@@ -185,7 +185,7 @@
 
 /area/ship/wolf/security/maa_office
 	icon_state = "maa"
-	name = "\improper Master At Arms Office"
+	name = "\improper Brig Chief's Office"
 	req_access = list(access_armory, access_brig, access_sec_doors)
 
 /area/ship/wolf/security/armory
@@ -425,7 +425,7 @@
 /area/ship/wolf/science/xenobio
 	name = "Xenobioflora Laboratory"
 	icon_state = "science"
-	req_access = list(access_research, access_xenobiology)
+	req_access = list(access_xenobiology)
 
 /area/ship/wolf/science/xenoarch
 	name = "Xenoarcheology"

@@ -36,7 +36,7 @@ ESCAPE_POD(4)
 /datum/shuttle/autodock/overmap/gnat
 	name = "Gnat"
 	shuttle_area = list(/area/ship/wolf/shuttle/gnat/cockpit,/area/ship/wolf/shuttle/gnat/passenger, /area/ship/wolf/shuttle/gnat/cargo, /area/ship/wolf/shuttle/gnat/maint)
-	dock_target = "gnat_airlock"
+	dock_target = "gnatdocking"
 	current_location = "odyssey_hangar"
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	warmup_time = 5
@@ -55,8 +55,6 @@ ESCAPE_POD(4)
 /obj/effect/shuttle_landmark/hangar
 	name = "Odyssey Hangar"
 	landmark_tag = "odyssey_hangar"
-	base_area = /area/ship/wolf/hangar
-	base_turf = /turf/simulated/floor/tiled/techfloor
 
 /obj/effect/shuttle_landmark/near_bow_third
 	name = "Near Odyssey Bow Third Deck"

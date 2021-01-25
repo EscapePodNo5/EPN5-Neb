@@ -116,13 +116,16 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/science/xenoarch/storage)
 "aq" = (
-/obj/effect/floor_decal/corner/research{
-	dir = 5;
-	icon_state = "corner_white"
+/obj/effect/floor_decal/corner/research/three_quarters{
+	dir = 8;
+	icon_state = "corner_white_three_quarters"
 	},
-/obj/structure/table/reinforced,
+/obj/structure/bed/chair,
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/white,
-/area/ship/wolf/science/xenoarch)
+/area/ship/wolf/science/science_hall)
 "ar" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -196,14 +199,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/maintenance/deckone/fore/port)
 "ay" = (
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	dir = 1;
-	icon_state = "airlock_control_off";
-	id_tag = "odyssey_hangar";
-	pixel_y = -24
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/obj/machinery/shipsensors/weak,
+/turf/simulated/floor/reinforced,
+/area/ship/wolf/shuttle/gnat/cockpit)
 "az" = (
 /obj/machinery/light{
 	dir = 4
@@ -315,6 +313,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/utility_shaft)
 "aO" = (
@@ -332,9 +331,13 @@
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "aQ" = (
-/obj/machinery/door/blast/regular,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1;
+	icon_state = "map-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/area/ship/wolf/shuttle/gnat/cargo)
 "aR" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced,
@@ -545,17 +548,15 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/thruster_bay/one)
 "bv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/structure/cable{
-	icon_state = "4-8"
+	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6;
-	icon_state = "intact-supply"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6;
-	icon_state = "intact-scrubbers"
-	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock/autoname/wolf/maintenance,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/utility_shaft)
 "bw" = (
@@ -570,39 +571,51 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/amidships/port)
 "bz" = (
-/obj/effect/floor_decal/corner/research/three_quarters{
-	dir = 8;
-	icon_state = "corner_white_three_quarters"
+/obj/effect/floor_decal/corner/research{
+	dir = 5;
+	icon_state = "corner_white"
 	},
-/obj/structure/bed/chair,
+/obj/structure/table/reinforced,
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/white,
-/area/ship/wolf/science/science_hall)
+/area/ship/wolf/science/xenoarch)
 "bA" = (
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/utility_shaft)
 "bB" = (
-/obj/structure/janitorialcart,
-/obj/structure/railing/mapped{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
 	},
-/obj/item/storage/bag/trash,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckone/fore/port)
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -24
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
 "bC" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
+	dir = 6;
 	icon_state = "intact-supply"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9;
+	dir = 6;
 	icon_state = "intact-scrubbers"
+	},
+/obj/structure/disposalpipe/segment/bent{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/utility_shaft)
@@ -710,11 +723,18 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/science/materials_lab)
 "bO" = (
-/obj/machinery/light{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1;
+	icon_state = "map_connector"
+	},
+/obj/machinery/portable_atmospherics/canister,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
 "bP" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/mining,
@@ -745,10 +765,15 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/fore/starboard)
 "bT" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/autoname/wolf/maintenance,
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 8;
+	icon_state = "map_on"
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating,
-/area/ship/wolf/hangar)
+/area/ship/wolf/shuttle/gnat/cargo)
 "bU" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -829,9 +854,13 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/first_deck)
 "cc" = (
-/obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/cockpit)
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8;
+	icon_state = "map_connector"
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
 "cd" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/command/office/rd/bed)
@@ -1307,12 +1336,11 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/ladderwell)
 "dk" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4;
-	icon_state = "map_vent_out"
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/obj/machinery/door/airlock/autoname/wolf/mining,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/area/ship/wolf/shuttle/gnat/cargo)
 "dl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
@@ -1398,26 +1426,34 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/first_deck)
 "dt" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
 	icon_state = "intact-supply"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	icon_state = "1-2"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9;
+	icon_state = "intact-scrubbers"
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/structure/disposalpipe/segment/bent{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled,
-/area/ship/wolf/hallway/first_deck)
+/turf/simulated/floor/plating,
+/area/ship/wolf/engineering/utility_shaft)
 "du" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10;
-	icon_state = "intact-supply"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
 "dv" = (
 /obj/structure/cable/green{
 	icon_state = "2-8"
@@ -1458,9 +1494,12 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/fore/port)
 "dz" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4;
+	icon_state = "map_scrubber_on"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/area/ship/wolf/shuttle/gnat/cargo)
 "dA" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4;
@@ -1657,9 +1696,10 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/materials_lab)
 "dV" = (
-/obj/machinery/shipsensors/weak,
-/turf/simulated/floor/reinforced,
-/area/ship/wolf/shuttle/gnat/maint)
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cockpit)
 "dW" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4;
@@ -2127,6 +2167,7 @@
 /obj/structure/cable/green{
 	icon_state = "2-4"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/utility_shaft)
 "eL" = (
@@ -2134,7 +2175,6 @@
 /area/ship/wolf/maintenance/deckone/fore/port)
 "eM" = (
 /obj/machinery/computer/ship/sensors,
-/obj/item/radio/intercom/bump/west,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/shuttle/gnat/cockpit)
 "eN" = (
@@ -2454,12 +2494,14 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "ft" = (
+/obj/machinery/atmospherics/binary/pump/on,
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6;
+	dir = 4;
 	icon_state = "intact-scrubbers"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
 "fu" = (
 /obj/machinery/light{
 	dir = 8
@@ -2730,23 +2772,16 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/atmospherics/pump_room)
 "fY" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4;
-	icon_state = "intact-supply"
-	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-	icon_state = "1-8"
+	icon_state = "1-2"
 	},
-/obj/structure/cable/green{
-	icon_state = "1-4"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-s"
-	},
-/turf/simulated/floor/tiled,
-/area/ship/wolf/hallway/first_deck)
+/obj/machinery/door/airlock/autoname/wolf/maintenance,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/ship/wolf/engineering/utility_shaft)
 "fZ" = (
 /obj/machinery/power/apc/super/critical{
 	dir = 8;
@@ -2762,12 +2797,9 @@
 	dir = 9;
 	icon_state = "intact-scrubbers"
 	},
-/obj/machinery/camera/network/mining{
-	dir = 8;
-	icon_state = "camera"
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/area/ship/wolf/shuttle/gnat/cargo)
 "gb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6;
@@ -2873,16 +2905,37 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/wolf/hangar)
 "gk" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
-"gl" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8;
-	icon_state = "map-scrubbers"
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -24
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/random/toolbox,
+/obj/random/toolbox,
+/obj/random/tool,
+/obj/structure/table/reinforced,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	icon_state = "map_vent_out"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/area/ship/wolf/shuttle/gnat/cargo)
+"gl" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8;
+	icon_state = "map_vent_out"
+	},
+/obj/structure/ore_box,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
 "gm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9;
@@ -3018,15 +3071,20 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "gy" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	icon_state = "apc0"
+	},
 /obj/structure/cable/green{
-	icon_state = "2-4"
+	icon_state = "0-2"
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8;
-	icon_state = "map_scrubber_on"
+/obj/effect/floor_decal/corner/brown{
+	dir = 5;
+	icon_state = "corner_white"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
+/obj/structure/ore_box,
+/turf/simulated/floor/tiled,
+/area/ship/wolf/cargo/general)
 "gz" = (
 /obj/machinery/light{
 	dir = 8
@@ -3038,16 +3096,20 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/wolf/hangar)
 "gA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
-/obj/structure/cable{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/airlock/autoname/wolf/maintenance,
-/turf/simulated/floor/plating,
-/area/ship/wolf/engineering/utility_shaft)
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled,
+/area/ship/wolf/hallway/first_deck)
 "gB" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 9;
@@ -3097,10 +3159,6 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/fore/starboard)
-"gH" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
 "gI" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/autoname/wolf/glass/civilian,
@@ -3984,20 +4042,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/ship/wolf/hallway/first_deck)
-"ir" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	icon_state = "apc0"
-	},
-/obj/structure/cable/green{
-	icon_state = "0-2"
-	},
-/obj/effect/floor_decal/corner/brown{
-	dir = 5;
-	icon_state = "corner_white"
-	},
-/turf/simulated/floor/tiled,
-/area/ship/wolf/cargo/general)
 "is" = (
 /obj/machinery/door/blast/regular{
 	dir = 8;
@@ -4414,15 +4458,23 @@
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/lockers)
 "jj" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	icon_state = "1-2"
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
 	},
-/obj/machinery/door/airlock/autoname/wolf/maintenance,
-/turf/simulated/floor/plating,
-/area/ship/wolf/engineering/utility_shaft)
+/obj/structure/cable/green{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/junction/mirrored{
+	dir = 4;
+	icon_state = "pipe-j2"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/wolf/hallway/first_deck)
 "jk" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -5278,28 +5330,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/wolf/hangar)
-"kJ" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-s"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9;
-	icon_state = "intact-scrubbers"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
-"kK" = (
-/obj/machinery/computer/ship/helm,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/cockpit)
-"kL" = (
-/obj/machinery/computer/ship/engines,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/cockpit)
 "kM" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -5545,16 +5575,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/hallway/first_deck)
-"ln" = (
-/obj/machinery/power/apc{
-	dir = 8;
-	icon_state = "apc0"
-	},
-/obj/structure/cable/orange{
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/cockpit)
 "lo" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -5705,12 +5725,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/materials_lab)
-"lG" = (
-/obj/structure/cable/orange{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/cockpit)
 "lH" = (
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
@@ -6400,40 +6414,12 @@
 /obj/structure/bed/chair/shuttle/black,
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/escape_pod_2)
-"ng" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
-/obj/structure/cable/orange{
-	icon_state = "2-8"
-	},
+"nh" = (
+/obj/machinery/computer/ship/helm,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/shuttle/gnat/cockpit)
-"nh" = (
-/obj/machinery/atmospherics/unary/tank,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/maint)
 "ni" = (
-/obj/random/trash,
-/obj/random/trash,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckone/fore/port)
-"nj" = (
-/obj/machinery/sleeper,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"nk" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4;
-	icon_state = "map_scrubber_on"
-	},
-/obj/machinery/computer/shuttle_control/explore/gnat{
-	dir = 1;
-	icon_state = "computer"
-	},
+/obj/machinery/computer/ship/engines,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/shuttle/gnat/cockpit)
 "nl" = (
@@ -6545,19 +6531,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/first_deck)
-"nw" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 8;
-	icon_state = "map_connector"
-	},
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
-/obj/item/radio/intercom/bump/north,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/maint)
 "nx" = (
 /obj/structure/bed,
 /obj/machinery/button/windowtint{
@@ -6578,22 +6551,6 @@
 /obj/structure/curtain/open/bed,
 /turf/simulated/floor/carpet,
 /area/ship/wolf/command/office/bosun/bed)
-"ny" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/light,
-/obj/machinery/camera/network/gnat{
-	dir = 1;
-	icon_state = "camera"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/cockpit)
-"nz" = (
-/obj/random/closet,
-/turf/simulated/floor/plating,
-/area/ship/wolf/maintenance/deckone/fore/starboard)
 "nA" = (
 /obj/structure/sign/janitor{
 	pixel_x = -32
@@ -6624,35 +6581,6 @@
 /obj/item/mop,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/janitorial)
-"nD" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8;
-	icon_state = "map-supply"
-	},
-/obj/structure/cable/orange{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/cockpit)
-"nE" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	dir = 4
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/maint)
-"nF" = (
-/obj/machinery/atmospherics/binary/pump/on{
-	dir = 8;
-	icon_state = "map_on"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/maint)
 "nG" = (
 /obj/machinery/computer/design_console{
 	dir = 4;
@@ -6767,17 +6695,6 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/general)
-"nT" = (
-/obj/machinery/door/airlock/autoname/wolf/mining,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4;
-	icon_state = "intact"
-	},
-/obj/structure/cable/orange{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/maint)
 "nU" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -6952,14 +6869,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/ship/wolf/command/office/bosun)
-"og" = (
-/obj/structure/bed/chair/shuttle/black{
-	dir = 8;
-	icon_state = "shuttle_chair"
-	},
-/obj/item/radio/intercom/bump/south,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
 "oh" = (
 /obj/structure/bed/chair/office/comfy/red{
 	dir = 8;
@@ -7074,14 +6983,6 @@
 /obj/machinery/fabricator/industrial,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/general)
-"or" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 8;
-	icon_state = "map_connector"
-	},
-/obj/item/radio/intercom/bump/south,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
 "os" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -7771,10 +7672,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/first_deck)
-"pD" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/maint)
 "pE" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
@@ -7786,150 +7683,18 @@
 	},
 /turf/simulated/floor/carpet,
 /area/ship/wolf/command/office/bosun)
-"pF" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	icon_state = "apc0"
-	},
-/obj/structure/cable/orange{
-	icon_state = "0-4"
-	},
-/obj/structure/bed/chair/shuttle/black,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"pG" = (
-/obj/structure/cable/orange{
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"pH" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8;
-	icon_state = "map-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/autoname/wolf/mining,
-/obj/structure/cable/orange{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cockpit)
-"pI" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 6;
-	icon_state = "intact"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/maint)
 "pJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 9;
-	icon_state = "intact"
-	},
-/obj/structure/cable/orange{
-	icon_state = "2-4"
-	},
+/obj/structure/closet/crate/freezer/rations,
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/maint)
+/area/ship/wolf/shuttle/gnat/passenger)
 "pK" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	dir = 4
-	},
-/obj/machinery/light,
-/obj/structure/cable/orange{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/maint)
-"pL" = (
-/obj/machinery/atmospherics/binary/pump/on{
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4;
-	icon_state = "map_on"
+	icon_state = "map_scrubber_on"
 	},
-/obj/machinery/camera/network/gnat{
-	dir = 1;
-	icon_state = "camera"
-	},
-/obj/machinery/power/apc,
-/obj/structure/cable/orange{
-	icon_state = "0-8"
-	},
+/obj/item/radio/intercom/bump/west,
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/maint)
-"pM" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 8;
-	icon_state = "map_connector"
-	},
-/obj/machinery/portable_atmospherics/canister,
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/maint)
-"pN" = (
-/obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/passenger)
-"pO" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4;
-	icon_state = "map_vent_out"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"pP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10;
-	icon_state = "intact-supply"
-	},
-/obj/structure/cable/orange{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"pQ" = (
-/obj/structure/bed/chair/shuttle/black{
-	dir = 8;
-	icon_state = "shuttle_chair"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"pR" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"pS" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/power/apc{
-	dir = 4;
-	icon_state = "apc0"
-	},
-/obj/structure/cable/orange{
-	icon_state = "0-2"
-	},
-/obj/structure/cable/orange,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"pT" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 8;
-	icon_state = "map"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/cargo)
+/area/ship/wolf/shuttle/gnat/cockpit)
 "pU" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8;
@@ -7949,100 +7714,36 @@
 /turf/simulated/wall/r_titanium,
 /area/ship/wolf/shuttle/gnat/cargo)
 "pW" = (
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"pX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+/obj/structure/bed/chair/shuttle/black{
+	dir = 1;
+	icon_state = "shuttle_chair"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5;
 	icon_state = "intact-supply"
 	},
-/obj/structure/cable/orange{
-	icon_state = "1-4"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10;
+	icon_state = "intact-scrubbers"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"pY" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4;
-	icon_state = "intact-supply"
-	},
-/obj/structure/cable/orange{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"pZ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4;
-	icon_state = "intact-supply"
-	},
-/obj/machinery/door/airlock/autoname/wolf/mining,
-/obj/structure/cable/orange{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qa" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4;
-	icon_state = "intact-supply"
-	},
-/obj/structure/cable/orange{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qb" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9;
-	icon_state = "intact-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/structure/cable/orange{
-	icon_state = "1-8"
-	},
-/obj/structure/cable/orange{
-	icon_state = "1-4"
-	},
-/obj/effect/shuttle_landmark/hangar,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qc" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/structure/cable/orange{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qd" = (
+/area/ship/wolf/shuttle/gnat/cockpit)
+"pX" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8;
 	icon_state = "map_vent_out"
 	},
-/obj/structure/cable/orange{
-	icon_state = "1-8"
+/obj/machinery/light{
+	dir = 4
 	},
-/obj/structure/cable/orange{
-	icon_state = "4-8"
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/cockpit)
+"pY" = (
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
 "qe" = (
 /obj/effect/floor_decal/corner/research{
 	dir = 5;
@@ -8050,34 +7751,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
-"qf" = (
-/obj/machinery/atmospherics/unary/tank/carbon_dioxide,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qg" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4;
-	icon_state = "map_scrubber_on"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qh" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9;
-	icon_state = "intact-scrubbers"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qi" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/structure/bed/chair/shuttle/black{
-	dir = 8;
-	icon_state = "shuttle_chair"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
 "qj" = (
 /obj/effect/floor_decal/corner/research{
 	dir = 9;
@@ -8100,55 +7773,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
-"qk" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 4;
-	icon_state = "intact"
-	},
-/obj/machinery/button/access/interior{
-	id_tag = "gnat_airlock";
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"ql" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 4;
-	icon_state = "intact"
-	},
-/obj/structure/cable/green{
-	icon_state = "2-4"
-	},
-/obj/effect/overmap/visitable/ship/landable/salvage,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
 "qm" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 4;
-	icon_state = "intact"
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = 32
 	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/light,
-/obj/machinery/camera/network/gnat{
-	dir = 1;
-	icon_state = "camera"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qn" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 4;
-	icon_state = "intact"
-	},
-/obj/machinery/power/terminal,
-/obj/structure/cable/green{
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
 "qo" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 6;
@@ -8160,102 +7790,15 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/space)
-"qp" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
-	dir = 1;
-	icon_state = "map"
-	},
-/obj/structure/cable/orange{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qq" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qr" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 9;
-	icon_state = "intact"
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qs" = (
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_x = 0;
-	pixel_y = -24
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qt" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qu" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
+"qz" = (
 /obj/machinery/door/airlock/external/bolted{
 	id_tag = "gnat_airlock_internal"
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qv" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6;
 	icon_state = "intact"
 	},
-/obj/machinery/door/airlock/external/bolted{
-	id_tag = "gnat_airlock_internal"
-	},
 /turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qw" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 9;
-	icon_state = "intact"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qx" = (
-/obj/structure/cable/orange{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/smes/buildable/preset/wolf/subgrid/atmos,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qy" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
-	dir = 8;
-	icon_state = "map"
-	},
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_x = 0;
-	pixel_y = -24
-	},
-/obj/structure/cable/orange{
-	icon_state = "1-8"
-	},
-/obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qz" = (
-/obj/machinery/atmospherics/binary/pump/on{
-	dir = 8;
-	icon_state = "map_on"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/wolf/shuttle/gnat/cargo)
 "qA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -8268,162 +7811,6 @@
 /obj/machinery/newscaster/bump/west,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/first_deck)
-"qB" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 6;
-	icon_state = "intact"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qC" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
-	dir = 1;
-	icon_state = "map"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qD" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 9;
-	icon_state = "intact"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qE" = (
-/obj/machinery/airlock_sensor{
-	id_tag = "gnat_airlock_sensor";
-	pixel_x = -24
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qF" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
-	dir = 1;
-	id_tag = "gnat_airlock_pump"
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qG" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
-	dir = 8;
-	icon_state = "map"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qH" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 10;
-	icon_state = "intact"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qI" = (
-/obj/machinery/atmospherics/unary/engine{
-	dir = 1;
-	icon_state = "nozzle"
-	},
-/turf/simulated/floor/reinforced,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qJ" = (
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	cycle_to_external_air = 1;
-	dir = 4;
-	icon_state = "airlock_control_off";
-	id_tag = "gnatdocking";
-	pixel_x = -24;
-	tag_airpump = "gnat_airlock_pump";
-	tag_chamber_sensor = "gnat_airlock_sensor";
-	tag_exterior_door = "gnat_airlock_exterior";
-	tag_interior_door = "gnat_airlock_internal"
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qK" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
-	dir = 4;
-	icon_state = "map_vent";
-	id_tag = "tradeship_shuttle_pump_out_internal"
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qL" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4;
-	icon_state = "intact"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qM" = (
-/obj/effect/paint/brown,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 10;
-	icon_state = "intact"
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qN" = (
-/obj/machinery/atmospherics/unary/engine{
-	dir = 1;
-	icon_state = "nozzle"
-	},
-/turf/simulated/floor/reinforced,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qO" = (
-/obj/effect/paint/brown,
-/obj/structure/fuel_port,
-/turf/simulated/wall/r_titanium,
-/area/ship/wolf/shuttle/gnat/passenger)
-"qP" = (
-/obj/machinery/door/airlock/external/bolted{
-	id_tag = "gnat_airlock_exterior"
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qQ" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/external/bolted{
-	id_tag = "gnat_airlock_exterior"
-	},
-/obj/machinery/button/access/exterior{
-	id_tag = "gnat_shuttle";
-	pixel_x = 24
-	},
-/turf/simulated/floor/plating,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qR" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
-	dir = 1;
-	id_tag = "gnat_airlock__pump_out_external"
-	},
-/turf/simulated/floor/reinforced,
-/area/ship/wolf/shuttle/gnat/cargo)
-"qS" = (
-/obj/structure/cable/orange{
-	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1;
-	icon_state = "map_connector"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/shuttle/gnat/cargo)
 "qT" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4;
@@ -8628,9 +8015,11 @@
 	icon_state = "left"
 	},
 /obj/machinery/door/window{
+	autoset_access = 0;
 	dir = 8;
 	icon_state = "left"
 	},
+/obj/structure/window/reinforced,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
 "rk" = (
@@ -9298,11 +8687,90 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/hallway/first_deck)
+"sw" = (
+/obj/effect/floor_decal/industrial/loading{
+	dir = 4;
+	icon_state = "loadingarea"
+	},
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled,
+/area/ship/wolf/cargo/general)
+"sy" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sz" = (
+/obj/machinery/power/apc{
+	dir = 8;
+	icon_state = "apc0"
+	},
+/obj/structure/cable/orange{
+	icon_state = "0-4"
+	},
+/obj/machinery/computer/shuttle_control/explore/gnat{
+	dir = 1;
+	icon_state = "computer"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/cockpit)
+"sA" = (
+/obj/structure/cable/orange{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/cockpit)
+"sB" = (
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -24
+	},
+/obj/structure/table/reinforced,
+/obj/item/clothing/head/helmet/corp/nt/pilot,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/cockpit)
+"sC" = (
+/obj/structure/cable/green{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"sD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"sE" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-s"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8;
+	icon_state = "map_scrubber_on"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
 "sF" = (
 /obj/machinery/door/airlock/autoname/wolf/maintenance,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/ship/wolf/science/xenoarch)
+"sG" = (
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
 "sH" = (
 /obj/structure/ladder,
 /obj/machinery/door/firedoor,
@@ -9313,6 +8781,60 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/ladderwell)
+"sI" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/bed/chair/shuttle/white{
+	icon_state = "shuttle_chair";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sJ" = (
+/obj/item/radio/intercom/bump/west,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sK" = (
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sL" = (
+/obj/structure/bed/chair/shuttle/black{
+	dir = 8;
+	icon_state = "shuttle_chair"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sM" = (
+/obj/machinery/atmospherics/unary/engine{
+	dir = 1;
+	icon_state = "nozzle"
+	},
+/turf/simulated/floor/reinforced,
+/area/ship/wolf/shuttle/gnat/cargo)
+"sN" = (
+/obj/item/radio/intercom/bump/west,
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sO" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sP" = (
+/obj/structure/bed/chair/shuttle/black{
+	dir = 4;
+	icon_state = "shuttle_chair"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sQ" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	icon_state = "map_vent_out"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
 "sR" = (
 /obj/effect/floor_decal/corner/research/three_quarters{
 	dir = 1;
@@ -9327,6 +8849,153 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/xenoarch/storage)
+"sS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sT" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sU" = (
+/obj/machinery/door/airlock/autoname/wolf/mining,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sV" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	icon_state = "apc0"
+	},
+/obj/structure/cable/orange{
+	icon_state = "0-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sW" = (
+/obj/structure/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/orange{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
+"sZ" = (
+/obj/machinery/sleeper,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
+"ta" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10;
+	icon_state = "intact-supply"
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
+"tb" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "gnat_airlock_internal"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tc" = (
+/obj/effect/paint/brown,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4;
+	icon_state = "intact"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/wolf/shuttle/gnat/cargo)
+"td" = (
+/obj/effect/paint/brown,
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 1;
+	icon_state = "map"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/wolf/shuttle/gnat/cargo)
+"te" = (
+/obj/effect/paint/brown,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 10;
+	icon_state = "intact"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tf" = (
+/obj/structure/table/reinforced,
+/obj/random/medical,
+/obj/random/medical,
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
 "tg" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -9342,6 +9011,67 @@
 	},
 /turf/simulated/floor/carpet/purple,
 /area/ship/wolf/command/office/rd)
+"th" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"ti" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4;
+	icon_state = "map_scrubber_on"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"tj" = (
+/obj/structure/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4;
+	icon_state = "map-scrubbers"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"tk" = (
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -24
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8;
+	icon_state = "map_vent_out"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"tl" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1;
+	icon_state = "map_scrubber_on"
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
+"tm" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
+"tn" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	icon_state = "map_vent_out"
+	},
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
+"to" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
 "tp" = (
 /obj/effect/catwalk_plated/white,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -9358,6 +9088,126 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/science/science_hall)
+"tq" = (
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "gnat_airlock_internal"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 4;
+	icon_state = "map"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tr" = (
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -24
+	},
+/obj/structure/table/reinforced,
+/obj/random/medical,
+/obj/random/medical,
+/turf/simulated/floor/tiled/white/monotile,
+/area/ship/wolf/shuttle/gnat/passenger)
+"ts" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4;
+	icon_state = "map_scrubber_on"
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"tt" = (
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -24
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"tu" = (
+/obj/structure/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/autoname/wolf/mining,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
+"tv" = (
+/obj/item/radio/intercom/bump/west,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tw" = (
+/obj/structure/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/orange{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tx" = (
+/obj/structure/cable/orange{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"ty" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	icon_state = "apc0"
+	},
+/obj/structure/cable/orange{
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
 "tA" = (
 /obj/machinery/door/airlock/autoname/wolf/research,
 /obj/machinery/door/firedoor,
@@ -9367,6 +9217,98 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/ship/wolf/science/xenoarch)
+"tB" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1;
+	icon_state = "map-scrubbers"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tD" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8;
+	icon_state = "map_scrubber_on"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tE" = (
+/obj/machinery/atmospherics/unary/tank/carbon_dioxide{
+	dir = 4
+	},
+/obj/structure/cable/orange{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"tF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 10;
+	icon_state = "intact"
+	},
+/obj/structure/cable/orange{
+	icon_state = "4-8"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	icon_state = "map_vent_out"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"tG" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	icon_state = "apc0"
+	},
+/obj/structure/cable/orange{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/orange{
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1;
+	icon_state = "map-supply"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"tH" = (
+/obj/structure/cable/orange{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"tI" = (
+/obj/structure/cable/orange{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/autoname/wolf/mining,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"tJ" = (
+/obj/structure/cable/orange{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
 "tK" = (
 /obj/machinery/camera/network/engineering{
 	dir = 1;
@@ -9374,10 +9316,184 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/atmospherics/pump_room)
+"tL" = (
+/obj/structure/cable/orange{
+	icon_state = "1-8"
+	},
+/obj/effect/shuttle_landmark/hangar{
+	docking_controller = "odyssey_dock"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tM" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	dir = 4;
+	icon_state = "map_vent";
+	id_tag = "gnatdocking_pump_out_internal"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4;
+	icon_state = "intact"
+	},
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "gnat_airlock_exterior"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tO" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4;
+	icon_state = "intact"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "gnat_airlock_exterior"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tP" = (
+/obj/effect/paint/brown,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tQ" = (
+/obj/machinery/recharge_station,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tR" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	icon_state = "map";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tT" = (
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	cycle_to_external_air = 1;
+	dir = 4;
+	icon_state = "airlock_control_off";
+	id_tag = "gnatdocking";
+	pixel_x = -24;
+	tag_airpump = "gnat_airlock_pump";
+	tag_chamber_sensor = "gnat_airlock_sensor";
+	tag_exterior_door = "gnat_airlock_exterior";
+	tag_exterior_sensor = "gnat_sensor_external";
+	tag_interior_door = "gnat_airlock_internal"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tU" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4;
+	icon_state = "intact"
+	},
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "gnat_airlock_exterior"
+	},
+/obj/machinery/button/access/exterior{
+	id_tag = "gnatdocking";
+	pixel_x = 24
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tW" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"tZ" = (
+/obj/machinery/atmospherics/unary/tank/carbon_dioxide{
+	dir = 4
+	},
+/obj/structure/cable/orange{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"ua" = (
+/obj/structure/cable/orange{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/autoname/wolf/mining,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/cockpit)
 "ub" = (
 /obj/effect/floor_decal/corner/research/three_quarters,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/xenoarch/storage)
+"uc" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	icon_state = "map";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"ud" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"ue" = (
+/obj/structure/cable/green{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"uf" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"ug" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
 "uh" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -9388,9 +9504,101 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/xenoarch)
+"ui" = (
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
+/obj/effect/overmap/visitable/ship/landable/salvage,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"uj" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 8;
+	icon_state = "map"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"uk" = (
+/obj/machinery/button/access/interior{
+	id_tag = "gnatdocking";
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"um" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4;
+	icon_state = "map-scrubbers"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/shuttle/gnat/cargo)
+"up" = (
+/obj/machinery/power/smes/buildable/preset/wolf/subgrid/atmos,
+/obj/structure/cable/orange,
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"ur" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
+/obj/machinery/power/terminal{
+	dir = 8;
+	icon_state = "term"
+	},
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"ut" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 8;
+	icon_state = "map"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"uu" = (
+/obj/structure/cable/green{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/unary/tank/air{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
 "uv" = (
 /turf/simulated/floor/reinforced,
 /area/ship/wolf/science/xenobio)
+"uw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
+/obj/machinery/meter,
+/obj/structure/fuel_port{
+	pixel_x = -32
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
 "ux" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -9403,6 +9611,31 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/carpet/purple,
 /area/ship/wolf/command/office/rd)
+"uy" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5;
+	icon_state = "intact"
+	},
+/obj/machinery/meter,
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"uz" = (
+/obj/machinery/airlock_sensor{
+	id_tag = "gnat_airlock_sensor";
+	pixel_x = -24
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	dir = 1;
+	id_tag = "gnat_airlock_pump"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
+"uA" = (
+/obj/machinery/atmospherics/unary/tank/air{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
 "uB" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -9418,6 +9651,69 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/wolf/hangar)
+"uC" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 8;
+	icon_state = "map"
+	},
+/obj/item/radio/intercom/bump/west,
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"uD" = (
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 8;
+	icon_state = "map_on"
+	},
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -24
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"uF" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8;
+	icon_state = "map_connector"
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/maint)
+"uG" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	dir = 8;
+	id_tag = "gnatdocking_pump_out_external"
+	},
+/obj/machinery/airlock_sensor{
+	id_tag = "gnat_sensor_external";
+	pixel_x = -32
+	},
+/turf/simulated/floor/reinforced,
+/area/ship/wolf/shuttle/gnat/cargo)
+"uH" = (
+/obj/effect/paint/brown,
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 8;
+	icon_state = "map"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/wolf/shuttle/gnat/maint)
+"uI" = (
+/obj/effect/paint/brown,
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 1;
+	icon_state = "map"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/wolf/shuttle/gnat/maint)
+"uJ" = (
+/obj/effect/paint/brown,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 4;
+	icon_state = "intact"
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/wolf/shuttle/gnat/maint)
 "uK" = (
 /obj/effect/floor_decal/corner/research{
 	dir = 1;
@@ -9427,6 +9723,77 @@
 /obj/item/baton,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/xenoarch)
+"uL" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	dir = 1;
+	id_tag = "gnat_airlock_pump"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ship/wolf/shuttle/gnat/cargo)
+"uM" = (
+/obj/machinery/atmospherics/unary/engine{
+	dir = 1;
+	icon_state = "nozzle"
+	},
+/turf/simulated/floor/reinforced,
+/area/ship/wolf/shuttle/gnat/maint)
+"uN" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "odyssey_dock_vent"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"uO" = (
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	dir = 4;
+	id_tag = "odyssey_dock";
+	pixel_x = -24;
+	pixel_y = 0;
+	tag_airpump = "odyssey_dock_vent";
+	tag_chamber_sensor = "odyssey_dock_sensor";
+	tag_exterior_door = "odyssey_dock_ext";
+	tag_interior_door = "odyssey_dock_int"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "odyssey_dock_vent"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"uP" = (
+/obj/machinery/door/airlock/external/glass/bolted{
+	id_tag = "odyssey_dock_ext"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"uR" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/external/glass/bolted{
+	id_tag = "odyssey_dock_ext"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"uS" = (
+/obj/machinery/airlock_sensor{
+	id_tag = "odyssey_dock_sensor";
+	pixel_x = 24
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "odyssey_dock_vent"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"uU" = (
+/obj/machinery/atmospherics/unary/tank/air,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
 "uV" = (
 /obj/machinery/light,
 /obj/structure/closet/secure_closet/RD,
@@ -9436,6 +9803,78 @@
 /obj/item/disk/secret_project/science,
 /turf/simulated/floor/carpet/purple,
 /area/ship/wolf/command/office/rd/bed)
+"uW" = (
+/obj/machinery/door/airlock/external/glass/bolted{
+	id_tag = "odyssey_dock_int"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 8;
+	icon_state = "map"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"uX" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/external/glass/bolted{
+	id_tag = "odyssey_dock_int"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"uY" = (
+/obj/machinery/door/airlock/external/glass/bolted{
+	id_tag = "odyssey_dock_int"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 9;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"uZ" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	dir = 8;
+	icon_state = "map"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"va" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"vb" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 9;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
 "vc" = (
 /obj/machinery/camera/network/mining{
 	dir = 4;
@@ -9443,6 +9882,43 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/wolf/cargo/general)
+"vd" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1;
+	icon_state = "map-supply"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"ve" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5;
+	icon_state = "intact"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"vf" = (
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 8;
+	icon_state = "map_on"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"vg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
+"vh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	icon_state = "intact-supply"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/wolf/hangar)
 "vo" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -10056,13 +10532,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/xenobio)
-"GB" = (
-/obj/machinery/camera/network/mining{
-	dir = 4;
-	icon_state = "camera"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
 "Hc" = (
 /obj/structure/cable/green{
 	icon_state = "2-4"
@@ -10223,13 +10692,6 @@
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/science/xenoarch/storage)
-"Kg" = (
-/obj/machinery/camera/network/mining{
-	dir = 8;
-	icon_state = "camera"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/wolf/hangar)
 "Ku" = (
 /obj/machinery/radiocarbon_spectrometer,
 /obj/effect/floor_decal/corner/research/three_quarters{
@@ -10958,13 +11420,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/xenoarch)
-"Wn" = (
-/obj/machinery/camera/network/gnat{
-	dir = 1;
-	icon_state = "camera"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
 "Wq" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 5;
@@ -17258,7 +17713,7 @@ YY
 NO
 vD
 Ze
-aq
+bz
 Jw
 Iu
 Pe
@@ -17753,7 +18208,7 @@ ns
 kZ
 by
 hd
-bz
+aq
 qj
 FY
 hr
@@ -17980,13 +18435,13 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
 aG
-aG
-aG
-aG
-aG
-bB
-ni
+aT
+aT
 bV
 dy
 iY
@@ -18102,19 +18557,19 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aG
+aG
+aG
 bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bT
 bw
 bw
 bw
@@ -18229,19 +18684,19 @@ aa
 aa
 aa
 aa
-aQ
-bW
-GB
-aX
-bW
-bW
-bW
-bW
-aX
-bW
-bW
-GB
-dk
+kW
+sO
+sO
+sO
+kW
+cK
+cK
+cK
+cK
+aa
+aa
+aa
+bw
 bU
 gz
 bw
@@ -18355,22 +18810,22 @@ aa
 aa
 aa
 aa
-aa
-aQ
-bW
-bW
-bW
-bW
 kW
 kW
-pN
-pN
-pN
-pN
+sP
+sP
+sP
 kW
-du
-gk
-gH
+tE
+tZ
+up
+cK
+cK
+cK
+cK
+bw
+bW
+sD
 bw
 VT
 ax
@@ -18481,21 +18936,21 @@ aa
 aa
 aa
 aa
-aa
-aa
-aQ
-bW
-bW
-bW
 kW
 kW
-pF
-pO
-pW
-qg
-Wn
+sJ
+sQ
+sK
+ts
 kW
-qO
+tF
+uc
+ur
+uw
+uC
+uH
+uM
+bw
 bW
 gS
 bw
@@ -18606,23 +19061,23 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aQ
-bW
-bW
+aV
 aV
 kW
-nj
-pG
-pP
-pX
-qh
-qs
-qB
-qI
+qm
+sK
+sS
+th
+tt
+kW
+tG
+ud
+ut
+uy
+uD
+uI
+uM
+bw
 bW
 uB
 bw
@@ -18733,26 +19188,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aQ
-bW
+ay
 aV
-aV
-aV
-aV
-aV
-pQ
-pY
-qi
-og
-qC
-qI
-bW
-gj
-bW
+pJ
+sy
+sL
+sT
+sL
+sL
+kW
+tH
+ue
+uu
+uA
+uF
+uJ
+cK
+bw
+uU
+uZ
+ve
 aX
 aO
 cS
@@ -18860,26 +19315,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aQ
-bW
-cc
-eM
-ln
-nk
 aV
+aV
+aV
+aV
+aV
+sU
 kW
-pZ
-qB
-qt
-qD
 kW
-qO
-gj
-bW
+kW
+tI
+uf
+cK
+cK
+cK
+uJ
+bw
+bw
+bw
+va
+vf
 rN
 rQ
 rS
@@ -18987,26 +19442,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aQ
-bW
-cc
-kK
-lG
-ny
+dV
+eM
+pK
+sz
 aV
-pR
-qa
-qk
-qu
-qE
-qJ
-qP
-gj
-bW
+sV
+ti
+kW
+tv
+tJ
+ug
+qz
+uz
+tT
+tN
+uP
+uO
+uW
+vb
+vg
 rN
 as
 rT
@@ -19037,11 +19492,11 @@ cR
 aW
 bA
 ag
-bv
+bC
 eK
-jj
-dt
 fY
+gA
+jj
 bm
 eE
 mZ
@@ -19114,26 +19569,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aQ
-bW
-cc
-kL
-ng
-nD
-pH
-pS
-qb
-ql
-qv
-qF
-qK
-qQ
+dV
+nh
+pW
+sA
+ua
+sW
+tj
+tu
+tw
+tL
+ui
+tb
+to
+to
+tO
+uR
+uN
+uX
 af
-bW
+sD
 bW
 bW
 bW
@@ -19163,8 +19618,8 @@ lJ
 cR
 bK
 aN
-gA
-bC
+bv
+dt
 nd
 eR
 eT
@@ -19241,26 +19696,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aQ
-bW
-cK
-cK
-cK
-nE
-pI
-pT
-qc
-qm
-qw
-pV
-qL
-pV
-gj
-bW
+dV
+ni
+pX
+sB
+aV
+sX
+tk
+kW
+tx
+tR
+uj
+tq
+uL
+tM
+tV
+uP
+uS
+uY
+vd
+vh
 rP
 rR
 rU
@@ -19368,26 +19823,26 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aQ
-bW
-dV
-cK
-nh
-nF
-pJ
-nT
-qd
-qn
-qx
+kW
+kW
+kW
+kW
+kW
+sU
+kW
+kW
+ty
+tS
+uk
 pV
-qM
-qR
+pV
+tP
+tc
+bw
+bw
+bw
 gj
-ay
+bW
 as
 as
 as
@@ -19495,23 +19950,23 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aQ
-bW
-cK
-cK
-nh
-pD
-pK
-qM
-qS
-qp
-qy
-qG
-qN
+kW
+kW
+pY
+sG
+sN
+sY
+tl
+kW
+tz
+tU
+bB
+pV
+dz
+tQ
+tc
+pV
+bw
 bW
 kG
 an
@@ -19623,22 +20078,22 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aQ
-bW
-bW
-cK
-cK
-nw
-pL
-pV
-qf
-qq
-qz
-qH
-qN
+kW
+kW
+sI
+sG
+sZ
+tm
+kW
+tB
+tW
+um
+dk
+ft
+bO
+td
+sM
+bw
 bW
 kH
 bW
@@ -19665,7 +20120,7 @@ hY
 eb
 cx
 cx
-pj
+sw
 gX
 cC
 gY
@@ -19751,21 +20206,21 @@ aa
 aa
 aa
 aa
-aa
-aa
+kW
+kW
+sG
+ta
+tn
+kW
+tB
 aQ
-bW
-bW
-bW
-cK
-cK
-pM
-pV
-qf
-qr
-or
-pV
-pV
+bT
+du
+ga
+gk
+te
+sM
+bw
 bW
 kI
 bw
@@ -19879,22 +20334,22 @@ aa
 aa
 aa
 aa
-aa
-aQ
-bW
-bW
-bW
-bW
-cK
-cK
-pV
-pV
-pV
-pV
-pV
-ft
+kW
+kW
+tf
+tr
+kW
+tD
 gl
-kJ
+cc
+pV
+pV
+tP
+pV
+pV
+bw
+bW
+sE
 bw
 aY
 aY
@@ -20007,20 +20462,20 @@ aa
 aa
 aa
 aa
-aQ
-bW
-Kg
-bO
-bW
-bW
-bW
-bW
-bO
-bW
-bW
-dz
-ga
-gy
+kW
+sO
+sO
+kW
+pV
+pV
+pV
+pV
+pV
+uG
+aa
+aa
+bw
+sC
 dd
 bw
 aU
@@ -20134,18 +20589,18 @@ aa
 aa
 aa
 aa
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
-bw
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aK
+aK
+aK
 bw
 cE
 bw
@@ -20266,12 +20721,12 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
 aK
-aK
-aK
-aK
-aK
-nz
+aU
 aU
 dE
 fy
@@ -20426,7 +20881,7 @@ ek
 ey
 iR
 cx
-ir
+gy
 op
 mg
 mg
