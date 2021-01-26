@@ -41,7 +41,7 @@
 	name = "rank chevrons"
 	desc = "A set of chevrons denoting rank at a glance."
 	slot = ACCESSORY_SLOT_INSIGNIA
-	on_rolled = list("down" = "none", "rolled" = "chevron")
+	hide_on_uniform_rolldown = TRUE
 	icon = 'maps/wolf/icons/rank_chevrons.dmi'
 	icon_state = "chevron"
 
@@ -70,7 +70,7 @@
 	name = "department stripes"
 	desc = "A set of colored fabric with a hook-and-loop backing."
 	slot = ACCESSORY_SLOT_DEPT
-	on_rolled = list("down" = "none", "rolled" = "deptstripe_rolled")
+	hide_on_uniform_rolldown = TRUE
 	icon = 'maps/wolf/icons/dept_stripes.dmi'
 	icon_state = "deptstripe"
 

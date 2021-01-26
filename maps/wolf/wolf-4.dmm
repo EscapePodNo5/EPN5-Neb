@@ -24,9 +24,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/command/vault)
 "af" = (
-/obj/effect/landmark/map_data{
-	height = 4
-	},
+/obj/effect/landmark/map_data/wolf,
 /turf/space,
 /area/space)
 "ag" = (
