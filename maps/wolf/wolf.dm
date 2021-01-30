@@ -1,15 +1,17 @@
 #if !defined(USING_MAP_DATUM)
 	#include "../../mods/general_content/GeneralContent.dme"
-//	#include "../../mods/ship_combat2/_spacebattles.dme"
-
 	#include "../../mods/species/skrell/_skrell.dme"
+	#include "../../mods/species/ascent/_ascent.dme"
+	#include "../../mods/species/tritonian/_tritonian.dme"
+	#include "../../mods/species/utility_frames/_utility_frames.dme"
 
-	#include "../away/supply_station/supply_station.dm"
+	#include "../../maps/away/ascent_caulship/_ascent_caulship.dm"
 
 	#include "wolf-1.dmm"
 	#include "wolf-2.dmm"
 	#include "wolf-3.dmm"
 	#include "wolf-4.dmm"
+	#include "supplystation.dmm"
 	#include "extras.dmm"
 	#include "wolf_branches.dm"
 	#include "wolf_overmap.dm"
@@ -43,7 +45,7 @@
 
 	#include "turfs\fuel_tank.dm"
 
-//	#include "wolf_security_state.dm"
+	#include "wolf_security_state.dm"
 
 	#define USING_MAP_DATUM /datum/map/wolf
 

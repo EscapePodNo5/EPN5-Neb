@@ -596,3 +596,9 @@
 	base_turf = /turf/space
 
 //Supply station stuff.
+
+/area/supply_station
+	name = "Supply Station"
+	icon_state = "supplystation"
+
+
