@@ -11,6 +11,7 @@
 	#include "wolf-2.dmm"
 	#include "wolf-3.dmm"
 	#include "wolf-4.dmm"
+	#include "wolf_define.dm"
 	#include "supplystation.dmm"
 	#include "extras.dmm"
 	#include "wolf_branches.dm"
