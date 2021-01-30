@@ -5,7 +5,9 @@
 /decl/security_state/default/wolf
 	all_security_levels = list(/decl/security_level/default/wolf/code_green, /decl/security_level/default/wolf/code_blue, /decl/security_level/default/wolf/code_orange, /decl/security_level/default/wolf/code_violet, /decl/security_level/default/wolf/code_red, /decl/security_level/default/wolf/code_delta)
 
-//Torch map alert levels. Refer to security_state.dm.
+/decl/security_level/default/wolf
+	alarm_appearance = /datum/alarm_appearance/green
+
 /decl/security_level/default/wolf/code_green
 	name = "code green"
 
@@ -20,6 +22,8 @@
 	overlay_status_display = "status_display_green"
 
 	alarm_appearance = /datum/alarm_appearance/green
+
+/area/supply_station/supply_dock
 
 	down_description = "All threats to the ship have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
 
