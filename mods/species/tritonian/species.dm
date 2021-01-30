@@ -27,5 +27,5 @@
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_TONE_TRITON | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR
 
 /obj/item/organ/internal/lungs/gills
-	name = "tritonian lungs"
+	name = "lungs and gills"
 	has_gills = TRUE
