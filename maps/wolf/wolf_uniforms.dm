@@ -1,6 +1,7 @@
 /obj/item/clothing/under/wolf
 	rolled_down = 0
 	rolled_sleeves = 0
+	bodytype_restricted = list(BODYTYPE_HUMANOID)
 
 /obj/item/clothing/under/wolf/grey
 	name = "grey jumpsuit"
