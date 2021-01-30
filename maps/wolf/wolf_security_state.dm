@@ -23,8 +23,6 @@
 
 	alarm_appearance = /datum/alarm_appearance/green
 
-/area/supply_station/supply_dock
-
 	down_description = "All threats to the ship have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
 
 /decl/security_level/default/wolf/code_blue
