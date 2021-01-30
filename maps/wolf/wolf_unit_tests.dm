@@ -14,5 +14,6 @@
 		/area/shuttle/escape_pod_1 = NO_APC,
 		/area/shuttle/escape_pod_2 = NO_APC,
 		/area/shuttle/escape_pod_3 = NO_APC,
-		/area/shuttle/escape_pod_4 = NO_APC
+		/area/shuttle/escape_pod_4 = NO_APC,
+		/area/supply_station/supply_dock = NO_APC|NO_SCRUBBER|NO_VENT
 	)
