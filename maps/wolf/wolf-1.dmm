@@ -723,17 +723,14 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/wolf/science/materials_lab)
 "bO" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4;
-	icon_state = "intact"
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 8;
+	icon_state = "map_on"
 	},
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1;
-	icon_state = "map_connector"
-	},
-/obj/machinery/portable_atmospherics/canister,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/wolf/shuttle/gnat/cargo)
 "bP" = (
 /obj/machinery/door/firedoor,
@@ -765,14 +762,13 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/fore/starboard)
 "bT" = (
-/obj/machinery/atmospherics/binary/pump/on{
-	dir = 8;
-	icon_state = "map_on"
-	},
+/obj/machinery/atmospherics/binary/pump/on,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/wolf/shuttle/gnat/cargo)
 "bU" = (
 /obj/machinery/alarm{
@@ -2494,13 +2490,17 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/science_hall)
 "ft" = (
-/obj/machinery/atmospherics/binary/pump/on,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "intact"
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1;
+	icon_state = "map_connector"
+	},
+/obj/machinery/portable_atmospherics/canister,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/wolf/shuttle/gnat/cargo)
 "fu" = (
 /obj/machinery/light{
@@ -3159,6 +3159,18 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/ship/wolf/maintenance/deckone/fore/starboard)
+"gH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "intact-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6;
+	icon_state = "intact-scrubbers"
+	},
+/obj/machinery/hologram/holopad/longrange/remoteship,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/shuttle/gnat/passenger)
 "gI" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/autoname/wolf/glass/civilian,
@@ -8849,17 +8861,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/science/xenoarch/storage)
-"sS" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4;
-	icon_state = "intact-supply"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6;
-	icon_state = "intact-scrubbers"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/shuttle/gnat/passenger)
 "sT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4;
@@ -19066,7 +19067,7 @@ aV
 kW
 qm
 sK
-sS
+gH
 th
 tt
 kW
@@ -20089,8 +20090,8 @@ tB
 tW
 um
 dk
+bT
 ft
-bO
 td
 sM
 bw
@@ -20214,7 +20215,7 @@ tn
 kW
 tB
 aQ
-bT
+bO
 du
 ga
 gk

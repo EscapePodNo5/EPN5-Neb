@@ -794,6 +794,7 @@
 
 /datum/job/wolf/civilian/deck_hand
 	title = "Deck Hand"
+	alt_titles = list("Deck Technician")
 	access = list(
 		access_mailsorting,
 		access_cargo,
@@ -841,6 +842,7 @@
 
 /datum/job/wolf/civilian/salvage_tech
 	title = "Salvage Technician"
+	alt_titles = list("Drill Technician", "Prospector")
 	access = list(
 		access_mailsorting,
 		access_cargo,

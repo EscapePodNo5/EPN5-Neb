@@ -37,6 +37,38 @@
 /obj/effect/shuttle_landmark/escape_pod/out/pod4,
 /turf/space/transit/east,
 /area/space)
+"k" = (
+/turf/simulated/shuttle/wall,
+/area/space)
+"l" = (
+/obj/effect/paint/sun,
+/turf/simulated/wall/r_titanium,
+/area/supply)
+"m" = (
+/turf/simulated/floor/shuttle/yellow,
+/area/supply)
+"n" = (
+/obj/effect/shuttle_landmark/supply/start,
+/turf/simulated/floor/shuttle/yellow,
+/area/supply)
+"o" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	dir = 8;
+	id_tag = "supply_shuttle";
+	pixel_x = 32;
+	tag_door = "supply_shuttle_hatch";
+	use_power = 1
+	},
+/turf/simulated/floor/shuttle/yellow,
+/area/supply)
+"p" = (
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "supply_shuttle_hatch";
+	name = "Shuttle Hatch";
+	use_power = 1
+	},
+/turf/simulated/floor/airless,
+/area/supply)
 
 (1,1,1) = {"
 a
@@ -14381,13 +14413,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+k
+k
+k
+k
+k
+k
 "}
 (114,1,1) = {"
 a
@@ -14508,13 +14540,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+l
+l
+l
+l
+k
 "}
 (115,1,1) = {"
 a
@@ -14635,13 +14667,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+m
+m
+m
+p
+k
 "}
 (116,1,1) = {"
 a
@@ -14762,13 +14794,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+m
+m
+m
+p
+k
 "}
 (117,1,1) = {"
 a
@@ -14889,13 +14921,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+m
+m
+m
+p
+k
 "}
 (118,1,1) = {"
 a
@@ -15016,13 +15048,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+m
+m
+m
+l
+k
 "}
 (119,1,1) = {"
 a
@@ -15143,13 +15175,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+m
+n
+m
+l
+k
 "}
 (120,1,1) = {"
 a
@@ -15270,13 +15302,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+m
+m
+m
+l
+k
 "}
 (121,1,1) = {"
 a
@@ -15397,13 +15429,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+m
+m
+m
+p
+k
 "}
 (122,1,1) = {"
 a
@@ -15524,13 +15556,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+m
+m
+m
+p
+k
 "}
 (123,1,1) = {"
 a
@@ -15651,13 +15683,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+m
+m
+o
+p
+k
 "}
 (124,1,1) = {"
 a
@@ -15778,13 +15810,13 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+l
+l
+l
+l
+l
+k
 "}
 (125,1,1) = {"
 a
@@ -15905,11 +15937,11 @@ a
 a
 a
 a
-a
-a
-a
-a
-a
-a
-a
+k
+k
+k
+k
+k
+k
+k
 "}

@@ -33,6 +33,26 @@
 	department_money = 0
 	salary_modifier = 0.2
 
+	species_to_branch_blacklist = list(
+		/decl/species/mantid = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian),
+		/decl/species/serpentid = list(/datum/mil_branch/exoplanetary_affairs, /datum/mil_branch/civilian)
+
+	)
+
+	species_to_rank_blacklist = list(
+		/decl/species/skrell = list(
+			/datum/mil_branch/exoplanetary_affairs = list(
+				/datum/mil_rank/exo/o3,
+				/datum/mil_rank/exo/o4,
+				/datum/mil_rank/exo/o5,
+				/datum/mil_rank/exo/o6,
+				/datum/mil_rank/exo/o7,
+				/datum/mil_rank/exo/o8,
+				/datum/mil_rank/exo/o9
+			)
+		)
+	)
+
 /datum/map/wolf/get_map_info()
 	return "You're aboard the <b>[station_name],</b> an exploration vessel owned by the USN and operated by the Department of Exoplanetary Affairs. \
-	Welcome to the deep frontier, it will be your home and place of employment for however long your enlistment or contract with Exoplanetary Affairs lasts, you're likely light years away from your real home now and in the deepest reaches of barely known space where all sorts of undesirables love to hide, this gives you a job. This also means you can't trust anybody outside of your crew, and even those within your crew should be looked at with a skeptical eye, even then they're all you have left now. It's just you, the rest of the crew, and the [station_short]."
+	Welcome to the deep frontier, it will be your home and place of employment for however long your enlistment or contract with Exoplanetary Affairs lasts, you're likely light years away from your real home now and in the deepest reaches of barely known space where all sorts of undesirables love to hide. This also means you can't trust anybody outside of your crew, and even those within your crew should be looked at with a skeptical eye, even then they're all you have left now. It's just you, the rest of the crew, and the [station_short]."
