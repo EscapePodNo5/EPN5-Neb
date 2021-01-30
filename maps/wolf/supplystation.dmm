@@ -428,11 +428,10 @@
 /turf/simulated/floor/plating,
 /area/supply_station)
 "bj" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	icon_state = "map_universal";
-	dir = 8
-	},
 /obj/effect/paint/brown,
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
 /turf/simulated/wall/r_wall,
 /area/supply_station)
 "bk" = (
