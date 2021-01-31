@@ -1729,8 +1729,18 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/wolf/security)
 "dZ" = (
-/obj/machinery/power/breakerbox,
-/turf/simulated/floor/plating,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8;
+	icon_state = "map_vent_out"
+	},
+/obj/effect/floor_decal/corner/orange{
+	dir = 9;
+	icon_state = "corner_white"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/ship/wolf/engineering/hallway/upper)
 "ea" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1741,14 +1751,7 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/habitation/kitchen)
 "eb" = (
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable,
-/obj/machinery/power/smes/buildable/preset/wolf/main{
-	RCon_tag = "Shield SMES A"
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/dark,
 /area/ship/wolf/engineering/hallway/upper)
 "ec" = (
 /obj/effect/catwalk_plated/dark,
@@ -8338,20 +8341,12 @@
 /area/shuttle/escape_pod_4)
 "pM" = (
 /obj/structure/cable{
-	icon_state = "1-4"
+	icon_state = "0-2"
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/machinery/power/smes/buildable/preset/wolf/main{
+	RCon_tag = "Shield SMES A"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8;
-	icon_state = "map_vent_out"
-	},
-/obj/effect/floor_decal/corner/orange{
-	dir = 9;
-	icon_state = "corner_white"
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/ship/wolf/engineering/hallway/upper)
 "pN" = (
 /obj/effect/catwalk_plated/dark,
@@ -20781,7 +20776,7 @@ mR
 mR
 nT
 mf
-pM
+dZ
 ro
 tG
 eL
@@ -20908,8 +20903,8 @@ rx
 sG
 bz
 kR
-dZ
 eb
+pM
 Vs
 fo
 la
