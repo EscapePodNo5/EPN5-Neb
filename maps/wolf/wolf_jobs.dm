@@ -106,9 +106,9 @@
 		access_external_airlocks,
 		access_tcomsat,
 		access_engine,
-		access_science,
 		access_armory,
-		access_engine_equip
+		access_engine_equip,
+		access_research
 	)
 	total_positions = 1
 	spawn_positions = 1
