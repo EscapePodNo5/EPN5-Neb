@@ -287,7 +287,7 @@
 	icon_state = "combed"
 
 /area/ship/wolf/command/office/xo
-	name = "\improper Executive Officer's Office"
+	name = "\improper First Officer's Office"
 	req_access = list(access_heads, access_hop)
 
 /area/ship/wolf/command/office/ce
@@ -315,7 +315,7 @@
 	icon_state = "combed"
 
 /area/ship/wolf/command/office/xo/bedroom
-	name = "\improper Executive Officer's Quarters"
+	name = "\improper First Officer's Quarters"
 	icon_state = "combed"
 
 /area/ship/wolf/command/office/bosun

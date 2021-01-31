@@ -103,7 +103,12 @@
 		access_RC_announce,
 		access_keycard_auth,
 		access_gateway,
-		access_external_airlocks
+		access_external_airlocks,
+		access_tcomsat,
+		access_engine,
+		access_armory,
+		access_engine_equip,
+		access_research
 	)
 	total_positions = 1
 	spawn_positions = 1
