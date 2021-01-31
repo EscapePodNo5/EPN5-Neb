@@ -55,7 +55,9 @@
 /obj/machinery/suit_cycler/wolf/generic
 	helmet = /obj/item/clothing/head/helmet/space
 	suit = /obj/item/clothing/suit/space
-	available_modifications = null
+	available_modifications = list(
+		/decl/item_modifier/space_suit/medical
+	)
 
 /obj/machinery/suit_cycler/wolf/salvage
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
