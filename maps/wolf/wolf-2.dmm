@@ -3798,6 +3798,9 @@
 /obj/structure/sign/warning/airlock{
 	pixel_y = 24
 	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/engineering/hallway)
 "hP" = (
@@ -5345,6 +5348,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/engineering/utility_shaft)
 "kg" = (

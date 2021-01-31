@@ -67,7 +67,7 @@
 	name = "Shuttle Hatch";
 	use_power = 1
 	},
-/turf/simulated/floor/airless,
+/turf/simulated/floor/shuttle/yellow,
 /area/supply)
 
 (1,1,1) = {"
@@ -14668,11 +14668,11 @@ a
 a
 a
 k
-l
-m
-m
-m
 p
+m
+m
+m
+l
 k
 "}
 (116,1,1) = {"
@@ -14795,11 +14795,11 @@ a
 a
 a
 k
-l
-m
-m
-m
 p
+m
+m
+m
+l
 k
 "}
 (117,1,1) = {"
@@ -14922,11 +14922,11 @@ a
 a
 a
 k
-l
-m
-m
-m
 p
+m
+m
+m
+l
 k
 "}
 (118,1,1) = {"
@@ -15430,11 +15430,11 @@ a
 a
 a
 k
-l
-m
-m
-m
 p
+m
+m
+m
+l
 k
 "}
 (122,1,1) = {"
@@ -15557,11 +15557,11 @@ a
 a
 a
 k
-l
-m
-m
-m
 p
+m
+m
+m
+l
 k
 "}
 (123,1,1) = {"
@@ -15684,11 +15684,11 @@ a
 a
 a
 k
-l
+p
 m
 m
 o
-p
+l
 k
 "}
 (124,1,1) = {"

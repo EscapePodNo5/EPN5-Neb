@@ -1999,6 +1999,9 @@
 	icon_state = "map_vent_out"
 	},
 /obj/structure/hygiene/toilet,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/ship/wolf/command/office/xo/bedroom)
 "dT" = (

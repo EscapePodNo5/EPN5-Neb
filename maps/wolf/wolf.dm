@@ -4,6 +4,7 @@
 	#include "../../mods/species/ascent/_ascent.dme"
 	#include "../../mods/species/tritonian/_tritonian.dme"
 	#include "../../mods/species/utility_frames/_utility_frames.dme"
+	#include "../../mods/species/neocorvids/_neocorvids.dme"
 
 	#include "../../maps/away/ascent_caulship/_ascent_caulship.dm"
 
