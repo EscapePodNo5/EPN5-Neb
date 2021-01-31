@@ -38,36 +38,90 @@
 /turf/space/transit/east,
 /area/space)
 "k" = (
-/turf/simulated/shuttle/wall,
+/turf/simulated/wall,
 /area/space)
 "l" = (
-/obj/effect/paint/sun,
-/turf/simulated/wall/r_titanium,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/steel_grid,
 /area/supply)
 "m" = (
-/turf/simulated/floor/shuttle/yellow,
-/area/supply)
-"n" = (
-/obj/effect/shuttle_landmark/supply/start,
-/turf/simulated/floor/shuttle/yellow,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/steel_grid,
 /area/supply)
 "o" = (
-/obj/machinery/embedded_controller/radio/simple_docking_controller{
-	dir = 8;
-	id_tag = "supply_shuttle";
-	pixel_x = 32;
-	tag_door = "supply_shuttle_hatch";
-	use_power = 1
+/obj/machinery/light{
+	dir = 8
 	},
-/turf/simulated/floor/shuttle/yellow,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel_grid,
 /area/supply)
-"p" = (
-/obj/machinery/door/airlock/external/bolted{
-	id_tag = "supply_shuttle_hatch";
-	name = "Shuttle Hatch";
-	use_power = 1
+"s" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
 	},
-/turf/simulated/floor/shuttle/yellow,
+/turf/simulated/floor/tiled/steel_grid,
+/area/supply)
+"t" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/supply)
+"w" = (
+/obj/effect/shuttle_landmark/supply/start,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/steel_grid,
+/area/supply)
+"D" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/supply)
+"F" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled/steel_grid,
+/area/supply)
+"G" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/supply)
+"U" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/supply)
+"V" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/supply)
+"X" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_grid,
 /area/supply)
 
 (1,1,1) = {"
@@ -14413,13 +14467,13 @@ a
 a
 a
 a
-k
-k
-k
-k
-k
-k
-k
+a
+a
+a
+a
+a
+a
+a
 "}
 (114,1,1) = {"
 a
@@ -14540,13 +14594,13 @@ a
 a
 a
 a
-k
-l
-l
-l
-l
-l
-k
+a
+a
+a
+a
+a
+a
+a
 "}
 (115,1,1) = {"
 a
@@ -14667,13 +14721,13 @@ a
 a
 a
 a
-k
-p
-m
-m
-m
-l
-k
+a
+a
+a
+a
+a
+a
+a
 "}
 (116,1,1) = {"
 a
@@ -14794,13 +14848,13 @@ a
 a
 a
 a
-k
-p
-m
-m
-m
-l
-k
+a
+a
+a
+a
+a
+a
+a
 "}
 (117,1,1) = {"
 a
@@ -14921,13 +14975,13 @@ a
 a
 a
 a
-k
-p
-m
-m
-m
-l
-k
+a
+a
+a
+a
+a
+a
+a
 "}
 (118,1,1) = {"
 a
@@ -15047,14 +15101,14 @@ a
 a
 a
 a
+k
+k
+k
+k
+k
+k
+k
 a
-k
-l
-m
-m
-m
-l
-k
 "}
 (119,1,1) = {"
 a
@@ -15174,14 +15228,14 @@ a
 a
 a
 a
+k
+l
+D
+o
+D
+t
+k
 a
-k
-l
-m
-n
-m
-l
-k
 "}
 (120,1,1) = {"
 a
@@ -15301,14 +15355,14 @@ a
 a
 a
 a
+k
+V
+m
+m
+m
+F
+k
 a
-k
-l
-m
-m
-m
-l
-k
 "}
 (121,1,1) = {"
 a
@@ -15428,14 +15482,14 @@ a
 a
 a
 a
+k
+V
+m
+w
+m
+F
+k
 a
-k
-p
-m
-m
-m
-l
-k
 "}
 (122,1,1) = {"
 a
@@ -15555,14 +15609,14 @@ a
 a
 a
 a
+k
+V
+m
+m
+m
+F
+k
 a
-k
-p
-m
-m
-m
-l
-k
 "}
 (123,1,1) = {"
 a
@@ -15682,14 +15736,14 @@ a
 a
 a
 a
+k
+s
+G
+X
+G
+U
+k
 a
-k
-p
-m
-m
-o
-l
-k
 "}
 (124,1,1) = {"
 a
@@ -15809,14 +15863,14 @@ a
 a
 a
 a
+k
+k
+k
+k
+k
+k
+k
 a
-k
-l
-l
-l
-l
-l
-k
 "}
 (125,1,1) = {"
 a
@@ -15937,11 +15991,11 @@ a
 a
 a
 a
-k
-k
-k
-k
-k
-k
-k
+a
+a
+a
+a
+a
+a
+a
 "}

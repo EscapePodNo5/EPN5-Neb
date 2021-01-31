@@ -64,26 +64,25 @@ ESCAPE_POD(4)
 	name = "Near Odyssey Bow Bridge Deck"
 	landmark_tag = "nav_odyssey_near_bow_bridge"
 
-/datum/shuttle/autodock/ferry/supply/cargo
-	name = "Supply"
+/datum/shuttle/autodock/ferry/supply/lift
+	name = "Supply Lift"
 	warmup_time = 10
 	location = 1
-	dock_target = "supply_shuttle"
 	shuttle_area = /area/supply
 	waypoint_offsite = "nav_cargo_start"
 	waypoint_station = "nav_cargo_station"
+	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
+	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
 
 /obj/effect/shuttle_landmark/supply/start
 	landmark_tag ="nav_cargo_start"
 
 /obj/effect/shuttle_landmark/supply/station
 	landmark_tag = "nav_cargo_station"
-	docking_controller = "cargo_bay"
-	base_area = /area/supply_station/supply_dock
-	base_turf = /turf/space
+	base_area = /area/supply_station
+	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/nav_supply_station/nav1
 	name = "Automated Supply Station Navpoint #1"
 	landmark_tag = "nav_supply_station_1"
-
-
+	docking_controller = "ts_big_airlock"
