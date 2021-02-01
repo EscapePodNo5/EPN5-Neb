@@ -587,18 +587,12 @@
 	name = "Gnat - Atmos Compartment"
 	icon_state = "gnatmaint"
 
-/area/supply
-	requires_power = 0
-
-/area/supply_station/supply_dock
-	name = "Supply Shuttle Dock"
-	icon_state = "shuttle3"
-	base_turf = /turf/space
-
 //Supply station stuff.
+/area/supply
+	name = "Supply Lift"
+	requires_power = FALSE
+	dynamic_lighting = TRUE
 
 /area/supply_station
 	name = "Supply Station"
 	icon_state = "supplystation"
-
-

@@ -12,9 +12,10 @@
 	#include "wolf-2.dmm"
 	#include "wolf-3.dmm"
 	#include "wolf-4.dmm"
-	#include "wolf_define.dm"
-	#include "supplystation.dmm"
 	#include "extras.dmm"
+	#include "supply.dmm"
+
+	#include "wolf_define.dm"
 	#include "wolf_branches.dm"
 	#include "wolf_overmap.dm"
 	#include "wolf_jobs.dm"

@@ -12,12 +12,13 @@
 	)
 
 /obj/effect/overmap/visitable/sector/supply_station
-	name = "supply_station"
+	name = "Automated Supply Station"
+	desc = "A supply station. These are usually deployed en-masse for the occasional explorer to resupply at."
 	color = "#00ffff"
 	start_x = 4
 	start_y = 4
 	initial_generic_waypoints = list("nav_supply_station_1")
 
 /obj/effect/overmap/visitable/sector/supply_station/Initialize()
-	name = "Automated Supply Station [rand(1,999)] - [docking_codes]"
 	. = ..()
+	name = "Automated Supply Station [rand(1,999)] - [docking_codes]"
