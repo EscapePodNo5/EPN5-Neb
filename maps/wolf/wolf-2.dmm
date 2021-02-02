@@ -498,12 +498,10 @@
 /turf/simulated/floor/plating,
 /area/ship/wolf/engineering/atmospherics)
 "bj" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red{
-	dir = 4;
-	icon_state = "intact"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/wolf/engineering/atmospherics)
+/obj/effect/catwalk_plated/dark,
+/obj/random_multi/single_item/palmers,
+/turf/simulated/floor/plating,
+/area/ship/wolf/command/bridge/cic)
 "bk" = (
 /obj/effect/floor_decal/corner/orange{
 	dir = 5;
@@ -6148,13 +6146,13 @@
 /turf/simulated/floor/reinforced/airless,
 /area/ship/wolf/engineering/reactor)
 "lz" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/green,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+/obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "intact"
 	},
+/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/tiled/dark,
-/area/ship/wolf/engineering/engine_room)
+/area/ship/wolf/engineering/atmospherics)
 "lA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -7185,6 +7183,7 @@
 /area/ship/wolf/engineering/reactor)
 "nF" = (
 /obj/structure/bed/chair,
+/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/engineering)
 "nG" = (
@@ -10721,6 +10720,15 @@
 "vd" = (
 /turf/simulated/floor/shuttle_ceiling,
 /area/space)
+"ve" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/green,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "intact-scrubbers"
+	},
+/obj/random_multi/single_item/poppy,
+/turf/simulated/floor/tiled/dark,
+/area/ship/wolf/engineering/engine_room)
 "vW" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 10;
@@ -18010,7 +18018,7 @@ ae
 ae
 ae
 aR
-bj
+lz
 bN
 dl
 bN
@@ -18785,7 +18793,7 @@ ou
 bQ
 cX
 kp
-lz
+ve
 mq
 on
 fT
@@ -19007,7 +19015,7 @@ et
 dX
 fA
 mO
-ft
+bj
 hs
 hz
 eN

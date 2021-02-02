@@ -5388,6 +5388,11 @@
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled,
 /area/ship/wolf/cargo/comissary)
+"kL" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/random_multi/single_item/kovacs,
+/turf/simulated/floor/carpet/purple,
+/area/ship/wolf/command/office/rd/bed)
 "kM" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -5489,9 +5494,9 @@
 /turf/simulated/wall/r_titanium,
 /area/ship/wolf/shuttle/gnat/passenger)
 "kX" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/random_multi/single_item/kovacs,
 /turf/simulated/floor/carpet/purple,
-/area/ship/wolf/command/office/rd/bed)
+/area/ship/wolf/command/office/rd)
 "kY" = (
 /obj/machinery/light/small/red{
 	dir = 4
@@ -17588,7 +17593,7 @@ Wl
 cd
 au
 ej
-Ut
+kX
 yR
 au
 DS
@@ -17838,7 +17843,7 @@ aa
 aa
 aa
 BF
-kX
+kL
 xN
 ux
 tg
