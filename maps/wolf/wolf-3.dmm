@@ -6937,6 +6937,7 @@
 	dir = 4;
 	icon_state = "corner_white"
 	},
+/obj/random_multi/single_item/runtime,
 /turf/simulated/floor/tiled/white,
 /area/ship/wolf/medical/chemistry)
 "no" = (
@@ -10002,6 +10003,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/tiled/dark,
 /area/ship/wolf/engineering/atmospherics)
 "sQ" = (
@@ -12429,6 +12431,11 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/wolf/eva)
+"xD" = (
+/obj/structure/catwalk,
+/obj/random_multi/single_item/poppy,
+/turf/simulated/floor/plating,
+/area/ship/wolf/engineering/shield_generator)
 "xP" = (
 /obj/effect/floor_decal/techfloor/orange,
 /obj/machinery/recharger/wallcharger{
@@ -20529,7 +20536,7 @@ av
 eK
 kQ
 sH
-sH
+xD
 sH
 bu
 ku

@@ -66,3 +66,50 @@
 		/decl/item_modifier/space_suit/mining
 	)
 
+//Ship pet stuff below
+
+/obj/random_multi/single_item/poppy
+	name = "poppy spawn"
+	id = "poppy"
+	item_path = /mob/living/simple_animal/opossum/poppy
+
+/obj/random_multi/single_item/runtime
+	name = "runtime spawn"
+	id = "runtime"
+	item_path = /mob/living/simple_animal/cat/fluff/Runtime
+
+/obj/random_multi/single_item/palmers
+	name = "palmers spawn"
+	id = "palmers"
+	item_path = /mob/living/simple_animal/koala/palmers
+
+/obj/random_multi/single_item/palmers
+	name = "palmers spawn"
+	id = "palmers"
+	item_path = /mob/living/simple_animal/koala/palmers
+
+/obj/random_multi/single_item/ian
+	name = "ian spawn"
+	id = "ian"
+	item_path = /mob/living/simple_animal/corgi/Ian
+
+/obj/random_multi/single_item/lisa
+	name = "lisa spawn"
+	id = "lisa"
+	item_path = /mob/living/simple_animal/corgi/Lisa
+
+/obj/random_multi/single_item/kovacs
+	name = "kovacs spawn"
+	id = "kovacs"
+	item_path = /mob/living/simple_animal/crow/cyber/kovacs
+
+/mob/living/simple_animal/koala/palmers
+	name = "Executive Director Palmers"
+	desc = "A lazy koala. Why is there a koala on the ship?"
+
+/mob/living/simple_animal/crow/cyber/kovacs
+	name = "Kovacs"
+	desc = "A strange cyber crow. Caw."
+
+
+
