@@ -18,7 +18,8 @@
 	start_x = 4
 	start_y = 4
 	initial_generic_waypoints = list("nav_supply_station_1")
+	color = "#964B00"
 
 /obj/effect/overmap/visitable/sector/supply_station/Initialize()
-	. = ..()
+	..()
 	name = "Automated Supply Station [rand(1,999)] - [docking_codes]"

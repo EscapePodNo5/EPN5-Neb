@@ -22,6 +22,8 @@
 
 /obj/machinery/suit_cycler/wolf
 	boots = /obj/item/clothing/shoes/magboots
+	req_access = list(access_eva)
+	initial_access = list()
 
 /obj/machinery/suit_cycler/wolf/engineering
 	helmet = /obj/item/clothing/head/helmet/space/void/engineering
