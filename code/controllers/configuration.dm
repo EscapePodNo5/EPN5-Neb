@@ -219,6 +219,7 @@ var/list/gamemode_cache = list()
 	var/radiation_material_resistance_divisor = 2 //A turf's possible radiation resistance is divided by this number, to get the real value.
 	var/radiation_lower_limit = 0.15 //If the radiation level for a turf would be below this, ignore it.
 
+	var/auto_local_admin = TRUE // If true, connections from 127.0.0.1 get automatic admin.
 	var/autostealth = 0 // Staff get automatic stealth after this many minutes
 
 	var/error_cooldown = 600 // The "cooldown" time for each occurrence of a unique error
@@ -235,6 +236,9 @@ var/list/gamemode_cache = list()
 	var/do_not_prevent_spam = FALSE //If this is true, skips spam prevention for user actions; inputs, verbs, macros, etc.
 	var/max_acts_per_interval = 140 //Number of actions per interval permitted for spam protection.
 	var/act_interval = 0.1 SECONDS //Interval for spam prevention.
+
+	var/panic_bunker = FALSE //is the panic bunker enabled?
+	var/panic_bunker_message = "Sorry! The panic bunker is enabled. Please head to our Discord or forum to get yourself added to the panic bunker bypass."
 
 	var/lock_client_view_x
 	var/lock_client_view_y
@@ -734,9 +738,11 @@ var/list/gamemode_cache = list()
 				if("autostealth")
 					config.autostealth = text2num(value)
 
+				if("auto_local_admin")
+					config.auto_local_admin = text2num(value)
+
 				if("radiation_lower_limit")
 					radiation_lower_limit = text2num(value)
-
 
 				if("error_cooldown")
 					error_cooldown = text2num(value)
@@ -773,6 +779,11 @@ var/list/gamemode_cache = list()
 					config.max_acts_per_interval = text2num(value)
 				if ("act_interval")
 					config.act_interval = text2num(value) SECONDS
+
+				if("panic_bunker")
+					config.panic_bunker = TRUE
+				if("panic_bunker_message")
+					config.panic_bunker_message = value
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")

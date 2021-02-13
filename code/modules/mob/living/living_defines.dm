@@ -1,6 +1,7 @@
 /mob/living
 	see_in_dark = 2
 	see_invisible = SEE_INVISIBLE_LIVING
+	transform_animate_time = ANIM_LYING_TIME
 
 	//Health and life related vars
 	var/maxHealth = 100 //Maximum health that should be possible.
@@ -48,3 +49,8 @@
 	var/list/obj/aura/auras = null //Basically a catch-all aura/force-field thing.
 
 	var/last_resist = 0
+
+	var/list/chem_effects
+	var/list/chem_doses
+	var/last_pain_message
+	var/next_pain_time = 0

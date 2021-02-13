@@ -1,3 +1,8 @@
+var/list/localhost_addresses = list(
+	"127.0.0.1" = TRUE,
+	"::1" = TRUE
+)
+
 	////////////
 	//SECURITY//
 	////////////
@@ -139,17 +144,18 @@
 
 	#endif
 
-	if(!config.guests_allowed && IsGuestKey(key))
-		alert(src,"This server doesn't allow guest accounts to play. Please go to http://www.byond.com/ and register for a key.","Guest","OK")
-		qdel(src)
-		return
-
-	if(config.player_limit != 0)
-		if((GLOB.clients.len >= config.player_limit) && !(ckey in admin_datums))
-			alert(src,"This server is currently full and not accepting new connections.","Server Full","OK")
-			log_admin("[ckey] tried to join and was turned away due to the server being full (player_limit=[config.player_limit])")
+	var/local_connection = (config.auto_local_admin && (isnull(address) || global.localhost_addresses[address]))
+	if(!local_connection)
+		if(!config.guests_allowed && IsGuestKey(key))
+			alert(src,"This server doesn't allow guest accounts to play. Please go to http://www.byond.com/ and register for a key.","Guest","OK")
 			qdel(src)
 			return
+		if(config.player_limit != 0)
+			if((GLOB.clients.len >= config.player_limit) && !(ckey in admin_datums))
+				alert(src,"This server is currently full and not accepting new connections.","Server Full","OK")
+				log_admin("[ckey] tried to join and was turned away due to the server being full (player_limit=[config.player_limit])")
+				qdel(src)
+				return
 
 	// Change the way they should download resources.
 	if(config.resource_urls && config.resource_urls.len)
@@ -162,6 +168,11 @@
 	to_chat(src, "<span class='warning'>If the title screen is black, resources are still downloading. Please be patient until the title screen appears.</span>")
 	GLOB.clients += src
 	GLOB.ckey_directory[ckey] = src
+
+	// Automatic admin rights for people connecting locally.
+	// Concept stolen from /tg/ with deepest gratitude.
+	if(local_connection && !admin_datums[ckey])
+		new /datum/admins("Local Host", R_EVERYTHING, ckey)
 
 	//Admin Authorisation
 	holder = admin_datums[ckey]
@@ -325,6 +336,13 @@
 	var/sql_computerid = sql_sanitize_text(src.computer_id)
 	var/sql_admin_rank = sql_sanitize_text(admin_rank)
 
+	if ((player_age <= 0) && !(ckey in global.panic_bunker_bypass)) //first connection
+		if (config.panic_bunker && !holder && !deadmin_holder)
+			log_adminwarn("Failed Login: [key] - New account attempting to connect during panic bunker")
+			message_admins("<span class='adminnotice'>Failed Login: [key] - New account attempting to connect during panic bunker</span>")
+			to_chat(src, config.panic_bunker_message)
+			qdel(src)
+			return 0
 
 	if(sql_id)
 		//Player already identified previously, we need to just update the 'lastseen', 'ip' and 'computer_id' variables

@@ -3,7 +3,6 @@
 	plane = DEFAULT_PLANE
 	layer = MOB_LAYER
 
-	appearance_flags = PIXEL_SCALE
 	animate_movement = 2
 	movable_flags = MOVABLE_FLAG_PROXMOVE
 
@@ -87,7 +86,6 @@
 	var/sleeping = 0		//Carbon
 	var/resting = 0			//Carbon
 	var/lying = 0
-	var/lying_prev = 0
 
 	var/radio_interrupt_cooldown = 0
 
@@ -143,9 +141,9 @@
 	var/blinded = null
 	var/ear_deaf = null		//Carbon
 
-//The last mob/living/carbon to push/drag/grab this mob (mostly used by slimes friend recognition)
-	var/mob/living/carbon/LAssailant = null
-
+	//The last mob/living/carbon to push/drag/grab this mob (mostly used by slimes friend recognition)
+	var/weakref/last_handled_by_mob 
+	
 	mouse_drag_pointer = MOUSE_ACTIVE_POINTER
 
 	var/update_icon = 1 //Set to 1 to trigger update_icons() at the next life() call
