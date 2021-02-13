@@ -23,3 +23,4 @@
 /obj/effect/overmap/visitable/sector/supply_station/Initialize()
 	..()
 	name = "Automated Supply Station [rand(1,999)] - [docking_codes]"
+	return INITIALIZE_HINT_NORMAL
