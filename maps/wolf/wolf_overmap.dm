@@ -18,7 +18,7 @@
 	start_x = 4
 	start_y = 4
 	initial_generic_waypoints = list("nav_supply_station_1")
-	color = "#964B00"
+	color = "#d6a724"
 
 /obj/effect/overmap/visitable/sector/supply_station/Initialize()
 	..()
