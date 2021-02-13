@@ -30,7 +30,7 @@
 
 /datum/job/wolf/command
 	selection_color = COLOR_COMMAND_BLUE
-	department_refs = list(DEPT_COMMAND)
+	department_types = list(/decl/department/command)
 
 /datum/job/wolf/command/captain
 	title = "Captain"
@@ -163,12 +163,12 @@
 
 /datum/job/wolf/security
 	selection_color = COLOR_NT_RED
-	department_refs = list(DEPT_SECURITY)
+	department_types = list(/decl/department/command)
 	supervisors = "the Security Commander"
 
 /datum/job/wolf/security/SSC
 	title = "Ship Security Commander"
-	department_refs = list(DEPT_COMMAND,DEPT_SECURITY)
+	department_types = list(/decl/department/command, /decl/department/security)
 	head_position = TRUE
 	req_admin_notify = TRUE
 	supervisors = "the Captain and the First Officer"
@@ -292,13 +292,13 @@
 
 /datum/job/wolf/engineering
 	selection_color = COLOR_AMBER
-	department_refs = list(DEPT_ENGINEERING)
+	department_types = list(/decl/department/engineering)
 	supervisors = "the Chief Engineer"
 	outfit_type = 	/decl/hierarchy/outfit/job/wolf/engineering
 
 /datum/job/wolf/engineering/CE
 	title = "Chief Engineer"
-	department_refs = list(DEPT_COMMAND,DEPT_ENGINEERING)
+	department_types = list(/decl/department/command, /decl/department/engineering)
 	access = list()
 	head_position = TRUE
 	req_admin_notify = TRUE
@@ -401,12 +401,12 @@
 
 /datum/job/wolf/medical
 	selection_color = "#92e7fc"
-	department_refs = list(DEPT_MEDICAL)
+	department_types = list(/decl/department/medical)
 	supervisors = "the Chief Medical Officer"
 
 /datum/job/wolf/medical/CMO
 	title = "Chief Medical Officer"
-	department_refs = list(DEPT_COMMAND,DEPT_MEDICAL)
+	department_types = list(/decl/department/command, /decl/department/medical)
 	access = list()
 	head_position = TRUE
 	req_admin_notify = TRUE
@@ -575,11 +575,11 @@
 
 /datum/job/wolf/science
 	selection_color = COLOR_VIOLET
-	department_refs = list(DEPT_EXPLORATION)
+	department_types = list(/decl/department/exploration)
 
 /datum/job/wolf/science/TD
 	title = "Technology Director"
-	department_refs = list(DEPT_COMMAND,DEPT_EXPLORATION)
+	department_types = list(/decl/department/command, /decl/department/exploration)
 	head_position = TRUE
 	req_admin_notify = TRUE
 	supervisors = "the Captain and the First Officer"
@@ -734,12 +734,12 @@
 
 /datum/job/wolf/civilian
 	selection_color = COLOR_BEASTY_BROWN
-	department_refs = list(DEPT_SUPPLY)
+	department_types = list(/decl/department/supply)
 	supervisors = "the Bosun"
 
 /datum/job/wolf/civilian/bosun
 	title = "Bosun"
-	department_refs = list(DEPT_COMMAND,DEPT_SUPPLY)
+	department_types = list(/decl/department/command, /decl/department/supply)
 	head_position = TRUE
 	req_admin_notify = TRUE
 	alt_titles = list("Quartermaster")
